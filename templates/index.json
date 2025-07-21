@@ -1081,6 +1081,118 @@
         "padding-block-end": 50
       }
     },
+    "section_nTAbfd": {
+      "type": "section",
+      "blocks": {
+        "text_EMmAtD": {
+          "type": "text",
+          "name": "t:names.heading",
+          "settings": {
+            "text": "<h2>Fique por dentro de todas as novidades</h2>",
+            "width": "100%",
+            "max_width": "normal",
+            "alignment": "center",
+            "type_preset": "rte",
+            "font": "var(--font-body--family)",
+            "font_size": "1rem",
+            "line_height": "normal",
+            "letter_spacing": "normal",
+            "case": "none",
+            "wrap": "pretty",
+            "color": "var(--color-foreground)",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        },
+        "text_HUbaap": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Seja o primeiro a saber das novas coleções, lançamentos e  ofertas exclusivas</p>",
+            "width": "fit-content",
+            "max_width": "normal",
+            "alignment": "center",
+            "type_preset": "paragraph",
+            "font": "var(--font-body--family)",
+            "font_size": "1rem",
+            "line_height": "normal",
+            "letter_spacing": "normal",
+            "case": "none",
+            "wrap": "pretty",
+            "color": "var(--color-foreground)",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        },
+        "email_signup_nPFrdr": {
+          "type": "email-signup",
+          "settings": {
+            "width": "custom",
+            "custom_width": 50,
+            "inherit_color_scheme": true,
+            "color_scheme": "",
+            "border_style": "all",
+            "border_width": 1,
+            "border_radius": 100,
+            "input_type_preset": "paragraph",
+            "style_class": "button-unstyled",
+            "display_type": "arrow",
+            "label": "Sign Up",
+            "integrated_button": true,
+            "button_type_preset": "paragraph",
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "text_EMmAtD",
+        "text_HUbaap",
+        "email_signup_nPFrdr"
+      ],
+      "name": "t:names.email_signup",
+      "settings": {
+        "content_direction": "column",
+        "vertical_on_mobile": true,
+        "horizontal_alignment": "flex-start",
+        "vertical_alignment": "center",
+        "align_baseline": false,
+        "horizontal_alignment_flex_direction_column": "center",
+        "vertical_alignment_flex_direction_column": "center",
+        "gap": 16,
+        "section_width": "page-width",
+        "section_height": "",
+        "section_height_custom": 50,
+        "color_scheme": "scheme-2",
+        "background_media": "none",
+        "video_position": "cover",
+        "background_image_position": "cover",
+        "border": "none",
+        "border_width": 1,
+        "border_opacity": 100,
+        "border_radius": 0,
+        "toggle_overlay": false,
+        "overlay_color": "#00000026",
+        "overlay_style": "solid",
+        "gradient_direction": "to top",
+        "padding-block-start": 50,
+        "padding-block-end": 50
+      }
+    },
     "slideshow_tqXcVa": {
       "type": "slideshow",
       "blocks": {
@@ -1424,7 +1536,7 @@
               "type": "_product-list-text",
               "name": "t:names.collection_title",
               "settings": {
-                "text": "<h3>{{ closest.collection.title }}</h3>",
+                "text": "<h3>Novidades que estão chegando no catálogo</h3>",
                 "width": "fit-content",
                 "max_width": "normal",
                 "alignment": "left",
@@ -1549,7 +1661,7 @@
                     "alignment": "left",
                     "type_preset": "custom",
                     "font": "var(--font-body--family)",
-                    "font_size": "0.75rem",
+                    "font_size": "0.875rem",
                     "line_height": "normal",
                     "letter_spacing": "normal",
                     "case": "none",
@@ -1572,7 +1684,7 @@
                     "width": "100%",
                     "max_width": "normal",
                     "alignment": "left",
-                    "type_preset": "h5",
+                    "type_preset": "h3",
                     "font": "var(--font-body--family)",
                     "font_size": "",
                     "line_height": "normal",
@@ -1583,31 +1695,8 @@
                     "background": false,
                     "background_color": "#00000026",
                     "corner_radius": 0,
-                    "padding-block-start": 0,
-                    "padding-block-end": 0,
-                    "padding-inline-start": 0,
-                    "padding-inline-end": 0
-                  },
-                  "blocks": {}
-                },
-                "price_MMyMNq": {
-                  "type": "price",
-                  "name": "t:names.product_price",
-                  "settings": {
-                    "show_sale_price_first": true,
-                    "show_installments": true,
-                    "show_tax_info": false,
-                    "type_preset": "custom",
-                    "width": "fit-content",
-                    "alignment": "left",
-                    "font": "var(--font-body--family)",
-                    "font_size": "0.75rem",
-                    "line_height": "normal",
-                    "letter_spacing": "normal",
-                    "case": "none",
-                    "color": "var(--color-foreground)",
-                    "padding-block-start": 0,
-                    "padding-block-end": 0,
+                    "padding-block-start": 10,
+                    "padding-block-end": 10,
                     "padding-inline-start": 0,
                     "padding-inline-end": 0
                   },
@@ -1617,7 +1706,7 @@
                   "type": "text",
                   "name": "t:names.text",
                   "settings": {
-                    "text": "{{ closest.product.description }}",
+                    "text": "{{ closest.product.description }}<p>--</p><p>ISBN {{ closest.product.metafields.facts.isbn.value }}</p>",
                     "width": "fit-content",
                     "max_width": "normal",
                     "alignment": "left",
@@ -1638,13 +1727,50 @@
                     "padding-inline-end": 0
                   },
                   "blocks": {}
+                },
+                "review_fqDLcy": {
+                  "type": "review",
+                  "name": "t:names.product_review_stars",
+                  "disabled": true,
+                  "settings": {
+                    "stars_style": "single",
+                    "show_number": true,
+                    "rating_color": "foreground",
+                    "type_preset": "paragraph",
+                    "alignment": "left"
+                  },
+                  "blocks": {}
+                },
+                "price_MMyMNq": {
+                  "type": "price",
+                  "name": "t:names.product_price",
+                  "settings": {
+                    "show_sale_price_first": true,
+                    "show_installments": true,
+                    "show_tax_info": false,
+                    "type_preset": "custom",
+                    "width": "fit-content",
+                    "alignment": "left",
+                    "font": "var(--font-body--family)",
+                    "font_size": "0.875rem",
+                    "line_height": "normal",
+                    "letter_spacing": "normal",
+                    "case": "none",
+                    "color": "var(--color-foreground)",
+                    "padding-block-start": 0,
+                    "padding-block-end": 0,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0
+                  },
+                  "blocks": {}
                 }
               },
               "block_order": [
                 "text_K8UiYb",
                 "product_title_hMYBHj",
-                "price_MMyMNq",
-                "text_cApKDF"
+                "text_cApKDF",
+                "review_fqDLcy",
+                "price_MMyMNq"
               ]
             }
           },
@@ -1654,16 +1780,16 @@
           ]
         }
       },
-      "name": "Lançamentos para crianças e jovens",
+      "name": "Lançamentos",
       "settings": {
         "collection": "lancamentos-1",
-        "layout_type": "editorial",
+        "layout_type": "carousel",
         "carousel_on_mobile": false,
         "max_products": 12,
-        "columns": 4,
+        "columns": 2,
         "mobile_columns": "2",
         "mobile_card_size": "60cqw",
-        "columns_gap": 0,
+        "columns_gap": 55,
         "rows_gap": 36,
         "icons_style": "arrow",
         "icons_shape": "circle",
@@ -2072,6 +2198,7 @@
     "marquee_DPpXh7",
     "hero_zPYTn8",
     "product_list_GEztnp",
+    "section_nTAbfd",
     "section_rAtRm9",
     "featured_product_4kgcAw",
     "featured_product_qKiAaK",
