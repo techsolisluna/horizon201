@@ -1,0 +1,472 @@
+{% doc %}
+  @prompt
+    create a multicolumn block that we can link to a metaobject with image, title, richtext, and a button, change the way we link to the metaobjects. I want to link the Metaobject "Autores" of the product, that is a list of metaobjects, link to the Metaobject (List) "Autor", now link the main image with the metaobject autor.foto and the title h2 with the autor.nome, create an option that we can change the image format (eg: square, wide, fit, fill...)
+
+{% enddoc %}
+{% assign ai_gen_id = block.id | replace: '_', '' | downcase %}
+
+{% style %}
+  .ai-authors-multicolumn-{{ ai_gen_id }} {
+    display: block;
+    width: 100%;
+  }
+
+  .ai-authors-columns-{{ ai_gen_id }} {
+    display: grid;
+    grid-template-columns: repeat({{ block.settings.columns_desktop }}, minmax(0, 1fr));
+    gap: {{ block.settings.column_gap }}px;
+    margin-bottom: {{ block.settings.row_gap }}px;
+  }
+
+  .ai-authors-column-{{ ai_gen_id }} {
+    display: flex;
+    flex-direction: column;
+    align-items: {{ block.settings.alignment }};
+    text-align: {{ block.settings.text_alignment }};
+  }
+
+  .ai-authors-image-wrapper-{{ ai_gen_id }} {
+    width: 100%;
+    margin-bottom: {{ block.settings.image_spacing }}px;
+    position: relative;
+  }
+
+  .ai-authors-image-{{ ai_gen_id }} {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  {% if block.settings.image_format == 'square' %}
+    .ai-authors-image-wrapper-{{ ai_gen_id }} {
+      aspect-ratio: 1/1;
+      overflow: hidden;
+    }
+    
+    .ai-authors-image-{{ ai_gen_id }} {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  {% elsif block.settings.image_format == 'wide' %}
+    .ai-authors-image-wrapper-{{ ai_gen_id }} {
+      aspect-ratio: 16/9;
+      overflow: hidden;
+    }
+    
+    .ai-authors-image-{{ ai_gen_id }} {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  {% elsif block.settings.image_format == 'fill' %}
+    .ai-authors-image-wrapper-{{ ai_gen_id }} {
+      aspect-ratio: {{ block.settings.image_aspect_ratio }};
+      overflow: hidden;
+    }
+    
+    .ai-authors-image-{{ ai_gen_id }} {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  {% elsif block.settings.image_format == 'fit' %}
+    .ai-authors-image-{{ ai_gen_id }} {
+      width: 100%;
+      height: auto;
+      object-fit: contain;
+    }
+  {% endif %}
+
+  .ai-authors-image-placeholder-{{ ai_gen_id }} {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f4f4f4;
+  }
+
+  .ai-authors-image-placeholder-{{ ai_gen_id }} svg {
+    width: 100%;
+    height: 100%;
+    max-width: 100%;
+    max-height: 100%;
+  }
+
+  .ai-authors-title-{{ ai_gen_id }} {
+    margin-top: 0;
+    margin-bottom: {{ block.settings.title_spacing }}px;
+    font-size: {{ block.settings.title_size }}px;
+    color: {{ block.settings.title_color }};
+  }
+
+  .ai-authors-content-{{ ai_gen_id }} {
+    margin-bottom: {{ block.settings.content_spacing }}px;
+    color: {{ block.settings.text_color }};
+  }
+
+  .ai-authors-button-{{ ai_gen_id }} {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: {{ block.settings.button_color }};
+    color: {{ block.settings.button_text_color }};
+    text-decoration: none;
+    border-radius: {{ block.settings.button_border_radius }}px;
+    transition: background-color 0.3s ease;
+  }
+
+  .ai-authors-button-{{ ai_gen_id }}:hover {
+    background-color: {{ block.settings.button_hover_color }};
+  }
+
+  @media screen and (max-width: 749px) {
+    .ai-authors-columns-{{ ai_gen_id }} {
+      grid-template-columns: repeat({{ block.settings.columns_mobile }}, minmax(0, 1fr));
+    }
+  }
+{% endstyle %}
+
+<div class="ai-authors-multicolumn-{{ ai_gen_id }}" {{ block.shopify_attributes }}>
+  {% if block.settings.title != blank %}
+    <h2 class="ai-authors-section-title-{{ ai_gen_id }}" style="text-align: {{ block.settings.section_title_alignment }}; margin-bottom: {{ block.settings.section_title_spacing }}px; font-size: {{ block.settings.section_title_size }}px; color: {{ block.settings.section_title_color }};">
+      {{ block.settings.title }}
+    </h2>
+  {% endif %}
+
+  {% if product.metafields.custom.autores %}
+    <div class="ai-authors-columns-{{ ai_gen_id }}">
+      {% for author in product.metafields.custom.autores.value %}
+        <div class="ai-authors-column-{{ ai_gen_id }}">
+          <div class="ai-authors-image-wrapper-{{ ai_gen_id }}">
+            {% if author.foto %}
+              <img 
+                src="{{ author.foto | image_url: width: 800 }}" 
+                alt="{{ author.nome }}" 
+                loading="lazy" 
+                class="ai-authors-image-{{ ai_gen_id }}"
+              >
+            {% else %}
+              <div class="ai-authors-image-placeholder-{{ ai_gen_id }}">
+                {{ 'image' | placeholder_svg_tag }}
+              </div>
+            {% endif %}
+          </div>
+
+          <h2 class="ai-authors-title-{{ ai_gen_id }}">{{ author.nome }}</h2>
+
+          {% if author.biografia %}
+            <div class="ai-authors-content-{{ ai_gen_id }}">
+              {{ author.biografia }}
+            </div>
+          {% endif %}
+
+          {% if block.settings.button_label != blank and block.settings.button_link != blank %}
+            <a href="{{ block.settings.button_link }}" class="ai-authors-button-{{ ai_gen_id }}">
+              {{ block.settings.button_label }}
+            </a>
+          {% endif %}
+        </div>
+      {% endfor %}
+    </div>
+  {% else %}
+    <div class="ai-authors-placeholder-{{ ai_gen_id }}" style="text-align: center; padding: 40px; background-color: #f4f4f4;">
+      <p>No authors found for this product. Please add authors to the product's "Autores" metafield.</p>
+    </div>
+  {% endif %}
+</div>
+
+{% schema %}
+{
+  "name": "Authors Multicolumn",
+  "tag": null,
+  "settings": [
+    {
+      "type": "header",
+      "content": "Section Settings"
+    },
+    {
+      "type": "text",
+      "id": "title",
+      "label": "Section title",
+      "default": "Authors"
+    },
+    {
+      "type": "select",
+      "id": "section_title_alignment",
+      "label": "Section title alignment",
+      "options": [
+        {
+          "value": "left",
+          "label": "Left"
+        },
+        {
+          "value": "center",
+          "label": "Center"
+        },
+        {
+          "value": "right",
+          "label": "Right"
+        }
+      ],
+      "default": "center"
+    },
+    {
+      "type": "range",
+      "id": "section_title_spacing",
+      "min": 10,
+      "max": 60,
+      "step": 5,
+      "unit": "px",
+      "label": "Section title spacing",
+      "default": 30
+    },
+    {
+      "type": "range",
+      "id": "section_title_size",
+      "min": 16,
+      "max": 60,
+      "step": 2,
+      "unit": "px",
+      "label": "Section title size",
+      "default": 32
+    },
+    {
+      "type": "color",
+      "id": "section_title_color",
+      "label": "Section title color",
+      "default": "#000000"
+    },
+    {
+      "type": "header",
+      "content": "Layout"
+    },
+    {
+      "type": "range",
+      "id": "columns_desktop",
+      "min": 1,
+      "max": 5,
+      "step": 1,
+      "label": "Columns on desktop",
+      "default": 3
+    },
+    {
+      "type": "select",
+      "id": "columns_mobile",
+      "label": "Columns on mobile",
+      "options": [
+        {
+          "value": "1",
+          "label": "1"
+        },
+        {
+          "value": "2",
+          "label": "2"
+        }
+      ],
+      "default": "1"
+    },
+    {
+      "type": "range",
+      "id": "column_gap",
+      "min": 10,
+      "max": 60,
+      "step": 5,
+      "unit": "px",
+      "label": "Column gap",
+      "default": 30
+    },
+    {
+      "type": "range",
+      "id": "row_gap",
+      "min": 10,
+      "max": 60,
+      "step": 5,
+      "unit": "px",
+      "label": "Row gap",
+      "default": 30
+    },
+    {
+      "type": "select",
+      "id": "alignment",
+      "label": "Content alignment",
+      "options": [
+        {
+          "value": "flex-start",
+          "label": "Left"
+        },
+        {
+          "value": "center",
+          "label": "Center"
+        },
+        {
+          "value": "flex-end",
+          "label": "Right"
+        }
+      ],
+      "default": "center"
+    },
+    {
+      "type": "select",
+      "id": "text_alignment",
+      "label": "Text alignment",
+      "options": [
+        {
+          "value": "left",
+          "label": "Left"
+        },
+        {
+          "value": "center",
+          "label": "Center"
+        },
+        {
+          "value": "right",
+          "label": "Right"
+        }
+      ],
+      "default": "center"
+    },
+    {
+      "type": "header",
+      "content": "Image Settings"
+    },
+    {
+      "type": "select",
+      "id": "image_format",
+      "label": "Image format",
+      "options": [
+        {
+          "value": "square",
+          "label": "Square (1:1)"
+        },
+        {
+          "value": "wide",
+          "label": "Wide (16:9)"
+        },
+        {
+          "value": "fit",
+          "label": "Fit (Natural)"
+        },
+        {
+          "value": "fill",
+          "label": "Fill (Custom)"
+        }
+      ],
+      "default": "square"
+    },
+    {
+      "type": "range",
+      "id": "image_aspect_ratio",
+      "min": 0.5,
+      "max": 2,
+      "step": 0.1,
+      "label": "Custom aspect ratio",
+      "default": 1
+    },
+    {
+      "type": "range",
+      "id": "image_spacing",
+      "min": 5,
+      "max": 40,
+      "step": 5,
+      "unit": "px",
+      "label": "Image bottom spacing",
+      "default": 20
+    },
+    {
+      "type": "header",
+      "content": "Content Settings"
+    },
+    {
+      "type": "range",
+      "id": "title_size",
+      "min": 12,
+      "max": 40,
+      "step": 2,
+      "unit": "px",
+      "label": "Title size",
+      "default": 24
+    },
+    {
+      "type": "color",
+      "id": "title_color",
+      "label": "Title color",
+      "default": "#000000"
+    },
+    {
+      "type": "range",
+      "id": "title_spacing",
+      "min": 5,
+      "max": 30,
+      "step": 5,
+      "unit": "px",
+      "label": "Title bottom spacing",
+      "default": 15
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Text color",
+      "default": "#333333"
+    },
+    {
+      "type": "range",
+      "id": "content_spacing",
+      "min": 5,
+      "max": 30,
+      "step": 5,
+      "unit": "px",
+      "label": "Content bottom spacing",
+      "default": 20
+    },
+    {
+      "type": "header",
+      "content": "Button Settings"
+    },
+    {
+      "type": "text",
+      "id": "button_label",
+      "label": "Button label",
+      "default": "Learn More"
+    },
+    {
+      "type": "url",
+      "id": "button_link",
+      "label": "Button link"
+    },
+    {
+      "type": "color",
+      "id": "button_color",
+      "label": "Button color",
+      "default": "#000f9f"
+    },
+    {
+      "type": "color",
+      "id": "button_text_color",
+      "label": "Button text color",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "button_hover_color",
+      "label": "Button hover color",
+      "default": "#000000"
+    },
+    {
+      "type": "range",
+      "id": "button_border_radius",
+      "min": 0,
+      "max": 40,
+      "step": 2,
+      "unit": "px",
+      "label": "Button border radius",
+      "default": 4
+    }
+  ],
+  "presets": [
+    {
+      "name": "Authors Multicolumn"
+    }
+  ]
+}
+{% endschema %}

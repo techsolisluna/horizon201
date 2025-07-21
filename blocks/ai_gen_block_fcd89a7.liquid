@@ -1,0 +1,493 @@
+{% doc %}
+  @prompt
+    create a multicolumn block that we can link to a metaobject with image, title, richtext, and a button, change the way we link to the metaobjects. 
+    
+    Create a selection that we can reference the metaobject list Autor, the multicolumn will loop the metaobject list product.Autor, it must reference the custom.autor metaobject list, create a selector of a product metaobject, the link is to a metaobject list, Select product metafield of a metaobject list "Autor"
+
+{% enddoc %}
+{% assign ai_gen_id = block.id | replace: '_', '' | downcase %}
+
+{% style %}
+  .ai-authors-multicolumn-{{ ai_gen_id }} {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+    padding: {{ block.settings.padding }}px;
+    background-color: {{ block.settings.background_color }};
+    border-radius: {{ block.settings.border_radius }}px;
+  }
+
+  .ai-authors-header-{{ ai_gen_id }} {
+    margin-bottom: 2rem;
+    text-align: {{ block.settings.heading_alignment }};
+  }
+
+  .ai-authors-heading-{{ ai_gen_id }} {
+    margin: 0;
+    font-size: {{ block.settings.heading_size }}px;
+    color: {{ block.settings.heading_color }};
+  }
+
+  .ai-authors-subheading-{{ ai_gen_id }} {
+    margin-top: 1rem;
+    font-size: {{ block.settings.subheading_size }}px;
+    color: {{ block.settings.text_color }};
+  }
+
+  .ai-authors-grid-{{ ai_gen_id }} {
+    display: grid;
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    gap: {{ block.settings.column_gap }}px;
+    width: 100%;
+  }
+
+  @media screen and (min-width: 750px) {
+    .ai-authors-grid-{{ ai_gen_id }} {
+      grid-template-columns: repeat({{ block.settings.columns_desktop }}, minmax(0, 1fr));
+    }
+  }
+
+  @media screen and (max-width: 749px) {
+    .ai-authors-grid-{{ ai_gen_id }} {
+      grid-template-columns: repeat({{ block.settings.columns_mobile }}, minmax(0, 1fr));
+    }
+  }
+
+  .ai-author-item-{{ ai_gen_id }} {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    background-color: {{ block.settings.item_background_color }};
+    border-radius: {{ block.settings.item_border_radius }}px;
+    overflow: hidden;
+    padding: {{ block.settings.item_padding }}px;
+  }
+
+  .ai-author-image-container-{{ ai_gen_id }} {
+    position: relative;
+    width: 100%;
+    margin-bottom: 1rem;
+    border-radius: {{ block.settings.image_border_radius }}px;
+    overflow: hidden;
+    aspect-ratio: {{ block.settings.image_aspect_ratio }};
+  }
+
+  .ai-author-image-{{ ai_gen_id }} {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+
+  .ai-author-image-container-{{ ai_gen_id }} svg {
+    width: 100%;
+    height: 100%;
+    background-color: #f4f4f4;
+  }
+
+  .ai-author-info-{{ ai_gen_id }} {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+  }
+
+  .ai-author-title-{{ ai_gen_id }} {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+    font-size: {{ block.settings.title_size }}px;
+    color: {{ block.settings.title_color }};
+  }
+
+  .ai-author-description-{{ ai_gen_id }} {
+    margin-bottom: 1.5rem;
+    color: {{ block.settings.text_color }};
+    font-size: {{ block.settings.text_size }}px;
+    flex-grow: 1;
+  }
+
+  .ai-author-button-{{ ai_gen_id }} {
+    display: inline-block;
+    padding: 0.75rem 1.5rem;
+    background-color: {{ block.settings.button_background }};
+    color: {{ block.settings.button_text_color }};
+    text-decoration: none;
+    border-radius: {{ block.settings.button_border_radius }}px;
+    font-size: {{ block.settings.button_text_size }}px;
+    text-align: center;
+    transition: background-color 0.3s, color 0.3s;
+    margin-top: auto;
+    align-self: flex-start;
+  }
+
+  .ai-author-button-{{ ai_gen_id }}:hover {
+    background-color: {{ block.settings.button_background_hover }};
+    color: {{ block.settings.button_text_color_hover }};
+  }
+
+  .ai-authors-empty-{{ ai_gen_id }} {
+    padding: 2rem;
+    text-align: center;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    grid-column: 1 / -1;
+  }
+{% endstyle %}
+
+<div class="ai-authors-multicolumn-{{ ai_gen_id }}" {{ block.shopify_attributes }}>
+  {% if block.settings.heading != blank or block.settings.subheading != blank %}
+    <div class="ai-authors-header-{{ ai_gen_id }}">
+      {% if block.settings.heading != blank %}
+        <h2 class="ai-authors-heading-{{ ai_gen_id }}">{{ block.settings.heading }}</h2>
+      {% endif %}
+      {% if block.settings.subheading != blank %}
+        <div class="ai-authors-subheading-{{ ai_gen_id }}">{{ block.settings.subheading }}</div>
+      {% endif %}
+    </div>
+  {% endif %}
+
+  <div class="ai-authors-grid-{{ ai_gen_id }}">
+    {% if block.settings.product != blank %}
+      {% assign author_metafield = block.settings.product.metafields.custom.autor %}
+      
+      {% if author_metafield != blank and author_metafield.value.size > 0 %}
+        {% for author in author_metafield.value %}
+          <div class="ai-author-item-{{ ai_gen_id }}">
+            <div class="ai-author-image-container-{{ ai_gen_id }}">
+              {% if author.image != blank %}
+                <img 
+                  src="{{ author.image | image_url: width: 800 }}" 
+                  alt="{{ author.image.alt | escape }}" 
+                  loading="lazy"
+                  class="ai-author-image-{{ ai_gen_id }}"
+                >
+              {% else %}
+                {{ 'image' | placeholder_svg_tag }}
+              {% endif %}
+            </div>
+            <div class="ai-author-info-{{ ai_gen_id }}">
+              {% if author.title != blank %}
+                <h3 class="ai-author-title-{{ ai_gen_id }}">{{ author.title }}</h3>
+              {% endif %}
+              {% if author.description != blank %}
+                <div class="ai-author-description-{{ ai_gen_id }}">{{ author.description }}</div>
+              {% endif %}
+              {% if block.settings.button_text != blank and author.url != blank %}
+                <a href="{{ author.url }}" class="ai-author-button-{{ ai_gen_id }}">
+                  {{ block.settings.button_text }}
+                </a>
+              {% endif %}
+            </div>
+          </div>
+        {% endfor %}
+      {% else %}
+        <div class="ai-authors-empty-{{ ai_gen_id }}">
+          <p>No authors found for this product. Please make sure the product has authors assigned in the metafield.</p>
+        </div>
+      {% endif %}
+    {% else %}
+      <div class="ai-authors-empty-{{ ai_gen_id }}">
+        <p>Please select a product in the block settings.</p>
+      </div>
+    {% endif %}
+  </div>
+</div>
+
+{% schema %}
+{
+  "name": "Product Authors",
+  "tag": null,
+  "settings": [
+    {
+      "type": "header",
+      "content": "Content"
+    },
+    {
+      "type": "text",
+      "id": "heading",
+      "label": "Heading",
+      "default": "Product Authors"
+    },
+    {
+      "type": "richtext",
+      "id": "subheading",
+      "label": "Subheading",
+      "default": "<p>Meet the creators behind this product</p>"
+    },
+    {
+      "type": "product",
+      "id": "product",
+      "label": "Select product with author metafield"
+    },
+    {
+      "type": "text",
+      "id": "button_text",
+      "label": "Button text",
+      "default": "Learn More"
+    },
+    {
+      "type": "header",
+      "content": "Layout"
+    },
+    {
+      "type": "range",
+      "id": "columns_desktop",
+      "min": 1,
+      "max": 5,
+      "step": 1,
+      "label": "Columns on desktop",
+      "default": 3
+    },
+    {
+      "type": "select",
+      "id": "columns_mobile",
+      "label": "Columns on mobile",
+      "options": [
+        {
+          "value": "1",
+          "label": "1"
+        },
+        {
+          "value": "2",
+          "label": "2"
+        }
+      ],
+      "default": "1"
+    },
+    {
+      "type": "range",
+      "id": "column_gap",
+      "min": 10,
+      "max": 60,
+      "step": 5,
+      "unit": "px",
+      "label": "Column gap",
+      "default": 30
+    },
+    {
+      "type": "select",
+      "id": "image_aspect_ratio",
+      "label": "Image aspect ratio",
+      "options": [
+        {
+          "value": "1/1",
+          "label": "Square (1:1)"
+        },
+        {
+          "value": "3/4",
+          "label": "Portrait (3:4)"
+        },
+        {
+          "value": "4/3",
+          "label": "Landscape (4:3)"
+        },
+        {
+          "value": "16/9",
+          "label": "Widescreen (16:9)"
+        }
+      ],
+      "default": "1/1"
+    },
+    {
+      "type": "range",
+      "id": "padding",
+      "min": 0,
+      "max": 60,
+      "step": 10,
+      "unit": "px",
+      "label": "Section padding",
+      "default": 20
+    },
+    {
+      "type": "header",
+      "content": "Style"
+    },
+    {
+      "type": "color",
+      "id": "background_color",
+      "label": "Background color",
+      "default": "#ffffff"
+    },
+    {
+      "type": "range",
+      "id": "border_radius",
+      "min": 0,
+      "max": 30,
+      "step": 2,
+      "unit": "px",
+      "label": "Border radius",
+      "default": 8
+    },
+    {
+      "type": "select",
+      "id": "heading_alignment",
+      "label": "Heading alignment",
+      "options": [
+        {
+          "value": "left",
+          "label": "Left"
+        },
+        {
+          "value": "center",
+          "label": "Center"
+        },
+        {
+          "value": "right",
+          "label": "Right"
+        }
+      ],
+      "default": "center"
+    },
+    {
+      "type": "range",
+      "id": "heading_size",
+      "min": 20,
+      "max": 60,
+      "step": 2,
+      "unit": "px",
+      "label": "Heading size",
+      "default": 32
+    },
+    {
+      "type": "color",
+      "id": "heading_color",
+      "label": "Heading color",
+      "default": "#000000"
+    },
+    {
+      "type": "range",
+      "id": "subheading_size",
+      "min": 12,
+      "max": 30,
+      "step": 1,
+      "unit": "px",
+      "label": "Subheading size",
+      "default": 16
+    },
+    {
+      "type": "header",
+      "content": "Item Style"
+    },
+    {
+      "type": "color",
+      "id": "item_background_color",
+      "label": "Item background color",
+      "default": "#f9f9f9"
+    },
+    {
+      "type": "range",
+      "id": "item_border_radius",
+      "min": 0,
+      "max": 30,
+      "step": 2,
+      "unit": "px",
+      "label": "Item border radius",
+      "default": 8
+    },
+    {
+      "type": "range",
+      "id": "item_padding",
+      "min": 0,
+      "max": 40,
+      "step": 5,
+      "unit": "px",
+      "label": "Item padding",
+      "default": 20
+    },
+    {
+      "type": "range",
+      "id": "image_border_radius",
+      "min": 0,
+      "max": 30,
+      "step": 2,
+      "unit": "px",
+      "label": "Image border radius",
+      "default": 8
+    },
+    {
+      "type": "range",
+      "id": "title_size",
+      "min": 16,
+      "max": 40,
+      "step": 2,
+      "unit": "px",
+      "label": "Title size",
+      "default": 24
+    },
+    {
+      "type": "color",
+      "id": "title_color",
+      "label": "Title color",
+      "default": "#000000"
+    },
+    {
+      "type": "range",
+      "id": "text_size",
+      "min": 12,
+      "max": 20,
+      "step": 1,
+      "unit": "px",
+      "label": "Text size",
+      "default": 16
+    },
+    {
+      "type": "color",
+      "id": "text_color",
+      "label": "Text color",
+      "default": "#333333"
+    },
+    {
+      "type": "header",
+      "content": "Button Style"
+    },
+    {
+      "type": "color",
+      "id": "button_background",
+      "label": "Background color",
+      "default": "#000f9f"
+    },
+    {
+      "type": "color",
+      "id": "button_text_color",
+      "label": "Text color",
+      "default": "#ffffff"
+    },
+    {
+      "type": "color",
+      "id": "button_background_hover",
+      "label": "Hover background color",
+      "default": "#000000"
+    },
+    {
+      "type": "color",
+      "id": "button_text_color_hover",
+      "label": "Hover text color",
+      "default": "#ffffff"
+    },
+    {
+      "type": "range",
+      "id": "button_border_radius",
+      "min": 0,
+      "max": 40,
+      "step": 2,
+      "unit": "px",
+      "label": "Border radius",
+      "default": 4
+    },
+    {
+      "type": "range",
+      "id": "button_text_size",
+      "min": 12,
+      "max": 20,
+      "step": 1,
+      "unit": "px",
+      "label": "Text size",
+      "default": 14
+    }
+  ],
+  "presets": [
+    {
+      "name": "Product Authors"
+    }
+  ]
+}
+{% endschema %}
