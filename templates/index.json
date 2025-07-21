@@ -464,7 +464,7 @@
             "text_heTQRb": {
               "type": "text",
               "settings": {
-                "text": "<h3>Leitor</h3>",
+                "text": "<h3>Leitores</h3>",
                 "width": "fit-content",
                 "max_width": "normal",
                 "alignment": "center",
