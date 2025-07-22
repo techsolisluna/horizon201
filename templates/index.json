@@ -224,8 +224,8 @@
             "group_xUDTTD": {
               "type": "group",
               "settings": {
-                "link": "",
-                "open_in_new_tab": false,
+                "link": "shopify://pages/sala-do-educador",
+                "open_in_new_tab": true,
                 "content_direction": "column",
                 "vertical_on_mobile": true,
                 "horizontal_alignment": "flex-start",
