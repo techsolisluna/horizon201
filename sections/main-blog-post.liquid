@@ -23,6 +23,16 @@
     {%- content_for 'block', id: 'blog-post-image', type: 'image' %}
     {%- content_for 'block', id: 'blog-post-content', type: '_blog-post-content' %}
 
+    <div class="element-margin center">
+      <a href="{% if section.settings.link_url == blank %}{{ blog.url }}{% else %}{{ section.settings.link_url }}{% endif %}" class="button">
+        {% if section.settings.link_text == blank %}
+          {% if localization.language.iso_code == "en" %}Go back{% else %}Voltar{% endif %}
+        {% else %}
+          {{ section.settings.link_text }}
+        {% endif %}
+      </a>
+    </div>
+
     {% if blog.comments_enabled? %}
       <div class="blog-post-comments-container">
         <h2 class="h3">{{- 'blogs.article.comments_heading' | t: count: article.comments_count -}}</h2>
@@ -105,6 +115,18 @@
   .blog-post-comments-pagination a:hover {
     border-bottom: 1px solid var(--color-foreground);
   }
+
+  .element-margin {
+    margin: 2rem auto;
+  }
+
+  .element-margin a{
+    margin: auto;
+  }
+
+  .center {
+    text-align: center;
+  }
 {% endstylesheet %}
 
 {% schema %}
@@ -112,6 +134,20 @@
   "name": "t:names.blog_post",
   "class": "section-wrapper",
   "settings": [
+    {
+      "type": "text",
+      "id": "link_text",
+      "label": "Texto Back link"
+    },
+    {
+      "type": "url",
+      "id": "link_url",
+      "label": "Url Back link"
+    },
+    {
+      "type": "header",
+      "content": "t:content.padding"
+    },
     {
       "type": "select",
       "id": "content_direction",

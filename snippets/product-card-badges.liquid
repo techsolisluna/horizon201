@@ -15,7 +15,21 @@
     --badge-font-family: var(--font-{{ settings.badge_font_family }}--family); --badge-font-weight: var(--font-{{ settings.badge_font_family }}--weight); --badge-text-transform: {{ settings.badge_text_transform }};
   "
 >
-  {%- if product.available == false or product.compare_at_price > product.price and product.available -%}
+  {%- if product.metafields.custom.status.value.system.handle == "pre-venda" -%}
+    <div
+      class="product-badges__badge product-badges__badge--rectangle"
+      style="background-color: #a90000; color: white;"
+    >
+      {% if localization.language.iso_code == "en" %}Pre-order{% else %}Pré-venda{% endif %}
+    </div>
+  {%- elsif product.metafields.custom.status.value.system.handle == "lancamento" -%}
+    <div
+      class="product-badges__badge product-badges__badge--rectangle"
+      style="background-color: #FFD700; border-color: #FFD700;"
+    >
+      {% if localization.language.iso_code == "en" %}Release{% else %}Lançamento{% endif %}
+    </div>
+  {%- elsif product.available == false or product.compare_at_price > product.price and product.available -%}
     <div
       class="
         product-badges__badge product-badges__badge--rectangle

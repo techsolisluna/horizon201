@@ -20,7 +20,7 @@
 
     <a
       class="button cart-items__empty-button"
-      href="{{ routes.all_products_collection_url }}"
+      href="{{ routes.root_url }}"
     >
       {{ 'actions.continue_shopping' | t }}
     </a>
@@ -243,6 +243,15 @@
                       {% endif %}
                     {% endif %}
                   </div>
+                  {%- if item.product.metafields.custom.status.value.system.handle == "pre-venda" -%}
+                    <div
+                      class="product-badges__badge"
+                      style="background-color: #a90000; color: white; --badge-border-radius: {{ settings.badge_corner_radius }}px; width: 70%; padding: 2px; min-width: 100px;
+                              --badge-font-family: var(--font-{{ settings.badge_font_family }}--family); --badge-font-weight: var(--font-{{ settings.badge_font_family }}--weight); --badge-text-transform: {{ settings.badge_text_transform }};"
+                    >
+                      {% if localization.language.iso_code == "en" %}Pre-order{% else %}Pré-venda{% endif %}
+                    </div>
+                  {%- endif -%}
                 </td>
                 <td
                   class="cart-items__quantity"

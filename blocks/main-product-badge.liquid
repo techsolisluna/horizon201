@@ -1,0 +1,13 @@
+{% if product.metafields.custom.status.value.system.handle == "pre-venda" %}
+  <div style="border:1px solid #a90000;border-radius:5px;display:inline;padding:5px 10px;color:white;background-color:#a90000;">{% if localization.language.iso_code == "en" %}Pre-order{% else %}Pré-venda{% endif %}</div>
+{% elsif product.metafields.custom.status.value.system.handle == "lancamento" %}
+  <div style="border:1px solid #FFD700;border-radius:5px;display:inline;padding:5px 10px;color:black;background-color:#FFD700;">{% if localization.language.iso_code == "en" %}Release{% else %}Lançamento{% endif %}</div>
+{% endif %}
+
+{% schema %}
+{
+  "name": "Main Product Badge",
+  "tag": null,
+  "settings": []
+}
+{% endschema %}

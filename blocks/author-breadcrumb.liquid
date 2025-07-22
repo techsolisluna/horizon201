@@ -1,0 +1,29 @@
+<div class="page-width breadcrumb h5">
+  <p>
+    <a href="{{ routes.root_url }}" class="deactive">
+      {% if localization.language.iso_code == "en" %}
+        Home Page
+      {% else %}
+        Página Inicial
+      {% endif %}
+    </a> 
+    / 
+    <a href="/pages/autores" class="deactive">
+      {% if localization.language.iso_code == "en" %}
+        Authors
+      {% else %}
+        Autores
+      {% endif %}
+    </a>
+    / 
+    {{ metaobject.nome }}
+  </p>
+</div>
+
+{% schema %}
+{
+  "name": "Autores Breadcrumb",
+  "tag": null,
+  "settings": []
+}
+{% endschema %}

@@ -1,0 +1,359 @@
+{% doc %}
+  @prompt
+    i need a block thats i can select a product metafield that is a list of a metaobject, that metaobject is the type 'premios' and i want to show each item in the list, wich i can select the image, the heading, the description, and can link a url to this item to click on him
+
+{% enddoc %}
+
+{% if product.metafields.custom.awards %}
+  {% assign ai_gen_id = block.id | replace: '_', '' | downcase %}
+
+  {% style %}
+    .ai-premios-list-{{ ai_gen_id }} {
+      display: grid;
+      grid-template-columns: repeat({{ block.settings.columns_desktop }}, 1fr);
+      gap: {{ block.settings.gap }}px;
+      padding: {{ block.settings.padding }}px;
+    }
+
+    @media screen and (max-width: 749px) {
+      .ai-premios-list-{{ ai_gen_id }} {
+        grid-template-columns: repeat({{ block.settings.columns_mobile }}, 1fr);
+      }
+    }
+
+    .ai-premio-card-{{ ai_gen_id }} {
+      background-color: {{ block.settings.card_background_color }};
+      border-radius: {{ block.settings.card_border_radius }}px;
+      overflow: hidden;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;text-decoration: none;
+      color: inherit;
+      display: block;
+      border: {{ block.settings.card_border_width }}px solid {{ block.settings.card_border_color }};
+    }
+
+    .ai-premio-card-{{ ai_gen_id }}:hover {
+      transform: translateY(-{{ block.settings.hover_lift }}px);
+      box-shadow: 0 {{ block.settings.hover_lift | times: 2 }}px {{ block.settings.hover_lift | times: 4 }}px rgba(0, 0, 0, 0.1);
+    }
+
+    .ai-premio-image-wrapper-{{ ai_gen_id }} {
+      position: relative;
+      width: 100%;
+      aspect-ratio: {{ block.settings.image_aspect_ratio }};
+      overflow: hidden;
+    }
+
+    .ai-premio-image-{{ ai_gen_id }} {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .ai-premio-image-placeholder-{{ ai_gen_id }} {
+      width: 100%;
+      height: 100%;
+      background-color: #f4f4f4;
+      display: flex;
+      align-items: center;
+      justify-content: center;}
+
+    .ai-premio-image-placeholder-{{ ai_gen_id }} svg {
+      width: 50%;
+      height: 50%;
+      opacity: 0.3;
+    }
+
+    .ai-premio-content-{{ ai_gen_id }} {
+      padding: {{ block.settings.content_padding }}px;
+      text-align: center;
+    }
+
+    .ai-premio-heading-{{ ai_gen_id }} {
+      font-size: {{ block.settings.heading_size }}px;
+      font-weight: {{ block.settings.heading_weight }};
+      color: {{ block.settings.heading_color }};
+      margin: 0 0 {{ block.settings.content_spacing }}px 0;line-height: 1.3;
+    }
+
+    .ai-premio-description-{{ ai_gen_id }} {
+      font-size: {{ block.settings.description_size }}px;
+      color: {{ block.settings.description_color }};
+      line-height: 1.5;
+      margin: 0;}
+
+    .ai-premios-empty-{{ ai_gen_id }} {
+      text-align: center;
+      padding: 40px 20px;
+      color: #666;
+      font-style: italic;
+    }
+  {% endstyle %}
+
+  <div style="max-width: 1300px; margin: {{ block.settings.top_margin }}px auto {{ block.settings.bottom_margin }}px">
+
+    <h2>{% if localization.language.iso_code == "en" %}Awards and recognitions{% else %}Prêmios e reconhecimentos{% endif %}</h2>
+
+    <div class="ai-premios-list-{{ ai_gen_id }}" {{ block.shopify_attributes }}>
+
+      {% assign premios_metafield = product.metafields.custom.awards.value %}
+        
+        
+      {% for premio in premios_metafield %}
+        
+        {% assign premio_image = premio.imagem %}
+        {% assign premio_heading = premio.nome %}
+        {% assign premio_description = premio.descricao %}
+        {% assign premio_url = premio.url %}
+
+        {% if premio_url and premio_url != blank %}
+          <a href="{{ premio_url }}" class="ai-premio-card-{{ ai_gen_id }}">
+        {% else %}
+          <div class="ai-premio-card-{{ ai_gen_id }}">
+        {% endif %}
+          
+          <div class="ai-premio-image-wrapper-{{ ai_gen_id }}">
+            {% if premio_image %}
+              <img
+                src="{{ premio_image | image_url: width: 600 }}"
+                alt="{{ premio_image.alt | escape }}"
+                class="ai-premio-image-{{ ai_gen_id }}"
+                loading="lazy"
+                width="600"
+                height="{{ 600 | divided_by: block.settings.image_aspect_ratio | round }}"
+                style="object-fit: contain;"
+              >
+            {% else %}
+              <div class="ai-premio-image-placeholder-{{ ai_gen_id }}">
+                {{ 'image' | placeholder_svg_tag }}
+              </div>
+            {% endif %}
+          </div>
+
+          <div class="ai-premio-content-{{ ai_gen_id }}">
+            {% if premio_heading and premio_heading != blank %}
+              <h3 class="ai-premio-heading-{{ ai_gen_id }}">{{ premio_heading }}</h3>
+            {% endif %}
+            
+            {% if premio_description and premio_description != blank %}
+              <div class="ai-premio-description-{{ ai_gen_id }}">{{ premio_description }}</div>
+            {% endif %}
+          </div>{% if premio_url and premio_url != blank %}
+          </a>
+        {% else %}
+          </div>
+        {% endif %}
+
+      {% endfor %}
+    </div>
+  </div>
+{% endif %}
+
+{% schema %}
+{
+  "name": "Premios List",
+  "tag": null,
+  "settings": [
+    {
+      "type": "header",
+      "content": "Layout"
+    },
+    {
+      "type": "select",
+      "id": "columns_desktop",
+      "label": "Columns on desktop",
+      "options": [
+        {"value": "1", "label": "1"},
+        {"value": "2", "label": "2"},
+        {"value": "3", "label": "3"},
+        {"value": "4", "label": "4"}
+      ],
+      "default": "3"
+    },
+    {
+      "type": "select",
+      "id": "columns_mobile",
+      "label": "Columns on mobile",
+      "options": [
+        {"value": "1", "label": "1"},
+        {"value": "2", "label": "2"}
+      ],
+      "default": "1"
+    },
+    {
+      "type": "range",
+      "id": "gap",
+      "min": 0,
+      "max": 50,
+      "step": 5,
+      "unit": "px",
+      "label": "Gap between items",
+      "default": 20
+    },
+    {
+      "type": "range",
+      "id": "top_margin",
+      "min": 0,
+      "max": 50,
+      "step": 2,
+      "unit": "px",
+      "label": "Margem superior",
+      "default": 20
+    },
+    {
+      "type": "range",
+      "id": "bottom_margin",
+      "min": 0,
+      "max": 50,
+      "step": 2,
+      "unit": "px",
+      "label": "Margem inferior",
+      "default": 20
+    },
+    {
+      "type": "range",
+      "id": "padding",
+      "min": 0,
+      "max": 50,
+      "step": 5,
+      "unit": "px",
+      "label": "Container padding",
+      "default": 0
+    },
+    {
+      "type": "header",
+      "content": "Card Style"
+    },
+    {
+      "type": "color",
+      "id": "card_background_color",
+      "label": "Card background color",
+      "default": "#ffffff"
+    },
+    {
+      "type": "range",
+      "id": "card_border_radius",
+      "min": 0,
+      "max": 30,
+      "step": 2,
+      "unit": "px",
+      "label": "Card border radius",
+      "default": 8
+    },
+    {
+      "type": "range",
+      "id": "card_border_width",
+      "min": 0,
+      "max": 5,
+      "step": 1,
+      "unit": "px",
+      "label": "Card border width",
+      "default": 1
+    },
+    {
+      "type": "color",
+      "id": "card_border_color",
+      "label": "Card border color",
+      "default": "#e6e6e6"
+    },
+    {
+      "type": "range",
+      "id": "hover_lift",
+      "min": 0,
+      "max": 10,
+      "step": 1,
+      "unit": "px",
+      "label": "Hover lift effect",
+      "default": 4
+    },
+    {
+      "type": "header",
+      "content": "Image Settings"
+    },
+    {
+      "type": "select",
+      "id": "image_aspect_ratio",
+      "label": "Image aspect ratio",
+      "options": [
+        {"value": "1", "label": "Square (1:1)"},
+        {"value": "1.33", "label": "Landscape (4:3)"},
+        {"value": "1.78", "label": "Wide (16:9)"},
+        {"value": "0.75", "label": "Portrait (3:4)"}
+      ],
+      "default": "1.33"
+    },
+    {
+      "type": "header",
+      "content": "Content Style"
+    },
+    {
+      "type": "range",
+      "id": "content_padding",
+      "min": 10,
+      "max": 40,
+      "step": 2,
+      "unit": "px",
+      "label": "Content padding",
+      "default": 20
+    },
+    {
+      "type": "range",
+      "id": "content_spacing",
+      "min": 5,
+      "max": 30,
+      "step": 1,
+      "unit": "px",
+      "label": "Spacing between heading and description",
+      "default": 10
+    },
+    {
+      "type": "range",
+      "id": "heading_size",
+      "min": 14,
+      "max": 32,
+      "step": 1,
+      "unit": "px",
+      "label": "Heading font size",
+      "default": 20
+    },
+    {
+      "type": "select",
+      "id": "heading_weight",
+      "label": "Heading font weight",
+      "options": [
+        {"value": "400", "label": "Normal"},
+        {"value": "500", "label": "Medium"},
+        {"value": "600", "label": "Semi-bold"},
+        {"value": "700", "label": "Bold"}
+      ],
+      "default": "600"
+    },
+    {
+      "type": "color",
+      "id": "heading_color",
+      "label": "Heading color",
+      "default": "#000000"
+    },
+    {
+      "type": "range",
+      "id": "description_size",
+      "min": 12,
+      "max": 20,
+      "step": 1,
+      "unit": "px",
+      "label": "Description font size",
+      "default": 14
+    },
+    {
+      "type": "color",
+      "id": "description_color",
+      "label": "Description color",
+      "default": "#666666"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Premios List"
+    }
+  ]
+}
+{% endschema %}

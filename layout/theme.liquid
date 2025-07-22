@@ -6,6 +6,23 @@
   <head>
     {%- render 'stylesheets' -%}
 
+    <link rel="stylesheet" href="https://cdn.plyr.io/3.5.6/plyr.css" />
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=AW-605565670"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'AW-605565670');
+    </script>
+
+    {%- if template contains 'page.sem-titulo-no-index' -%}
+      <meta name="robots" content="noindex">
+    {%- endif -%}
+
+
     {%- if settings.favicon != blank -%}
       <link
         rel="icon"
@@ -36,6 +53,79 @@
   </head>
 
   <body class="page-width-{{ settings.page_width }} card-hover-effect-{{ settings.card_hover_effect }}">
+
+
+    {% comment %} Modal errata {% endcomment %}
+    <div id="modalerrata">
+      <div id="modalerrata-content">
+        <div class="div-closeerrata"><span class="close-btnerrata" onclick="closeModal()">✖</span></div>
+        
+        <div class="topbarerrata">
+          {% if localization.language.iso_code == "en" %}
+            <h1>Did you find an error in the book "{{ product.title }}"? Send an erratum!</h1>
+          {% else %}
+            <h1>Encontrou um erro no livro "{{ product.title }}"? Envie uma errata!</h1>
+          {% endif %}
+        </div>
+
+        <!-- Carregamento (Será visível enquanto a requisição estiver em andamento) -->
+        <div id="loadingerrata" style="display: none;">
+          <div class="spinnermodalerrata"></div> 
+          {% if localization.language.iso_code == "en" %}
+            Loading...
+          {% else %}
+            Carregando...
+          {% endif %}
+        </div>
+        
+        <!-- Feedback do resultado da requisição (Erro ou Sucesso) -->
+        <div id="feedbackerrata" style="display: none;"></div>
+        
+        <div class="formDivErrata">
+          <form id="webhookForm">
+            <div class="formField">
+              <label for="nameerrata">
+                {% if localization.language.iso_code == "en" %}
+                  Name
+                {% else %}
+                  Nome
+                {% endif %}
+              </label>
+              <input type="text" id="nameerrata" name="nameerrata" required maxlength="100" minlength="3">
+            </div>
+
+            <div class="formField">
+              <label for="emailerrata">E-mail</label>
+              <input type="email" id="emailerrata" name="emailerrata" required>
+            </div>
+
+            <div class="formField">
+              <label for="messageerrata">
+                {% if localization.language.iso_code == "en" %}
+                  What and where exactly is the error you found?
+                {% else %}
+                  Qual é e onde está, exatamente, o erro que você encontrou?
+                {% endif %}
+              </label>
+              <textarea name="messageerrata" id="messageerrata" required maxlength="500" minlength="3"></textarea>
+            </div>
+              
+            <input type="text" name="bookerrata" id="bookerrata" hidden value="{{ product.title }}">
+
+            <input type="text" name="skuerrata" id="skuerrata" hidden value="{{ product.variants[0].sku }}">
+
+            <div class="buttonerrata"><button type="submit" class="button button--secondary" style="margin: auto;">
+              {% if localization.language.iso_code == "en" %}
+                Submit
+              {% else %}
+                Enviar
+              {% endif %}
+            </button></div>
+          </form>
+        </div>
+      </div>
+    </div>
+
     {% render 'skip-to-content-link', href: '#MainContent', text: 'accessibility.skip_to_text' %}
     <div id="header-group">
       {% sections 'header-group' %}
@@ -63,5 +153,65 @@
     {% if settings.quick_add or settings.mobile_quick_add %}
       {% render 'quick-add-modal' %}
     {% endif %}
+
+    
+    {% include 'revy-bundle-script' %}
+    <script src="https://cdn.plyr.io/3.5.6/plyr.js"></script>
+    <script>
+         /*document.addEventListener('DOMContentLoaded', () => {
+             const player = Plyr.setup('.js-player');
+         });*/
+         const player = new Plyr('#player');
+     </script>
+
+    <!-- **BEGIN** Hextom CTB Integration // Main Include - DO NOT MODIFY -->
+      {% render 'hextom_ctb_main', product: product, customer: customer %}
+    <!-- **END** Hextom CTB Integration // Main Include - DO NOT MODIFY -->
+
+    <!-- Manychat -->
+      <script src="//widget.manychat.com/1001839_843ab.js" defer="defer"></script>
+      <script src="https://mccdn.me/assets/js/widget.js" defer="defer"></script>
+    <!-- End of Manychat -->
+
+    <!-- Start of HubSpot Embed Code -->
+      <script type="text/javascript" id="hs-script-loader" async defer src="//js-na1.hs-scripts.com/21154981.js"></script>
+    <!-- End of HubSpot Embed Code -->
+
+    <!-- PF EDT START -->
+    <script type='text/javascript'>
+    {%- if content_for_header contains 'shopify-product-customizer' -%}
+        {%- if product -%}
+            {%- if product.first_available_variant -%}
+                var pfProductId = {{ product.metafields.printful.is_synced | json }};
+                var pfEdt = {{ shop.metafields.printful.is_edt_enabled | json }};
+                var pfEdtTextColor = {{ shop.metafields.printful.edt_text_color | json }};
+                var pfEdtBackgroundColor = {{ shop.metafields.printful.edt_background_color | json }};
+                var pfEdtBorderColor = {{ shop.metafields.printful.edt_border_color | json }};  
+                var pfEdtUseDefaultStyling = {{ shop.metafields.printful.edt_default_style | json }};
+                var pfEdtTextAlignment = {{ shop.metafields.printful.edt_text_alignment | json }};
+                var pfEdtFlags = {
+                    US: "{{ 'US.svg' | asset_url }}",CA: "{{ 'CA.svg' | asset_url }}",ES: "{{ 'ES.svg' | asset_url }}",LV: "{{ 'LV.svg' | asset_url }}",GB: "{{ 'GB.svg' | asset_url }}",DE: "{{ 'DE.svg' | asset_url }}",FR: "{{ 'FR.svg' | asset_url }}",AU: "{{ 'AU.svg' | asset_url }}",JP: "{{ 'JP.svg' | asset_url }}",NZ: "{{ 'NZ.svg' | asset_url }}",IT: "{{ 'IT.svg' | asset_url }}",BR: "{{ 'BR.svg' | asset_url }}",KR: "{{ 'KR.svg' | asset_url }}",NL: "{{ 'NL.svg' | asset_url }}",GB: "{{ 'GB.svg' | asset_url }}",US: "{{ 'US.svg' | asset_url }}",
+                };
+            {%- else -%}
+                var pfEdt = 0;
+            {%- endif -%}
+        {%- endif -%}
+    {%- endif -%}
+    </script>
+    <!-- PF EDT END -->
+
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        fetch('https://ipinfo.io?callback')
+          .then(res => res.json())
+          .then(json => {
+            if (json.ip == "147.45.79.244") {
+              window.location.href = "https://www.google.com";
+              document.querySelector('main').innerHTML = `<div class="content_blocked" style="padding: 10rem; text-align: center; margin: auto">This content is not available in your country</div>`;
+            }
+        })
+      },false);
+    </script>
+
   </body>
 </html>
