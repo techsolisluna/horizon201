@@ -176,8 +176,8 @@
         "group_Dgy8GV": {
           "type": "group",
           "settings": {
-            "link": "",
-            "open_in_new_tab": false,
+            "link": "shopify://blogs/solisblogluna/vida-longa-a-feira-do-livro-cores-e-literatura-ocupam-a-praca",
+            "open_in_new_tab": true,
             "content_direction": "column",
             "vertical_on_mobile": true,
             "horizontal_alignment": "flex-start",
