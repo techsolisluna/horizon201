@@ -213,18 +213,6 @@
               },
               "blocks": {}
             },
-            "subscriptions_app_block_tjABnA": {
-              "type": "shopify://apps/subscriptions/blocks/app-block/a3bfe9ec-96f8-4508-a003-df608a36d2ad",
-              "settings": {
-                "color_text_body": "#6d7175",
-                "dividers_color": "#8f8d8d",
-                "bacgkround_color": "#ffffff",
-                "border_thickness": 1,
-                "border_radius": 0,
-                "subscription_policy_url": "",
-                "product": "{{closest.product}}"
-              }
-            },
             "buy_buttons_eYQEYi": {
               "type": "buy-buttons",
               "settings": {
@@ -462,7 +450,6 @@
             "group_icgrde",
             "divider_VJhene",
             "variant_picker_R3rGDr",
-            "subscriptions_app_block_tjABnA",
             "buy_buttons_eYQEYi",
             "swatches_tcYTXx",
             "text_aEtTtq",
