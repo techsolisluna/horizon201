@@ -83,6 +83,7 @@
         "section_height": "small",
         "section_height_custom": 50,
         "color_scheme": "scheme-58084d4c-a86e-4d0a-855e-a0966e5043f7",
+        "banner_not_empty": false,
         "toggle_overlay": true,
         "overlay_color": "#00000014",
         "overlay_style": "gradient",
@@ -1329,8 +1330,8 @@
             "horizontal_alignment": "flex-start",
             "vertical_alignment": "flex-start",
             "collection_card_gap": 8,
-            "inherit_color_scheme": true,
-            "color_scheme": "",
+            "inherit_color_scheme": false,
+            "color_scheme": "scheme-6",
             "border": "none",
             "border_width": 1,
             "border_opacity": 100,
@@ -1370,13 +1371,13 @@
               "settings": {
                 "image_ratio": "portrait",
                 "toggle_overlay": true,
-                "overlay_color": "#ffffffe3",
-                "overlay_style": "solid",
+                "overlay_color": "#ff9400",
+                "overlay_style": "gradient",
                 "gradient_direction": "to bottom",
-                "border": "solid",
+                "border": "none",
                 "border_width": 0,
                 "border_opacity": 100,
-                "border_radius": 0
+                "border_radius": 10
               },
               "blocks": {}
             }
@@ -1797,6 +1798,7 @@
           "type": "_slide",
           "settings": {
             "media_type_1": "video",
+            "link": "",
             "content_direction": "column",
             "vertical_on_mobile": true,
             "horizontal_alignment": "flex-start",
@@ -2082,6 +2084,7 @@
         "section_height": "large",
         "section_height_custom": 50,
         "color_scheme": "scheme-5",
+        "banner_not_empty": false,
         "toggle_overlay": true,
         "overlay_color": "#00000026",
         "overlay_style": "gradient",
@@ -2731,6 +2734,7 @@
         "section_height": "medium",
         "section_height_custom": 50,
         "color_scheme": "scheme-5",
+        "banner_not_empty": false,
         "toggle_overlay": true,
         "overlay_color": "#00000026",
         "overlay_style": "gradient",
