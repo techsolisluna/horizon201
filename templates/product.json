@@ -109,8 +109,7 @@
                 "badge": {
                   "type": "main-product-badge",
                   "name": "Badge",
-                  "settings": {
-                  },
+                  "settings": {},
                   "blocks": {}
                 },
                 "text_HjAwYD": {
@@ -286,7 +285,6 @@
               "type": "product-inventory",
               "name": "t:names.product_inventory",
               "settings": {
-                "product": "{{ closest.product }}",
                 "inventory_threshold": 10,
                 "show_inventory_quantity": true,
                 "padding-block-start": 0,
@@ -497,8 +495,7 @@
             "errata": {
               "type": "errata",
               "name": "Envie uma errata",
-              "settings": {
-              },
+              "settings": {},
               "blocks": {}
             }
           },
@@ -533,12 +530,6 @@
         "ai_gen_block_48d4bde_MpiJVM": {
           "type": "ai_gen_block_48d4bde",
           "settings": {
-            "selected_product": "{{ closest.product }}",
-            "metafield_key": "awards",
-            "image_field": "",
-            "heading_field": "title",
-            "description_field": "description",
-            "url_field": "url",
             "columns_desktop": "3",
             "columns_mobile": "1",
             "gap": 20,
@@ -612,18 +603,12 @@
             "section_title_size": 22,
             "section_title_color": "#333333",
             "section_title_margin": 20,
-            "columns_desktop": 3,
-            "columns_mobile": "1",
-            "gap": 20,
-            "margin_top": 30,
-            "margin_bottom": 30,
             "gap": 50,
             "margin_top": 70,
             "margin_bottom": 70,
             "card_background_color": "#ffffff",
             "card_border_radius": 8,
             "card_padding": 20,
-            "card_shadow": 7,
             "card_shadow": 3,
             "image_width": 800,
             "image_aspect_ratio": 100,
@@ -682,11 +667,11 @@
       "type": "hero",
       "name": "Product banner",
       "settings": {
-        "link": "",
-        "open_in_new_tab": false,
         "media_type_1": "image",
         "image_1": "{{ product.metafields.my_fields.banner.value }}",
         "media_type_2": "image",
+        "link": "",
+        "open_in_new_tab": false,
         "content_direction": "column",
         "vertical_on_mobile": true,
         "horizontal_alignment": "flex-start",
@@ -697,9 +682,9 @@
         "gap": 16,
         "section_width": "page-width",
         "section_height": "auto",
-        "banner_not_empty": true,
         "section_height_custom": 50,
         "color_scheme": "scheme-58084d4c-a86e-4d0a-855e-a0966e5043f7",
+        "banner_not_empty": true,
         "toggle_overlay": false,
         "overlay_color": "#00000026",
         "overlay_style": "gradient",

@@ -396,7 +396,6 @@
               "name": "t:names.product_list_button",
               "settings": {
                 "label": "Ver todos",
-                "collection": "{{ closest.collection }}",
                 "open_in_new_tab": false,
                 "style_class": "link",
                 "width": "fit-content",
@@ -435,7 +434,6 @@
               "type": "_product-card-gallery",
               "name": "t:names.product_image",
               "settings": {
-                "product": "{{ closest.product }}",
                 "image_ratio": "adapt",
                 "border": "none",
                 "border_width": 1,
@@ -517,7 +515,6 @@
                   "type": "product-title",
                   "name": "t:names.product_title",
                   "settings": {
-                    "product": "{{ closest.product }}",
                     "width": "100%",
                     "max_width": "normal",
                     "alignment": "left",
@@ -544,7 +541,6 @@
                   "name": "t:names.product_price",
                   "disabled": true,
                   "settings": {
-                    "product": "{{ closest.product }}",
                     "show_sale_price_first": true,
                     "show_installments": true,
                     "show_tax_info": false,
