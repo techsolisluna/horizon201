@@ -421,7 +421,7 @@
                       "settings": {
                         "heading": "Dados técnicos",
                         "open_by_default": true,
-                        "icon": "none",
+                        "icon": "ruler",
                         "width": 20
                       },
                       "blocks": {
@@ -460,7 +460,7 @@
                       "settings": {
                         "heading": "Classificação",
                         "open_by_default": false,
-                        "icon": "none",
+                        "icon": "clipboard",
                         "width": 20
                       },
                       "blocks": {
