@@ -112,11 +112,37 @@
                   "settings": {},
                   "blocks": {}
                 },
+                "text_xrnftG": {
+                  "type": "text",
+                  "name": "Titulo",
+                  "settings": {
+                    "text": "<h1>{{ closest.product.title }}</h1>",
+                    "width": "100%",
+                    "max_width": "normal",
+                    "alignment": "left",
+                    "type_preset": "h2",
+                    "font": "var(--font-primary--family)",
+                    "font_size": "",
+                    "line_height": "normal",
+                    "letter_spacing": "normal",
+                    "case": "none",
+                    "wrap": "pretty",
+                    "color": "",
+                    "background": false,
+                    "background_color": "#00000026",
+                    "corner_radius": 0,
+                    "padding-block-start": 0,
+                    "padding-block-end": 0,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0
+                  },
+                  "blocks": {}
+                },
                 "text_HjAwYD": {
                   "type": "text",
                   "name": "Autor",
                   "settings": {
-                    "text": "<p>{{ closest.product.metafields.custom.autor | metafield_text: field: 'nome' }}</p>",
+                    "text": "<p><strong>{{ closest.product.metafields.custom.autor | metafield_text: field: 'nome' }}</strong></p>",
                     "width": "fit-content",
                     "max_width": "normal",
                     "alignment": "left",
@@ -142,7 +168,7 @@
                   "type": "text_product_ilustrator",
                   "name": "Ilustrador",
                   "settings": {
-                    "text": "<p>Ilustrado por {{ closest.product.metafields.custom.autor_da_ilustracao | metafield_text: field: 'nome' }}</p>",
+                    "text": "<p>Ilustrado por <strong>{{ closest.product.metafields.custom.autor_da_ilustracao | metafield_text: field: 'nome' }}</strong></p>",
                     "width": "fit-content",
                     "max_width": "normal",
                     "alignment": "left",
@@ -164,29 +190,15 @@
                   },
                   "blocks": {}
                 },
-                "text_xrnftG": {
-                  "type": "text",
-                  "name": "Titulo",
+                "divider_UHPH7x": {
+                  "type": "_divider",
+                  "name": "t:names.divider",
                   "settings": {
-                    "text": "<h1>{{ closest.product.title }}</h1>",
-                    "width": "100%",
-                    "max_width": "normal",
-                    "alignment": "left",
-                    "type_preset": "h2",
-                    "font": "var(--font-primary--family)",
-                    "font_size": "",
-                    "line_height": "normal",
-                    "letter_spacing": "normal",
-                    "case": "none",
-                    "wrap": "pretty",
-                    "color": "",
-                    "background": false,
-                    "background_color": "#00000026",
-                    "corner_radius": 0,
+                    "thickness": 0.5,
+                    "corner_radius": "square",
+                    "width_percent": 100,
                     "padding-block-start": 0,
-                    "padding-block-end": 0,
-                    "padding-inline-start": 0,
-                    "padding-inline-end": 0
+                    "padding-block-end": 0
                   },
                   "blocks": {}
                 },
@@ -216,9 +228,10 @@
               },
               "block_order": [
                 "badge",
+                "text_xrnftG",
                 "text_HjAwYD",
                 "text_HjAwYD2",
-                "text_xrnftG",
+                "divider_UHPH7x",
                 "price_tVjtKg"
               ]
             },
@@ -519,7 +532,7 @@
         "equal_columns": false,
         "limit_details_width": false,
         "gap": 48,
-        "color_scheme": "scheme-2",
+        "color_scheme": "scheme-1",
         "padding-block-start": 0,
         "padding-block-end": 0
       }
