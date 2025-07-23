@@ -11,6 +11,17 @@
   "sections": {
     "section_iVDGta": {
       "type": "section",
+      "blocks": {
+        "author-breadcrumb": {
+          "type": "author-breadcrumb",
+          "name": "Autor Breadcrumb",
+          "settings": {},
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "author-breadcrumb"
+      ],
       "name": "t:names.custom_section",
       "settings": {
         "content_direction": "column",
@@ -36,7 +47,7 @@
         "overlay_color": "#00000026",
         "overlay_style": "solid",
         "gradient_direction": "to top",
-        "padding-block-start": 0,
+        "padding-block-start": 40,
         "padding-block-end": 0
       }
     },
@@ -81,100 +92,7 @@
             "padding-inline-end": 0
           },
           "blocks": {
-            "image_8rEibh": {
-              "type": "image",
-              "name": "t:names.image",
-              "settings": {
-                "image": "{{ closest.metaobject.autor.foto.value }}",
-                "link": "",
-                "image_ratio": "adapt",
-                "width": "fill",
-                "custom_width": 100,
-                "width_mobile": "fill",
-                "custom_width_mobile": 100,
-                "height": "fit",
-                "border": "none",
-                "border_width": 1,
-                "border_opacity": 100,
-                "border_radius": 0,
-                "padding-block-start": 0,
-                "padding-block-end": 0,
-                "padding-inline-start": 0,
-                "padding-inline-end": 0
-              },
-              "blocks": {}
-            },
-            "text_4FEeX6": {
-              "type": "text",
-              "name": "Autor da foto",
-              "settings": {
-                "text": "<p>{{ closest.metaobject.autor.fotografo.value }}</p>",
-                "width": "fit-content",
-                "max_width": "normal",
-                "alignment": "left",
-                "type_preset": "rte",
-                "font": "var(--font-body--family)",
-                "font_size": "1rem",
-                "line_height": "normal",
-                "letter_spacing": "normal",
-                "case": "none",
-                "wrap": "pretty",
-                "color": "var(--color-foreground)",
-                "background": false,
-                "background_color": "#00000026",
-                "corner_radius": 0,
-                "padding-block-start": 0,
-                "padding-block-end": 0,
-                "padding-inline-start": 0,
-                "padding-inline-end": 0
-              },
-              "blocks": {}
-            }
-          },
-          "block_order": [
-            "image_8rEibh",
-            "text_4FEeX6"
-          ]
-        },
-        "group_9EYkBD": {
-          "type": "group",
-          "settings": {
-            "link": "",
-            "open_in_new_tab": false,
-            "content_direction": "column",
-            "vertical_on_mobile": true,
-            "horizontal_alignment": "flex-start",
-            "vertical_alignment": "center",
-            "align_baseline": false,
-            "horizontal_alignment_flex_direction_column": "flex-start",
-            "vertical_alignment_flex_direction_column": "center",
-            "gap": 12,
-            "width": "custom",
-            "custom_width": 100,
-            "width_mobile": "fill",
-            "custom_width_mobile": 100,
-            "height": "fill",
-            "custom_height": 100,
-            "inherit_color_scheme": true,
-            "color_scheme": "",
-            "background_media": "none",
-            "video_position": "cover",
-            "background_image_position": "cover",
-            "border": "none",
-            "border_width": 1,
-            "border_opacity": 100,
-            "border_radius": 0,
-            "toggle_overlay": false,
-            "overlay_color": "#00000026",
-            "overlay_style": "solid",
-            "gradient_direction": "to top",
-            "padding-block-start": 0,
-            "padding-block-end": 0,
-            "padding-inline-start": 0,
-            "padding-inline-end": 0
-          },
-          "blocks": {
-            "text_jLgfpr": {
+            "text_y4zwzL": {
               "type": "text",
               "name": "t:names.heading",
               "settings": {
@@ -200,7 +118,7 @@
               },
               "blocks": {}
             },
-            "text_w4iWzH": {
+            "text_4FEeX6": {
               "type": "text",
               "settings": {
                 "text": "{{ closest.metaobject.autor.biografia | metafield_tag }}",
@@ -227,25 +145,50 @@
             }
           },
           "block_order": [
-            "text_jLgfpr",
-            "text_w4iWzH"
+            "text_y4zwzL",
+            "text_4FEeX6"
           ]
+        },
+        "image_xkd9Qk": {
+          "type": "image",
+          "settings": {
+            "image": "{{ closest.metaobject.autor.foto.value }}",
+            "link": "",
+            "image_ratio": "square",
+            "width": "custom",
+            "custom_width": 60,
+            "width_mobile": "fill",
+            "custom_width_mobile": 100,
+            "height": "fit",
+            "border": "none",
+            "border_width": 1,
+            "border_opacity": 100,
+            "border_radius": 12,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
         }
       },
       "block_order": [
         "group_kTLya7",
-        "group_9EYkBD"
+        "image_xkd9Qk"
+      ],
+      "custom_css": [
+        ".text-block {--max-width: none !important;}"
       ],
       "name": "t:names.image_with_text",
       "settings": {
         "content_direction": "row",
         "vertical_on_mobile": true,
         "horizontal_alignment": "flex-end",
-        "vertical_alignment": "center",
+        "vertical_alignment": "flex-start",
         "align_baseline": false,
         "horizontal_alignment_flex_direction_column": "flex-start",
         "vertical_alignment_flex_direction_column": "center",
-        "gap": 32,
+        "gap": 50,
         "section_width": "page-width",
         "section_height": "",
         "section_height_custom": 50,
@@ -355,6 +298,7 @@
       "block_order": [
         "ai_gen_block_8bc881e_F4UMWn"
       ],
+      "disabled": true,
       "name": "t:names.custom_section",
       "settings": {
         "content_direction": "column",
@@ -383,11 +327,282 @@
         "padding-block-start": 0,
         "padding-block-end": 0
       }
+    },
+    "section-product-list-author": {
+      "type": "product-list-author",
+      "blocks": {
+        "static-header": {
+          "type": "_product-list-content",
+          "name": "t:names.header",
+          "static": true,
+          "settings": {
+            "content_direction": "row",
+            "vertical_on_mobile": false,
+            "horizontal_alignment": "space-between",
+            "vertical_alignment": "flex-end",
+            "align_baseline": true,
+            "horizontal_alignment_flex_direction_column": "flex-start",
+            "vertical_alignment_flex_direction_column": "center",
+            "gap": 12,
+            "width": "fill",
+            "custom_width": 100,
+            "width_mobile": "fill",
+            "custom_width_mobile": 100,
+            "height": "fit",
+            "custom_height": 100,
+            "inherit_color_scheme": true,
+            "color_scheme": "",
+            "background_media": "none",
+            "video_position": "cover",
+            "background_image_position": "cover",
+            "border": "none",
+            "border_width": 1,
+            "border_opacity": 100,
+            "border_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {
+            "product_list_text_VehFN7": {
+              "type": "_product-list-text",
+              "name": "t:names.collection_title",
+              "settings": {
+                "text": "<h3>Livros de {{ metaobject.nome.value }} publicados pela Solisluna</h3>",
+                "width": "fit-content",
+                "max_width": "normal",
+                "alignment": "left",
+                "type_preset": "rte",
+                "font": "var(--font-body--family)",
+                "font_size": "",
+                "line_height": "normal",
+                "letter_spacing": "normal",
+                "case": "none",
+                "wrap": "pretty",
+                "color": "var(--color-foreground)",
+                "background": false,
+                "background_color": "#00000026",
+                "corner_radius": 0,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            },
+            "product_list_button_xTNni6": {
+              "type": "_product-list-button",
+              "name": "t:names.product_list_button",
+              "settings": {
+                "label": "Ver todos",
+                "collection": "{{ closest.collection }}",
+                "open_in_new_tab": false,
+                "style_class": "link",
+                "width": "fit-content",
+                "custom_width": 100,
+                "width_mobile": "fit-content",
+                "custom_width_mobile": 100
+              },
+              "blocks": {}
+            }
+          },
+          "block_order": [
+            "product_list_text_VehFN7",
+            "product_list_button_xTNni6"
+          ]
+        },
+        "static-product-card": {
+          "type": "product-card",
+          "name": "t:names.product_card",
+          "static": true,
+          "settings": {
+            "product": "{{ closest.product }}",
+            "product_card_gap": 8,
+            "inherit_color_scheme": true,
+            "color_scheme": "",
+            "border": "none",
+            "border_width": 1,
+            "border_opacity": 100,
+            "border_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {
+            "product_card_gallery_fHmhzx": {
+              "type": "_product-card-gallery",
+              "name": "t:names.product_image",
+              "settings": {
+                "product": "{{ closest.product }}",
+                "image_ratio": "adapt",
+                "border": "none",
+                "border_width": 1,
+                "border_opacity": 100,
+                "border_radius": 0,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            },
+            "group_f9Q4A4": {
+              "type": "group",
+              "name": "t:names.group",
+              "settings": {
+                "link": "",
+                "open_in_new_tab": false,
+                "content_direction": "column",
+                "vertical_on_mobile": true,
+                "horizontal_alignment": "flex-start",
+                "vertical_alignment": "center",
+                "align_baseline": false,
+                "horizontal_alignment_flex_direction_column": "flex-start",
+                "vertical_alignment_flex_direction_column": "center",
+                "gap": 4,
+                "width": "fill",
+                "custom_width": 100,
+                "width_mobile": "fill",
+                "custom_width_mobile": 100,
+                "height": "fit",
+                "custom_height": 100,
+                "inherit_color_scheme": true,
+                "color_scheme": "",
+                "background_media": "none",
+                "video_position": "cover",
+                "background_image_position": "cover",
+                "border": "none",
+                "border_width": 1,
+                "border_opacity": 100,
+                "border_radius": 0,
+                "toggle_overlay": false,
+                "overlay_color": "#00000026",
+                "overlay_style": "solid",
+                "gradient_direction": "to top",
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {
+                "text_K8UiYb": {
+                  "type": "text",
+                  "name": "Autores",
+                  "settings": {
+                    "text": "<p>{{ closest.product.metafields.custom.autor | metafield_text: field: 'nome' }}</p>",
+                    "width": "fit-content",
+                    "max_width": "normal",
+                    "alignment": "left",
+                    "type_preset": "custom",
+                    "font": "var(--font-body--family)",
+                    "font_size": "0.75rem",
+                    "line_height": "normal",
+                    "letter_spacing": "normal",
+                    "case": "none",
+                    "wrap": "pretty",
+                    "color": "var(--color-foreground)",
+                    "background": false,
+                    "background_color": "#00000026",
+                    "corner_radius": 0,
+                    "padding-block-start": 0,
+                    "padding-block-end": 0,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0
+                  },
+                  "blocks": {}
+                },
+                "product_title_hMYBHj": {
+                  "type": "product-title",
+                  "name": "t:names.product_title",
+                  "settings": {
+                    "product": "{{ closest.product }}",
+                    "width": "100%",
+                    "max_width": "normal",
+                    "alignment": "left",
+                    "type_preset": "h5",
+                    "font": "var(--font-body--family)",
+                    "font_size": "",
+                    "line_height": "normal",
+                    "letter_spacing": "normal",
+                    "case": "none",
+                    "wrap": "pretty",
+                    "color": "var(--color-foreground)",
+                    "background": false,
+                    "background_color": "#00000026",
+                    "corner_radius": 0,
+                    "padding-block-start": 0,
+                    "padding-block-end": 0,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0
+                  },
+                  "blocks": {}
+                },
+                "price_MMyMNq": {
+                  "type": "price",
+                  "name": "t:names.product_price",
+                  "disabled": true,
+                  "settings": {
+                    "product": "{{ closest.product }}",
+                    "show_sale_price_first": true,
+                    "show_installments": true,
+                    "show_tax_info": false,
+                    "type_preset": "custom",
+                    "width": "fit-content",
+                    "alignment": "left",
+                    "font": "var(--font-body--family)",
+                    "font_size": "0.75rem",
+                    "line_height": "normal",
+                    "letter_spacing": "normal",
+                    "case": "none",
+                    "color": "var(--color-foreground)",
+                    "padding-block-start": 0,
+                    "padding-block-end": 0,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "text_K8UiYb",
+                "product_title_hMYBHj",
+                "price_MMyMNq"
+              ]
+            }
+          },
+          "block_order": [
+            "product_card_gallery_fHmhzx",
+            "group_f9Q4A4"
+          ]
+        }
+      },
+      "name": "Livros do autor",
+      "settings": {
+        "collection": "",
+        "layout_type": "grid",
+        "carousel_on_mobile": false,
+        "max_products": 12,
+        "columns": 4,
+        "mobile_columns": "2",
+        "columns_gap": 0,
+        "rows_gap": 36,
+        "icons_style": "arrow",
+        "icons_shape": "circle",
+        "section_width": "page-width",
+        "horizontal_alignment": "flex-start",
+        "gap": 28,
+        "color_scheme": "scheme-1",
+        "padding-block-start": 48,
+        "padding-block-end": 48
+      }
     }
   },
   "order": [
     "section_iVDGta",
     "section_D8jYPY",
-    "section_KDABz7"
+    "section_KDABz7",
+    "section-product-list-author"
   ]
 }
