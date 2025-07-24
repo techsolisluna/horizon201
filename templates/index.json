@@ -882,6 +882,206 @@
         "padding-block-end": 48
       }
     },
+    "marquee_DPpXh7": {
+      "type": "marquee",
+      "blocks": {
+        "text_qV3hX6": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Desde 1993, excelência na arte de publicar histórias que transformam.</p>",
+            "width": "fit-content",
+            "max_width": "normal",
+            "alignment": "left",
+            "type_preset": "custom",
+            "font": "var(--font-body--family)",
+            "font_size": "1rem",
+            "line_height": "tight",
+            "letter_spacing": "tight",
+            "case": "none",
+            "wrap": "nowrap",
+            "color": "var(--color-foreground)",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "text_qV3hX6"
+      ],
+      "name": "t:names.marquee_section",
+      "settings": {
+        "movement_direction": "normal",
+        "color_scheme": "scheme-4",
+        "padding-block-start": 24,
+        "padding-block-end": 24,
+        "gap_between_elements": 24
+      }
+    },
+    "slideshow_tqXcVa": {
+      "type": "slideshow",
+      "blocks": {
+        "slide_EW6N67": {
+          "type": "_slide",
+          "settings": {
+            "media_type_1": "video",
+            "link": "",
+            "content_direction": "column",
+            "vertical_on_mobile": true,
+            "horizontal_alignment": "flex-start",
+            "vertical_alignment": "center",
+            "align_baseline": false,
+            "horizontal_alignment_flex_direction_column": "center",
+            "vertical_alignment_flex_direction_column": "center",
+            "gap": 12,
+            "inherit_color_scheme": true,
+            "color_scheme": "",
+            "toggle_overlay": false,
+            "overlay_color": "#00000026",
+            "overlay_style": "solid",
+            "gradient_direction": "to top",
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {
+            "group_kJmBiC": {
+              "type": "group",
+              "settings": {
+                "link": "",
+                "open_in_new_tab": false,
+                "content_direction": "column",
+                "vertical_on_mobile": true,
+                "horizontal_alignment": "flex-start",
+                "vertical_alignment": "center",
+                "align_baseline": false,
+                "horizontal_alignment_flex_direction_column": "center",
+                "vertical_alignment_flex_direction_column": "center",
+                "gap": 12,
+                "width": "custom",
+                "custom_width": 50,
+                "width_mobile": "custom",
+                "custom_width_mobile": 85,
+                "height": "fit",
+                "custom_height": 100,
+                "inherit_color_scheme": false,
+                "color_scheme": "scheme-6",
+                "background_media": "none",
+                "video_position": "cover",
+                "background_image_position": "cover",
+                "border": "none",
+                "border_width": 1,
+                "border_opacity": 100,
+                "border_radius": 0,
+                "toggle_overlay": false,
+                "overlay_color": "#00000026",
+                "overlay_style": "solid",
+                "gradient_direction": "to top",
+                "padding-block-start": 48,
+                "padding-block-end": 48,
+                "padding-inline-start": 48,
+                "padding-inline-end": 48
+              },
+              "blocks": {
+                "text_kERX7N": {
+                  "type": "text",
+                  "settings": {
+                    "text": "<h2>Benefícios para <br/>Professores e Bibliotecários</h2>",
+                    "width": "fit-content",
+                    "max_width": "normal",
+                    "alignment": "left",
+                    "type_preset": "rte",
+                    "font": "var(--font-body--family)",
+                    "font_size": "1rem",
+                    "line_height": "normal",
+                    "letter_spacing": "normal",
+                    "case": "none",
+                    "wrap": "pretty",
+                    "color": "var(--color-foreground)",
+                    "background": false,
+                    "background_color": "#00000026",
+                    "corner_radius": 0,
+                    "padding-block-start": 0,
+                    "padding-block-end": 0,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0
+                  },
+                  "blocks": {}
+                },
+                "text_TKiGGi": {
+                  "type": "text",
+                  "settings": {
+                    "text": "<p>Introducing our latest products, made especially for the season. Shop your favorites before they're gone!</p>",
+                    "width": "fit-content",
+                    "max_width": "normal",
+                    "alignment": "left",
+                    "type_preset": "rte",
+                    "font": "var(--font-body--family)",
+                    "font_size": "1rem",
+                    "line_height": "normal",
+                    "letter_spacing": "normal",
+                    "case": "none",
+                    "wrap": "pretty",
+                    "color": "var(--color-foreground)",
+                    "background": false,
+                    "background_color": "#00000026",
+                    "corner_radius": 0,
+                    "padding-block-start": 0,
+                    "padding-block-end": 20,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0
+                  },
+                  "blocks": {}
+                },
+                "button_b83qQz": {
+                  "type": "button",
+                  "settings": {
+                    "label": "Shop now",
+                    "link": "shopify://collections/all",
+                    "open_in_new_tab": false,
+                    "style_class": "button",
+                    "width": "fit-content",
+                    "custom_width": 100,
+                    "width_mobile": "fit-content",
+                    "custom_width_mobile": 100
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "text_kERX7N",
+                "text_TKiGGi",
+                "button_b83qQz"
+              ]
+            }
+          },
+          "block_order": [
+            "group_kJmBiC"
+          ]
+        }
+      },
+      "block_order": [
+        "slide_EW6N67"
+      ],
+      "name": "t:names.slideshow",
+      "settings": {
+        "icons_style": "arrows_large",
+        "slideshow_controls_style": "dots",
+        "color_scheme": "",
+        "autoplay": false,
+        "autoplay_speed": 4,
+        "section_width": "full-width",
+        "slide_height": "auto",
+        "padding-block-start": 0,
+        "padding-block-end": 0
+      }
+    },
     "collection_list_dWtwyr": {
       "type": "collection-list",
       "blocks": {
@@ -1245,7 +1445,6 @@
           "block_order": []
         }
       },
-      "disabled": true,
       "name": "t:names.collection_links_spotlight",
       "settings": {
         "collection_list": [
@@ -1428,211 +1627,12 @@
         "padding-block-end": 50
       }
     },
-    "slideshow_tqXcVa": {
-      "type": "slideshow",
-      "blocks": {
-        "slide_EW6N67": {
-          "type": "_slide",
-          "settings": {
-            "media_type_1": "video",
-            "link": "",
-            "content_direction": "column",
-            "vertical_on_mobile": true,
-            "horizontal_alignment": "flex-start",
-            "vertical_alignment": "center",
-            "align_baseline": false,
-            "horizontal_alignment_flex_direction_column": "center",
-            "vertical_alignment_flex_direction_column": "center",
-            "gap": 12,
-            "inherit_color_scheme": true,
-            "color_scheme": "",
-            "toggle_overlay": false,
-            "overlay_color": "#00000026",
-            "overlay_style": "solid",
-            "gradient_direction": "to top",
-            "padding-block-start": 0,
-            "padding-block-end": 0,
-            "padding-inline-start": 0,
-            "padding-inline-end": 0
-          },
-          "blocks": {
-            "group_kJmBiC": {
-              "type": "group",
-              "settings": {
-                "link": "",
-                "open_in_new_tab": false,
-                "content_direction": "column",
-                "vertical_on_mobile": true,
-                "horizontal_alignment": "flex-start",
-                "vertical_alignment": "center",
-                "align_baseline": false,
-                "horizontal_alignment_flex_direction_column": "center",
-                "vertical_alignment_flex_direction_column": "center",
-                "gap": 12,
-                "width": "custom",
-                "custom_width": 50,
-                "width_mobile": "custom",
-                "custom_width_mobile": 85,
-                "height": "fit",
-                "custom_height": 100,
-                "inherit_color_scheme": false,
-                "color_scheme": "scheme-6",
-                "background_media": "none",
-                "video_position": "cover",
-                "background_image_position": "cover",
-                "border": "none",
-                "border_width": 1,
-                "border_opacity": 100,
-                "border_radius": 0,
-                "toggle_overlay": false,
-                "overlay_color": "#00000026",
-                "overlay_style": "solid",
-                "gradient_direction": "to top",
-                "padding-block-start": 48,
-                "padding-block-end": 48,
-                "padding-inline-start": 48,
-                "padding-inline-end": 48
-              },
-              "blocks": {
-                "text_kERX7N": {
-                  "type": "text",
-                  "settings": {
-                    "text": "<h2>Benefícios para <br/>Professores e Bibliotecários</h2>",
-                    "width": "fit-content",
-                    "max_width": "normal",
-                    "alignment": "left",
-                    "type_preset": "rte",
-                    "font": "var(--font-body--family)",
-                    "font_size": "1rem",
-                    "line_height": "normal",
-                    "letter_spacing": "normal",
-                    "case": "none",
-                    "wrap": "pretty",
-                    "color": "var(--color-foreground)",
-                    "background": false,
-                    "background_color": "#00000026",
-                    "corner_radius": 0,
-                    "padding-block-start": 0,
-                    "padding-block-end": 0,
-                    "padding-inline-start": 0,
-                    "padding-inline-end": 0
-                  },
-                  "blocks": {}
-                },
-                "text_TKiGGi": {
-                  "type": "text",
-                  "settings": {
-                    "text": "<p>Introducing our latest products, made especially for the season. Shop your favorites before they're gone!</p>",
-                    "width": "fit-content",
-                    "max_width": "normal",
-                    "alignment": "left",
-                    "type_preset": "rte",
-                    "font": "var(--font-body--family)",
-                    "font_size": "1rem",
-                    "line_height": "normal",
-                    "letter_spacing": "normal",
-                    "case": "none",
-                    "wrap": "pretty",
-                    "color": "var(--color-foreground)",
-                    "background": false,
-                    "background_color": "#00000026",
-                    "corner_radius": 0,
-                    "padding-block-start": 0,
-                    "padding-block-end": 20,
-                    "padding-inline-start": 0,
-                    "padding-inline-end": 0
-                  },
-                  "blocks": {}
-                },
-                "button_b83qQz": {
-                  "type": "button",
-                  "settings": {
-                    "label": "Shop now",
-                    "link": "shopify://collections/all",
-                    "open_in_new_tab": false,
-                    "style_class": "button",
-                    "width": "fit-content",
-                    "custom_width": 100,
-                    "width_mobile": "fit-content",
-                    "custom_width_mobile": 100
-                  },
-                  "blocks": {}
-                }
-              },
-              "block_order": [
-                "text_kERX7N",
-                "text_TKiGGi",
-                "button_b83qQz"
-              ]
-            }
-          },
-          "block_order": [
-            "group_kJmBiC"
-          ]
-        }
-      },
-      "block_order": [
-        "slide_EW6N67"
-      ],
-      "name": "t:names.slideshow",
-      "settings": {
-        "icons_style": "arrows_large",
-        "slideshow_controls_style": "dots",
-        "color_scheme": "",
-        "autoplay": false,
-        "autoplay_speed": 4,
-        "section_width": "full-width",
-        "slide_height": "auto",
-        "padding-block-start": 0,
-        "padding-block-end": 0
-      }
-    },
-    "marquee_DPpXh7": {
-      "type": "marquee",
-      "blocks": {
-        "text_qV3hX6": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Desde 1993, excelência na arte de publicar histórias que transformam.</p>",
-            "width": "fit-content",
-            "max_width": "normal",
-            "alignment": "left",
-            "type_preset": "custom",
-            "font": "var(--font-body--family)",
-            "font_size": "1rem",
-            "line_height": "tight",
-            "letter_spacing": "tight",
-            "case": "none",
-            "wrap": "nowrap",
-            "color": "var(--color-foreground)",
-            "background": false,
-            "background_color": "#00000026",
-            "corner_radius": 0,
-            "padding-block-start": 0,
-            "padding-block-end": 0,
-            "padding-inline-start": 0,
-            "padding-inline-end": 0
-          },
-          "blocks": {}
-        }
-      },
-      "block_order": [
-        "text_qV3hX6"
-      ],
-      "name": "t:names.marquee_section",
-      "settings": {
-        "movement_direction": "normal",
-        "color_scheme": "scheme-4",
-        "padding-block-start": 24,
-        "padding-block-end": 24,
-        "gap_between_elements": 24
-      }
-    },
     "hero_zPYTn8": {
       "type": "hero",
       "blocks": {
         "text_aCn3TJ": {
           "type": "text",
+          "disabled": true,
           "settings": {
             "text": "<h1>New arrivals</h1>",
             "width": "fit-content",
@@ -1658,6 +1658,7 @@
         },
         "text_tVWeM3": {
           "type": "text",
+          "disabled": true,
           "settings": {
             "text": "<p>Made with care and unconditionally loved by our customers.</p>",
             "width": "fit-content",
@@ -1684,6 +1685,7 @@
         "button_hBtczK": {
           "type": "button",
           "name": "t:names.button",
+          "disabled": true,
           "settings": {
             "label": "Shop Now",
             "link": "shopify://collections/all",
@@ -1705,7 +1707,7 @@
       "name": "t:names.hero",
       "settings": {
         "media_type_1": "image",
-        "image_1": "shopify://shop_images/Estampa_Imagens-da-Diaspora_52.jpg",
+        "image_1": "shopify://shop_images/desenhos_02.jpg",
         "media_type_2": "image",
         "link": "",
         "open_in_new_tab": false,
@@ -1773,10 +1775,10 @@
               "type": "_product-list-text",
               "name": "t:names.collection_title",
               "settings": {
-                "text": "<h3>{{ closest.collection.title }}</h3>",
-                "width": "fit-content",
+                "text": "<h2>Novidades e lançamentos na Solisluna ✨</h2>",
+                "width": "100%",
                 "max_width": "normal",
-                "alignment": "left",
+                "alignment": "center",
                 "type_preset": "rte",
                 "font": "var(--font-body--family)",
                 "font_size": "",
@@ -1860,7 +1862,7 @@
                 "horizontal_alignment": "flex-start",
                 "vertical_alignment": "center",
                 "align_baseline": false,
-                "horizontal_alignment_flex_direction_column": "flex-start",
+                "horizontal_alignment_flex_direction_column": "center",
                 "vertical_alignment_flex_direction_column": "center",
                 "gap": 4,
                 "width": "fill",
@@ -1920,14 +1922,14 @@
                   "settings": {
                     "width": "100%",
                     "max_width": "normal",
-                    "alignment": "left",
-                    "type_preset": "h5",
-                    "font": "var(--font-body--family)",
-                    "font_size": "",
+                    "alignment": "center",
+                    "type_preset": "custom",
+                    "font": "var(--font-heading--family)",
+                    "font_size": "1.125rem",
                     "line_height": "normal",
                     "letter_spacing": "normal",
                     "case": "none",
-                    "wrap": "pretty",
+                    "wrap": "balance",
                     "color": "var(--color-foreground)",
                     "background": false,
                     "background_color": "#00000026",
@@ -2017,7 +2019,7 @@
         "rows_gap": 36,
         "icons_style": "arrow",
         "icons_shape": "circle",
-        "section_width": "page-width",
+        "section_width": "full-width",
         "horizontal_alignment": "flex-start",
         "gap": 28,
         "color_scheme": "scheme-1",
@@ -2415,13 +2417,13 @@
     "section_HfQAGW",
     "section_g4bmcj",
     "section_Hgiqdy",
+    "marquee_DPpXh7",
+    "slideshow_tqXcVa",
     "collection_list_dWtwyr",
     "media_with_content_cyX99F",
     "collection_links_xz7hah",
     "collection_links_cpihfQ",
     "section_jVTF7W",
-    "slideshow_tqXcVa",
-    "marquee_DPpXh7",
     "hero_zPYTn8",
     "product_list_GEztnp",
     "section_rAtRm9",
