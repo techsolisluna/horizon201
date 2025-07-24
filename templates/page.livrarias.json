@@ -673,7 +673,7 @@
           "type": "text",
           "name": "t:names.heading",
           "settings": {
-            "text": "<h3>Perguntas frequentes</h3>",
+            "text": "<h3>Dúvidas frequentes</h3>",
             "width": "fit-content",
             "max_width": "narrow",
             "alignment": "left",
@@ -717,7 +717,7 @@
             "accordion_row_GpHjVc": {
               "type": "_accordion-row",
               "settings": {
-                "heading": "What is the return policy?",
+                "heading": "Onde encontrar os livros da Solisluna?",
                 "open_by_default": false,
                 "icon": "none",
                 "width": 20
@@ -756,8 +756,8 @@
             "accordion_row_VTykeG": {
               "type": "_accordion-row",
               "settings": {
-                "heading": "Are any purchases final sale?",
-                "open_by_default": false,
+                "heading": "Tenho uma livraria e gostaria de revender os livros da Solisluna.",
+                "open_by_default": true,
                 "icon": "none",
                 "width": 20
               },
@@ -796,7 +796,7 @@
               "type": "_accordion-row",
               "name": "t:names.accordion_dash_row",
               "settings": {
-                "heading": "When will I get my order?",
+                "heading": "Professor e bibliotecário tem desconto?",
                 "open_by_default": false,
                 "icon": "none",
                 "width": 20
