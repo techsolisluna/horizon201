@@ -1613,7 +1613,7 @@
               "type": "_image",
               "static": true,
               "settings": {
-                "height": "large",
+                "height": "medium",
                 "ratio": "square",
                 "border_radius": 0
               },
@@ -2600,7 +2600,7 @@
             "horizontal_alignment": "flex-start",
             "vertical_alignment": "center",
             "align_baseline": false,
-            "horizontal_alignment_flex_direction_column": "center",
+            "horizontal_alignment_flex_direction_column": "flex-end",
             "vertical_alignment_flex_direction_column": "space-between",
             "gap": 32,
             "width": "fill",
@@ -2610,9 +2610,10 @@
             "height": "fill",
             "custom_height": 100,
             "inherit_color_scheme": false,
-            "color_scheme": "scheme-5",
+            "color_scheme": "scheme-1",
             "background_media": "image",
             "video_position": "cover",
+            "background_image": "shopify://shop_images/carrinho-de-livros.jpg",
             "background_image_position": "cover",
             "border": "none",
             "border_width": 1,
@@ -2628,6 +2629,46 @@
             "padding-inline-end": 40
           },
           "blocks": {
+            "text_FGpnKh": {
+              "type": "text",
+              "settings": {
+                "text": "<h3><a href=\"/pages/carrinho-de-livros\" target=\"_blank\" title=\"Ca(r)rinho de Livros da Solisluna\">Caminhos que já percorremos</a></h3><h5><a href=\"/pages/carrinho-de-livros\" target=\"_blank\" title=\"Ca(r)rinho de Livros da Solisluna\">Saiba mais</a></h5>",
+                "width": "fit-content",
+                "max_width": "normal",
+                "alignment": "center",
+                "type_preset": "custom",
+                "font": "var(--font-body--family)",
+                "font_size": "1.125rem",
+                "line_height": "normal",
+                "letter_spacing": "normal",
+                "case": "none",
+                "wrap": "pretty",
+                "color": "var(--color-foreground-heading)",
+                "background": true,
+                "background_color": "#ffffff",
+                "corner_radius": 0,
+                "padding-block-start": 10,
+                "padding-block-end": 10,
+                "padding-inline-start": 10,
+                "padding-inline-end": 10
+              },
+              "blocks": {}
+            },
+            "button_NL3xVh": {
+              "type": "button",
+              "disabled": true,
+              "settings": {
+                "label": "Shop now",
+                "link": "shopify://collections/all",
+                "open_in_new_tab": false,
+                "style_class": "link",
+                "width": "fit-content",
+                "custom_width": 100,
+                "width_mobile": "fit-content",
+                "custom_width_mobile": 100
+              },
+              "blocks": {}
+            },
             "spacer_qzdAQU": {
               "type": "spacer",
               "settings": {
@@ -2640,54 +2681,15 @@
                 "pixel_size_mobile": 120
               },
               "blocks": {}
-            },
-            "text_FGpnKh": {
-              "type": "text",
-              "settings": {
-                "text": "<h3>New arrivals</h3>",
-                "width": "fit-content",
-                "max_width": "normal",
-                "alignment": "center",
-                "type_preset": "h3",
-                "font": "var(--font-body--family)",
-                "font_size": "1rem",
-                "line_height": "normal",
-                "letter_spacing": "normal",
-                "case": "none",
-                "wrap": "pretty",
-                "color": "var(--color-foreground)",
-                "background": false,
-                "background_color": "#00000026",
-                "corner_radius": 0,
-                "padding-block-start": 0,
-                "padding-block-end": 0,
-                "padding-inline-start": 0,
-                "padding-inline-end": 0
-              },
-              "blocks": {}
-            },
-            "button_NL3xVh": {
-              "type": "button",
-              "settings": {
-                "label": "Shop now",
-                "link": "shopify://collections/all",
-                "open_in_new_tab": false,
-                "style_class": "link",
-                "width": "fit-content",
-                "custom_width": 100,
-                "width_mobile": "fit-content",
-                "custom_width_mobile": 100
-              },
-              "blocks": {}
             }
           },
           "block_order": [
-            "spacer_qzdAQU",
             "text_FGpnKh",
-            "button_NL3xVh"
+            "button_NL3xVh",
+            "spacer_qzdAQU"
           ]
         },
-        "group_HLNg8e": {
+        "group_fcD6zM": {
           "type": "group",
           "settings": {
             "link": "",
@@ -2697,7 +2699,7 @@
             "horizontal_alignment": "flex-start",
             "vertical_alignment": "center",
             "align_baseline": false,
-            "horizontal_alignment_flex_direction_column": "center",
+            "horizontal_alignment_flex_direction_column": "flex-end",
             "vertical_alignment_flex_direction_column": "space-between",
             "gap": 32,
             "width": "fill",
@@ -2707,9 +2709,10 @@
             "height": "fill",
             "custom_height": 100,
             "inherit_color_scheme": false,
-            "color_scheme": "scheme-5",
+            "color_scheme": "scheme-1",
             "background_media": "image",
             "video_position": "cover",
+            "background_image": "shopify://shop_images/CarrinhoPelourinho.jpg",
             "background_image_position": "cover",
             "border": "none",
             "border_width": 1,
@@ -2725,46 +2728,34 @@
             "padding-inline-end": 40
           },
           "blocks": {
-            "spacer_fe9AA6": {
-              "type": "spacer",
-              "settings": {
-                "size": "pixel",
-                "percent_size": 100,
-                "pixel_size": 16,
-                "custom_mobile_size": false,
-                "size_mobile": "percent",
-                "percent_size_mobile": 100,
-                "pixel_size_mobile": 120
-              },
-              "blocks": {}
-            },
-            "text_qBgVDj": {
+            "text_q3GA6c": {
               "type": "text",
               "settings": {
-                "text": "<h3>Bestsellers</h3>",
+                "text": "<h3><a href=\"/pages/carrinho-de-livros\" target=\"_blank\" title=\"Ca(r)rinho de Livros da Solisluna\">Caminhos que já percorremos</a></h3><h5><a href=\"/pages/carrinho-de-livros\" target=\"_blank\" title=\"Ca(r)rinho de Livros da Solisluna\">Saiba mais</a></h5>",
                 "width": "fit-content",
                 "max_width": "normal",
                 "alignment": "center",
-                "type_preset": "h3",
+                "type_preset": "custom",
                 "font": "var(--font-body--family)",
-                "font_size": "1rem",
+                "font_size": "1.125rem",
                 "line_height": "normal",
                 "letter_spacing": "normal",
                 "case": "none",
                 "wrap": "pretty",
-                "color": "var(--color-foreground)",
-                "background": false,
-                "background_color": "#00000026",
+                "color": "var(--color-foreground-heading)",
+                "background": true,
+                "background_color": "#ffffff",
                 "corner_radius": 0,
-                "padding-block-start": 0,
-                "padding-block-end": 0,
-                "padding-inline-start": 0,
-                "padding-inline-end": 0
+                "padding-block-start": 10,
+                "padding-block-end": 10,
+                "padding-inline-start": 10,
+                "padding-inline-end": 10
               },
               "blocks": {}
             },
-            "button_DFEic4": {
+            "button_jPdphg": {
               "type": "button",
+              "disabled": true,
               "settings": {
                 "label": "Shop now",
                 "link": "shopify://collections/all",
@@ -2776,18 +2767,131 @@
                 "custom_width_mobile": 100
               },
               "blocks": {}
+            },
+            "spacer_ihJKFi": {
+              "type": "spacer",
+              "settings": {
+                "size": "pixel",
+                "percent_size": 100,
+                "pixel_size": 16,
+                "custom_mobile_size": false,
+                "size_mobile": "percent",
+                "percent_size_mobile": 100,
+                "pixel_size_mobile": 120
+              },
+              "blocks": {}
             }
           },
           "block_order": [
-            "spacer_fe9AA6",
-            "text_qBgVDj",
-            "button_DFEic4"
+            "text_q3GA6c",
+            "button_jPdphg",
+            "spacer_ihJKFi"
+          ]
+        },
+        "group_kqjerg": {
+          "type": "group",
+          "settings": {
+            "link": "",
+            "open_in_new_tab": false,
+            "content_direction": "column",
+            "vertical_on_mobile": true,
+            "horizontal_alignment": "flex-start",
+            "vertical_alignment": "center",
+            "align_baseline": false,
+            "horizontal_alignment_flex_direction_column": "flex-end",
+            "vertical_alignment_flex_direction_column": "space-between",
+            "gap": 32,
+            "width": "fill",
+            "custom_width": 100,
+            "width_mobile": "fill",
+            "custom_width_mobile": 100,
+            "height": "fill",
+            "custom_height": 100,
+            "inherit_color_scheme": false,
+            "color_scheme": "scheme-1",
+            "background_media": "image",
+            "video_position": "cover",
+            "background_image": "shopify://shop_images/Carrinho_Bienal_1.jpg",
+            "background_image_position": "cover",
+            "border": "none",
+            "border_width": 1,
+            "border_opacity": 100,
+            "border_radius": 0,
+            "toggle_overlay": false,
+            "overlay_color": "#00000026",
+            "overlay_style": "solid",
+            "gradient_direction": "to top",
+            "padding-block-start": 40,
+            "padding-block-end": 40,
+            "padding-inline-start": 40,
+            "padding-inline-end": 40
+          },
+          "blocks": {
+            "text_9pPpkk": {
+              "type": "text",
+              "settings": {
+                "text": "<h3><a href=\"/pages/carrinho-de-livros\" target=\"_blank\" title=\"Ca(r)rinho de Livros da Solisluna\">Caminhos que já percorremos</a></h3><h5><a href=\"/pages/carrinho-de-livros\" target=\"_blank\" title=\"Ca(r)rinho de Livros da Solisluna\">Saiba mais</a></h5>",
+                "width": "fit-content",
+                "max_width": "normal",
+                "alignment": "center",
+                "type_preset": "custom",
+                "font": "var(--font-body--family)",
+                "font_size": "1.125rem",
+                "line_height": "normal",
+                "letter_spacing": "normal",
+                "case": "none",
+                "wrap": "pretty",
+                "color": "var(--color-foreground-heading)",
+                "background": true,
+                "background_color": "#ffffff",
+                "corner_radius": 0,
+                "padding-block-start": 10,
+                "padding-block-end": 10,
+                "padding-inline-start": 10,
+                "padding-inline-end": 10
+              },
+              "blocks": {}
+            },
+            "button_VQWQ4P": {
+              "type": "button",
+              "disabled": true,
+              "settings": {
+                "label": "Shop now",
+                "link": "shopify://collections/all",
+                "open_in_new_tab": false,
+                "style_class": "link",
+                "width": "fit-content",
+                "custom_width": 100,
+                "width_mobile": "fit-content",
+                "custom_width_mobile": 100
+              },
+              "blocks": {}
+            },
+            "spacer_TBTp6N": {
+              "type": "spacer",
+              "settings": {
+                "size": "pixel",
+                "percent_size": 100,
+                "pixel_size": 16,
+                "custom_mobile_size": false,
+                "size_mobile": "percent",
+                "percent_size_mobile": 100,
+                "pixel_size_mobile": 120
+              },
+              "blocks": {}
+            }
+          },
+          "block_order": [
+            "text_9pPpkk",
+            "button_VQWQ4P",
+            "spacer_TBTp6N"
           ]
         }
       },
       "block_order": [
         "group_M9wdnw",
-        "group_HLNg8e"
+        "group_fcD6zM",
+        "group_kqjerg"
       ],
       "name": "t:names.split_showcase",
       "settings": {
@@ -2816,6 +2920,113 @@
         "gradient_direction": "to top",
         "padding-block-start": 0,
         "padding-block-end": 0
+      }
+    },
+    "hero_YLCwnC": {
+      "type": "hero",
+      "blocks": {
+        "spacer_8GGcxG": {
+          "type": "spacer",
+          "settings": {
+            "size": "pixel",
+            "percent_size": 100,
+            "pixel_size": 24,
+            "custom_mobile_size": false,
+            "size_mobile": "percent",
+            "percent_size_mobile": 100,
+            "pixel_size_mobile": 120
+          },
+          "blocks": {}
+        },
+        "marquee_wANBMz": {
+          "type": "_marquee",
+          "settings": {
+            "movement_direction": "normal",
+            "inherit_color_scheme": true,
+            "color_scheme": "",
+            "transparent_background": true,
+            "padding-block-start": 24,
+            "padding-block-end": 24,
+            "gap_between_elements": 24
+          },
+          "blocks": {
+            "text_nzDyJE": {
+              "type": "text",
+              "settings": {
+                "text": "<p>Explore our latest products.</p>",
+                "width": "fit-content",
+                "max_width": "normal",
+                "alignment": "left",
+                "type_preset": "h1",
+                "font": "var(--font-body--family)",
+                "font_size": "1rem",
+                "line_height": "normal",
+                "letter_spacing": "normal",
+                "case": "none",
+                "wrap": "pretty",
+                "color": "var(--color-foreground)",
+                "background": false,
+                "background_color": "#00000026",
+                "corner_radius": 0,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            }
+          },
+          "block_order": [
+            "text_nzDyJE"
+          ]
+        },
+        "button_ghFjYq": {
+          "type": "button",
+          "settings": {
+            "label": "Shop Now",
+            "link": "shopify://collections/all",
+            "open_in_new_tab": false,
+            "style_class": "button",
+            "width": "fit-content",
+            "custom_width": 100,
+            "width_mobile": "fit-content",
+            "custom_width_mobile": 100
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "spacer_8GGcxG",
+        "marquee_wANBMz",
+        "button_ghFjYq"
+      ],
+      "name": "t:names.hero_marquee",
+      "settings": {
+        "media_type_1": "video",
+        "media_type_2": "image",
+        "link": "",
+        "open_in_new_tab": false,
+        "content_direction": "column",
+        "vertical_on_mobile": true,
+        "horizontal_alignment": "flex-start",
+        "vertical_alignment": "center",
+        "align_baseline": false,
+        "horizontal_alignment_flex_direction_column": "center",
+        "vertical_alignment_flex_direction_column": "space-between",
+        "gap": 32,
+        "section_width": "page-width",
+        "section_height": "large",
+        "section_height_custom": 50,
+        "color_scheme": "scheme-5",
+        "banner_not_empty": false,
+        "toggle_overlay": true,
+        "overlay_color": "#00000026",
+        "overlay_style": "gradient",
+        "gradient_direction": "to top",
+        "blurred_reflection": false,
+        "reflection_opacity": 75,
+        "padding-block-start": 0,
+        "padding-block-end": 40
       }
     },
     "featured_product_4kgcAw": {
@@ -3144,6 +3355,7 @@
     "collection_links_cpihfQ",
     "section_rAtRm9",
     "section_9PkDgA",
+    "hero_YLCwnC",
     "featured_product_4kgcAw",
     "featured_product_qKiAaK",
     "hero_LEpq8q"
