@@ -69,6 +69,7 @@
         "heading",
         "text_neBLCq"
       ],
+      "disabled": true,
       "settings": {
         "content_direction": "column",
         "gap": 32,
@@ -134,7 +135,7 @@
             "text_TT3eie": {
               "type": "text",
               "settings": {
-                "text": "<h3>New arrivals</h3>",
+                "text": "<h3>Catálogos</h3>",
                 "width": "fit-content",
                 "max_width": "normal",
                 "alignment": "center",
@@ -231,7 +232,7 @@
             "text_AcziRx": {
               "type": "text",
               "settings": {
-                "text": "<h3>New arrivals</h3>",
+                "text": "<h3>Novidades</h3>",
                 "width": "fit-content",
                 "max_width": "normal",
                 "alignment": "center",
@@ -328,11 +329,38 @@
             "text_wJH7Qc": {
               "type": "text",
               "settings": {
-                "text": "<h3>Bestsellers</h3>",
+                "text": "<h3>Dúvidas? Escreva para comercial@solisluna.com.br</h3>",
                 "width": "fit-content",
                 "max_width": "normal",
                 "alignment": "center",
                 "type_preset": "h3",
+                "font": "var(--font-body--family)",
+                "font_size": "1rem",
+                "line_height": "normal",
+                "letter_spacing": "normal",
+                "case": "none",
+                "wrap": "pretty",
+                "color": "var(--color-foreground)",
+                "background": false,
+                "background_color": "#00000026",
+                "corner_radius": 0,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            },
+            "text_product_ilustrator_G7Xj6D": {
+              "type": "text_product_ilustrator",
+              "name": "t:names.text",
+              "disabled": true,
+              "settings": {
+                "text": "<p>We make things that work better and last longer. sdsd products solve real problems with clean design and honest materials.</p>",
+                "width": "fit-content",
+                "max_width": "normal",
+                "alignment": "left",
+                "type_preset": "rte",
                 "font": "var(--font-body--family)",
                 "font_size": "1rem",
                 "line_height": "normal",
@@ -368,6 +396,7 @@
           "block_order": [
             "spacer_zGjJrN",
             "text_wJH7Qc",
+            "text_product_ilustrator_G7Xj6D",
             "button_h4yqrf"
           ]
         }
@@ -644,7 +673,7 @@
           "type": "text",
           "name": "t:names.heading",
           "settings": {
-            "text": "<h3>Frequently asked questions</h3>",
+            "text": "<h3>Perguntas frequentes</h3>",
             "width": "fit-content",
             "max_width": "narrow",
             "alignment": "left",
