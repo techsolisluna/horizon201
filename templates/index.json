@@ -1018,6 +1018,7 @@
                 },
                 "text_TKiGGi": {
                   "type": "text",
+                  "disabled": true,
                   "settings": {
                     "text": "<p>Introducing our latest products, made especially for the season. Shop your favorites before they're gone!</p>",
                     "width": "fit-content",
@@ -1047,7 +1048,7 @@
                     "label": "Shop now",
                     "link": "shopify://collections/all",
                     "open_in_new_tab": false,
-                    "style_class": "button",
+                    "style_class": "link",
                     "width": "fit-content",
                     "custom_width": 100,
                     "width_mobile": "fit-content",
@@ -1500,19 +1501,20 @@
           "block_order": []
         }
       },
-      "disabled": true,
       "name": "t:names.collection_links_spotlight",
       "settings": {
         "collection_list": [
           "frontpage",
           "educacao",
-          "lancamentos"
+          "lancamentos",
+          "cultura-afrobrasileira",
+          "inclusao"
         ],
-        "layout": "spotlight",
-        "section_width": "page-width",
-        "alignment": "left",
+        "layout": "text",
+        "section_width": "full-width",
+        "alignment": "center",
         "image_position": "right",
-        "color_scheme": "scheme-5",
+        "color_scheme": "scheme-1",
         "padding-block-start": 0,
         "padding-block-end": 0
       }
