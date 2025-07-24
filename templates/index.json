@@ -930,7 +930,7 @@
           "type": "_slide",
           "settings": {
             "media_type_1": "image",
-            "image_1": "shopify://shop_images/Banner-site-Kintsugi-02-b.png",
+            "image_1": "shopify://shop_images/A_incrivel_expedicao_dos_robos_04.jpg",
             "video_1": "shopify://files/videos/BG-ROBOTI.mov",
             "link": "",
             "content_direction": "column",
@@ -938,12 +938,12 @@
             "horizontal_alignment": "flex-start",
             "vertical_alignment": "center",
             "align_baseline": false,
-            "horizontal_alignment_flex_direction_column": "center",
-            "vertical_alignment_flex_direction_column": "center",
+            "horizontal_alignment_flex_direction_column": "flex-end",
+            "vertical_alignment_flex_direction_column": "flex-end",
             "gap": 12,
-            "inherit_color_scheme": true,
-            "color_scheme": "",
-            "toggle_overlay": true,
+            "inherit_color_scheme": false,
+            "color_scheme": "scheme-6",
+            "toggle_overlay": false,
             "overlay_color": "#ffd700",
             "overlay_style": "solid",
             "gradient_direction": "to top",
@@ -963,8 +963,8 @@
                 "horizontal_alignment": "flex-start",
                 "vertical_alignment": "center",
                 "align_baseline": false,
-                "horizontal_alignment_flex_direction_column": "center",
-                "vertical_alignment_flex_direction_column": "center",
+                "horizontal_alignment_flex_direction_column": "flex-end",
+                "vertical_alignment_flex_direction_column": "flex-end",
                 "gap": 12,
                 "width": "custom",
                 "custom_width": 50,
@@ -973,7 +973,7 @@
                 "height": "fit",
                 "custom_height": 100,
                 "inherit_color_scheme": false,
-                "color_scheme": "scheme-58084d4c-a86e-4d0a-855e-a0966e5043f7",
+                "color_scheme": "scheme-6",
                 "background_media": "none",
                 "video_position": "cover",
                 "background_image_position": "cover",
@@ -993,19 +993,20 @@
               "blocks": {
                 "text_kERX7N": {
                   "type": "text",
+                  "disabled": true,
                   "settings": {
                     "text": "<h2>Benefícios para <br/>Professores e Bibliotecários</h2>",
                     "width": "fit-content",
                     "max_width": "normal",
                     "alignment": "left",
-                    "type_preset": "rte",
+                    "type_preset": "h3",
                     "font": "var(--font-body--family)",
                     "font_size": "1rem",
                     "line_height": "normal",
                     "letter_spacing": "normal",
                     "case": "none",
                     "wrap": "pretty",
-                    "color": "var(--color-foreground)",
+                    "color": "var(--color-foreground-heading)",
                     "background": false,
                     "background_color": "#00000026",
                     "corner_radius": 0,
@@ -1016,14 +1017,27 @@
                   },
                   "blocks": {}
                 },
+                "spacer_4jVcTV": {
+                  "type": "spacer",
+                  "name": "t:names.spacer",
+                  "settings": {
+                    "size": "pixel",
+                    "percent_size": 100,
+                    "pixel_size": 300,
+                    "custom_mobile_size": false,
+                    "size_mobile": "percent",
+                    "percent_size_mobile": 100,
+                    "pixel_size_mobile": 120
+                  },
+                  "blocks": {}
+                },
                 "text_TKiGGi": {
                   "type": "text",
-                  "disabled": true,
                   "settings": {
-                    "text": "<p>Introducing our latest products, made especially for the season. Shop your favorites before they're gone!</p>",
-                    "width": "fit-content",
+                    "text": "<p><strong>A Incrível Expedição dos Robôs © Jindric Janicev </strong></p>",
+                    "width": "100%",
                     "max_width": "normal",
-                    "alignment": "left",
+                    "alignment": "right",
                     "type_preset": "rte",
                     "font": "var(--font-body--family)",
                     "font_size": "1rem",
@@ -1044,6 +1058,7 @@
                 },
                 "button_b83qQz": {
                   "type": "button",
+                  "disabled": true,
                   "settings": {
                     "label": "Shop now",
                     "link": "shopify://collections/all",
@@ -1059,6 +1074,7 @@
               },
               "block_order": [
                 "text_kERX7N",
+                "spacer_4jVcTV",
                 "text_TKiGGi",
                 "button_b83qQz"
               ]
@@ -1067,20 +1083,179 @@
           "block_order": [
             "group_kJmBiC"
           ]
+        },
+        "slide_cPQwzN": {
+          "type": "_slide",
+          "settings": {
+            "media_type_1": "image",
+            "image_1": "shopify://shop_images/ilus_pastinha_cau03B_2025.jpg",
+            "video_1": "shopify://files/videos/BG-ROBOTI.mov",
+            "link": "",
+            "content_direction": "column",
+            "vertical_on_mobile": true,
+            "horizontal_alignment": "flex-start",
+            "vertical_alignment": "center",
+            "align_baseline": false,
+            "horizontal_alignment_flex_direction_column": "flex-end",
+            "vertical_alignment_flex_direction_column": "flex-end",
+            "gap": 12,
+            "inherit_color_scheme": false,
+            "color_scheme": "scheme-6",
+            "toggle_overlay": false,
+            "overlay_color": "#ffd700",
+            "overlay_style": "solid",
+            "gradient_direction": "to top",
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {
+            "group_EYzc6r": {
+              "type": "group",
+              "settings": {
+                "link": "",
+                "open_in_new_tab": false,
+                "content_direction": "column",
+                "vertical_on_mobile": true,
+                "horizontal_alignment": "flex-start",
+                "vertical_alignment": "center",
+                "align_baseline": false,
+                "horizontal_alignment_flex_direction_column": "flex-end",
+                "vertical_alignment_flex_direction_column": "flex-end",
+                "gap": 12,
+                "width": "custom",
+                "custom_width": 50,
+                "width_mobile": "custom",
+                "custom_width_mobile": 85,
+                "height": "fit",
+                "custom_height": 100,
+                "inherit_color_scheme": false,
+                "color_scheme": "scheme-6",
+                "background_media": "none",
+                "video_position": "cover",
+                "background_image_position": "cover",
+                "border": "none",
+                "border_width": 1,
+                "border_opacity": 100,
+                "border_radius": 0,
+                "toggle_overlay": false,
+                "overlay_color": "#00000026",
+                "overlay_style": "solid",
+                "gradient_direction": "to top",
+                "padding-block-start": 48,
+                "padding-block-end": 48,
+                "padding-inline-start": 48,
+                "padding-inline-end": 48
+              },
+              "blocks": {
+                "text_fJDU8Y": {
+                  "type": "text",
+                  "disabled": true,
+                  "settings": {
+                    "text": "<h2>Benefícios para <br/>Professores e Bibliotecários</h2>",
+                    "width": "fit-content",
+                    "max_width": "normal",
+                    "alignment": "left",
+                    "type_preset": "h3",
+                    "font": "var(--font-body--family)",
+                    "font_size": "1rem",
+                    "line_height": "normal",
+                    "letter_spacing": "normal",
+                    "case": "none",
+                    "wrap": "pretty",
+                    "color": "var(--color-foreground-heading)",
+                    "background": false,
+                    "background_color": "#00000026",
+                    "corner_radius": 0,
+                    "padding-block-start": 0,
+                    "padding-block-end": 0,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0
+                  },
+                  "blocks": {}
+                },
+                "spacer_iEjBEa": {
+                  "type": "spacer",
+                  "name": "t:names.spacer",
+                  "settings": {
+                    "size": "pixel",
+                    "percent_size": 100,
+                    "pixel_size": 300,
+                    "custom_mobile_size": false,
+                    "size_mobile": "percent",
+                    "percent_size_mobile": 100,
+                    "pixel_size_mobile": 120
+                  },
+                  "blocks": {}
+                },
+                "text_KjMnN8": {
+                  "type": "text",
+                  "settings": {
+                    "text": "<p><strong>Pastinha © Cau Gomez</strong></p>",
+                    "width": "100%",
+                    "max_width": "normal",
+                    "alignment": "right",
+                    "type_preset": "rte",
+                    "font": "var(--font-body--family)",
+                    "font_size": "1rem",
+                    "line_height": "normal",
+                    "letter_spacing": "normal",
+                    "case": "none",
+                    "wrap": "pretty",
+                    "color": "var(--color-foreground)",
+                    "background": false,
+                    "background_color": "#00000026",
+                    "corner_radius": 0,
+                    "padding-block-start": 0,
+                    "padding-block-end": 20,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0
+                  },
+                  "blocks": {}
+                },
+                "button_JJz6zE": {
+                  "type": "button",
+                  "disabled": true,
+                  "settings": {
+                    "label": "Shop now",
+                    "link": "shopify://collections/all",
+                    "open_in_new_tab": false,
+                    "style_class": "link",
+                    "width": "fit-content",
+                    "custom_width": 100,
+                    "width_mobile": "fit-content",
+                    "custom_width_mobile": 100
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "text_fJDU8Y",
+                "spacer_iEjBEa",
+                "text_KjMnN8",
+                "button_JJz6zE"
+              ]
+            }
+          },
+          "block_order": [
+            "group_EYzc6r"
+          ]
         }
       },
       "block_order": [
-        "slide_EW6N67"
+        "slide_EW6N67",
+        "slide_cPQwzN"
       ],
       "name": "t:names.slideshow",
       "settings": {
         "icons_style": "arrows_large",
         "slideshow_controls_style": "dots",
         "color_scheme": "",
-        "autoplay": false,
+        "autoplay": true,
         "autoplay_speed": 4,
         "section_width": "full-width",
-        "slide_height": "auto",
+        "slide_height": "medium",
         "padding-block-start": 0,
         "padding-block-end": 0
       }
@@ -1406,7 +1581,7 @@
         "media_height": "auto",
         "section_width": "full-width",
         "extend_media": true,
-        "color_scheme": "scheme-2",
+        "color_scheme": "scheme-1",
         "padding-block-start": 20,
         "padding-block-end": 20
       }
@@ -1451,6 +1626,7 @@
       "name": "t:names.collection_links_spotlight",
       "settings": {
         "collection_list": [
+          "lendas-africanas",
           "frontpage",
           "educacao",
           "lancamentos"
@@ -1459,64 +1635,9 @@
         "section_width": "page-width",
         "alignment": "left",
         "image_position": "right",
-        "color_scheme": "scheme-2",
+        "color_scheme": "scheme-1",
         "padding-block-start": 40,
         "padding-block-end": 40
-      }
-    },
-    "collection_links_cpihfQ": {
-      "type": "collection-links",
-      "blocks": {
-        "link": {
-          "type": "_collection-link",
-          "static": true,
-          "settings": {
-            "show_count": false
-          },
-          "blocks": {
-            "title": {
-              "type": "_inline-collection-title",
-              "name": "t:names.title",
-              "static": true,
-              "settings": {
-                "font": "var(--font-subheading--family)",
-                "weight": "",
-                "line_height": "normal",
-                "letter_spacing": "normal",
-                "case": "none"
-              },
-              "blocks": {}
-            },
-            "image": {
-              "type": "_image",
-              "static": true,
-              "settings": {
-                "height": "large",
-                "ratio": "portrait",
-                "border_radius": 0
-              },
-              "blocks": {}
-            }
-          },
-          "block_order": []
-        }
-      },
-      "name": "t:names.collection_links_spotlight",
-      "settings": {
-        "collection_list": [
-          "frontpage",
-          "educacao",
-          "lancamentos",
-          "cultura-afrobrasileira",
-          "inclusao"
-        ],
-        "layout": "text",
-        "section_width": "full-width",
-        "alignment": "center",
-        "image_position": "right",
-        "color_scheme": "scheme-1",
-        "padding-block-start": 25,
-        "padding-block-end": 25
       }
     },
     "section_jVTF7W": {
@@ -2080,6 +2201,7 @@
             "product_list_button_xTNni6": {
               "type": "_product-list-button",
               "name": "t:names.product_list_button",
+              "disabled": true,
               "settings": {
                 "label": "Ver todos",
                 "open_in_new_tab": false,
@@ -2305,6 +2427,61 @@
         "color_scheme": "scheme-1",
         "padding-block-start": 48,
         "padding-block-end": 48
+      }
+    },
+    "collection_links_cpihfQ": {
+      "type": "collection-links",
+      "blocks": {
+        "link": {
+          "type": "_collection-link",
+          "static": true,
+          "settings": {
+            "show_count": false
+          },
+          "blocks": {
+            "title": {
+              "type": "_inline-collection-title",
+              "name": "t:names.title",
+              "static": true,
+              "settings": {
+                "font": "var(--font-subheading--family)",
+                "weight": "",
+                "line_height": "normal",
+                "letter_spacing": "normal",
+                "case": "none"
+              },
+              "blocks": {}
+            },
+            "image": {
+              "type": "_image",
+              "static": true,
+              "settings": {
+                "height": "large",
+                "ratio": "portrait",
+                "border_radius": 0
+              },
+              "blocks": {}
+            }
+          },
+          "block_order": []
+        }
+      },
+      "name": "t:names.collection_links_spotlight",
+      "settings": {
+        "collection_list": [
+          "frontpage",
+          "educacao",
+          "lancamentos",
+          "cultura-afrobrasileira",
+          "inclusao"
+        ],
+        "layout": "text",
+        "section_width": "full-width",
+        "alignment": "center",
+        "image_position": "right",
+        "color_scheme": "scheme-1",
+        "padding-block-start": 25,
+        "padding-block-end": 25
       }
     },
     "section_rAtRm9": {
@@ -2933,11 +3110,11 @@
     "collection_list_dWtwyr",
     "media_with_content_cyX99F",
     "collection_links_xz7hah",
-    "collection_links_cpihfQ",
     "section_jVTF7W",
     "slideshow_fzxHeh",
     "hero_zPYTn8",
     "product_list_GEztnp",
+    "collection_links_cpihfQ",
     "section_rAtRm9",
     "section_9PkDgA",
     "featured_product_4kgcAw",
