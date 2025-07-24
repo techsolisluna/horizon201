@@ -842,7 +842,8 @@
           "type": "_media-without-appearance",
           "static": true,
           "settings": {
-            "media_type": "video",
+            "media_type": "image",
+            "image": "{{ closest.product.metafields.my_fields.picture_on_hand.value }}",
             "link": "",
             "video": "{{ closest.product.metafields.custom.video.value }}",
             "video_loop": true,
@@ -1004,7 +1005,6 @@
           ]
         }
       },
-      "disabled": true,
       "name": "t:names.editorial",
       "settings": {
         "media_position": "left",
