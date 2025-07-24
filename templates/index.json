@@ -1515,8 +1515,8 @@
         "alignment": "center",
         "image_position": "right",
         "color_scheme": "scheme-1",
-        "padding-block-start": 0,
-        "padding-block-end": 0
+        "padding-block-start": 25,
+        "padding-block-end": 25
       }
     },
     "section_jVTF7W": {
