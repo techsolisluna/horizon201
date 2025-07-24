@@ -1,20 +1,13 @@
-{% capture custom_products %}
-  {% paginate collections.all.products by 1000 %}
-    {% for product in collections.all.products %}
-      {{ custom_products }},{{ product }}
-    {% endfor %}
-  {% endpaginate %}
-{% endcapture %}
-
-{% assign custom_products = custom_products | split: ',' %}
-
 {% liquid
   # Pega o metaobject autor atual da página
   assign current_author = metaobject | default: metaobject
 
 
   assign max_items = section.settings.max_products
-  assign section_products = custom_products
+  paginate collections.all.products by 1000
+    assign section_products = collections.all.products | sort: 'published_at' | reverse
+  endpaginate
+  
 
   case section.settings.layout_type
     when 'grid'
@@ -56,8 +49,8 @@
     {%- content_for 'block', type: '_product-list-content', id: 'static-header' -%}
   </div>
   {% capture list_items %}
-    {% paginate collections.all.products by 1000 %}
-      {% for product in collections.all.products %}
+    {% paginate section_products by 1000 %}
+      {% for product in section_products %}
 
         {% assign show_product = false %}
         
