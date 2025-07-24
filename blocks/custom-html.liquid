@@ -1,0 +1,26 @@
+{% if block.settings.section_html != blank %}
+    <div class="rte">
+        {{ block.settings.section_html }}
+    </div>
+{% endif %}
+
+{% schema %}
+    {
+      "name": "HTML Customizado",
+      "tag": null,
+      "settings": [
+        {
+            "type": "html",
+            "id": "section_html",
+            "label": "HTML Customizado",
+            "default": "<p>Cole aqui seu HTML</p>"
+        }
+      ],
+      "presets": [
+        {
+          "name": "HTML Customizado",
+          "category": "t:categories.layout"
+        }
+      ]
+    }
+{% endschema %}
