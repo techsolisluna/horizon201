@@ -2305,7 +2305,6 @@
                 "price_MMyMNq": {
                   "type": "price",
                   "name": "t:names.product_price",
-                  "disabled": true,
                   "settings": {
                     "show_sale_price_first": true,
                     "show_installments": true,
@@ -2325,12 +2324,40 @@
                     "padding-inline-end": 0
                   },
                   "blocks": {}
+                },
+                "text_fd9qja": {
+                  "type": "text",
+                  "name": "t:names.text",
+                  "disabled": true,
+                  "settings": {
+                    "text": "<p></p>{{ closest.product.description }}",
+                    "width": "fit-content",
+                    "max_width": "none",
+                    "alignment": "left",
+                    "type_preset": "rte",
+                    "font": "var(--font-body--family)",
+                    "font_size": "1rem",
+                    "line_height": "normal",
+                    "letter_spacing": "normal",
+                    "case": "none",
+                    "wrap": "pretty",
+                    "color": "var(--color-foreground)",
+                    "background": false,
+                    "background_color": "#00000026",
+                    "corner_radius": 0,
+                    "padding-block-start": 0,
+                    "padding-block-end": 0,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0
+                  },
+                  "blocks": {}
                 }
               },
               "block_order": [
                 "text_K8UiYb",
                 "product_title_hMYBHj",
-                "price_MMyMNq"
+                "price_MMyMNq",
+                "text_fd9qja"
               ]
             }
           },
@@ -2345,7 +2372,7 @@
         "collection": "lancamentos-1",
         "layout_type": "editorial",
         "carousel_on_mobile": false,
-        "max_products": 12,
+        "max_products": 7,
         "columns": 4,
         "mobile_columns": "2",
         "mobile_card_size": "60cqw",
