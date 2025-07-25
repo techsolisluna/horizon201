@@ -135,7 +135,7 @@
 
 {% schema %}
 {
-  "name": "Posts do blog",
+  "name": "Blog posts",
   "blocks": [
     {
       "type": "@theme"
@@ -362,6 +362,15 @@
       "unit": "px",
       "default": 0
     }
-  ]
-}
+  ],
+  "presets": [
+    {
+      "name": "Blog posts",
+      "category": "t:categories.layout",
+      "settings": {},
+      "blocks": {
+        },
+      "block_order": []
+    },
+]}
 {% endschema %}
