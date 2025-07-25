@@ -1,8 +1,8 @@
 {% liquid
-  paginate collections.all.products by 1000
-    
-  endpaginate
-  
+
+  assign blog = blogs[section.settings.blog]
+
+
 
   case section.settings.layout_type
     when 'grid'
@@ -22,7 +22,7 @@
       endcapture
   endcase
 %}
-
+SALVEEE
 <div class="section-background color-{{ section.settings.color_scheme }}"></div>
 <div
   class="
@@ -44,25 +44,26 @@
     {%- content_for 'block', type: '_product-list-content', id: 'static-header' -%}
   </div>
   {% capture list_items %}
-    {% paginate section_products by 1000 %}
-      {% for product in section_products %}
+      {% for article in blog.articles %}
         
 
 
-        {% if show_product  %}
+        
           <div
             class="resource-list__item"
           >
-            {% content_for 'block', type: 'product-card', id: 'static-product-card', closest.product: product %}
+            {% render 'resource-card',
+              resource: article,
+              resource_type: 'article'
+            %}
           </div>
 
           {% unless forloop.last %}
             <!--@list/split-->
           {% endunless %}
-        {% endif %}
+        
 
       {% endfor %}
-    {% endpaginate %}
   {% endcapture %}
 
   {% liquid
@@ -151,6 +152,11 @@
     "groups": ["header", "footer"]
   },
   "settings": [
+    {
+      "type": "blog",
+      "id": "blog",
+      "label": "Blog"
+    },
     {
       "type": "select",
       "id": "layout_type",
@@ -367,7 +373,9 @@
     {
       "name": "Blog posts",
       "category": "t:categories.layout",
-      "settings": {},
+      "settings": {
+        "blog": "Blog da Solis"
+      },
       "blocks": {
         },
       "block_order": []

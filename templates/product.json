@@ -1206,6 +1206,9 @@
       }
     }
   },
+  "blog-posts": {
+      "type": "blog-posts"
+  },
   "order": [
     "main",
     "section_mq6RBB",
@@ -1214,6 +1217,7 @@
     "section_c9t9Qn",
     "175287049661b97f88",
     "media_with_content_7g7CXm",
-    "product_recommendations_qggXJq"
+    "product_recommendations_qggXJq",
+    "blog-posts"
   ]
 }
