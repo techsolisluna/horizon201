@@ -1245,8 +1245,8 @@
       },
       "name": "Blog posts",
       "settings": {
-        "blog": "",
-        "layout_type": "grid",
+        "blog": "solisblogluna",
+        "layout_type": "carousel",
         "carousel_on_mobile": false,
         "columns": 4,
         "mobile_columns": "2",
