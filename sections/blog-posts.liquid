@@ -22,7 +22,7 @@
       endcapture
   endcase
 %}
-SALVEEE
+
 <div class="section-background color-{{ section.settings.color_scheme }}"></div>
 <div
   class="
@@ -44,10 +44,8 @@ SALVEEE
     {%- content_for 'block', type: '_product-list-content', id: 'static-header' -%}
   </div>
   {% capture list_items %}
+    {% paginate blog.articles by 1000 %}
       {% for article in blog.articles %}
-        
-
-
         
           <div
             class="resource-list__item"
@@ -64,6 +62,7 @@ SALVEEE
         
 
       {% endfor %}
+    {% endpaginate %}
   {% endcapture %}
 
   {% liquid

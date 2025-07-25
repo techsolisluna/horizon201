@@ -11,7 +11,9 @@
 {%- enddoc -%}
 
 {% liquid
-  if image_aspect_ratio == blank or image_aspect_ratio == 'adapt'
+  if resource_type == 'article'
+    assign ratio = 'contain'
+  elsif image_aspect_ratio == blank or image_aspect_ratio == 'adapt'
     assign ratio = resource.featured_image.aspect_ratio
   else
     assign ratio = image_aspect_ratio
@@ -107,7 +109,13 @@
           {% endfor %}
         </div>
       {%- endif -%}
-    {%- endif -%}
+    {%- elsif resource_type == 'article' -%}
+        {{
+          resource.image
+          | image_url: width: image_width
+          | image_tag: loading: 'lazy', class: 'resource-card__image', sizes: 'auto', widths: widths
+        }}
+  {%- endif -%}
   </div>
 
   <div class="resource-card__content">
