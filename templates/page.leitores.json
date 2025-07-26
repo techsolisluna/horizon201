@@ -39,10 +39,10 @@
               "type": "jumbo-text",
               "name": "t:names.jumbo_text",
               "settings": {
-                "text": "leitores",
+                "text": "É preciso que a leitura\nseja um ato de amor",
                 "font": "accent",
-                "alignment": "right",
-                "line_height": "0.8",
+                "alignment": "left",
+                "line_height": "1",
                 "letter_spacing": "-0.03em",
                 "case": "none",
                 "text_effect": "blur",
@@ -54,7 +54,7 @@
               "type": "text",
               "name": "t:names.text",
               "settings": {
-                "text": "<p>We make things that work better and last longer. Our products solve real problems with clean design and honest materials.</p>",
+                "text": "<p><strong>Paulo Freire</strong></p>",
                 "width": "fit-content",
                 "max_width": "normal",
                 "alignment": "left",
@@ -85,12 +85,12 @@
       },
       "name": "t:names.editorial_jumbo_text",
       "settings": {
-        "media_position": "left",
+        "media_position": "right",
         "media_width": "medium",
         "media_height": "60svh",
         "section_width": "full-width",
         "extend_media": true,
-        "color_scheme": "scheme-3",
+        "color_scheme": "scheme-4",
         "padding-block-start": 0,
         "padding-block-end": 0
       }
@@ -159,7 +159,7 @@
       "settings": {
         "content_direction": "column",
         "gap": 32,
-        "color_scheme": "scheme-1",
+        "color_scheme": "scheme-4",
         "padding-block-start": 40,
         "padding-block-end": 80
       }
@@ -194,6 +194,7 @@
         },
         "button_jEMYLE": {
           "type": "button",
+          "disabled": true,
           "settings": {
             "label": "Shop now",
             "link": "shopify://collections/all",
@@ -224,7 +225,7 @@
         "section_width": "page-width",
         "section_height": "",
         "section_height_custom": 50,
-        "color_scheme": "",
+        "color_scheme": "scheme-1",
         "background_media": "none",
         "video_position": "cover",
         "background_image_position": "cover",
@@ -421,7 +422,7 @@
               "type": "button",
               "settings": {
                 "label": "Conheça",
-                "link": "shopify://collections/all",
+                "link": "shopify://collections/lancamentos-1",
                 "open_in_new_tab": false,
                 "style_class": "link",
                 "width": "fit-content",
