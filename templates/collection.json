@@ -43,7 +43,7 @@
           "type": "text",
           "name": "t:names.text",
           "settings": {
-            "text": "{{ closest.collection.description }}",
+            "text": "<h1>{{ closest.collection.title }}</h1>{{ closest.collection.description }}",
             "width": "fit-content",
             "max_width": "normal",
             "alignment": "left",
@@ -107,12 +107,13 @@
             "image_iAYAMe": {
               "type": "image",
               "name": "t:names.image",
+              "disabled": true,
               "settings": {
                 "link": "",
                 "image_ratio": "adapt",
-                "width": "fit-content",
+                "width": "custom",
                 "custom_width": 100,
-                "width_mobile": "fill",
+                "width_mobile": "fit-content",
                 "custom_width_mobile": 100,
                 "height": "fit",
                 "border": "none",
