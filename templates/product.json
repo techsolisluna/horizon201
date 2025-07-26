@@ -1321,7 +1321,7 @@
             "border_opacity": 100,
             "border_radius": 0,
             "padding-block-start": 0,
-            "padding-block-end": 0,
+            "padding-block-end": 15,
             "padding-inline-start": 0,
             "padding-inline-end": 0
           },
@@ -1330,7 +1330,7 @@
               "type": "text",
               "name": "t:names.heading",
               "settings": {
-                "text": "<h2>New arrivals</h2>",
+                "text": "<h2>Leia no blog da Solis</h2>",
                 "width": "fit-content",
                 "max_width": "normal",
                 "alignment": "left",
