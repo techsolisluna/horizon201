@@ -17,6 +17,7 @@
           "static": true,
           "settings": {
             "media_type": "image",
+            "image": "shopify://shop_images/carrinho-de-livros.jpg",
             "link": "",
             "video_loop": true,
             "video_autoplay": false,
@@ -649,7 +650,7 @@
             "text_pRRi3B": {
               "type": "text",
               "settings": {
-                "text": "<h3>Onde encontrar?</h3>",
+                "text": "<h3>Onde encontrar nossos livros?</h3>",
                 "width": "fit-content",
                 "max_width": "normal",
                 "alignment": "center",
