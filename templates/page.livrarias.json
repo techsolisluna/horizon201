@@ -617,6 +617,7 @@
             "color_scheme": "scheme-5",
             "background_media": "image",
             "video_position": "cover",
+            "background_image": "shopify://shop_images/Captura_de_Tela_2025-07-26_as_17.58.53.png",
             "background_image_position": "cover",
             "border": "none",
             "border_width": 1,
@@ -673,10 +674,10 @@
             "button_eqqGnL": {
               "type": "button",
               "settings": {
-                "label": "Shop now",
+                "label": "Abrir no mapadolivro.org",
                 "link": "shopify://collections/all",
                 "open_in_new_tab": false,
-                "style_class": "link",
+                "style_class": "button",
                 "width": "fit-content",
                 "custom_width": 100,
                 "width_mobile": "fit-content",
