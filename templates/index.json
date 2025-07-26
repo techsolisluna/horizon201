@@ -446,7 +446,7 @@
                 "text_7E8E6E": {
                   "type": "text",
                   "settings": {
-                    "text": "<h2>Livreiros</h2>",
+                    "text": "<h2><a href=\"/pages/distribuidores-e-pontos-de-venda-dos-livros-da-solisluna\" target=\"_blank\" title=\"Pontos de venda e distribuição\">Livreiros</a></h2>",
                     "width": "100%",
                     "max_width": "normal",
                     "alignment": "center",
