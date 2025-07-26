@@ -9,6 +9,91 @@
  */
 {
   "sections": {
+    "media_with_content_WE3m3r": {
+      "type": "media-with-content",
+      "blocks": {
+        "media": {
+          "type": "_media-without-appearance",
+          "static": true,
+          "settings": {
+            "media_type": "image",
+            "link": "",
+            "video_loop": true,
+            "video_autoplay": false,
+            "image_position": "cover",
+            "video_position": "cover"
+          },
+          "blocks": {}
+        },
+        "content": {
+          "type": "_content-without-appearance",
+          "static": true,
+          "settings": {
+            "horizontal_alignment_flex_direction_column": "flex-start",
+            "vertical_alignment_flex_direction_column": "flex-end",
+            "gap": 24
+          },
+          "blocks": {
+            "jumbo_text_An9HgE": {
+              "type": "jumbo-text",
+              "name": "t:names.jumbo_text",
+              "settings": {
+                "text": "nas livrarias",
+                "font": "accent",
+                "alignment": "right",
+                "line_height": "1",
+                "letter_spacing": "-0.03em",
+                "case": "none",
+                "text_effect": "blur",
+                "animation_repeat": true
+              },
+              "blocks": {}
+            },
+            "text_D6PU3Y": {
+              "type": "text",
+              "name": "t:names.text",
+              "settings": {
+                "text": "<p>We make things that work better and last longer. Our products solve real problems with clean design and honest materials.</p>",
+                "width": "fit-content",
+                "max_width": "normal",
+                "alignment": "left",
+                "type_preset": "rte",
+                "font": "var(--font-body--family)",
+                "font_size": "1rem",
+                "line_height": "normal",
+                "letter_spacing": "normal",
+                "case": "none",
+                "wrap": "pretty",
+                "color": "var(--color-foreground)",
+                "background": false,
+                "background_color": "#00000026",
+                "corner_radius": 0,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            }
+          },
+          "block_order": [
+            "jumbo_text_An9HgE",
+            "text_D6PU3Y"
+          ]
+        }
+      },
+      "name": "t:names.editorial_jumbo_text",
+      "settings": {
+        "media_position": "right",
+        "media_width": "medium",
+        "media_height": "60svh",
+        "section_width": "full-width",
+        "extend_media": true,
+        "color_scheme": "scheme-3",
+        "padding-block-start": 0,
+        "padding-block-end": 0
+      }
+    },
     "main": {
       "type": "main-page",
       "blocks": {
@@ -199,7 +284,8 @@
             "custom_height": 100,
             "inherit_color_scheme": false,
             "color_scheme": "scheme-5",
-            "background_media": "image",
+            "background_media": "video",
+            "video": "shopify://files/videos/BG-video-teste.mov",
             "video_position": "cover",
             "background_image_position": "cover",
             "border": "none",
@@ -329,7 +415,7 @@
             "text_wJH7Qc": {
               "type": "text",
               "settings": {
-                "text": "<h3>Dúvidas? Escreve para gente</h3>",
+                "text": "<h3>Dúvidas? Entre em contato</h3>",
                 "width": "fit-content",
                 "max_width": "normal",
                 "alignment": "center",
@@ -412,6 +498,7 @@
       "blocks": {
         "group_kjWAFa": {
           "type": "group",
+          "disabled": true,
           "settings": {
             "link": "",
             "open_in_new_tab": false,
@@ -932,6 +1019,7 @@
     }
   },
   "order": [
+    "media_with_content_WE3m3r",
     "main",
     "section_nPgXMT",
     "section_NfT4ay",
