@@ -295,7 +295,7 @@
             "height": "fill",
             "custom_height": 100,
             "inherit_color_scheme": false,
-            "color_scheme": "scheme-5",
+            "color_scheme": "scheme-58084d4c-a86e-4d0a-855e-a0966e5043f7",
             "background_media": "image",
             "video_position": "cover",
             "background_image_position": "cover",
@@ -303,8 +303,8 @@
             "border_width": 1,
             "border_opacity": 100,
             "border_radius": 0,
-            "toggle_overlay": false,
-            "overlay_color": "#00000026",
+            "toggle_overlay": true,
+            "overlay_color": "#ffd700",
             "overlay_style": "solid",
             "gradient_direction": "to top",
             "padding-block-start": 40,
@@ -329,7 +329,7 @@
             "text_wJH7Qc": {
               "type": "text",
               "settings": {
-                "text": "<h3>Dúvidas? Escreva para gente</h3>",
+                "text": "<h3>Dúvidas? Escreve para gente</h3>",
                 "width": "fit-content",
                 "max_width": "normal",
                 "alignment": "center",
