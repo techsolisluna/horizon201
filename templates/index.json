@@ -177,7 +177,7 @@
         "text_FKxexF": {
           "type": "text",
           "settings": {
-            "text": "<p>Quem é você?</p>",
+            "text": "",
             "width": "100%",
             "max_width": "narrow",
             "alignment": "center",
@@ -278,8 +278,8 @@
               "settings": {
                 "icon": "heart",
                 "width": 32,
-                "link": "",
-                "open_in_new_tab": false
+                "link": "shopify://pages/carrinho-de-livros",
+                "open_in_new_tab": true
               },
               "blocks": {}
             },
