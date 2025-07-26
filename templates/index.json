@@ -400,8 +400,8 @@
               "settings": {
                 "icon": "map_pin",
                 "width": 32,
-                "link": "",
-                "open_in_new_tab": false
+                "link": "shopify://pages/distribuidores-e-pontos-de-venda-dos-livros-da-solisluna",
+                "open_in_new_tab": true
               },
               "blocks": {}
             },
