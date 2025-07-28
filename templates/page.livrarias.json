@@ -21,7 +21,7 @@
             "link": "",
             "video_loop": true,
             "video_autoplay": false,
-            "image_position": "cover",
+            "image_position": "contain",
             "video_position": "cover"
           },
           "blocks": {}
@@ -88,7 +88,7 @@
       "settings": {
         "media_position": "right",
         "media_width": "medium",
-        "media_height": "60svh",
+        "media_height": "50svh",
         "section_width": "full-width",
         "extend_media": true,
         "color_scheme": "scheme-4",
