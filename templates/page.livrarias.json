@@ -53,6 +53,7 @@
             "text_D6PU3Y": {
               "type": "text",
               "name": "t:names.text",
+              "disabled": true,
               "settings": {
                 "text": "<p>Celebrando as livrarias que escolhem o extraordinário. Guardiãs da literatura que transforma</p>",
                 "width": "fit-content",
