@@ -500,6 +500,7 @@
             "text_AkRqta": {
               "type": "text",
               "name": "t:names.text",
+              "disabled": true,
               "settings": {
                 "text": "<p><em>Livro em pré-venda. Previsão de envio </em><em>{{ closest.product.metafields.my_fields.prevenda_data.value }}</em></p>",
                 "width": "fit-content",
