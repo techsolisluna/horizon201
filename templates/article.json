@@ -158,6 +158,7 @@
             "featured-product-gallery": {
               "type": "_featured-product-gallery",
               "name": "t:names.image",
+              "disabled": true,
               "static": true,
               "settings": {
                 "image_ratio": "adapt",
@@ -184,6 +185,7 @@
           "block_order": []
         }
       },
+      "disabled": true,
       "name": "t:names.featured_product",
       "settings": {
         "product": "{{ article.metafields.custom.featured_product.value }}",
