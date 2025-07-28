@@ -500,7 +500,6 @@
             "text_AkRqta": {
               "type": "text",
               "name": "t:names.text",
-              "disabled": true,
               "settings": {
                 "text": "<p><em>Livro em pré-venda. Previsão de envio </em><em>{{ closest.product.metafields.my_fields.prevenda_data.value }}</em></p>",
                 "width": "fit-content",
@@ -528,7 +527,7 @@
               "type": "custom-liquid",
               "name": "Data prevenda",
               "settings": {
-                "custom_liquid": "{% if product.metafields.my_fields.prevenda_data and product.metafields.custom.status.value.system.handle == \"pre-venda\" %}<div style=\"font-size:14px;\"><b>{% if localization.language.iso_code == 'en' %}This book is in pre-order.<br/></b>\nShipping forecast:{% else %}Livro em pré-venda.<br/></b>\nPrevisão de envio:{% endif %} {{product.metafields.my_fields.prevenda_data}}</div>{% endif %}"
+                "custom_liquid": "{% if product.metafields.my_fields.prevenda_data and product.metafields.custom.status.value.system.handle == \"pre-venda\" %}<div style=\"font-size:0.75rem; font-style: italic;\">{% if localization.language.iso_code == 'en' %}This book is in pre-order.\nShipping forecast{% else %}Livro em pré-venda.\nPrevisão de envio{% endif %} {{product.metafields.my_fields.prevenda_data}}</div>{% endif %}"
               },
               "blocks": {}
             },
