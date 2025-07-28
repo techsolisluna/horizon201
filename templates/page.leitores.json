@@ -702,7 +702,7 @@
             "border_opacity": 100,
             "border_radius": 0,
             "toggle_overlay": true,
-            "overlay_color": "#00029ba2",
+            "overlay_color": "#00029ba3",
             "overlay_style": "solid",
             "gradient_direction": "to top",
             "padding-block-start": 40,
@@ -1067,6 +1067,7 @@
         "text_xBLtjy",
         "accordion_3dB8NX"
       ],
+      "disabled": true,
       "name": "t:names.faq_section",
       "settings": {
         "content_direction": "column",
@@ -1235,11 +1236,11 @@
   },
   "order": [
     "media_with_content_WE3m3r",
+    "section_gBJhWW",
     "main",
     "section_DzYxLz",
     "section_nPgXMT",
     "section_NfT4ay",
-    "section_WNPGVC",
-    "section_gBJhWW"
+    "section_WNPGVC"
   ]
 }
