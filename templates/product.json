@@ -655,7 +655,7 @@
                         "text_k7LUUJ": {
                           "type": "text",
                           "settings": {
-                            "text": "<p>{{ closest.product.metafields.infotecnica.dados | metafield_tag }}</p>",
+                            "text": "<p><strong>ISBN:</strong> {{ product.metafields.facts.isbn.value }}<br/><strong>Idioma:</strong> {{ product.metafields.custom.idiomas_do_produto.value }}<br/><strong>Formato:</strong> {{ product.metafields.custom.largura.value }} x {{ product.metafields.custom.altura.value }} x {{ product.metafields.custom.profundidade.value }} cm<br/><strong>N° de páginas:</strong> {{ product.metafields.custom.numero_de_paginas.value }}<br/><strong>Encadernação:</strong> {{ product.metafields.custom.formato.value }}<br/><strong>Ano de publicação:</strong> {{ product.metafields.my_fields.published_year.value }}</p>",
                             "width": "100%",
                             "max_width": "normal",
                             "alignment": "left",
@@ -694,7 +694,7 @@
                         "text_geD4ir": {
                           "type": "text",
                           "settings": {
-                            "text": "<p><strong>THEMA:</strong><br/>{{ closest.product.metafields.custom.classificacao_thema | metafield_tag }}</p><p><strong>BISAC:</strong><br/>{{ closest.product.metafields.custom.bisac | metafield_tag }}</p><p><strong>TEMAS:</strong>{{ closest.product.metafields.custom.temas | metafield_tag }}</p>",
+                            "text": "<p><strong>Palavras-chave:</strong> {{ product.metafields.custom.palavra_chave.value }}<br/><strong>Público-alvo:</strong> {{ product.metafields.custom.publico_alvo.value }}<br/><strong>Classificação Thema: </strong>{{ product.metafields.custom.classificacao_thema | metafield_tag }}<br/><strong>BISAC: </strong><br/>{{ product.metafields.custom.bisac | metafield_tag }}<br/><strong>Temas: </strong></p>{{ closest.product.metafields.custom.temas | metafield_tag }}",
                             "width": "100%",
                             "max_width": "normal",
                             "alignment": "left",
