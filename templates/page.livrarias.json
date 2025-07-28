@@ -54,7 +54,7 @@
               "type": "text",
               "name": "t:names.text",
               "settings": {
-                "text": "<p>We make things that work better and last longer. Our products solve real problems with clean design and honest materials.</p>",
+                "text": "<p>Celebrando as livrarias que escolhem o extraordinário. Guardiãs da literatura que transforma</p>",
                 "width": "fit-content",
                 "max_width": "normal",
                 "alignment": "left",
@@ -344,7 +344,7 @@
             "button_iHGkDx": {
               "type": "button",
               "settings": {
-                "label": "Shop now",
+                "label": "Saiba mais",
                 "link": "shopify://collections/all",
                 "open_in_new_tab": false,
                 "style_class": "link",
