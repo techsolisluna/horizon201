@@ -1,7 +1,16 @@
 {% liquid
 
-  assign blog = blogs[section.settings.blog]
+  assign max_items = 1000
+  if section.settings.posts_limit == true
+    assign max_items = section.settings.max_posts
+  endif
 
+  assign blog = blogs[section.settings.blog]
+  paginate blog.articles by 1000
+    assign blog = blog.articles
+  endpaginate
+
+  #FILTRAR OS POSTS DO PRODUTO
 
 
   case section.settings.layout_type
@@ -44,8 +53,8 @@
     {%- content_for 'block', type: '_product-list-content', id: 'static-header' -%}
   </div>
   {% capture list_items %}
-    {% paginate blog.articles by 1000 %}
-      {% for article in blog.articles %}
+    {% paginate blog by max_items %}
+      {% for article in blog %}
         
           <div
             class="resource-list__item"
@@ -157,6 +166,28 @@
       "type": "blog",
       "id": "blog",
       "label": "Blog"
+    },
+    {
+      "type": "checkbox",
+      "id": "related_product",
+      "label": "Exibir posts relacionados ao produto",
+      "default": false
+    },
+    {
+      "type": "checkbox",
+      "id": "posts_limit",
+      "label": "Limitar quantidade de posts",
+      "default": false
+    },
+    {
+      "type": "range",
+      "id": "max_posts",
+      "label": "Número de posts para exibir",
+      "min": 1,
+      "max": 16,
+      "step": 1,
+      "default": 3,
+      "visible_if": "{{ section.settings.posts_limit == true }}"
     },
     {
       "type": "select",
