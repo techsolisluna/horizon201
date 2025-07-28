@@ -191,6 +191,7 @@
             "color_scheme": "scheme-5",
             "background_media": "image",
             "video_position": "cover",
+            "background_image": "shopify://shop_images/CapaCatalogo_0c6855b6-6e8f-4113-8fb2-bb9ecf479880.jpg",
             "background_image_position": "cover",
             "border": "none",
             "border_width": 1,
@@ -247,7 +248,7 @@
             "button_Bw6Yab": {
               "type": "button",
               "settings": {
-                "label": "Shop now",
+                "label": "Ver agora",
                 "link": "shopify://collections/all",
                 "open_in_new_tab": false,
                 "style_class": "link",
