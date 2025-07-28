@@ -11,9 +11,7 @@
 {%- enddoc -%}
 
 {% liquid
-  if resource_type == 'article'
-    assign ratio = 'contain'
-  elsif image_aspect_ratio == blank or image_aspect_ratio == 'adapt'
+  if image_aspect_ratio == blank or image_aspect_ratio == 'adapt'
     assign ratio = resource.featured_image.aspect_ratio
   else
     assign ratio = image_aspect_ratio
@@ -41,7 +39,7 @@
   >
 {%- endif -%}
 <div
-  class="resource-card{% if style == 'overlay' %} resource-card--overlay{% endif %}"
+  class="resource-card{% if style == 'overlay' %} resource-card--overlay{% endif %}{% if resource_type == 'article' %} resource-card--article{% endif %}"
   href="{{ resource.url }}"
   data-resource-type="{{ resource_type }}"
 >
@@ -119,21 +117,33 @@
   </div>
 
   <div class="resource-card__content">
-    <p class="resource-card__title{% if style == 'overlay' %} h5{%else %} paragraph{% endif %}">
-      {{- resource.title -}}
-    </p>
+    {%- if resource_type == 'article' -%}
+      <div>
+        <p class="resource-card__title" style="font-size: 1.2rem; font-weight: 500; -webkit-line-clamp: 10;">
+          {{- resource.title -}}
+        </p>
+        <span style="font-size: 0.75rem;">{{- resource.published_at | time_tag: format: 'date' | upcase -}}</span>
+      </div>
+      <p class="resource-card__subtext paragraph">
+        {{- resource.excerpt | default: resource.content | strip_html | truncatewords: 30 -}}
+      </p>
+    {%- else -%}
+      <p class="resource-card__title{% if style == 'overlay' %} h5{%else %} paragraph{% endif %}">
+        {{- resource.title -}}
+      </p>
 
-    {% if resource_type == 'product' %}
-      {% render 'price', product_resource: resource, show_unit_price: true %}
-    {% elsif resource_type == 'collection' and single_thumbnail_collection == false %}
-      <p class="resource-card__subtext paragraph">
-        {{- 'content.search_results_resource_products_count' | t: count: resource.all_products_count -}}
-      </p>
-    {% else %}
-      <p class="resource-card__subtext paragraph">
-        {{- resource.excerpt | default: resource.content | strip_html | truncate: 65 -}}
-      </p>
-    {% endif %}
+        {% if resource_type == 'product' %}
+          {% render 'price', product_resource: resource, show_unit_price: true %}
+        {% elsif resource_type == 'collection' and single_thumbnail_collection == false %}
+          <p class="resource-card__subtext paragraph">
+            {{- 'content.search_results_resource_products_count' | t: count: resource.all_products_count -}}
+          </p>
+        {% else %}
+          <p class="resource-card__subtext paragraph">
+            {{- resource.excerpt | default: resource.content | strip_html | truncate: 65 -}}
+          </p>
+        {% endif %}
+    {%- endif -%}
   </div>
 </div>
 {%- if resource_type == 'product' and settings.transition_to_main_product -%}
@@ -196,6 +206,18 @@
     display: none;
   }
 
+  .resource-card--article .resource-card__media {
+    overflow: hidden;
+  }
+
+  .resource-card--article .resource-card__image{
+    transition: transform 0.1s ease;
+  }
+
+  .resource-card--article:hover .resource-card__image{
+    transform: scale(1.03);
+  }
+
   .resource-card__image-placeholder {
     padding: var(--padding-sm);
     font-size: var(--font-size--lg);
@@ -218,6 +240,10 @@
 
   .resource-card__title.paragraph {
     line-height: 1.3;
+  }
+
+  .resource-card--article:hover .resource-card__title{
+    text-decoration: underline;
   }
 
   .resource-card--overlay {
