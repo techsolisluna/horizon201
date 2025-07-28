@@ -671,8 +671,78 @@
               },
               "blocks": {}
             },
+            "popup_link_4qfWFg": {
+              "type": "popup-link",
+              "name": "t:names.popup_link",
+              "settings": {
+                "behavior": "default",
+                "heading": "Ver no mapa",
+                "type_preset": "",
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {
+                "text_AnrVUQ": {
+                  "type": "text",
+                  "settings": {
+                    "text": "<h2>Em breve um mapa!</h2><h5></h5>",
+                    "width": "fit-content",
+                    "max_width": "normal",
+                    "alignment": "left",
+                    "type_preset": "rte",
+                    "font": "var(--font-body--family)",
+                    "font_size": "1rem",
+                    "line_height": "normal",
+                    "letter_spacing": "normal",
+                    "case": "none",
+                    "wrap": "pretty",
+                    "color": "var(--color-foreground)",
+                    "background": false,
+                    "background_color": "#00000026",
+                    "corner_radius": 0,
+                    "padding-block-start": 0,
+                    "padding-block-end": 16,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0
+                  },
+                  "blocks": {}
+                },
+                "text_yVgQnt": {
+                  "type": "text",
+                  "settings": {
+                    "text": "<p>se inscreva para saber em primeira mão</p>",
+                    "width": "fit-content",
+                    "max_width": "normal",
+                    "alignment": "left",
+                    "type_preset": "rte",
+                    "font": "var(--font-body--family)",
+                    "font_size": "1rem",
+                    "line_height": "normal",
+                    "letter_spacing": "normal",
+                    "case": "none",
+                    "wrap": "pretty",
+                    "color": "var(--color-foreground)",
+                    "background": false,
+                    "background_color": "#00000026",
+                    "corner_radius": 0,
+                    "padding-block-start": 0,
+                    "padding-block-end": 0,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "text_AnrVUQ",
+                "text_yVgQnt"
+              ]
+            },
             "button_eqqGnL": {
               "type": "button",
+              "disabled": true,
               "settings": {
                 "label": "Abrir no mapadolivro.org",
                 "link": "shopify://collections/all",
@@ -689,6 +759,7 @@
           "block_order": [
             "spacer_DHMrmr",
             "text_pRRi3B",
+            "popup_link_4qfWFg",
             "button_eqqGnL"
           ]
         }
