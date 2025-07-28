@@ -687,6 +687,7 @@
               "blocks": {
                 "text_AnrVUQ": {
                   "type": "text",
+                  "disabled": true,
                   "settings": {
                     "text": "<h2>Em breve um mapa!</h2><h5></h5>",
                     "width": "fit-content",
@@ -712,6 +713,7 @@
                 },
                 "text_yVgQnt": {
                   "type": "text",
+                  "disabled": true,
                   "settings": {
                     "text": "<p>se inscreva para saber em primeira mão</p>",
                     "width": "fit-content",
