@@ -347,8 +347,8 @@
               "type": "button",
               "settings": {
                 "label": "Saiba mais",
-                "link": "shopify://collections/all",
-                "open_in_new_tab": false,
+                "link": "shopify://collections/lancamentos-para-adultos",
+                "open_in_new_tab": true,
                 "style_class": "link",
                 "width": "fit-content",
                 "custom_width": 100,
