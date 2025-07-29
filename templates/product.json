@@ -1506,6 +1506,9 @@
       "name": "Blog posts",
       "settings": {
         "blog": "solisblogluna",
+        "related_product": true,
+        "posts_limit": false,
+        "max_posts": 3,
         "layout_type": "carousel",
         "carousel_on_mobile": false,
         "columns": 3,
