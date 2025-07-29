@@ -1460,13 +1460,13 @@
               "name": "t:names.jumbo_text",
               "disabled": true,
               "settings": {
-                "text": "Novidade",
+                "text": "EM\nBREVE",
                 "font": "accent",
                 "alignment": "right",
                 "line_height": "1",
                 "letter_spacing": "-0.03em",
                 "case": "none",
-                "text_effect": "blur",
+                "text_effect": "reveal",
                 "animation_repeat": true
               },
               "blocks": {}
@@ -1501,7 +1501,7 @@
               "type": "text",
               "name": "t:names.heading",
               "settings": {
-                "text": "<h2>Impressões em Fine-Art</h2>",
+                "text": "<h2>Impressões em <em>Fine-Art</em> de obras de arte selecionadas</h2>",
                 "width": "100%",
                 "max_width": "normal",
                 "alignment": "left",
@@ -1527,7 +1527,7 @@
               "type": "text",
               "name": "t:names.text",
               "settings": {
-                "text": "<p>Vocês pediram e nós realizamos. Agora você pode levar a arte das páginas do livro para a parede da sua casa. Lançamos uma seleção de obras de arte em gravura.</p>",
+                "text": "<p>Vocês pediram e nós vamos realizar. </p><p>A obra de arte que vai da páginas do livro à parede da sua casa. <br/>Uma seleção de obras de arte em gravura.</p>",
                 "width": "fit-content",
                 "max_width": "normal",
                 "alignment": "left",
@@ -1553,7 +1553,7 @@
               "type": "button",
               "name": "t:names.button",
               "settings": {
-                "label": "Saiba mais",
+                "label": "Me avise!",
                 "link": "shopify://pages/galeria",
                 "open_in_new_tab": false,
                 "style_class": "button",
@@ -1582,8 +1582,8 @@
         "section_width": "full-width",
         "extend_media": true,
         "color_scheme": "scheme-1",
-        "padding-block-start": 20,
-        "padding-block-end": 20
+        "padding-block-start": 70,
+        "padding-block-end": 70
       }
     },
     "collection_links_xz7hah": {
@@ -1623,6 +1623,7 @@
           "block_order": []
         }
       },
+      "disabled": true,
       "name": "t:names.collection_links_spotlight",
       "settings": {
         "collection_list": [

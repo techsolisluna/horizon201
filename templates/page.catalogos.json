@@ -76,9 +76,21 @@
         "padding-block-start": 40,
         "padding-block-end": 80
       }
+    },
+    "custom_liquid_wa9tYw": {
+      "type": "custom-liquid",
+      "name": "t:names.custom_liquid",
+      "settings": {
+        "custom_liquid": "",
+        "color_scheme": "",
+        "section_width": "page-width",
+        "padding-block-start": 0,
+        "padding-block-end": 0
+      }
     }
   },
   "order": [
-    "main"
+    "main",
+    "custom_liquid_wa9tYw"
   ]
 }
