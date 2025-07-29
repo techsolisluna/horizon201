@@ -2496,11 +2496,9 @@
       "name": "t:names.collection_links_spotlight",
       "settings": {
         "collection_list": [
-          "frontpage",
-          "educacao",
-          "lancamentos",
           "cultura-afrobrasileira",
-          "inclusao"
+          "inclusao",
+          "bebes-0-3-anos"
         ],
         "layout": "text",
         "section_width": "full-width",
@@ -2631,6 +2629,7 @@
           "blocks": {
             "text_FGpnKh": {
               "type": "text",
+              "disabled": true,
               "settings": {
                 "text": "<h3><a href=\"/pages/carrinho-de-livros\" target=\"_blank\" title=\"Ca(r)rinho de Livros da Solisluna\">Caminhos que já percorremos</a></h3><h5><a href=\"/pages/carrinho-de-livros\" target=\"_blank\" title=\"Ca(r)rinho de Livros da Solisluna\">Saiba mais</a></h5>",
                 "width": "fit-content",
@@ -2730,6 +2729,7 @@
           "blocks": {
             "text_q3GA6c": {
               "type": "text",
+              "disabled": true,
               "settings": {
                 "text": "<h3><a href=\"/pages/carrinho-de-livros\" target=\"_blank\" title=\"Ca(r)rinho de Livros da Solisluna\">Caminhos que já percorremos</a></h3><h5><a href=\"/pages/carrinho-de-livros\" target=\"_blank\" title=\"Ca(r)rinho de Livros da Solisluna\">Saiba mais</a></h5>",
                 "width": "fit-content",
@@ -2829,6 +2829,7 @@
           "blocks": {
             "text_9pPpkk": {
               "type": "text",
+              "disabled": true,
               "settings": {
                 "text": "<h3><a href=\"/pages/carrinho-de-livros\" target=\"_blank\" title=\"Ca(r)rinho de Livros da Solisluna\">Caminhos que já percorremos</a></h3><h5><a href=\"/pages/carrinho-de-livros\" target=\"_blank\" title=\"Ca(r)rinho de Livros da Solisluna\">Saiba mais</a></h5>",
                 "width": "fit-content",
