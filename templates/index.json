@@ -2496,9 +2496,12 @@
       "name": "t:names.collection_links_spotlight",
       "settings": {
         "collection_list": [
+          "arte",
           "cultura-afrobrasileira",
           "inclusao",
-          "bebes-0-3-anos"
+          "bebes-0-3-anos",
+          "tradicao",
+          "memoria"
         ],
         "layout": "text",
         "section_width": "full-width",
