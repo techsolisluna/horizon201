@@ -10,7 +10,30 @@
     assign blog = blog.articles
   endpaginate
 
-  #FILTRAR OS POSTS DO PRODUTO
+  if section.settings.related_product
+    assign blog_posts_product = "" | split: ""
+
+    paginate blog by 1000
+      for article in blog
+        assign blog_related = false
+
+        for blog_product in article.metafields.custom.livro_relacionado.value
+          if blog_product.id == closest.product.id
+            assign blog_related = true
+            break
+          endif
+        endfor
+
+        if blog_related == true
+          assign article_related = article | sort
+          assign blog_posts_product = blog_posts_product | concat: article_related
+        endif
+      endfor
+    endpaginate
+
+    assign blog = blog_posts_product | concat: blog | uniq
+
+  endif
 
 
   case section.settings.layout_type
@@ -55,7 +78,6 @@
   {% capture list_items %}
     {% paginate blog by max_items %}
       {% for article in blog %}
-        
           <div
             class="resource-list__item"
           >
