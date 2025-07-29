@@ -465,7 +465,7 @@
           "type": "text",
           "name": "t:names.heading",
           "settings": {
-            "text": "<h2>Subscribe to our emails</h2>",
+            "text": "<h2>Vamos ficar em contato!</h2>",
             "width": "100%",
             "max_width": "normal",
             "alignment": "center",
