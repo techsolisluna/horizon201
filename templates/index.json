@@ -2504,7 +2504,7 @@
           "memoria"
         ],
         "layout": "text",
-        "section_width": "full-width",
+        "section_width": "page-width",
         "alignment": "center",
         "image_position": "right",
         "color_scheme": "scheme-1",
