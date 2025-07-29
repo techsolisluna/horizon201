@@ -489,6 +489,7 @@
         },
         "text_DrbPep": {
           "type": "text",
+          "disabled": true,
           "settings": {
             "text": "<p>Be the first to know about new collections and special offers. </p>",
             "width": "100%",
