@@ -143,15 +143,15 @@
         "group_6YJQWL": {
           "type": "group",
           "settings": {
-            "link": "",
-            "open_in_new_tab": false,
-            "content_direction": "column",
+            "link": "shopify://collections/livros_para_criancas",
+            "open_in_new_tab": true,
+            "content_direction": "row",
             "vertical_on_mobile": true,
-            "horizontal_alignment": "flex-start",
-            "vertical_alignment": "center",
+            "horizontal_alignment": "space-between",
+            "vertical_alignment": "flex-start",
             "align_baseline": false,
-            "horizontal_alignment_flex_direction_column": "center",
-            "vertical_alignment_flex_direction_column": "space-between",
+            "horizontal_alignment_flex_direction_column": "flex-start",
+            "vertical_alignment_flex_direction_column": "flex-start",
             "gap": 32,
             "width": "fill",
             "custom_width": 100,
@@ -163,12 +163,13 @@
             "color_scheme": "scheme-5",
             "background_media": "image",
             "video_position": "cover",
+            "background_image": "shopify://shop_images/IMG_8870-2.jpg",
             "background_image_position": "cover",
             "border": "none",
             "border_width": 1,
             "border_opacity": 100,
             "border_radius": 0,
-            "toggle_overlay": false,
+            "toggle_overlay": true,
             "overlay_color": "#00000026",
             "overlay_style": "solid",
             "gradient_direction": "to top",
@@ -178,27 +179,14 @@
             "padding-inline-end": 40
           },
           "blocks": {
-            "spacer_Lpjd3G": {
-              "type": "spacer",
-              "settings": {
-                "size": "pixel",
-                "percent_size": 100,
-                "pixel_size": 16,
-                "custom_mobile_size": false,
-                "size_mobile": "percent",
-                "percent_size_mobile": 100,
-                "pixel_size_mobile": 120
-              },
-              "blocks": {}
-            },
             "text_EWKrtd": {
               "type": "text",
               "settings": {
                 "text": "<h3>Crianças</h3>",
                 "width": "fit-content",
-                "max_width": "normal",
+                "max_width": "narrow",
                 "alignment": "center",
-                "type_preset": "h3",
+                "type_preset": "h2",
                 "font": "var(--font-body--family)",
                 "font_size": "1rem",
                 "line_height": "normal",
@@ -216,10 +204,23 @@
               },
               "blocks": {}
             },
+            "spacer_Lpjd3G": {
+              "type": "spacer",
+              "settings": {
+                "size": "pixel",
+                "percent_size": 100,
+                "pixel_size": 16,
+                "custom_mobile_size": false,
+                "size_mobile": "percent",
+                "percent_size_mobile": 100,
+                "pixel_size_mobile": 120
+              },
+              "blocks": {}
+            },
             "button_6GLWXg": {
               "type": "button",
               "settings": {
-                "label": "Shop now",
+                "label": "Ver catálogo",
                 "link": "shopify://collections/all",
                 "open_in_new_tab": false,
                 "style_class": "link",
@@ -232,8 +233,8 @@
             }
           },
           "block_order": [
-            "spacer_Lpjd3G",
             "text_EWKrtd",
+            "spacer_Lpjd3G",
             "button_6GLWXg"
           ]
         },
@@ -242,12 +243,12 @@
           "settings": {
             "link": "",
             "open_in_new_tab": false,
-            "content_direction": "column",
+            "content_direction": "row",
             "vertical_on_mobile": true,
-            "horizontal_alignment": "flex-start",
-            "vertical_alignment": "center",
+            "horizontal_alignment": "space-between",
+            "vertical_alignment": "flex-start",
             "align_baseline": false,
-            "horizontal_alignment_flex_direction_column": "center",
+            "horizontal_alignment_flex_direction_column": "flex-start",
             "vertical_alignment_flex_direction_column": "space-between",
             "gap": 32,
             "width": "fill",
@@ -260,6 +261,7 @@
             "color_scheme": "scheme-5",
             "background_media": "image",
             "video_position": "cover",
+            "background_image": "shopify://shop_images/IMG_8707_c10573fb-3fe7-4581-b8a4-17b1f2e52358.jpg",
             "background_image_position": "cover",
             "border": "none",
             "border_width": 1,
@@ -277,6 +279,7 @@
           "blocks": {
             "spacer_JyzTfj": {
               "type": "spacer",
+              "disabled": true,
               "settings": {
                 "size": "pixel",
                 "percent_size": 100,
@@ -291,11 +294,11 @@
             "text_3TM9wm": {
               "type": "text",
               "settings": {
-                "text": "<h3>Adultos</h3>",
+                "text": "<h3>Jovens e adultos</h3>",
                 "width": "fit-content",
                 "max_width": "normal",
                 "alignment": "center",
-                "type_preset": "h3",
+                "type_preset": "h2",
                 "font": "var(--font-body--family)",
                 "font_size": "1rem",
                 "line_height": "normal",
@@ -316,9 +319,9 @@
             "button_Ci4Ujt": {
               "type": "button",
               "settings": {
-                "label": "Shop now",
+                "label": "Ver catálogo",
                 "link": "shopify://collections/all",
-                "open_in_new_tab": false,
+                "open_in_new_tab": true,
                 "style_class": "link",
                 "width": "fit-content",
                 "custom_width": 100,
@@ -348,11 +351,11 @@
         "align_baseline": false,
         "horizontal_alignment_flex_direction_column": "flex-start",
         "vertical_alignment_flex_direction_column": "center",
-        "gap": 0,
-        "section_width": "full-width",
-        "section_height": "large",
+        "gap": 20,
+        "section_width": "page-width",
+        "section_height": "medium",
         "section_height_custom": 50,
-        "color_scheme": "",
+        "color_scheme": "scheme-4",
         "background_media": "none",
         "video_position": "cover",
         "background_image_position": "cover",
@@ -365,7 +368,7 @@
         "overlay_style": "solid",
         "gradient_direction": "to top",
         "padding-block-start": 0,
-        "padding-block-end": 0
+        "padding-block-end": 20
       }
     },
     "custom_liquid_wa9tYw": {
@@ -490,6 +493,82 @@
         "padding-block-start": 40,
         "padding-block-end": 40
       }
+    },
+    "section_he8F8r": {
+      "type": "section",
+      "blocks": {
+        "text_qPwPFm": {
+          "type": "text",
+          "settings": {
+            "text": "<p>At the heart of every product lies a unique story, driven by our passion for quality and innovation. Each item enhances your everyday life and sparks joy.</p>",
+            "width": "fit-content",
+            "max_width": "narrow",
+            "alignment": "center",
+            "type_preset": "h2",
+            "font": "var(--font-body--family)",
+            "font_size": "1rem",
+            "line_height": "normal",
+            "letter_spacing": "normal",
+            "case": "none",
+            "wrap": "pretty",
+            "color": "var(--color-foreground)",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        },
+        "button_c8Yihc": {
+          "type": "button",
+          "settings": {
+            "label": "Shop now",
+            "link": "shopify://collections/all",
+            "open_in_new_tab": false,
+            "style_class": "link",
+            "width": "fit-content",
+            "custom_width": 100,
+            "width_mobile": "fit-content",
+            "custom_width_mobile": 100
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "text_qPwPFm",
+        "button_c8Yihc"
+      ],
+      "name": "t:names.pull_quote",
+      "settings": {
+        "content_direction": "column",
+        "vertical_on_mobile": true,
+        "horizontal_alignment": "flex-start",
+        "vertical_alignment": "center",
+        "align_baseline": false,
+        "horizontal_alignment_flex_direction_column": "flex-start",
+        "vertical_alignment_flex_direction_column": "center",
+        "gap": 16,
+        "section_width": "page-width",
+        "section_height": "",
+        "section_height_custom": 50,
+        "color_scheme": "scheme-4",
+        "background_media": "none",
+        "video_position": "cover",
+        "background_image_position": "cover",
+        "border": "none",
+        "border_width": 1,
+        "border_opacity": 100,
+        "border_radius": 0,
+        "toggle_overlay": false,
+        "overlay_color": "#00000026",
+        "overlay_style": "solid",
+        "gradient_direction": "to top",
+        "padding-block-start": 64,
+        "padding-block-end": 64
+      }
     }
   },
   "order": [
@@ -497,6 +576,7 @@
     "media_with_content_ndCKAM",
     "section_wBhi39",
     "custom_liquid_wa9tYw",
-    "section_JKB9fx"
+    "section_JKB9fx",
+    "section_he8F8r"
   ]
 }
