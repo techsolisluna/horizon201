@@ -465,7 +465,7 @@
           "type": "text",
           "name": "t:names.heading",
           "settings": {
-            "text": "<h2>Vamos ficar em contato!</h2>",
+            "text": "<h2>Inscreva-se para acompanhar as novidades</h2>",
             "width": "100%",
             "max_width": "normal",
             "alignment": "center",
@@ -800,7 +800,7 @@
               "type": "_product-list-text",
               "name": "t:names.collection_title",
               "settings": {
-                "text": "<h3>{{ closest.collection.title }}</h3>",
+                "text": "<h3>Novidades que acabaram de chegar</h3>",
                 "width": "fit-content",
                 "max_width": "normal",
                 "alignment": "left",
@@ -826,7 +826,7 @@
               "type": "_product-list-button",
               "name": "t:names.product_list_button",
               "settings": {
-                "label": "View all",
+                "label": "Ver todos",
                 "open_in_new_tab": false,
                 "style_class": "link",
                 "width": "fit-content",
