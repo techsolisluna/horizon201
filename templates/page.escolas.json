@@ -502,7 +502,7 @@
         "text_qeGRPJ": {
           "type": "text",
           "settings": {
-            "text": "<p>At the heart of every product lies a unique story, driven by our passion for quality and innovation. Each item enhances your everyday life and sparks joy.</p>",
+            "text": "<p>Há décadas os livros da Solisluna são cuidadosamente adotados para fazerem parte de acervos em escolas das redes públicas e privadas do Brasil</p>",
             "width": "100%",
             "max_width": "narrow",
             "alignment": "center",
@@ -578,7 +578,7 @@
         "text_4kK3ie": {
           "type": "text",
           "settings": {
-            "text": "<h2>Ensaios para pensar a leitura</h2><p>Importantes títulos destinados a educadores, mediadores de leitura, professores, bibliotecários e todos que estudam, pesquisam e trabalham com literatura para crianças e jovens.</p><p></p><p><a href=\"/collections/colecao-de-ensaios-para-pensar-a-leitura-selo-emilia-solisluna\" target=\"_blank\" title=\"Ensaios para pensar a leitura\">Saiba mais</a></p>",
+            "text": "<h2>Ensaios para pensar a leitura</h2><p>Importantes títulos destinados a educadores, mediadores de leitura, professores, bibliotecários e todos que estudam, pesquisam e trabalham com literatura para crianças e jovens.</p><p><a href=\"/collections/colecao-de-ensaios-para-pensar-a-leitura-selo-emilia-solisluna\" target=\"_blank\" title=\"Ensaios para pensar a leitura\">Saiba mais</a></p>",
             "width": "fit-content",
             "max_width": "normal",
             "alignment": "left",
@@ -593,10 +593,10 @@
             "background": true,
             "background_color": "#ffffff",
             "corner_radius": 0,
-            "padding-block-start": 0,
-            "padding-block-end": 0,
-            "padding-inline-start": 0,
-            "padding-inline-end": 0
+            "padding-block-start": 15,
+            "padding-block-end": 15,
+            "padding-inline-start": 15,
+            "padding-inline-end": 15
           },
           "blocks": {}
         }
