@@ -2533,12 +2533,11 @@
       "name": "t:names.collection_links_spotlight",
       "settings": {
         "collection_list": [
-          "arte",
-          "cultura-afrobrasileira",
+          "diaspora",
           "inclusao",
-          "bebes-0-3-anos",
+          "memoria",
           "tradicao",
-          "memoria"
+          "bebes-0-3-anos"
         ],
         "layout": "text",
         "section_width": "page-width",
