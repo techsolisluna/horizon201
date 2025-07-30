@@ -403,6 +403,7 @@
             "color_scheme": "scheme-5",
             "background_media": "image",
             "video_position": "cover",
+            "background_image": "shopify://shop_images/CapaCatalogo_0c6855b6-6e8f-4113-8fb2-bb9ecf479880.jpg",
             "background_image_position": "cover",
             "border": "none",
             "border_width": 1,
@@ -654,7 +655,7 @@
             "button_h4yqrf": {
               "type": "button",
               "settings": {
-                "label": "comercial@solisluna.com.br",
+                "label": "contato@solisluna.com.br",
                 "link": "mailto:comercial@solisluna.com.br",
                 "open_in_new_tab": true,
                 "style_class": "link",
