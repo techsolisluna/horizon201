@@ -1401,6 +1401,7 @@
       "block_order": [
         "group_t8kNmc"
       ],
+      "disabled": true,
       "name": "t:names.collections_bento",
       "settings": {
         "collection_list": [],
