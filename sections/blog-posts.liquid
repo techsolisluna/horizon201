@@ -76,8 +76,8 @@
     {%- content_for 'block', type: '_product-list-content', id: 'static-header' -%}
   </div>
   {% capture list_items %}
-    {% paginate blog by max_items %}
-      {% for article in blog %}
+    {% paginate blog by 1000 %}
+      {% for article in blog limit: max_items %}
           <div
             class="resource-list__item"
           >
@@ -199,7 +199,7 @@
       "type": "checkbox",
       "id": "posts_limit",
       "label": "Limitar quantidade de posts",
-      "default": false
+      "default": true
     },
     {
       "type": "range",
