@@ -1552,7 +1552,8 @@
             },
             "button_Up7ixF": {
               "type": "button",
-              "name": "t:names.button",
+              "name": "Button Galeria",
+              "disabled": true,
               "settings": {
                 "label": "Me avise!",
                 "link": "shopify://pages/galeria",
@@ -1564,6 +1565,41 @@
                 "custom_width_mobile": 100
               },
               "blocks": {}
+            },
+            "popup_link_nx7fmg": {
+              "type": "popup-link",
+              "name": "t:names.popup_link",
+              "settings": {
+                "behavior": "default",
+                "heading": "Me avise",
+                "type_preset": "",
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {
+                "forms_inline_nzX33h": {
+                  "type": "shopify://apps/forms/blocks/inline/8744a304-fcb1-4347-b211-bb6b4759a76a",
+                  "settings": {
+                    "form_id": "",
+                    "text_color": "#202020",
+                    "button_background_color": "#202020",
+                    "button_label_color": "#FFFFFF",
+                    "links_color": "#1878B9",
+                    "errors_color": "#E02229",
+                    "text_alignment": "center",
+                    "form_alignment": "center",
+                    "padding_top": 0,
+                    "padding_bottom": 24,
+                    "padding_right": 0,
+                    "padding_left": 0
+                  }
+                }
+              },
+              "block_order": [
+                "forms_inline_nzX33h"
+              ]
             }
           },
           "block_order": [
@@ -1571,7 +1607,8 @@
             "text_pwJaiE",
             "text_EbGLXT",
             "text_HCwwmw",
-            "button_Up7ixF"
+            "button_Up7ixF",
+            "popup_link_nx7fmg"
           ]
         }
       },
