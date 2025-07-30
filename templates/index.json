@@ -3735,7 +3735,7 @@
             "text_V8hKRC": {
               "type": "text",
               "settings": {
-                "text": "<p>Explore our latest products.</p>",
+                "text": "<p>Descubra os mais novos e incríveis lançamentos da Solisluna ✨</p>",
                 "width": "fit-content",
                 "max_width": "normal",
                 "alignment": "left",
@@ -3765,8 +3765,8 @@
         "button_m8XJ9f": {
           "type": "button",
           "settings": {
-            "label": "Shop Now",
-            "link": "shopify://collections/all",
+            "label": "Comprar agora",
+            "link": "shopify://collections/pre-venda",
             "open_in_new_tab": false,
             "style_class": "button",
             "width": "fit-content",
@@ -3786,7 +3786,7 @@
       "settings": {
         "media_type_1": "video",
         "video_1": "shopify://files/videos/Robôs Site 1-Up to 4K.mov",
-        "media_type_2": "video",
+        "media_type_2": "image",
         "video_2": "shopify://files/videos/Robôs Site-HD 720p.mov",
         "link": "",
         "open_in_new_tab": false,
