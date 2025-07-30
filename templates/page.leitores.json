@@ -886,26 +886,100 @@
               },
               "blocks": {}
             },
-            "button_eqqGnL": {
-              "type": "button",
-              "disabled": true,
+            "popup_link_zh9WCK": {
+              "type": "popup-link",
+              "name": "t:names.popup_link",
               "settings": {
-                "label": "Abrir no mapa",
-                "link": "shopify://collections/all",
-                "open_in_new_tab": false,
-                "style_class": "button",
-                "width": "fit-content",
-                "custom_width": 100,
-                "width_mobile": "fit-content",
-                "custom_width_mobile": 100
+                "behavior": "default",
+                "heading": "Ver no mapa",
+                "type_preset": "",
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
               },
-              "blocks": {}
+              "blocks": {
+                "text_PMrhwT": {
+                  "type": "text",
+                  "disabled": true,
+                  "settings": {
+                    "text": "<h2>Em breve um mapa!</h2><h5></h5>",
+                    "width": "fit-content",
+                    "max_width": "normal",
+                    "alignment": "left",
+                    "type_preset": "rte",
+                    "font": "var(--font-body--family)",
+                    "font_size": "1rem",
+                    "line_height": "normal",
+                    "letter_spacing": "normal",
+                    "case": "none",
+                    "wrap": "pretty",
+                    "color": "var(--color-foreground)",
+                    "background": false,
+                    "background_color": "#00000026",
+                    "corner_radius": 0,
+                    "padding-block-start": 0,
+                    "padding-block-end": 16,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0
+                  },
+                  "blocks": {}
+                },
+                "text_ggXByL": {
+                  "type": "text",
+                  "disabled": true,
+                  "settings": {
+                    "text": "<p>se inscreva para saber em primeira mão</p>",
+                    "width": "fit-content",
+                    "max_width": "normal",
+                    "alignment": "left",
+                    "type_preset": "rte",
+                    "font": "var(--font-body--family)",
+                    "font_size": "1rem",
+                    "line_height": "normal",
+                    "letter_spacing": "normal",
+                    "case": "none",
+                    "wrap": "pretty",
+                    "color": "var(--color-foreground)",
+                    "background": false,
+                    "background_color": "#00000026",
+                    "corner_radius": 0,
+                    "padding-block-start": 0,
+                    "padding-block-end": 0,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0
+                  },
+                  "blocks": {}
+                },
+                "forms_inline_V9i8Wp": {
+                  "type": "shopify://apps/forms/blocks/inline/8744a304-fcb1-4347-b211-bb6b4759a76a",
+                  "settings": {
+                    "form_id": "580654",
+                    "text_color": "#202020",
+                    "button_background_color": "#202020",
+                    "button_label_color": "#ffffff",
+                    "links_color": "#1878b9",
+                    "errors_color": "#e02229",
+                    "text_alignment": "center",
+                    "form_alignment": "center",
+                    "padding_top": 0,
+                    "padding_bottom": 24,
+                    "padding_right": 0,
+                    "padding_left": 0
+                  }
+                }
+              },
+              "block_order": [
+                "text_PMrhwT",
+                "text_ggXByL",
+                "forms_inline_V9i8Wp"
+              ]
             }
           },
           "block_order": [
             "spacer_DHMrmr",
             "text_pRRi3B",
-            "button_eqqGnL"
+            "popup_link_zh9WCK"
           ]
         }
       },
@@ -1205,7 +1279,6 @@
         "text_xBLtjy",
         "accordion_3dB8NX"
       ],
-      "disabled": true,
       "name": "t:names.faq_section",
       "settings": {
         "content_direction": "column",
