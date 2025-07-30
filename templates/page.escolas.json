@@ -17,7 +17,7 @@
           "static": true,
           "settings": {
             "media_type": "image",
-            "image": "shopify://shop_images/IMG_2933-2.jpg",
+            "image": "shopify://shop_images/IMG_2900.jpg",
             "link": "",
             "video_loop": true,
             "video_autoplay": false,
@@ -53,9 +53,8 @@
             "text_D6PU3Y": {
               "type": "text",
               "name": "t:names.text",
-              "disabled": true,
               "settings": {
-                "text": "<p>Celebrando as livrarias que escolhem o extraordinário. Guardiãs da literatura que transforma</p>",
+                "text": "<p>Livros que contribuem com a prática pedagógica em todo o tempo escolar e obras fundamentais para educadores e mediadores de leitura.</p>",
                 "width": "fit-content",
                 "max_width": "normal",
                 "alignment": "left",
