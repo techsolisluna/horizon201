@@ -39,7 +39,7 @@
               "type": "jumbo-text",
               "name": "t:names.jumbo_text",
               "settings": {
-                "text": "nas livrarias",
+                "text": "nas escolas",
                 "font": "accent",
                 "alignment": "right",
                 "line_height": "1",
@@ -268,6 +268,7 @@
         },
         "group_m9trLj": {
           "type": "group",
+          "disabled": true,
           "settings": {
             "link": "shopify://collections/lancamentos-para-adultos",
             "open_in_new_tab": false,
@@ -692,6 +693,7 @@
       "block_order": [
         "group_iCMdJd"
       ],
+      "disabled": true,
       "name": "t:names.split_showcase",
       "settings": {
         "content_direction": "row",
