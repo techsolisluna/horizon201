@@ -888,6 +888,7 @@
             },
             "button_eqqGnL": {
               "type": "button",
+              "disabled": true,
               "settings": {
                 "label": "Abrir no mapa",
                 "link": "shopify://collections/all",
