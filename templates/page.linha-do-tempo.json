@@ -39,7 +39,7 @@
               "type": "jumbo-text",
               "name": "t:names.jumbo_text",
               "settings": {
-                "text": "nossa história",
+                "text": "tudo começou com uma \nhistória de amor",
                 "font": "accent",
                 "alignment": "right",
                 "line_height": "1",
