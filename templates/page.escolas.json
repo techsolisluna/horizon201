@@ -480,7 +480,7 @@
         "section_width": "page-width",
         "section_height": "",
         "section_height_custom": 50,
-        "color_scheme": "",
+        "color_scheme": "scheme-2",
         "background_media": "none",
         "video_position": "cover",
         "background_image_position": "cover",
@@ -822,9 +822,9 @@
         "text_qUn4cC": {
           "type": "text",
           "settings": {
-            "text": "<p>At the heart of every product lies a unique story, driven by our passion for quality and innovation. Each item enhances your everyday life and sparks joy.</p>",
+            "text": "<p>\"Quem lê se 'desnaturaliza' de alguma forma, dá o salto, desacredita do automático, sente perplexidade, curiosidade, intriga, depois olha, procura, decifra. (...) Busca indícios e, ao encontrá-los, tem audácia de construir pequenas cidades de sentido, pequenos universos que habita por um tempo, sem se enraizar definitivamente neles porque terá que continuar lendo.  O leitor é ágil e está sempre insatisfeito.\"</p><p></p>",
             "width": "100%",
-            "max_width": "narrow",
+            "max_width": "normal",
             "alignment": "center",
             "type_preset": "h2",
             "font": "var(--font-body--family)",
@@ -844,24 +844,36 @@
           },
           "blocks": {}
         },
-        "button_CC4GNy": {
-          "type": "button",
+        "text_MrLqdH": {
+          "type": "text",
+          "name": "t:names.text",
           "settings": {
-            "label": "Shop now",
-            "link": "shopify://collections/all",
-            "open_in_new_tab": false,
-            "style_class": "link",
+            "text": "<p>Graciela Montes em ‘<a href=\"/products/buscar-indicios-construir-sentidos\" target=\"_blank\" title=\"Buscar indícios, construir sentidos\">Buscar Indícios, Construir Sentidos</a>’</p>",
             "width": "fit-content",
-            "custom_width": 100,
-            "width_mobile": "fit-content",
-            "custom_width_mobile": 100
+            "max_width": "normal",
+            "alignment": "left",
+            "type_preset": "rte",
+            "font": "var(--font-body--family)",
+            "font_size": "1rem",
+            "line_height": "normal",
+            "letter_spacing": "normal",
+            "case": "none",
+            "wrap": "pretty",
+            "color": "var(--color-foreground)",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
           },
           "blocks": {}
         }
       },
       "block_order": [
         "text_qUn4cC",
-        "button_CC4GNy"
+        "text_MrLqdH"
       ],
       "name": "t:names.pull_quote",
       "settings": {
