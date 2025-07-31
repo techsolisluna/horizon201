@@ -573,6 +573,67 @@
         "padding-block-end": 64
       }
     },
+    "section_6fUGAP": {
+      "type": "section",
+      "blocks": {
+        "text_WinJ8w": {
+          "type": "text",
+          "settings": {
+            "text": "<p>\"Quem lê se 'desnaturaliza' de alguma forma, dá o salto, desacredita do automático, sente perplexidade, curiosidade, intriga, depois olha, procura, decifra. (...) Busca indícios e, ao encontrá-los, tem audácia de construir pequenas cidades de sentido, pequenos universos que habita por um tempo, sem se enraizar definitivamente neles porque terá que continuar lendo.  O leitor é ágil e está sempre insatisfeito.\"</p><p></p>",
+            "width": "100%",
+            "max_width": "normal",
+            "alignment": "center",
+            "type_preset": "h2",
+            "font": "var(--font-body--family)",
+            "font_size": "1rem",
+            "line_height": "normal",
+            "letter_spacing": "normal",
+            "case": "none",
+            "wrap": "pretty",
+            "color": "var(--color-foreground)",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "text_WinJ8w"
+      ],
+      "name": "Frase Graciela",
+      "settings": {
+        "content_direction": "column",
+        "vertical_on_mobile": true,
+        "horizontal_alignment": "flex-start",
+        "vertical_alignment": "center",
+        "align_baseline": false,
+        "horizontal_alignment_flex_direction_column": "center",
+        "vertical_alignment_flex_direction_column": "center",
+        "gap": 16,
+        "section_width": "page-width",
+        "section_height": "",
+        "section_height_custom": 50,
+        "color_scheme": "scheme-2",
+        "background_media": "none",
+        "video_position": "cover",
+        "background_image_position": "cover",
+        "border": "none",
+        "border_width": 1,
+        "border_opacity": 100,
+        "border_radius": 0,
+        "toggle_overlay": false,
+        "overlay_color": "#00000026",
+        "overlay_style": "solid",
+        "gradient_direction": "to top",
+        "padding-block-start": 80,
+        "padding-block-end": 80
+      }
+    },
     "media_with_content_dBK8YU": {
       "type": "media-with-content",
       "blocks": {
@@ -760,7 +821,7 @@
         "text_4kK3ie": {
           "type": "text",
           "settings": {
-            "text": "<h5>Aos educadores</h5><h2>Ensaios para pensar a leitura</h2><p>Importantes títulos destinados a educadores, mediadores de leitura, professores, bibliotecários e todos que estudam, pesquisam e trabalham com literatura para crianças e jovens.</p><p><a href=\"/collections/colecao-de-ensaios-para-pensar-a-leitura-selo-emilia-solisluna\" target=\"_blank\" title=\"Ensaios para pensar a leitura\">Saiba mais</a></p>",
+            "text": "<h5>Para os educadores</h5><h2>Ensaios para pensar a leitura</h2><p>Importantes títulos destinados a educadores, mediadores de leitura, professores, bibliotecários e todos que estudam, pesquisam e trabalham com literatura para crianças e jovens.</p><p><a href=\"/collections/colecao-de-ensaios-para-pensar-a-leitura-selo-emilia-solisluna\" target=\"_blank\" title=\"Ensaios para pensar a leitura\">Saiba mais</a></p>",
             "width": "fit-content",
             "max_width": "normal",
             "alignment": "left",
@@ -875,7 +936,7 @@
         "text_qUn4cC",
         "text_MrLqdH"
       ],
-      "name": "t:names.pull_quote",
+      "name": "Frase Graciela",
       "settings": {
         "content_direction": "column",
         "vertical_on_mobile": true,
@@ -1491,6 +1552,7 @@
     "main",
     "section_nPgXMT",
     "section_N7idyN",
+    "section_6fUGAP",
     "media_with_content_dBK8YU",
     "hero_hMWK8V",
     "section_cDbPdJ",
