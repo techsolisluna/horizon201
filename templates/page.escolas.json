@@ -579,11 +579,36 @@
         "text_WinJ8w": {
           "type": "text",
           "settings": {
-            "text": "<p>Livros para crianças, jovens e adultos que fazem a diferença na prática pedagógica.</p><p>Os livros da Solisluna fazem parte do dia-a-dia de diferentes salas de aula – da pré-escola e educação infantil, passando pelo fundamental e médio, até o grupo de pesquisa na pós-graduação.</p>",
-            "width": "100%",
+            "text": "<p>Livros para crianças, jovens e adultos que fazem a diferença na prática pedagógica.</p>",
+            "width": "fit-content",
             "max_width": "normal",
             "alignment": "center",
             "type_preset": "h2",
+            "font": "var(--font-body--family)",
+            "font_size": "1rem",
+            "line_height": "normal",
+            "letter_spacing": "normal",
+            "case": "none",
+            "wrap": "pretty",
+            "color": "var(--color-foreground-heading)",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        },
+        "text_NekDgm": {
+          "type": "text",
+          "settings": {
+            "text": "<p></p><p>Os livros da Solisluna fazem parte do dia-a-dia de diferentes salas de aula – da pré-escola e educação infantil, passando pelo fundamental e médio, até o grupo de pesquisa na pós-graduação.</p>",
+            "width": "100%",
+            "max_width": "normal",
+            "alignment": "center",
+            "type_preset": "h3",
             "font": "var(--font-body--family)",
             "font_size": "1rem",
             "line_height": "normal",
@@ -603,7 +628,8 @@
         }
       },
       "block_order": [
-        "text_WinJ8w"
+        "text_WinJ8w",
+        "text_NekDgm"
       ],
       "name": "Frase Graciela",
       "settings": {
@@ -728,7 +754,7 @@
                   "type": "text",
                   "name": "t:names.heading",
                   "settings": {
-                    "text": "<h2>Livros para sala de aula</h2>",
+                    "text": "<h2>Coleção de livros para crianças</h2>",
                     "width": "fit-content",
                     "max_width": "normal",
                     "alignment": "left",
