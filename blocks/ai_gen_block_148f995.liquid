@@ -134,37 +134,39 @@
   {% endif %}
 
   <div class="authors-grid-{{ ai_gen_id }}">
-    {% assign autores_ordenados = metaobjects.autor.values | sort: 'nome.value' %}
-      {% for autor in autores_ordenados %}
-      <a href="{{ autor.system.url }}" class="author-card-{{ ai_gen_id }}">
-        <div class="author-image-wrapper-{{ ai_gen_id }}">
-          {% if autor.foto.value != blank %}
-            <img 
-              src="{{ autor.foto.value | image_url: width: 300 }}" 
-              alt="{{ autor.nome.value }}" 
-              loading="lazy"
-              class="author-image-{{ ai_gen_id }}"
-            >
-          {% else %}
-            <div class="author-image-placeholder-{{ ai_gen_id }}">
-              {{ 'image' | placeholder_svg_tag }}
-            </div>
-          {% endif %}
-        </div>
-        <h3 class="author-name-{{ ai_gen_id }}">{{ autor.nome.value }}</h3>
-      </a>
-    {% else %}
-      {% for i in (1..4) %}
-        <div class="author-card-{{ ai_gen_id }}">
+    {% paginate metaobjects.autor.values by 1000 %}
+      {% assign autores_ordenados = metaobjects.autor.values | sort: 'nome.value' %}
+        {% for autor in autores_ordenados %}
+        <a href="{{ autor.system.url }}" class="author-card-{{ ai_gen_id }}">
           <div class="author-image-wrapper-{{ ai_gen_id }}">
-            <div class="author-image-placeholder-{{ ai_gen_id }}">
-              {{ 'image' | placeholder_svg_tag }}
-            </div>
+            {% if autor.foto.value != blank %}
+              <img 
+                src="{{ autor.foto.value | image_url: width: 300 }}" 
+                alt="{{ autor.nome.value }}" 
+                loading="lazy"
+                class="author-image-{{ ai_gen_id }}"
+              >
+            {% else %}
+              <div class="author-image-placeholder-{{ ai_gen_id }}">
+                {{ 'image' | placeholder_svg_tag }}
+              </div>
+            {% endif %}
           </div>
-          <h3 class="author-name-{{ ai_gen_id }}">Author Name</h3>
-        </div>
+          <h3 class="author-name-{{ ai_gen_id }}">{{ autor.nome.value }}</h3>
+        </a>
+      {% else %}
+        {% for i in (1..4) %}
+          <div class="author-card-{{ ai_gen_id }}">
+            <div class="author-image-wrapper-{{ ai_gen_id }}">
+              <div class="author-image-placeholder-{{ ai_gen_id }}">
+                {{ 'image' | placeholder_svg_tag }}
+              </div>
+            </div>
+            <h3 class="author-name-{{ ai_gen_id }}">Author Name</h3>
+          </div>
+        {% endfor %}
       {% endfor %}
-    {% endfor %}
+    {% endpaginate %}
   </div>
 </div>
 
