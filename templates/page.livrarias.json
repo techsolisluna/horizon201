@@ -775,7 +775,7 @@
                 "heading": "Onde encontrar os livros da Solisluna?",
                 "open_by_default": false,
                 "icon": "star",
-                "width": 20
+                "width": 22
               },
               "blocks": {
                 "text_Hdagiw": {
@@ -814,7 +814,7 @@
                 "heading": "Tenho uma livraria. Como posso revender os livros da Solisluna?",
                 "open_by_default": true,
                 "icon": "plant",
-                "width": 20
+                "width": 22
               },
               "blocks": {
                 "text_UUzK7G": {
@@ -854,7 +854,7 @@
                 "heading": "Professor e bibliotecário tem desconto?",
                 "open_by_default": false,
                 "icon": "price_tag",
-                "width": 20
+                "width": 12
               },
               "blocks": {
                 "text_xrTHFL": {
@@ -895,7 +895,7 @@
                 "heading": "Como agendar uma reunião com um divulgador da Solisluna?",
                 "open_by_default": false,
                 "icon": "chat_bubble",
-                "width": 20
+                "width": 22
               },
               "blocks": {
                 "text_6JP3Wx": {
@@ -936,7 +936,7 @@
                 "heading": "Quanto custa o frete?",
                 "open_by_default": false,
                 "icon": "plane",
-                "width": 20
+                "width": 22
               },
               "blocks": {
                 "text_jHhFan": {
