@@ -1080,6 +1080,7 @@
       },
       "name": "Imagem em destaque",
       "settings": {
+        "has_image": true,
         "media_position": "left",
         "media_width": "medium",
         "media_height": "60svh",
