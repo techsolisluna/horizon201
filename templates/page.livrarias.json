@@ -781,7 +781,7 @@
                 "text_Hdagiw": {
                   "type": "text",
                   "settings": {
-                    "text": "<p>Trabalhamos com livrarias selecionadas que compartilham nossos valores de curadoria literária e apoio à literatura independente. </p><p>Ao invés de comprar de companhias estrangeiras, como a Amazon, dê preferência às livrarias de rua e independentes - elas são espaços fundamentais de literatura e resistência cultural, e seu apoio fortalece todo o ecossistema literário nacional.</p><p><strong>Também vendemos diretamente pelo nosso site oficial, com envio seguro para todo o Brasil. </strong>Comprar diretamente da editora é um fortalecer e valorizar o trabalho editorial independente.</p>",
+                    "text": "<ul><li><strong>Livrarias parceiras</strong>: Trabalhamos com livrarias selecionadas que compartilham nossos valores de curadoria literária e apoio à literatura independente.</li></ul><p></p><ul><li><strong>Loja online</strong>: Também vendemos diretamente pelo nosso site oficial, com envio seguro para todo o Brasil. <strong>Comprar diretamente da editora é uma forma de fortalecer e valorizar o trabalho editorial independente.</strong></li></ul><p>💡 <strong>Nossa recomendação</strong>: Ao invés de comprar de companhias estrangeiras, como a Amazon, dê preferência às livrarias de rua e independentes - elas são espaços fundamentais de literatura e resistência cultural, e seu apoio fortalece todo o ecossistema literário nacional.</p>",
                     "width": "100%",
                     "max_width": "normal",
                     "alignment": "left",
