@@ -774,7 +774,7 @@
               "settings": {
                 "heading": "Onde encontrar os livros da Solisluna?",
                 "open_by_default": false,
-                "icon": "none",
+                "icon": "star",
                 "width": 20
               },
               "blocks": {
@@ -813,14 +813,14 @@
               "settings": {
                 "heading": "Tenho uma livraria. Como posso revender os livros da Solisluna?",
                 "open_by_default": true,
-                "icon": "none",
+                "icon": "plant",
                 "width": 20
               },
               "blocks": {
                 "text_UUzK7G": {
                   "type": "text",
                   "settings": {
-                    "text": "<p>We are unable to accept returns on certain items. These will be carefully marked before purchase.</p>",
+                    "text": "<p>Ficamos muito felizes com seu interesse! Trabalhamos exclusivamente com livrarias que valorizam literatura de qualidade, independente e diversa.</p><p><strong>Para se tornar nosso parceiro:</strong></p><ul><li>Envie um e-mail para: <strong>comercial@solisluna.com.br</strong></li><li>Ou preencha nosso formulário de parceria</li><li>Inclua: dados da livraria, CNPJ, localização</li><li>um pouco sobre seu perfil editorial, os gêneros e assuntos de interesse</li></ul><p>Geralmente as livrarias são atendidas por distribuidores, que podemos indicar e acompanhar o atendimento. Buscamos sempre estreitar os laços com as livrarias e apoiar o desenvolvimento de um relacionamento próximo e duradouro.</p>",
                     "width": "100%",
                     "max_width": "normal",
                     "alignment": "left",
@@ -853,7 +853,7 @@
               "settings": {
                 "heading": "Professor e bibliotecário tem desconto?",
                 "open_by_default": false,
-                "icon": "none",
+                "icon": "price_tag",
                 "width": 20
               },
               "blocks": {
@@ -861,7 +861,7 @@
                   "type": "text",
                   "name": "t:names.text",
                   "settings": {
-                    "text": "<p>We will work quickly to ship your order as soon as possible. Once your order has shipped, you will receive an email with further information. Delivery times vary depending on your location.</p>",
+                    "text": "<p>Sim! Oferecemos desconto especial para educadores e bibliotecários, além de outros benefícios e conteúdos exclusivos.. Preencha o formulário neste link</p>",
                     "width": "100%",
                     "max_width": "normal",
                     "alignment": "left",
@@ -894,7 +894,7 @@
               "settings": {
                 "heading": "Como agendar uma reunião com um divulgador da Solisluna?",
                 "open_by_default": false,
-                "icon": "none",
+                "icon": "chat_bubble",
                 "width": 20
               },
               "blocks": {
@@ -933,7 +933,7 @@
               "type": "_accordion-row",
               "name": "t:names.accordion_dash_row",
               "settings": {
-                "heading": "How much does shipping cost?",
+                "heading": "Quanto custa o frete?",
                 "open_by_default": false,
                 "icon": "none",
                 "width": 20
