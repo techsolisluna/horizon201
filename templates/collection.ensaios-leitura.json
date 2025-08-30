@@ -371,6 +371,20 @@
     "17565690672c765641": {
       "type": "_blocks",
       "blocks": {
+        "spacer_wGKjGU": {
+          "type": "spacer",
+          "name": "t:names.spacer",
+          "settings": {
+            "size": "pixel",
+            "percent_size": 100,
+            "pixel_size": 120,
+            "custom_mobile_size": false,
+            "size_mobile": "percent",
+            "percent_size_mobile": 100,
+            "pixel_size_mobile": 120
+          },
+          "blocks": {}
+        },
         "forms_inline_aq7y34": {
           "type": "shopify://apps/forms/blocks/inline/8744a304-fcb1-4347-b211-bb6b4759a76a",
           "settings": {
@@ -390,6 +404,7 @@
         }
       },
       "block_order": [
+        "spacer_wGKjGU",
         "forms_inline_aq7y34"
       ],
       "settings": {
