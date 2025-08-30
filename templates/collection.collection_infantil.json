@@ -107,6 +107,7 @@
             "image_iAYAMe": {
               "type": "image",
               "name": "t:names.image",
+              "disabled": true,
               "settings": {
                 "link": "",
                 "image_ratio": "adapt",
