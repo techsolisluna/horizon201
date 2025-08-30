@@ -1614,6 +1614,7 @@
       },
       "name": "GALERIA",
       "settings": {
+        "has_image": false,
         "media_position": "right",
         "media_width": "narrow",
         "media_height": "auto",
@@ -2951,7 +2952,7 @@
               "type": "text",
               "name": "t:names.caption",
               "settings": {
-                "text": "<p>Bestseller</p>",
+                "text": "<p>Sorrisos de Pierre Verger</p>",
                 "width": "fit-content",
                 "max_width": "normal",
                 "alignment": "left",
@@ -3014,8 +3015,9 @@
                 "text_Mewzmd": {
                   "type": "text",
                   "name": "t:names.heading",
+                  "disabled": true,
                   "settings": {
-                    "text": "<h2>Our signature product</h2>",
+                    "text": "<h2>Sorria!</h2>",
                     "width": "fit-content",
                     "max_width": "normal",
                     "alignment": "left",
@@ -3040,8 +3042,8 @@
                 "text_CgP99b": {
                   "type": "text",
                   "settings": {
-                    "text": "<p>Made with care and unconditionally loved by our customers, this signature bestseller exceeds all expectations.</p>",
-                    "width": "fit-content",
+                    "text": "<p>“Se alguém está tão cansado que não possa te dar um sorriso, deixa-lhe o teu.” <em>Provérbio popular</em></p>",
+                    "width": "100%",
                     "max_width": "narrow",
                     "alignment": "left",
                     "type_preset": "rte",
@@ -3071,7 +3073,7 @@
             "button_AgCNi9": {
               "type": "button",
               "settings": {
-                "label": "Shop now",
+                "label": "Saiba mais",
                 "link": "shopify://collections/all",
                 "open_in_new_tab": false,
                 "style_class": "link",
@@ -3092,6 +3094,7 @@
       },
       "name": "t:names.editorial",
       "settings": {
+        "has_image": false,
         "media_position": "left",
         "media_width": "medium",
         "media_height": "60svh",
