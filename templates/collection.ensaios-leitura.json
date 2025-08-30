@@ -544,6 +544,7 @@
         "spacer_wGKjGU": {
           "type": "spacer",
           "name": "t:names.spacer",
+          "disabled": true,
           "settings": {
             "size": "pixel",
             "percent_size": 100,
