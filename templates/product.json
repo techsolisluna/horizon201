@@ -922,7 +922,7 @@
             "video": "{{ closest.product.metafields.custom.video.value }}",
             "video_loop": true,
             "video_autoplay": true,
-            "image_position": "contain",
+            "image_position": "cover",
             "video_position": "cover"
           },
           "blocks": {}
@@ -1142,7 +1142,7 @@
         "gradient_direction": "to top",
         "blurred_reflection": false,
         "reflection_opacity": 75,
-        "padding-block-start": 40,
+        "padding-block-start": 0,
         "padding-block-end": 40
       }
     },
