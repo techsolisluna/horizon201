@@ -1549,6 +1549,17 @@
         "padding-block-start": 65,
         "padding-block-end": 40
       }
+    },
+    "custom_liquid_dHqKTc": {
+      "type": "custom-liquid",
+      "name": "t:names.custom_liquid",
+      "settings": {
+        "custom_liquid": "",
+        "color_scheme": "",
+        "section_width": "page-width",
+        "padding-block-start": 0,
+        "padding-block-end": 0
+      }
     }
   },
   "order": [
@@ -1560,6 +1571,7 @@
     "section_c9t9Qn",
     "175287049661b97f88",
     "product_recommendations_qggXJq",
-    "blog_posts_CDck9P"
+    "blog_posts_CDck9P",
+    "custom_liquid_dHqKTc"
   ]
 }
