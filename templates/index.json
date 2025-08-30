@@ -238,7 +238,7 @@
         "group_Dgy8GV": {
           "type": "group",
           "settings": {
-            "link": "shopify://blogs/solisblogluna/vida-longa-a-feira-do-livro-cores-e-literatura-ocupam-a-praca",
+            "link": "shopify://pages/leitores",
             "open_in_new_tab": true,
             "content_direction": "column",
             "vertical_on_mobile": true,
@@ -324,7 +324,7 @@
                 "text_VCRwwj": {
                   "type": "text",
                   "settings": {
-                    "text": "<h2><a href=\"/pages/colcha\" title=\"A união faz a colcha\">Leitores</a></h2>",
+                    "text": "<h2><a href=\"/pages/leitores\" target=\"_blank\" title=\"Leitores\">Leitores</a></h2>",
                     "width": "100%",
                     "max_width": "normal",
                     "alignment": "center",
@@ -360,7 +360,7 @@
         "group_VnbDrM": {
           "type": "group",
           "settings": {
-            "link": "shopify://pages/distribuidores-e-pontos-de-venda-dos-livros-da-solisluna",
+            "link": "shopify://pages/livrarias",
             "open_in_new_tab": true,
             "content_direction": "column",
             "vertical_on_mobile": true,
@@ -446,7 +446,7 @@
                 "text_7E8E6E": {
                   "type": "text",
                   "settings": {
-                    "text": "<h2><a href=\"/pages/distribuidores-e-pontos-de-venda-dos-livros-da-solisluna\" target=\"_blank\" title=\"Pontos de venda e distribuição\">Livreiros</a></h2>",
+                    "text": "<h2><a href=\"/pages/livrarias\" target=\"_blank\" title=\"Livrarias\">Livreiros</a></h2>",
                     "width": "100%",
                     "max_width": "normal",
                     "alignment": "center",
@@ -482,8 +482,8 @@
         "group_PRDkzp": {
           "type": "group",
           "settings": {
-            "link": "",
-            "open_in_new_tab": false,
+            "link": "shopify://pages/escolas",
+            "open_in_new_tab": true,
             "content_direction": "column",
             "vertical_on_mobile": true,
             "horizontal_alignment": "flex-start",
@@ -568,7 +568,7 @@
                 "text_zrgJnC": {
                   "type": "text",
                   "settings": {
-                    "text": "<h2>Educadores</h2>",
+                    "text": "<h2><a href=\"/pages/escolas\" target=\"_blank\" title=\"Escolas\">Educadores</a></h2>",
                     "width": "100%",
                     "max_width": "normal",
                     "alignment": "center",
@@ -604,8 +604,8 @@
         "group_TKfjcL": {
           "type": "group",
           "settings": {
-            "link": "",
-            "open_in_new_tab": false,
+            "link": "shopify://pages/bibliotecas",
+            "open_in_new_tab": true,
             "content_direction": "column",
             "vertical_on_mobile": true,
             "horizontal_alignment": "flex-start",
@@ -690,7 +690,7 @@
                 "text_UFbk84": {
                   "type": "text",
                   "settings": {
-                    "text": "<h2>Bibliotecas</h2>",
+                    "text": "<h2><a href=\"/pages/bibliotecas\" title=\"Bibliotecas\">Bibliotecas</a></h2>",
                     "width": "100%",
                     "max_width": "normal",
                     "alignment": "center",
