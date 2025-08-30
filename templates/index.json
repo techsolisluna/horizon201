@@ -3516,8 +3516,8 @@
       "name": "t:names.collections_bento",
       "settings": {
         "collection_list": [
-          "arte",
-          "ficcao"
+          "ficcao",
+          "nao-ficcao"
         ],
         "layout_type": "bento",
         "carousel_on_mobile": false,
