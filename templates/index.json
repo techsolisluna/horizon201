@@ -2730,8 +2730,8 @@
       "name": "pesquise por categoria B",
       "settings": {
         "collection_list": [
-          "livros_para_criancas",
-          "arte"
+          "arte",
+          "infantil"
         ],
         "layout_type": "bento",
         "carousel_on_mobile": false,
