@@ -151,7 +151,7 @@
         "section_width": "page-width",
         "section_height": "small",
         "section_height_custom": 50,
-        "color_scheme": "scheme-1",
+        "color_scheme": "scheme-6",
         "background_media": "video",
         "video": "{{ collection.metafields.custom.banner.value }}",
         "video_position": "cover",
