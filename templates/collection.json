@@ -175,13 +175,13 @@
           "type": "filters",
           "static": true,
           "settings": {
-            "enable_filtering": true,
+            "enable_filtering": false,
             "filter_style": "horizontal",
             "filter_width": "centered",
             "text_label_case": "default",
             "show_swatch_label": false,
             "show_filter_label": true,
-            "enable_count": true,
+            "enable_count": false,
             "enable_sorting": true,
             "enable_grid_density": true,
             "inherit_color_scheme": true,
@@ -353,8 +353,8 @@
         }
       },
       "settings": {
-        "layout_type": "organic",
-        "product_card_size": "large",
+        "layout_type": "grid",
+        "product_card_size": "extra-large",
         "mobile_product_card_size": "large",
         "product_grid_width": "full-width",
         "full_width_on_mobile": true,
