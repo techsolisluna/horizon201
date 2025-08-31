@@ -2154,13 +2154,13 @@
         "mobile_columns": "2",
         "mobile_card_size": "60cqw",
         "columns_gap": 8,
-        "bento_gap": 12,
+        "bento_gap": 10,
         "rows_gap": 8,
         "max_collections": 4,
         "icons_style": "arrow",
         "icons_shape": "none",
         "section_width": "page-width",
-        "gap": 12,
+        "gap": 10,
         "color_scheme": "scheme-2",
         "padding-block-start": 50,
         "padding-block-end": 0
@@ -2237,8 +2237,8 @@
       "name": "pesquise por categoria B",
       "settings": {
         "collection_list": [
-          "arte",
-          "infantil"
+          "infantil",
+          "arte"
         ],
         "layout_type": "bento",
         "carousel_on_mobile": false,
@@ -2246,15 +2246,107 @@
         "mobile_columns": "2",
         "mobile_card_size": "60cqw",
         "columns_gap": 8,
-        "bento_gap": 12,
+        "bento_gap": 10,
         "rows_gap": 8,
         "max_collections": 4,
         "icons_style": "arrow",
         "icons_shape": "none",
         "section_width": "page-width",
-        "gap": 12,
+        "gap": 10,
         "color_scheme": "scheme-2",
-        "padding-block-start": 12,
+        "padding-block-start": 10,
+        "padding-block-end": 0
+      }
+    },
+    "collection_list_gXjBYW": {
+      "type": "collection-list",
+      "blocks": {
+        "static-collection-card": {
+          "type": "_collection-card",
+          "name": "t:names.collection_card",
+          "static": true,
+          "settings": {
+            "placement": "on_image",
+            "horizontal_alignment": "flex-start",
+            "vertical_alignment": "flex-end",
+            "collection_card_gap": 8,
+            "inherit_color_scheme": true,
+            "color_scheme": "",
+            "border": "none",
+            "border_width": 1,
+            "border_opacity": 100,
+            "border_radius": 12
+          },
+          "blocks": {
+            "collection_title_fcdJQn": {
+              "type": "collection-title",
+              "name": "t:names.collection_title",
+              "settings": {
+                "width": "fit-content",
+                "max_width": "normal",
+                "alignment": "left",
+                "type_preset": "rte",
+                "font": "var(--font-body--family)",
+                "font_size": "1rem",
+                "line_height": "normal",
+                "letter_spacing": "normal",
+                "case": "none",
+                "wrap": "pretty",
+                "color": "var(--color-foreground)",
+                "background": true,
+                "background_color": "#ffffff",
+                "corner_radius": 0,
+                "padding-block-start": 4,
+                "padding-block-end": 4,
+                "padding-inline-start": 8,
+                "padding-inline-end": 8
+              },
+              "blocks": {}
+            },
+            "collection-card-image": {
+              "type": "_collection-card-image",
+              "name": "t:names.collection_card_image",
+              "static": true,
+              "settings": {
+                "image_ratio": "portrait",
+                "toggle_overlay": false,
+                "overlay_color": "#00000026",
+                "overlay_style": "solid",
+                "gradient_direction": "to top",
+                "border": "none",
+                "border_width": 1,
+                "border_opacity": 100,
+                "border_radius": 0
+              },
+              "blocks": {}
+            }
+          },
+          "block_order": [
+            "collection_title_fcdJQn"
+          ]
+        }
+      },
+      "name": "pesquise por categoria C",
+      "settings": {
+        "collection_list": [
+          "musica-danca-e-teatro",
+          "quadrinhos"
+        ],
+        "layout_type": "bento",
+        "carousel_on_mobile": false,
+        "columns": 4,
+        "mobile_columns": "2",
+        "mobile_card_size": "60cqw",
+        "columns_gap": 8,
+        "bento_gap": 10,
+        "rows_gap": 8,
+        "max_collections": 4,
+        "icons_style": "arrow",
+        "icons_shape": "none",
+        "section_width": "page-width",
+        "gap": 10,
+        "color_scheme": "scheme-2",
+        "padding-block-start": 10,
         "padding-block-end": 60
       }
     },
@@ -3896,6 +3988,7 @@
     "product_list_GEztnp",
     "collection_list_yqyAmh",
     "collection_list_XbxgTg",
+    "collection_list_gXjBYW",
     "section_jVTF7W",
     "section_mhzJA7",
     "collection_links_cpihfQ",
