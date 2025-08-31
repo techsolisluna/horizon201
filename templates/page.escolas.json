@@ -838,11 +838,11 @@
         "text_NekDgm": {
           "type": "text",
           "settings": {
-            "text": "<p></p><p>Os livros da Solisluna fazem parte do dia-a-dia de diferentes salas de aula – da pré-escola e educação infantil, passando pelo fundamental e médio, até o grupo de pesquisa na pós-graduação.</p>",
+            "text": "<p>Os livros da Solisluna fazem parte do dia-a-dia de diferentes salas de aula – da pré-escola e educação infantil, passando pelo fundamental e médio, até o grupo de pesquisa na pós-graduação.</p>",
             "width": "100%",
             "max_width": "normal",
             "alignment": "left",
-            "type_preset": "h5",
+            "type_preset": "rte",
             "font": "var(--font-body--family)",
             "font_size": "1rem",
             "line_height": "normal",
