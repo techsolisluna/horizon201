@@ -182,7 +182,7 @@
             "show_swatch_label": false,
             "show_filter_label": true,
             "enable_count": false,
-            "enable_sorting": true,
+            "enable_sorting": false,
             "enable_grid_density": true,
             "inherit_color_scheme": true,
             "color_scheme": "",
