@@ -3425,6 +3425,67 @@
         "padding-block-end": 0
       }
     },
+    "section_QWtabe": {
+      "type": "section",
+      "blocks": {
+        "text_9Py8Ld": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Para além de publicar livros, a <strong>Solisluna</strong> desenvolve projetos especiais que envolvem tecnologia digitais, sempre em diálogo com o patrimônio histórico e a memória dos nossos povos.</p>",
+            "width": "100%",
+            "max_width": "none",
+            "alignment": "center",
+            "type_preset": "h2",
+            "font": "var(--font-body--family)",
+            "font_size": "1rem",
+            "line_height": "normal",
+            "letter_spacing": "normal",
+            "case": "none",
+            "wrap": "pretty",
+            "color": "var(--color-foreground)",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "text_9Py8Ld"
+      ],
+      "name": "t:names.pull_quote",
+      "settings": {
+        "content_direction": "column",
+        "vertical_on_mobile": true,
+        "horizontal_alignment": "flex-start",
+        "vertical_alignment": "center",
+        "align_baseline": false,
+        "horizontal_alignment_flex_direction_column": "center",
+        "vertical_alignment_flex_direction_column": "center",
+        "gap": 16,
+        "section_width": "page-width",
+        "section_height": "",
+        "section_height_custom": 50,
+        "color_scheme": "",
+        "background_media": "none",
+        "video_position": "cover",
+        "background_image_position": "cover",
+        "border": "none",
+        "border_width": 1,
+        "border_opacity": 100,
+        "border_radius": 0,
+        "toggle_overlay": false,
+        "overlay_color": "#00000026",
+        "overlay_style": "solid",
+        "gradient_direction": "to top",
+        "padding-block-start": 64,
+        "padding-block-end": 64
+      }
+    },
     "hero_LEpq8q": {
       "type": "hero",
       "blocks": {
@@ -3514,7 +3575,7 @@
               "name": "t:names.button",
               "settings": {
                 "label": "Saiba mais",
-                "link": "shopify://collections/all",
+                "link": "shopify://blogs/portfolio/museu-virtual-casa-de-ganho-para-as-ganhadeiras-de-itapua",
                 "open_in_new_tab": false,
                 "style_class": "link",
                 "width": "fit-content",
@@ -3534,6 +3595,147 @@
       "block_order": [
         "button_NxjMmB",
         "group_ydb9zh"
+      ],
+      "disabled": true,
+      "name": "t:names.hero",
+      "settings": {
+        "media_type_1": "image",
+        "image_1": "shopify://shop_images/nacoesdocandomble_8f8a305c-6d21-4246-b74b-1dbad7a39c22.jpg",
+        "media_type_2": "image",
+        "link": "",
+        "open_in_new_tab": false,
+        "content_direction": "column",
+        "vertical_on_mobile": true,
+        "horizontal_alignment": "flex-start",
+        "vertical_alignment": "center",
+        "align_baseline": false,
+        "horizontal_alignment_flex_direction_column": "flex-start",
+        "vertical_alignment_flex_direction_column": "flex-end",
+        "gap": 16,
+        "section_width": "page-width",
+        "section_height": "medium",
+        "section_height_custom": 50,
+        "color_scheme": "scheme-2",
+        "banner_not_empty": false,
+        "toggle_overlay": true,
+        "overlay_color": "#00000026",
+        "overlay_style": "gradient",
+        "gradient_direction": "to top",
+        "blurred_reflection": false,
+        "reflection_opacity": 75,
+        "padding-block-start": 40,
+        "padding-block-end": 40
+      }
+    },
+    "hero_LRV9yj": {
+      "type": "hero",
+      "blocks": {
+        "button_tVDj9C": {
+          "type": "button",
+          "name": "t:names.button",
+          "disabled": true,
+          "settings": {
+            "label": "Shop Now",
+            "link": "shopify://collections/all",
+            "open_in_new_tab": false,
+            "style_class": "button",
+            "width": "fit-content",
+            "custom_width": 100,
+            "width_mobile": "fit-content",
+            "custom_width_mobile": 100
+          },
+          "blocks": {}
+        },
+        "group_pTy8BM": {
+          "type": "group",
+          "name": "t:names.group",
+          "settings": {
+            "link": "",
+            "open_in_new_tab": false,
+            "content_direction": "column",
+            "vertical_on_mobile": true,
+            "horizontal_alignment": "flex-start",
+            "vertical_alignment": "center",
+            "align_baseline": false,
+            "horizontal_alignment_flex_direction_column": "flex-start",
+            "vertical_alignment_flex_direction_column": "center",
+            "gap": 12,
+            "width": "fit-content",
+            "custom_width": 100,
+            "width_mobile": "fit-content",
+            "custom_width_mobile": 100,
+            "height": "fit",
+            "custom_height": 100,
+            "inherit_color_scheme": true,
+            "color_scheme": "",
+            "background_media": "none",
+            "video_position": "cover",
+            "background_image_position": "cover",
+            "border": "none",
+            "border_width": 1,
+            "border_opacity": 100,
+            "border_radius": 12,
+            "toggle_overlay": true,
+            "overlay_color": "#ffffffdd",
+            "overlay_style": "solid",
+            "gradient_direction": "to top",
+            "padding-block-start": 12,
+            "padding-block-end": 12,
+            "padding-inline-start": 12,
+            "padding-inline-end": 12
+          },
+          "blocks": {
+            "text_FxpeMn": {
+              "type": "text",
+              "name": "t:names.text",
+              "settings": {
+                "text": "<h3><em>Museu Virtual Casa de Ganho </em><br/>Ganhadeiras de Itapuã</h3>",
+                "width": "fit-content",
+                "max_width": "normal",
+                "alignment": "left",
+                "type_preset": "rte",
+                "font": "var(--font-body--family)",
+                "font_size": "1rem",
+                "line_height": "normal",
+                "letter_spacing": "normal",
+                "case": "none",
+                "wrap": "pretty",
+                "color": "var(--color-foreground)",
+                "background": false,
+                "background_color": "#00000026",
+                "corner_radius": 0,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            },
+            "button_rrJWm8": {
+              "type": "button",
+              "name": "t:names.button",
+              "settings": {
+                "label": "Saiba mais",
+                "link": "shopify://blogs/portfolio/museu-virtual-casa-de-ganho-para-as-ganhadeiras-de-itapua",
+                "open_in_new_tab": false,
+                "style_class": "link",
+                "width": "fit-content",
+                "custom_width": 100,
+                "width_mobile": "fit-content",
+                "custom_width_mobile": 100
+              },
+              "blocks": {}
+            }
+          },
+          "block_order": [
+            "text_FxpeMn",
+            "button_rrJWm8"
+          ]
+        }
+      },
+      "block_order": [
+        "button_tVDj9C",
+        "group_pTy8BM"
       ],
       "name": "t:names.hero",
       "settings": {
@@ -3586,6 +3788,8 @@
     "media_with_content_UxxP3g",
     "hero_F93Qng",
     "featured_product_4kgcAw",
-    "hero_LEpq8q"
+    "section_QWtabe",
+    "hero_LEpq8q",
+    "hero_LRV9yj"
   ]
 }
