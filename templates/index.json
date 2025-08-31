@@ -3431,11 +3431,11 @@
         "text_UgtNCB": {
           "type": "text",
           "settings": {
-            "text": "<h1>New arrivals</h1>",
+            "text": "<h3><em>Museu Virtual Casa de Ganho </em><br/>Ganhadeiras de Itapuã</h3>",
             "width": "fit-content",
             "max_width": "narrow",
             "alignment": "left",
-            "type_preset": "h1",
+            "type_preset": "h2",
             "font": "var(--font-body--family)",
             "font_size": "1rem",
             "line_height": "normal",
