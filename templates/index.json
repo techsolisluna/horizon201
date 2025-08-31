@@ -3273,7 +3273,7 @@
               "type": "button",
               "settings": {
                 "label": "Saiba mais",
-                "link": "shopify://collections/all",
+                "link": "shopify://products/sorrisos",
                 "open_in_new_tab": false,
                 "style_class": "link",
                 "width": "fit-content",
@@ -3296,7 +3296,7 @@
         "has_image": false,
         "media_position": "left",
         "media_width": "medium",
-        "media_height": "80svh",
+        "media_height": "60svh",
         "section_width": "full-width",
         "extend_media": true,
         "color_scheme": "scheme-5",
