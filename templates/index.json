@@ -2827,6 +2827,93 @@
         "padding-block-end": 0
       }
     },
+    "section_QWtabe": {
+      "type": "section",
+      "blocks": {
+        "text_9Py8Ld": {
+          "type": "text",
+          "settings": {
+            "text": "<p>A Solisluna é uma casa editorial com sede na Bahia e olhares para o mundo. Criada há mais de 30 anos por uma família apaixonada pela arte dos livros, hoje é desenhada e co-criada por uma rede imensa de autores, artistas, parceiros, mediadores e leitores.</p><p>Acreditamos na potência da história viva: sendo lida, revivida, renascida. Compartilhada em roda, em conversas, em trocas de experiências. Acreditamos no poder simbólico do livro – de um belo livro.</p>",
+            "width": "fit-content",
+            "max_width": "none",
+            "alignment": "center",
+            "type_preset": "h2",
+            "font": "var(--font-body--family)",
+            "font_size": "1rem",
+            "line_height": "normal",
+            "letter_spacing": "normal",
+            "case": "none",
+            "wrap": "pretty",
+            "color": "var(--color-foreground)",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        },
+        "text_JLH3mD": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Conheça a seguir alguns projetos que participamos nos 32 anos de empresa.</p>",
+            "width": "100%",
+            "max_width": "none",
+            "alignment": "left",
+            "type_preset": "h5",
+            "font": "var(--font-body--family)",
+            "font_size": "1rem",
+            "line_height": "normal",
+            "letter_spacing": "normal",
+            "case": "none",
+            "wrap": "pretty",
+            "color": "var(--color-foreground)",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "text_9Py8Ld",
+        "text_JLH3mD"
+      ],
+      "name": "t:names.pull_quote",
+      "settings": {
+        "content_direction": "column",
+        "vertical_on_mobile": true,
+        "horizontal_alignment": "flex-start",
+        "vertical_alignment": "center",
+        "align_baseline": false,
+        "horizontal_alignment_flex_direction_column": "flex-start",
+        "vertical_alignment_flex_direction_column": "center",
+        "gap": 16,
+        "section_width": "page-width",
+        "section_height": "",
+        "section_height_custom": 50,
+        "color_scheme": "scheme-5",
+        "background_media": "none",
+        "video_position": "cover",
+        "background_image_position": "cover",
+        "border": "none",
+        "border_width": 1,
+        "border_opacity": 100,
+        "border_radius": 0,
+        "toggle_overlay": false,
+        "overlay_color": "#00000026",
+        "overlay_style": "solid",
+        "gradient_direction": "to top",
+        "padding-block-start": 64,
+        "padding-block-end": 64
+      }
+    },
     "section_3w6Wj8": {
       "type": "section",
       "blocks": {
@@ -3425,10 +3512,10 @@
         "padding-block-end": 0
       }
     },
-    "section_QWtabe": {
+    "section_pcVPYN": {
       "type": "section",
       "blocks": {
-        "text_9Py8Ld": {
+        "text_A3qLbt": {
           "type": "text",
           "settings": {
             "text": "<p>Para além de publicar livros, a <strong>Solisluna</strong> desenvolve projetos especiais que envolvem tecnologia digitais, sempre em diálogo com o patrimônio histórico e a memória das nossas culturas.</p>",
@@ -3453,7 +3540,7 @@
           },
           "blocks": {}
         },
-        "text_JLH3mD": {
+        "text_rJEKXh": {
           "type": "text",
           "settings": {
             "text": "<p>Conheça a seguir alguns projetos que participamos nos 32 anos de empresa.</p>",
@@ -3480,8 +3567,8 @@
         }
       },
       "block_order": [
-        "text_9Py8Ld",
-        "text_JLH3mD"
+        "text_A3qLbt",
+        "text_rJEKXh"
       ],
       "name": "t:names.pull_quote",
       "settings": {
@@ -3561,7 +3648,7 @@
             "border_opacity": 100,
             "border_radius": 12,
             "toggle_overlay": true,
-            "overlay_color": "#ffffffdd",
+            "overlay_color": "#ffffffde",
             "overlay_style": "solid",
             "gradient_direction": "to top",
             "padding-block-start": 12,
@@ -3702,7 +3789,7 @@
             "border_opacity": 100,
             "border_radius": 12,
             "toggle_overlay": true,
-            "overlay_color": "#ffffffdd",
+            "overlay_color": "#ffffffde",
             "overlay_style": "solid",
             "gradient_direction": "to top",
             "padding-block-start": 12,
@@ -3810,11 +3897,12 @@
     "section_mhzJA7",
     "collection_links_cpihfQ",
     "section_9PkDgA",
+    "section_QWtabe",
     "section_3w6Wj8",
     "media_with_content_UxxP3g",
     "hero_F93Qng",
     "featured_product_4kgcAw",
-    "section_QWtabe",
+    "section_pcVPYN",
     "hero_LEpq8q",
     "hero_LRV9yj"
   ]
