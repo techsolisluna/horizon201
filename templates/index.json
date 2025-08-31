@@ -3452,10 +3452,36 @@
             "padding-inline-end": 0
           },
           "blocks": {}
+        },
+        "text_JLH3mD": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Conheça a seguir alguns projetos que participamos nos 32 anos de empresa.</p>",
+            "width": "100%",
+            "max_width": "none",
+            "alignment": "center",
+            "type_preset": "h4",
+            "font": "var(--font-body--family)",
+            "font_size": "1rem",
+            "line_height": "normal",
+            "letter_spacing": "normal",
+            "case": "none",
+            "wrap": "pretty",
+            "color": "var(--color-foreground)",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
         }
       },
       "block_order": [
-        "text_9Py8Ld"
+        "text_9Py8Ld",
+        "text_JLH3mD"
       ],
       "name": "t:names.pull_quote",
       "settings": {
