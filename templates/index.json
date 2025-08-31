@@ -3331,6 +3331,7 @@
             "featured-product-title": {
               "type": "product-title",
               "name": "t:names.title",
+              "disabled": true,
               "static": true,
               "settings": {
                 "width": "100%",
@@ -3357,6 +3358,7 @@
             "featured-product-price": {
               "type": "_featured-product-price",
               "name": "t:names.price",
+              "disabled": true,
               "static": true,
               "settings": {
                 "show_sale_price_first": true,
@@ -3394,6 +3396,7 @@
           "block_order": []
         }
       },
+      "disabled": true,
       "name": "t:names.featured_product",
       "settings": {
         "product": "a-incrivel-expedicao-dos-robos",
