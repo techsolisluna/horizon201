@@ -1225,7 +1225,7 @@
     },
     "custom_liquid_dHqKTc": {
       "type": "custom-liquid",
-      "name": "t:names.custom_liquid",
+      "name": "FLIP pages",
       "settings": {
         "custom_liquid": "<iframe allowfullscreen=\"allowfullscreen\" allow=\"clipboard-write\" scrolling=\"no\" class=\"fp-iframe\" style=\"border: 1px solid lightgray; width: 100%; height: 80vh;\" src=\"https://solisluna.aflip.in/robos\"></iframe>",
         "color_scheme": "",
@@ -1566,9 +1566,9 @@
     "section_mq6RBB",
     "1751125067ca0a4964",
     "media_with_content_7g7CXm",
+    "custom_liquid_dHqKTc",
     "hero_EfXQDX",
     "section_c9t9Qn",
-    "custom_liquid_dHqKTc",
     "175287049661b97f88",
     "product_recommendations_qggXJq",
     "blog_posts_CDck9P"
