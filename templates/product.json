@@ -1114,6 +1114,28 @@
         "padding-block-end": 0
       }
     },
+    "heyzine": {
+      "type": "heyzine",
+      "settings": {
+        "section_width": "full-width",
+        "section_height": "",
+        "color_scheme": "",
+        "padding-block-start": 50,
+        "padding-block-end": 50
+      }
+    },
+    "custom_liquid_dHqKTc": {
+      "type": "custom-liquid",
+      "disabled": true,
+      "name": "FLIP pages",
+      "settings": {
+        "custom_liquid": "<iframe allowfullscreen=\"allowfullscreen\" allow=\"clipboard-write\" scrolling=\"no\" class=\"fp-iframe\" style=\"border: 1px solid lightgray; width: 100%; height: 80vh;\" src=\"https://solisluna.aflip.in/robos\"></iframe>",
+        "color_scheme": "",
+        "section_width": "full-width",
+        "padding-block-start": 0,
+        "padding-block-end": 0
+      }
+    },
     "hero_EfXQDX": {
       "type": "hero",
       "name": "Product banner",
@@ -1221,17 +1243,6 @@
         "gradient_direction": "to top",
         "padding-block-start": 64,
         "padding-block-end": 64
-      }
-    },
-    "custom_liquid_dHqKTc": {
-      "type": "custom-liquid",
-      "name": "FLIP pages",
-      "settings": {
-        "custom_liquid": "<iframe allowfullscreen=\"allowfullscreen\" allow=\"clipboard-write\" scrolling=\"no\" class=\"fp-iframe\" style=\"border: 1px solid lightgray; width: 100%; height: 80vh;\" src=\"https://solisluna.aflip.in/robos\"></iframe>",
-        "color_scheme": "",
-        "section_width": "full-width",
-        "padding-block-start": 0,
-        "padding-block-end": 0
       }
     },
     "175287049661b97f88": {
@@ -1559,9 +1570,6 @@
         "padding-block-start": 65,
         "padding-block-end": 40
       }
-    },
-    "heyzine": {
-      "type": "heyzine"
     }
   },
   "order": [
@@ -1569,12 +1577,12 @@
     "section_mq6RBB",
     "1751125067ca0a4964",
     "media_with_content_7g7CXm",
+    "heyzine",
     "custom_liquid_dHqKTc",
     "hero_EfXQDX",
     "section_c9t9Qn",
     "175287049661b97f88",
     "product_recommendations_qggXJq",
-    "blog_posts_CDck9P",
-    "heyzine"
+    "blog_posts_CDck9P"
   ]
 }
