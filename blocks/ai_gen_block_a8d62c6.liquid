@@ -88,6 +88,18 @@
     flex-grow: 1;
   }
 
+  @media screen and (min-width: 921px) and (max-width: 1200px) {
+    .author-card-bio-{{ ai_gen_id }} {
+      font-size: {{ block.settings.author_bio_size |  times: 0.9}}px;
+    }
+  }
+
+  @media screen and (min-width: 751px) and (max-width: 920px) {
+    .author-card-bio-{{ ai_gen_id }} {
+      font-size: {{ block.settings.author_bio_size |  times: 0.85}}px;
+    }
+  }
+
   .author-card-button-{{ ai_gen_id }} {
     display: inline-block;
     padding: {{ block.settings.button_padding_vertical }}px {{ block.settings.button_padding_horizontal }}px;
