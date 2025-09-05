@@ -1559,6 +1559,9 @@
         "padding-block-start": 65,
         "padding-block-end": 40
       }
+    },
+    "heyzine": {
+      "type": "heyzine"
     }
   },
   "order": [
@@ -1571,6 +1574,7 @@
     "section_c9t9Qn",
     "175287049661b97f88",
     "product_recommendations_qggXJq",
-    "blog_posts_CDck9P"
+    "blog_posts_CDck9P",
+    "heyzine"
   ]
 }
