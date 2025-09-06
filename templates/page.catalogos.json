@@ -127,6 +127,7 @@
       },
       "name": "t:names.editorial_jumbo_text",
       "settings": {
+        "has_image": false,
         "media_position": "right",
         "media_width": "medium",
         "media_height": "60svh",
@@ -355,7 +356,7 @@
         "section_width": "page-width",
         "section_height": "medium",
         "section_height_custom": 50,
-        "color_scheme": "scheme-4",
+        "color_scheme": "scheme-1",
         "background_media": "none",
         "video_position": "cover",
         "background_image_position": "cover",
@@ -403,7 +404,7 @@
           "type": "text",
           "name": "t:names.text",
           "settings": {
-            "text": "<p>Graciela Montes em <strong>‘Buscar Indícios, Construir Sentidos’</strong></p>",
+            "text": "<p>Graciela Montes em <a href=\"/products/buscar-indicios-construir-sentidos\" target=\"_blank\" title=\"Buscar indícios, construir sentidos\"><strong>‘Buscar Indícios, Construir Sentidos’</strong></a></p>",
             "width": "fit-content",
             "max_width": "normal",
             "alignment": "left",
@@ -812,7 +813,7 @@
               "type": "_product-list-text",
               "name": "t:names.collection_title",
               "settings": {
-                "text": "<h3>Novidades que acabaram de chegar</h3>",
+                "text": "<h3>Conheça os lançamentos</h3>",
                 "width": "fit-content",
                 "max_width": "normal",
                 "alignment": "left",
