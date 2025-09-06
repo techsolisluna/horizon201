@@ -228,6 +228,7 @@
                 "group_mXGcxj": {
                   "type": "group",
                   "name": "Cupom 10% OFF",
+                  "disabled": true,
                   "settings": {
                     "link": "",
                     "open_in_new_tab": false,
