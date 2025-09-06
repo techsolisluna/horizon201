@@ -222,8 +222,8 @@
               "type": "button",
               "settings": {
                 "label": "Ver catálogo",
-                "link": "shopify://collections/all",
-                "open_in_new_tab": false,
+                "link": "shopify://collections/livros_para_criancas",
+                "open_in_new_tab": true,
                 "style_class": "link",
                 "width": "fit-content",
                 "custom_width": 100,
