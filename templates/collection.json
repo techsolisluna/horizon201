@@ -353,7 +353,7 @@
         }
       },
       "settings": {
-        "layout_type": "organic",
+        "layout_type": "grid",
         "product_card_size": "extra-large",
         "mobile_product_card_size": "large",
         "product_grid_width": "full-width",
