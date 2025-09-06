@@ -1461,7 +1461,7 @@
             "overlay_style": "solid",
             "gradient_direction": "to top",
             "padding-block-start": 40,
-            "padding-block-end": 40,
+            "padding-block-end": 80,
             "padding-inline-start": 40,
             "padding-inline-end": 40
           },
@@ -1592,7 +1592,7 @@
         "text_4kK3ie": {
           "type": "text",
           "settings": {
-            "text": "<h5>Para os educadores</h5><h2>Ensaios para pensar a leitura</h2><p>Importantes títulos destinados a educadores, mediadores de leitura, professores, bibliotecários e todos que estudam, pesquisam e trabalham com literatura para crianças e jovens.</p><p><a href=\"/collections/colecao-de-ensaios-para-pensar-a-leitura-selo-emilia-solisluna\" target=\"_blank\" title=\"Ensaios para pensar a leitura\">Saiba mais</a></p>",
+            "text": "<h5>Para educadores</h5><h2>Ensaios para pensar a leitura</h2><p>Importantes títulos destinados a educadores, mediadores de leitura, professores, bibliotecários e todos que estudam, pesquisam e trabalham com literatura para crianças e jovens.</p><p><a href=\"/collections/colecao-de-ensaios-para-pensar-a-leitura-selo-emilia-solisluna\" target=\"_blank\" title=\"Ensaios para pensar a leitura\">Saiba mais</a></p>",
             "width": "fit-content",
             "max_width": "normal",
             "alignment": "left",
