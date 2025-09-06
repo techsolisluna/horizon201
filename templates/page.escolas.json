@@ -1482,7 +1482,7 @@
             "text_bDzT4q": {
               "type": "text",
               "settings": {
-                "text": "<h3>Agende uma apresentação com um divulgador da Solisluna</h3>",
+                "text": "<p><strong>Apresentação do catálogo da Solisluna</strong></p>",
                 "width": "fit-content",
                 "max_width": "normal",
                 "alignment": "center",
@@ -1504,10 +1504,36 @@
               },
               "blocks": {}
             },
+            "text_BfQdEQ": {
+              "type": "text",
+              "name": "t:names.text",
+              "settings": {
+                "text": "<p>Agende uma apresentação com nosso divulgador e explore as obras e materiais disponíveis. Uma oportunidade para conhecer nosso catálogo e tirar suas dúvidas sobre nossos títulos.</p>",
+                "width": "fit-content",
+                "max_width": "normal",
+                "alignment": "left",
+                "type_preset": "rte",
+                "font": "var(--font-body--family)",
+                "font_size": "1rem",
+                "line_height": "normal",
+                "letter_spacing": "normal",
+                "case": "none",
+                "wrap": "pretty",
+                "color": "var(--color-foreground)",
+                "background": false,
+                "background_color": "#00000026",
+                "corner_radius": 0,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            },
             "button_X89KKQ": {
               "type": "button",
               "settings": {
-                "label": "Agendar",
+                "label": "Agendar uma apresentação",
                 "link": "mailto:comercial@solisluna.com.br",
                 "open_in_new_tab": true,
                 "style_class": "button",
@@ -1522,6 +1548,7 @@
           "block_order": [
             "spacer_mxiEKB",
             "text_bDzT4q",
+            "text_BfQdEQ",
             "button_X89KKQ"
           ]
         }
