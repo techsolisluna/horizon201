@@ -155,7 +155,7 @@
         "background_media": "image",
         "video": "{{ collection.metafields.custom.banner.value }}",
         "video_position": "cover",
-        "background_image": "{{ collection.image }}",
+        "background_image": "{{ collection.metafields.custom.banner.value }}",
         "background_image_position": "cover",
         "border": "none",
         "border_width": 1,
