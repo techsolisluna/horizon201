@@ -519,7 +519,8 @@
           "ficcao",
           "nao-ficcao",
           "arte",
-          "musica-danca-e-teatro"
+          "musica-danca-e-teatro",
+          "quadrinhos"
         ],
         "layout_type": "grid",
         "carousel_on_mobile": false,
