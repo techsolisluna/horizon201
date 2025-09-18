@@ -415,6 +415,7 @@
             "text_wLRVCc": {
               "type": "text",
               "name": "t:names.text",
+              "disabled": true,
               "settings": {
                 "text": "<h3>Shop by collection</h3>",
                 "width": "fit-content",
