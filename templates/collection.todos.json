@@ -477,7 +477,7 @@
                 "wrap": "pretty",
                 "color": "var(--color-foreground)",
                 "background": false,
-                "background_color": "#00000000",
+                "background_color": "rgba(0,0,0,0)",
                 "corner_radius": 0,
                 "padding-block-start": 4,
                 "padding-block-end": 19,
@@ -519,8 +519,8 @@
           "ficcao",
           "nao-ficcao",
           "arte",
-          "musica-danca-e-teatro",
-          "quadrinhos"
+          "quadrinhos",
+          "lendas-africanas"
         ],
         "layout_type": "grid",
         "carousel_on_mobile": false,
