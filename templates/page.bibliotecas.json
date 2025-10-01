@@ -41,12 +41,38 @@
               "settings": {
                 "text": "bibliotecas",
                 "font": "accent",
-                "alignment": "right",
+                "alignment": "left",
                 "line_height": "1",
                 "letter_spacing": "-0.03em",
                 "case": "none",
                 "text_effect": "blur",
                 "animation_repeat": true
+              },
+              "blocks": {}
+            },
+            "text_Kfr3bC": {
+              "type": "text",
+              "name": "t:names.text",
+              "settings": {
+                "text": "<p>We make things that work better and last longer. Our products solve real problems with clean design and honest materials.</p>",
+                "width": "fit-content",
+                "max_width": "normal",
+                "alignment": "left",
+                "type_preset": "rte",
+                "font": "var(--font-body--family)",
+                "font_size": "1rem",
+                "line_height": "normal",
+                "letter_spacing": "normal",
+                "case": "none",
+                "wrap": "pretty",
+                "color": "var(--color-foreground)",
+                "background": false,
+                "background_color": "#00000026",
+                "corner_radius": 0,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
               },
               "blocks": {}
             },
@@ -80,12 +106,14 @@
           },
           "block_order": [
             "jumbo_text_An9HgE",
+            "text_Kfr3bC",
             "text_D6PU3Y"
           ]
         }
       },
       "name": "t:names.editorial_jumbo_text",
       "settings": {
+        "has_image": false,
         "media_position": "right",
         "media_width": "medium",
         "media_height": "50svh",
@@ -718,7 +746,7 @@
         "overlay_style": "solid",
         "gradient_direction": "to top",
         "padding-block-start": 0,
-        "padding-block-end": 0
+        "padding-block-end": 30
       }
     },
     "section_WNPGVC": {
@@ -806,45 +834,6 @@
               },
               "block_order": [
                 "text_Hdagiw"
-              ]
-            },
-            "accordion_row_VTykeG": {
-              "type": "_accordion-row",
-              "settings": {
-                "heading": "Tenho uma livraria. Como posso revender os livros da Solisluna?",
-                "open_by_default": true,
-                "icon": "none",
-                "width": 20
-              },
-              "blocks": {
-                "text_UUzK7G": {
-                  "type": "text",
-                  "settings": {
-                    "text": "<p>We are unable to accept returns on certain items. These will be carefully marked before purchase.</p>",
-                    "width": "100%",
-                    "max_width": "normal",
-                    "alignment": "left",
-                    "type_preset": "rte",
-                    "font": "var(--font-body--family)",
-                    "font_size": "",
-                    "line_height": "normal",
-                    "letter_spacing": "normal",
-                    "case": "none",
-                    "wrap": "pretty",
-                    "color": "var(--color-foreground)",
-                    "background": false,
-                    "background_color": "#00000026",
-                    "corner_radius": 0,
-                    "padding-block-start": 0,
-                    "padding-block-end": 0,
-                    "padding-inline-start": 0,
-                    "padding-inline-end": 0
-                  },
-                  "blocks": {}
-                }
-              },
-              "block_order": [
-                "text_UUzK7G"
               ]
             },
             "accordion_row_y7tmXC": {
@@ -973,7 +962,6 @@
           },
           "block_order": [
             "accordion_row_GpHjVc",
-            "accordion_row_VTykeG",
             "accordion_row_y7tmXC",
             "accordion_row_aKHQcq",
             "accordion_row_iRgtAx"
@@ -984,6 +972,7 @@
         "text_xBLtjy",
         "accordion_3dB8NX"
       ],
+      "disabled": true,
       "name": "t:names.faq_section",
       "settings": {
         "content_direction": "column",
