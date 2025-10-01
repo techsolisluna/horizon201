@@ -2371,7 +2371,7 @@
               "name": "t:names.collection_card_image",
               "static": true,
               "settings": {
-                "image_ratio": "portrait",
+                "image_ratio": "landscape",
                 "toggle_overlay": false,
                 "overlay_color": "#00000026",
                 "overlay_style": "solid",
@@ -2394,19 +2394,10 @@
       ],
       "name": "pesquise por categoria B",
       "settings": {
-        "collection_list": [
-          "infantil",
-          "arte",
-          "ficcao",
-          "nao-ficcao",
-          "quadrinhos",
-          "musica-danca-e-teatro",
-          "lendas-africanas",
-          "colecao-de-ensaios-para-pensar-a-leitura-selo-emilia-solisluna"
-        ],
+        "collection_list": "{{ metaobjects.colecoes_destaque[\"colecoes-destaque-hkxqtkc2\"].lista_a.value }}",
         "layout_type": "grid",
         "carousel_on_mobile": false,
-        "columns": 3,
+        "columns": 2,
         "mobile_columns": "2",
         "mobile_card_size": "60cqw",
         "columns_gap": 8,
