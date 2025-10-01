@@ -2171,16 +2171,7 @@
       },
       "name": "Collection links: TEMAS",
       "settings": {
-        "collection_list": [
-          "diaspora",
-          "inclusao",
-          "memoria",
-          "tradicao",
-          "bebes-0-3-anos",
-          "raizes",
-          "ecologia",
-          "natureza"
-        ],
+        "collection_list": "{{ metaobjects.colecoes_destaque[\"temas-em-destaque\"].lista_a.value }}",
         "layout": "text",
         "section_width": "page-width",
         "alignment": "center",
