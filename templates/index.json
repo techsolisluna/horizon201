@@ -2548,7 +2548,7 @@
               "type": "text",
               "name": "t:names.caption",
               "settings": {
-                "text": "<p>Solisuna</p>",
+                "text": "<p>Sobre nós</p>",
                 "width": "fit-content",
                 "max_width": "normal",
                 "alignment": "left",
@@ -2611,7 +2611,7 @@
                 "text_fGTXWd": {
                   "type": "text",
                   "settings": {
-                    "text": "<p>A Solisluna é uma casa editorial com sede na Bahia e olhares para o mundo. Criada há mais de 30 anos por uma família apaixonada pela arte dos livros, hoje é desenhada e co-criada por uma rede imensa de autores, artistas, parceiros, mediadores e leitores.</p><p>Acreditamos na potência da história viva: sendo lida, revivida, renascida. Compartilhada em roda, em conversas, em trocas de experiências. Acreditamos no poder simbólico do livro – de um belo livro.</p>",
+                    "text": "<p><strong>A Solisluna é uma casa editorial com sede na Bahia e olhares para o mundo. </strong>Criada há mais de 30 anos por uma família apaixonada pela arte dos livros, hoje é desenhada e co-criada por uma rede imensa de autores, artistas, parceiros, mediadores e leitores.</p><p>Acreditamos na potência da história viva: sendo lida, revivida, renascida. Compartilhada em roda, em conversas, em trocas de experiências. Acreditamos no poder simbólico do livro – de um belo livro.</p>",
                     "width": "fit-content",
                     "max_width": "normal",
                     "alignment": "left",
