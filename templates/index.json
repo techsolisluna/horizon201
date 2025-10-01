@@ -2079,7 +2079,7 @@
           "settings": {
             "text": "<p>Escolha por temas</p>",
             "width": "100%",
-            "max_width": "narrow",
+            "max_width": "none",
             "alignment": "center",
             "type_preset": "h2",
             "font": "var(--font-body--family)",
@@ -2113,7 +2113,7 @@
         "horizontal_alignment_flex_direction_column": "flex-start",
         "vertical_alignment_flex_direction_column": "center",
         "gap": 16,
-        "section_width": "page-width",
+        "section_width": "full-width",
         "section_height": "",
         "section_height_custom": 50,
         "color_scheme": "scheme-2",
@@ -2128,8 +2128,8 @@
         "overlay_color": "#00000026",
         "overlay_style": "solid",
         "gradient_direction": "to top",
-        "padding-block-start": 64,
-        "padding-block-end": 64
+        "padding-block-start": 100,
+        "padding-block-end": 15
       }
     },
     "collection_links_cpihfQ": {
