@@ -1130,6 +1130,7 @@
         "slide_EW6N67",
         "slide_cPQwzN"
       ],
+      "disabled": true,
       "name": "t:names.slideshow",
       "settings": {
         "icons_style": "arrows_large",
@@ -2525,6 +2526,7 @@
           "static": true,
           "settings": {
             "media_type": "image",
+            "image": "shopify://shop_images/IMG_9119.jpg",
             "link": "",
             "video_loop": true,
             "video_autoplay": false,
@@ -2546,7 +2548,7 @@
               "type": "text",
               "name": "t:names.caption",
               "settings": {
-                "text": "<p>Bestseller</p>",
+                "text": "<p>Solisuna</p>",
                 "width": "fit-content",
                 "max_width": "normal",
                 "alignment": "left",
@@ -2615,7 +2617,7 @@
                     "alignment": "left",
                     "type_preset": "custom",
                     "font": "var(--font-body--family)",
-                    "font_size": "1.5rem",
+                    "font_size": "1.25rem",
                     "line_height": "normal",
                     "letter_spacing": "normal",
                     "case": "none",
@@ -2638,6 +2640,7 @@
             },
             "button_Xj8pkK": {
               "type": "button",
+              "disabled": true,
               "settings": {
                 "label": "Shop now",
                 "link": "shopify://collections/all",
@@ -2649,12 +2652,27 @@
                 "custom_width_mobile": 100
               },
               "blocks": {}
+            },
+            "spacer_ttUL3F": {
+              "type": "spacer",
+              "name": "t:names.spacer",
+              "settings": {
+                "size": "percent",
+                "percent_size": 55,
+                "pixel_size": 120,
+                "custom_mobile_size": false,
+                "size_mobile": "percent",
+                "percent_size_mobile": 100,
+                "pixel_size_mobile": 120
+              },
+              "blocks": {}
             }
           },
           "block_order": [
             "text_XKNnDQ",
             "group_DkbJ4D",
-            "button_Xj8pkK"
+            "button_Xj8pkK",
+            "spacer_ttUL3F"
           ]
         }
       },
