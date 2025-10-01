@@ -2217,6 +2217,47 @@
         "gap_between_elements": 24
       }
     },
+    "marquee_3QgzV6": {
+      "type": "marquee",
+      "blocks": {
+        "text_rwgKT3": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Desde 1993, excelência na arte de publicar histórias que transformam.</p>",
+            "width": "fit-content",
+            "max_width": "normal",
+            "alignment": "left",
+            "type_preset": "custom",
+            "font": "var(--font-body--family)",
+            "font_size": "1rem",
+            "line_height": "tight",
+            "letter_spacing": "tight",
+            "case": "none",
+            "wrap": "nowrap",
+            "color": "var(--color-foreground)",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "text_rwgKT3"
+      ],
+      "name": "t:names.marquee_section",
+      "settings": {
+        "movement_direction": "normal",
+        "color_scheme": "scheme-4",
+        "padding-block-start": 24,
+        "padding-block-end": 24,
+        "gap_between_elements": 24
+      }
+    },
     "section_HfQAGW": {
       "type": "section",
       "blocks": {
@@ -4065,9 +4106,9 @@
             "horizontal_alignment": "flex-start",
             "vertical_alignment": "center",
             "align_baseline": false,
-            "horizontal_alignment_flex_direction_column": "center",
+            "horizontal_alignment_flex_direction_column": "flex-start",
             "vertical_alignment_flex_direction_column": "space-between",
-            "gap": 32,
+            "gap": 0,
             "width": "fill",
             "custom_width": 100,
             "width_mobile": "fill",
@@ -4075,9 +4116,10 @@
             "height": "fill",
             "custom_height": 100,
             "inherit_color_scheme": false,
-            "color_scheme": "scheme-5",
+            "color_scheme": "scheme-1",
             "background_media": "image",
             "video_position": "cover",
+            "background_image": "shopify://shop_images/image.webp",
             "background_image_position": "cover",
             "border": "none",
             "border_width": 1,
@@ -4087,10 +4129,10 @@
             "overlay_color": "#00000026",
             "overlay_style": "solid",
             "gradient_direction": "to top",
-            "padding-block-start": 40,
-            "padding-block-end": 40,
-            "padding-inline-start": 40,
-            "padding-inline-end": 40
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
           },
           "blocks": {
             "spacer_8WtCTJ": {
@@ -4109,10 +4151,10 @@
             "text_WrcLPm": {
               "type": "text",
               "settings": {
-                "text": "<h3>New arrivals</h3>",
-                "width": "fit-content",
+                "text": "<h3>Concurso de ilustração e exposição de arte</h3>",
+                "width": "100%",
                 "max_width": "normal",
-                "alignment": "center",
+                "alignment": "left",
                 "type_preset": "h3",
                 "font": "var(--font-body--family)",
                 "font_size": "1rem",
@@ -4121,35 +4163,20 @@
                 "case": "none",
                 "wrap": "pretty",
                 "color": "var(--color-foreground)",
-                "background": false,
-                "background_color": "#00000026",
+                "background": true,
+                "background_color": "#ffffff",
                 "corner_radius": 0,
-                "padding-block-start": 0,
-                "padding-block-end": 0,
-                "padding-inline-start": 0,
+                "padding-block-start": 15,
+                "padding-block-end": 15,
+                "padding-inline-start": 10,
                 "padding-inline-end": 0
-              },
-              "blocks": {}
-            },
-            "button_UmQwkD": {
-              "type": "button",
-              "settings": {
-                "label": "Shop now",
-                "link": "shopify://collections/all",
-                "open_in_new_tab": false,
-                "style_class": "link",
-                "width": "fit-content",
-                "custom_width": 100,
-                "width_mobile": "fit-content",
-                "custom_width_mobile": 100
               },
               "blocks": {}
             }
           },
           "block_order": [
             "spacer_8WtCTJ",
-            "text_WrcLPm",
-            "button_UmQwkD"
+            "text_WrcLPm"
           ]
         },
         "group_mhMwep": {
@@ -4162,7 +4189,7 @@
             "horizontal_alignment": "flex-start",
             "vertical_alignment": "center",
             "align_baseline": false,
-            "horizontal_alignment_flex_direction_column": "center",
+            "horizontal_alignment_flex_direction_column": "flex-start",
             "vertical_alignment_flex_direction_column": "space-between",
             "gap": 32,
             "width": "fill",
@@ -4185,17 +4212,31 @@
             "overlay_color": "#00000026",
             "overlay_style": "solid",
             "gradient_direction": "to top",
-            "padding-block-start": 40,
-            "padding-block-end": 40,
-            "padding-inline-start": 40,
-            "padding-inline-end": 40
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
           },
           "blocks": {
+            "spacer_pxjeYP": {
+              "type": "spacer",
+              "name": "t:names.spacer",
+              "settings": {
+                "size": "percent",
+                "percent_size": 100,
+                "pixel_size": 120,
+                "custom_mobile_size": false,
+                "size_mobile": "percent",
+                "percent_size_mobile": 100,
+                "pixel_size_mobile": 120
+              },
+              "blocks": {}
+            },
             "text_7HTRRF": {
               "type": "text",
               "settings": {
                 "text": "<h1>Expedição de Mateus Aleluia ganha Museu Virtual</h1>",
-                "width": "fit-content",
+                "width": "100%",
                 "max_width": "normal",
                 "alignment": "left",
                 "type_preset": "h3",
@@ -4207,33 +4248,19 @@
                 "wrap": "pretty",
                 "color": "var(--color-foreground-heading)",
                 "background": true,
-                "background_color": "#ffffffef",
-                "corner_radius": 15,
-                "padding-block-start": 0,
-                "padding-block-end": 0,
-                "padding-inline-start": 0,
+                "background_color": "#ffffff",
+                "corner_radius": 0,
+                "padding-block-start": 15,
+                "padding-block-end": 15,
+                "padding-inline-start": 10,
                 "padding-inline-end": 0
-              },
-              "blocks": {}
-            },
-            "button_KggBRX": {
-              "type": "button",
-              "settings": {
-                "label": "Shop now",
-                "link": "shopify://blogs/solisblogluna/mateus-aleluia-apresenta-benin-do-lado-de-ca",
-                "open_in_new_tab": false,
-                "style_class": "link",
-                "width": "fit-content",
-                "custom_width": 100,
-                "width_mobile": "fit-content",
-                "custom_width_mobile": 100
               },
               "blocks": {}
             }
           },
           "block_order": [
-            "text_7HTRRF",
-            "button_KggBRX"
+            "spacer_pxjeYP",
+            "text_7HTRRF"
           ]
         }
       },
@@ -4246,11 +4273,11 @@
         "content_direction": "row",
         "vertical_on_mobile": true,
         "horizontal_alignment": "flex-start",
-        "vertical_alignment": "center",
+        "vertical_alignment": "flex-end",
         "align_baseline": false,
         "horizontal_alignment_flex_direction_column": "flex-start",
         "vertical_alignment_flex_direction_column": "center",
-        "gap": 0,
+        "gap": 9,
         "section_width": "full-width",
         "section_height": "small",
         "section_height_custom": 50,
@@ -4262,8 +4289,8 @@
         "border_width": 0,
         "border_opacity": 100,
         "border_radius": 0,
-        "toggle_overlay": false,
-        "overlay_color": "#00000026",
+        "toggle_overlay": true,
+        "overlay_color": "#000000",
         "overlay_style": "solid",
         "gradient_direction": "to top",
         "padding-block-start": 0,
@@ -4283,6 +4310,7 @@
     "collection_links_cpihfQ",
     "section_jVTF7W",
     "marquee_DPpXh7",
+    "marquee_3QgzV6",
     "section_HfQAGW",
     "slideshow_fzxHeh",
     "media_with_content_JVbTt8",
