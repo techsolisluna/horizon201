@@ -2644,6 +2644,160 @@
         "padding-block-end": 0
       }
     },
+    "media_with_content_JVbTt8": {
+      "type": "media-with-content",
+      "blocks": {
+        "media": {
+          "type": "_media-without-appearance",
+          "static": true,
+          "settings": {
+            "media_type": "image",
+            "link": "",
+            "video_loop": true,
+            "video_autoplay": false,
+            "image_position": "cover",
+            "video_position": "cover"
+          },
+          "blocks": {}
+        },
+        "content": {
+          "type": "_content-without-appearance",
+          "static": true,
+          "settings": {
+            "horizontal_alignment_flex_direction_column": "flex-start",
+            "vertical_alignment_flex_direction_column": "space-between",
+            "gap": 24
+          },
+          "blocks": {
+            "text_XKNnDQ": {
+              "type": "text",
+              "name": "t:names.caption",
+              "settings": {
+                "text": "<p>Bestseller</p>",
+                "width": "fit-content",
+                "max_width": "normal",
+                "alignment": "left",
+                "type_preset": "h6",
+                "font": "var(--font-body--family)",
+                "font_size": "1rem",
+                "line_height": "normal",
+                "letter_spacing": "normal",
+                "case": "none",
+                "wrap": "pretty",
+                "color": "var(--color-foreground)",
+                "background": false,
+                "background_color": "#00000026",
+                "corner_radius": 0,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            },
+            "group_DkbJ4D": {
+              "type": "group",
+              "settings": {
+                "link": "",
+                "open_in_new_tab": false,
+                "content_direction": "column",
+                "vertical_on_mobile": true,
+                "horizontal_alignment": "flex-start",
+                "vertical_alignment": "center",
+                "align_baseline": false,
+                "horizontal_alignment_flex_direction_column": "flex-start",
+                "vertical_alignment_flex_direction_column": "center",
+                "gap": 12,
+                "width": "fill",
+                "custom_width": 100,
+                "width_mobile": "fill",
+                "custom_width_mobile": 100,
+                "height": "fit",
+                "custom_height": 100,
+                "inherit_color_scheme": true,
+                "color_scheme": "",
+                "background_media": "none",
+                "video_position": "cover",
+                "background_image_position": "cover",
+                "border": "none",
+                "border_width": 1,
+                "border_opacity": 100,
+                "border_radius": 0,
+                "toggle_overlay": false,
+                "overlay_color": "#00000026",
+                "overlay_style": "solid",
+                "gradient_direction": "to top",
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {
+                "text_fGTXWd": {
+                  "type": "text",
+                  "settings": {
+                    "text": "<p>A Solisluna é uma casa editorial com sede na Bahia e olhares para o mundo. Criada há mais de 30 anos por uma família apaixonada pela arte dos livros, hoje é desenhada e co-criada por uma rede imensa de autores, artistas, parceiros, mediadores e leitores.</p><p>Acreditamos na potência da história viva: sendo lida, revivida, renascida. Compartilhada em roda, em conversas, em trocas de experiências. Acreditamos no poder simbólico do livro – de um belo livro.</p>",
+                    "width": "fit-content",
+                    "max_width": "normal",
+                    "alignment": "left",
+                    "type_preset": "custom",
+                    "font": "var(--font-body--family)",
+                    "font_size": "1.5rem",
+                    "line_height": "normal",
+                    "letter_spacing": "normal",
+                    "case": "none",
+                    "wrap": "pretty",
+                    "color": "var(--color-foreground)",
+                    "background": false,
+                    "background_color": "#00000026",
+                    "corner_radius": 0,
+                    "padding-block-start": 0,
+                    "padding-block-end": 0,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "text_fGTXWd"
+              ]
+            },
+            "button_Xj8pkK": {
+              "type": "button",
+              "settings": {
+                "label": "Shop now",
+                "link": "shopify://collections/all",
+                "open_in_new_tab": false,
+                "style_class": "link",
+                "width": "fit-content",
+                "custom_width": 100,
+                "width_mobile": "fit-content",
+                "custom_width_mobile": 100
+              },
+              "blocks": {}
+            }
+          },
+          "block_order": [
+            "text_XKNnDQ",
+            "group_DkbJ4D",
+            "button_Xj8pkK"
+          ]
+        }
+      },
+      "name": "t:names.editorial",
+      "settings": {
+        "has_image": false,
+        "media_position": "left",
+        "media_width": "medium",
+        "media_height": "60svh",
+        "section_width": "full-width",
+        "extend_media": true,
+        "color_scheme": "scheme-4",
+        "padding-block-start": 0,
+        "padding-block-end": 0
+      }
+    },
     "section_9PkDgA": {
       "type": "section",
       "blocks": {
@@ -2980,93 +3134,6 @@
         "gradient_direction": "to top",
         "padding-block-start": 0,
         "padding-block-end": 0
-      }
-    },
-    "section_QWtabe": {
-      "type": "section",
-      "blocks": {
-        "text_9Py8Ld": {
-          "type": "text",
-          "settings": {
-            "text": "<p>A Solisluna é uma casa editorial com sede na Bahia e olhares para o mundo. Criada há mais de 30 anos por uma família apaixonada pela arte dos livros, hoje é desenhada e co-criada por uma rede imensa de autores, artistas, parceiros, mediadores e leitores.</p><p>Acreditamos na potência da história viva: sendo lida, revivida, renascida. Compartilhada em roda, em conversas, em trocas de experiências. Acreditamos no poder simbólico do livro – de um belo livro.</p>",
-            "width": "fit-content",
-            "max_width": "none",
-            "alignment": "center",
-            "type_preset": "h2",
-            "font": "var(--font-body--family)",
-            "font_size": "1rem",
-            "line_height": "normal",
-            "letter_spacing": "normal",
-            "case": "none",
-            "wrap": "pretty",
-            "color": "var(--color-foreground)",
-            "background": false,
-            "background_color": "#00000026",
-            "corner_radius": 0,
-            "padding-block-start": 0,
-            "padding-block-end": 0,
-            "padding-inline-start": 0,
-            "padding-inline-end": 0
-          },
-          "blocks": {}
-        },
-        "text_JLH3mD": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Conheça a seguir alguns projetos que participamos nos 32 anos de empresa.</p>",
-            "width": "100%",
-            "max_width": "none",
-            "alignment": "left",
-            "type_preset": "h5",
-            "font": "var(--font-body--family)",
-            "font_size": "1rem",
-            "line_height": "normal",
-            "letter_spacing": "normal",
-            "case": "none",
-            "wrap": "pretty",
-            "color": "var(--color-foreground)",
-            "background": false,
-            "background_color": "#00000026",
-            "corner_radius": 0,
-            "padding-block-start": 0,
-            "padding-block-end": 0,
-            "padding-inline-start": 0,
-            "padding-inline-end": 0
-          },
-          "blocks": {}
-        }
-      },
-      "block_order": [
-        "text_9Py8Ld",
-        "text_JLH3mD"
-      ],
-      "name": "t:names.pull_quote",
-      "settings": {
-        "content_direction": "column",
-        "vertical_on_mobile": true,
-        "horizontal_alignment": "flex-start",
-        "vertical_alignment": "center",
-        "align_baseline": false,
-        "horizontal_alignment_flex_direction_column": "flex-start",
-        "vertical_alignment_flex_direction_column": "center",
-        "gap": 16,
-        "section_width": "page-width",
-        "section_height": "",
-        "section_height_custom": 50,
-        "color_scheme": "scheme-4",
-        "background_media": "none",
-        "video_position": "cover",
-        "background_image_position": "cover",
-        "border": "none",
-        "border_width": 1,
-        "border_opacity": 100,
-        "border_radius": 0,
-        "toggle_overlay": false,
-        "overlay_color": "#00000026",
-        "overlay_style": "solid",
-        "gradient_direction": "to top",
-        "padding-block-start": 64,
-        "padding-block-end": 64
       }
     },
     "section_3w6Wj8": {
@@ -4054,8 +4121,8 @@
     "marquee_DPpXh7",
     "section_HfQAGW",
     "slideshow_fzxHeh",
+    "media_with_content_JVbTt8",
     "section_9PkDgA",
-    "section_QWtabe",
     "section_3w6Wj8",
     "media_with_content_UxxP3g",
     "featured_product_4kgcAw",
