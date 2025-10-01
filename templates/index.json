@@ -2309,7 +2309,7 @@
             "vertical_alignment": "center",
             "align_baseline": false,
             "horizontal_alignment_flex_direction_column": "flex-start",
-            "vertical_alignment_flex_direction_column": "flex-start",
+            "vertical_alignment_flex_direction_column": "flex-end",
             "gap": 12,
             "inherit_color_scheme": true,
             "color_scheme": "",
@@ -2361,26 +2361,11 @@
                 "padding-inline-end": 48
               },
               "blocks": {
-                "spacer_yamNNa": {
-                  "type": "spacer",
-                  "name": "t:names.spacer",
-                  "settings": {
-                    "size": "pixel",
-                    "percent_size": 100,
-                    "pixel_size": 380,
-                    "custom_mobile_size": false,
-                    "size_mobile": "percent",
-                    "percent_size_mobile": 100,
-                    "pixel_size_mobile": 120
-                  },
-                  "blocks": {}
-                },
                 "text_gBxwqd": {
                   "type": "text",
-                  "disabled": true,
                   "settings": {
-                    "text": "<p>Introducing our latest products, made especially for the season. Shop your favorites before they're gone!</p>",
-                    "width": "100%",
+                    "text": "<p>© Issa Watanabe</p>",
+                    "width": "fit-content",
                     "max_width": "normal",
                     "alignment": "left",
                     "type_preset": "rte",
@@ -2395,7 +2380,7 @@
                     "background_color": "#00000026",
                     "corner_radius": 0,
                     "padding-block-start": 0,
-                    "padding-block-end": 20,
+                    "padding-block-end": 0,
                     "padding-inline-start": 0,
                     "padding-inline-end": 0
                   },
@@ -2403,7 +2388,6 @@
                 }
               },
               "block_order": [
-                "spacer_yamNNa",
                 "text_gBxwqd"
               ]
             }
@@ -2423,8 +2407,8 @@
             "horizontal_alignment": "flex-start",
             "vertical_alignment": "center",
             "align_baseline": false,
-            "horizontal_alignment_flex_direction_column": "center",
-            "vertical_alignment_flex_direction_column": "center",
+            "horizontal_alignment_flex_direction_column": "flex-start",
+            "vertical_alignment_flex_direction_column": "flex-end",
             "gap": 12,
             "inherit_color_scheme": true,
             "color_scheme": "",
@@ -2448,7 +2432,7 @@
                 "horizontal_alignment": "flex-start",
                 "vertical_alignment": "center",
                 "align_baseline": false,
-                "horizontal_alignment_flex_direction_column": "center",
+                "horizontal_alignment_flex_direction_column": "flex-start",
                 "vertical_alignment_flex_direction_column": "center",
                 "gap": 12,
                 "width": "custom",
@@ -2476,23 +2460,35 @@
                 "padding-inline-end": 48
               },
               "blocks": {
-                "spacer_TmXLkJ": {
-                  "type": "spacer",
-                  "name": "t:names.spacer",
+                "text_GjEweP": {
+                  "type": "text",
+                  "name": "t:names.text",
                   "settings": {
-                    "size": "percent",
-                    "percent_size": 100,
-                    "pixel_size": 120,
-                    "custom_mobile_size": false,
-                    "size_mobile": "percent",
-                    "percent_size_mobile": 100,
-                    "pixel_size_mobile": 120
+                    "text": "<p>© Veronica Truttero</p>",
+                    "width": "fit-content",
+                    "max_width": "normal",
+                    "alignment": "left",
+                    "type_preset": "rte",
+                    "font": "var(--font-body--family)",
+                    "font_size": "1rem",
+                    "line_height": "normal",
+                    "letter_spacing": "normal",
+                    "case": "none",
+                    "wrap": "pretty",
+                    "color": "var(--color-foreground)",
+                    "background": false,
+                    "background_color": "#00000026",
+                    "corner_radius": 0,
+                    "padding-block-start": 0,
+                    "padding-block-end": 0,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0
                   },
                   "blocks": {}
                 }
               },
               "block_order": [
-                "spacer_TmXLkJ"
+                "text_GjEweP"
               ]
             }
           },
@@ -2513,7 +2509,7 @@
         "autoplay": true,
         "autoplay_speed": 4,
         "section_width": "full-width",
-        "slide_height": "medium",
+        "slide_height": "large",
         "padding-block-start": 0,
         "padding-block-end": 0
       }
