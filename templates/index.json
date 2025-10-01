@@ -988,6 +988,7 @@
           ]
         }
       },
+      "custom_css": [],
       "name": "GALERIA",
       "settings": {
         "has_image": false,
