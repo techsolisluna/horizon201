@@ -1024,10 +1024,9 @@
     },
     "custom_liquid_gcUDFt": {
       "type": "custom-liquid",
-      "disabled": true,
       "name": "Gumlet",
       "settings": {
-        "custom_liquid": "{%if product.metafields.custom.gumlet_iframe %}{{ product.metafields.custom.gumlet_iframe }}{% endif %}",
+        "custom_liquid": "{%if product.metafields.custom.gumlet_iframe != blank %}{{ product.metafields.custom.gumlet_iframe }}{% endif %}",
         "color_scheme": "",
         "section_width": "page-width",
         "padding-block-start": 0,
