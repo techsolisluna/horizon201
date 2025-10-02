@@ -1317,6 +1317,17 @@
         "padding-block-end": 50
       }
     },
+    "custom_liquid_gcUDFt": {
+      "type": "custom-liquid",
+      "name": "t:names.custom_liquid",
+      "settings": {
+        "custom_liquid": "<div style=\"position:relative;aspect-ratio:16/9;\">\n      <iframe \n            loading=\"lazy\" title=\"Gumlet video player\"\n            src=\"https://play.gumlet.io/embed/68765cd1e448cc1c325e43f8?background=false&autoplay=true&loop=false&disableControls=false\"\n            style=\"border:none; position: absolute; top: 0; left: 0; height: 100%; width: 100%;\"\n          allow=\"accelerometer; gyroscope; autoplay; encrypted-media; picture-in-picture; fullscreen;\">\n          </iframe>\n    </div>",
+        "color_scheme": "",
+        "section_width": "page-width",
+        "padding-block-start": 0,
+        "padding-block-end": 0
+      }
+    },
     "custom_liquid_dHqKTc": {
       "type": "custom-liquid",
       "disabled": true,
@@ -1773,6 +1784,7 @@
     "1751125067ca0a4964",
     "media_with_content_7g7CXm",
     "heyzine",
+    "custom_liquid_gcUDFt",
     "custom_liquid_dHqKTc",
     "hero_EfXQDX",
     "section_c9t9Qn",
