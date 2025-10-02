@@ -1023,6 +1023,17 @@
         "padding-block-end": 32
       }
     },
+    "custom_liquid_gcUDFt": {
+      "type": "custom-liquid",
+      "name": "Gumlet",
+      "settings": {
+        "custom_liquid": "{%if product.metafields.custom.gumlet_iframe != blank %}{{ product.metafields.custom.gumlet_iframe }}{% endif %}",
+        "color_scheme": "",
+        "section_width": "page-width",
+        "padding-block-start": 0,
+        "padding-block-end": 0
+      }
+    },
     "1751125067ca0a4964": {
       "type": "_blocks",
       "blocks": {
@@ -1771,6 +1782,7 @@
     "section_mq6RBB",
     "17593322738c5dfb36",
     "section_7rF8BL",
+    "custom_liquid_gcUDFt",
     "1751125067ca0a4964",
     "media_with_content_7g7CXm",
     "heyzine",

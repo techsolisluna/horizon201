@@ -31,38 +31,10 @@
             "padding-inline-end": 0
           },
           "blocks": {}
-        },
-        "text_iXYWz6": {
-          "type": "text",
-          "name": "t:names.text",
-          "disabled": true,
-          "settings": {
-            "text": "<p>With a focus on quality and design, we curate products that enhance your everyday.</p>",
-            "width": "fit-content",
-            "max_width": "narrow",
-            "alignment": "left",
-            "type_preset": "h4",
-            "font": "var(--font-body--family)",
-            "font_size": "1rem",
-            "line_height": "normal",
-            "letter_spacing": "normal",
-            "case": "none",
-            "wrap": "pretty",
-            "color": "var(--color-foreground)",
-            "background": false,
-            "background_color": "#00000026",
-            "corner_radius": 0,
-            "padding-block-start": 0,
-            "padding-block-end": 0,
-            "padding-inline-start": 0,
-            "padding-inline-end": 0
-          },
-          "blocks": {}
         }
       },
       "block_order": [
-        "logo_4AeNBU",
-        "text_iXYWz6"
+        "logo_4AeNBU"
       ],
       "name": "t:names.hero",
       "settings": {
@@ -92,67 +64,6 @@
         "reflection_opacity": 75,
         "padding-block-start": 100,
         "padding-block-end": 48
-      }
-    },
-    "section_g4bmcj": {
-      "type": "section",
-      "blocks": {
-        "text_FKxexF": {
-          "type": "text",
-          "settings": {
-            "text": "",
-            "width": "100%",
-            "max_width": "narrow",
-            "alignment": "center",
-            "type_preset": "h4",
-            "font": "var(--font-body--family)",
-            "font_size": "1rem",
-            "line_height": "normal",
-            "letter_spacing": "normal",
-            "case": "none",
-            "wrap": "pretty",
-            "color": "var(--color-foreground)",
-            "background": false,
-            "background_color": "#00000026",
-            "corner_radius": 0,
-            "padding-block-start": 0,
-            "padding-block-end": 0,
-            "padding-inline-start": 0,
-            "padding-inline-end": 0
-          },
-          "blocks": {}
-        }
-      },
-      "block_order": [
-        "text_FKxexF"
-      ],
-      "name": "t:names.pull_quote",
-      "settings": {
-        "content_direction": "column",
-        "vertical_on_mobile": true,
-        "horizontal_alignment": "flex-start",
-        "vertical_alignment": "center",
-        "align_baseline": false,
-        "horizontal_alignment_flex_direction_column": "center",
-        "vertical_alignment_flex_direction_column": "center",
-        "gap": 16,
-        "section_width": "page-width",
-        "section_height": "",
-        "section_height_custom": 50,
-        "color_scheme": "scheme-4",
-        "background_media": "none",
-        "video_position": "cover",
-        "background_image_position": "cover",
-        "border": "none",
-        "border_width": 1,
-        "border_opacity": 100,
-        "border_radius": 0,
-        "toggle_overlay": false,
-        "overlay_color": "#00000026",
-        "overlay_style": "solid",
-        "gradient_direction": "to top",
-        "padding-block-start": 64,
-        "padding-block-end": 0
       }
     },
     "section_Hgiqdy": {
@@ -2217,47 +2128,6 @@
         "gap_between_elements": 24
       }
     },
-    "marquee_3QgzV6": {
-      "type": "marquee",
-      "blocks": {
-        "text_rwgKT3": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Desde 1993, excelência na arte de publicar histórias que transformam.</p>",
-            "width": "fit-content",
-            "max_width": "normal",
-            "alignment": "left",
-            "type_preset": "custom",
-            "font": "var(--font-body--family)",
-            "font_size": "1rem",
-            "line_height": "tight",
-            "letter_spacing": "tight",
-            "case": "none",
-            "wrap": "nowrap",
-            "color": "var(--color-foreground)",
-            "background": false,
-            "background_color": "#00000026",
-            "corner_radius": 0,
-            "padding-block-start": 0,
-            "padding-block-end": 0,
-            "padding-inline-start": 0,
-            "padding-inline-end": 0
-          },
-          "blocks": {}
-        }
-      },
-      "block_order": [
-        "text_rwgKT3"
-      ],
-      "name": "t:names.marquee_section",
-      "settings": {
-        "movement_direction": "normal",
-        "color_scheme": "scheme-4",
-        "padding-block-start": 24,
-        "padding-block-end": 24,
-        "gap_between_elements": 24
-      }
-    },
     "section_HfQAGW": {
       "type": "section",
       "blocks": {
@@ -4116,7 +3986,7 @@
             "height": "fill",
             "custom_height": 100,
             "inherit_color_scheme": false,
-            "color_scheme": "scheme-1",
+            "color_scheme": "scheme-6",
             "background_media": "image",
             "video_position": "cover",
             "background_image": "shopify://shop_images/image.webp",
@@ -4199,7 +4069,7 @@
             "height": "fill",
             "custom_height": 100,
             "inherit_color_scheme": false,
-            "color_scheme": "scheme-58084d4c-a86e-4d0a-855e-a0966e5043f7",
+            "color_scheme": "scheme-6",
             "background_media": "image",
             "video_position": "cover",
             "background_image": "shopify://shop_images/museu1.webp",
@@ -4281,7 +4151,7 @@
         "section_width": "full-width",
         "section_height": "small",
         "section_height_custom": 50,
-        "color_scheme": "scheme-6",
+        "color_scheme": "scheme-5",
         "background_media": "none",
         "video_position": "cover",
         "background_image_position": "cover",
@@ -4289,18 +4159,58 @@
         "border_width": 0,
         "border_opacity": 100,
         "border_radius": 0,
-        "toggle_overlay": true,
+        "toggle_overlay": false,
         "overlay_color": "#000000",
         "overlay_style": "solid",
         "gradient_direction": "to top",
-        "padding-block-start": 0,
+        "padding-block-start": 10,
         "padding-block-end": 0
+      }
+    },
+    "marquee_3QgzV6": {
+      "type": "marquee",
+      "blocks": {
+        "text_rwgKT3": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Desde 1993, excelência na arte de publicar histórias que transformam.</p>",
+            "width": "fit-content",
+            "max_width": "normal",
+            "alignment": "left",
+            "type_preset": "custom",
+            "font": "var(--font-body--family)",
+            "font_size": "1rem",
+            "line_height": "tight",
+            "letter_spacing": "tight",
+            "case": "none",
+            "wrap": "nowrap",
+            "color": "var(--color-foreground)",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "text_rwgKT3"
+      ],
+      "name": "t:names.marquee_section",
+      "settings": {
+        "movement_direction": "normal",
+        "color_scheme": "scheme-4",
+        "padding-block-start": 24,
+        "padding-block-end": 24,
+        "gap_between_elements": 24
       }
     }
   },
   "order": [
     "hero_jVaWmY",
-    "section_g4bmcj",
     "section_Hgiqdy",
     "media_with_content_cyX99F",
     "product_list_GEztnp",
@@ -4310,7 +4220,6 @@
     "collection_links_cpihfQ",
     "section_jVTF7W",
     "marquee_DPpXh7",
-    "marquee_3QgzV6",
     "section_HfQAGW",
     "slideshow_fzxHeh",
     "media_with_content_JVbTt8",
@@ -4323,6 +4232,7 @@
     "hero_LEpq8q",
     "hero_LRV9yj",
     "blog_posts_Uze9H7",
-    "section_7xk9Xh"
+    "section_7xk9Xh",
+    "marquee_3QgzV6"
   ]
 }
