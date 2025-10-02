@@ -142,7 +142,7 @@
                   "type": "text",
                   "name": "Autor",
                   "settings": {
-                    "text": "<p>{{ closest.product.metafields.custom.autor | metafield_text: field: 'nome' }}</p>",
+                    "text": "<p><a href='#authors'>{{ closest.product.metafields.custom.autor | metafield_text: field: 'nome' }}</a></p>",
                     "width": "fit-content",
                     "max_width": "normal",
                     "alignment": "left",
