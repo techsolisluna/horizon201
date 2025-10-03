@@ -85,7 +85,10 @@
               resource: article,
               resource_type: 'article',
               image_aspect_ratio: '16/9',
-              image_width: 1800
+              image_width: 1800,
+              font_size_heading: section.settings.font_size_heading,
+              font_size_date: section.settings.font_size_date,
+              font_size_body: section.settings.font_size_body
             %}
           </div>
 
@@ -286,6 +289,40 @@
       "unit": "px",
       "default": 8,
       "visible_if": "{{ section.settings.layout_type == 'grid'}}"
+    },
+    {
+      "type": "header",
+      "content": "Font size"
+    },
+    {
+      "type": "range",
+      "id": "font_size_heading",
+      "label": "Card Heading font size",
+      "min": 0,
+      "max": 3,
+      "step": 0.1,
+      "unit": "rem",
+      "default": 1.2
+    },
+    {
+      "type": "range",
+      "id": "font_size_date",
+      "label": "Card Date font size",
+      "min": 0,
+      "max": 3,
+      "step": 0.1,
+      "unit": "rem",
+      "default": 0.8
+    },
+    {
+      "type": "range",
+      "id": "font_size_body",
+      "label": "Card Body font size",
+      "min": 0,
+      "max": 3,
+      "step": 0.1,
+      "unit": "rem",
+      "default": 1
     },
     {
       "type": "header",
