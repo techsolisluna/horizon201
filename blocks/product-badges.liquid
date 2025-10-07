@@ -1,0 +1,36 @@
+{% liquid
+    assign tagsList = "" | split: ""
+
+    if product.metafields.custom.status.value.system.handle == "pre-venda"
+        assign tag = "Pré-venda" | sort
+        assign tagsList = tagsList | concat: tag
+    elsif product.metafields.custom.status.value.system.handle == "lancamento"
+        assign tag = "Lançamento" | sort
+        assign tagsList = tagsList | concat: tag
+    endif
+
+    for category in product.metafields.custom.categorias.values
+        assign tag = category | sort
+        assign tagsList = tagsList | concat: tag
+    endfor
+
+    assign tagsList = tagsList | slice: 0, 2 
+%}
+
+{{ tagsList }}
+
+{% schema %}
+{
+  "name": "Product Badges",
+  "tag": null,
+  "settings": [
+    
+  ],
+  "presets": [
+    {
+      "name": "Product Badges",
+      "category": "t:categories.product"
+    }
+  ]
+}
+{% endschema %}
