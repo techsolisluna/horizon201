@@ -80,7 +80,11 @@
           "blocks": {}
         }
       },
-      "block_order": ["text_GqmVFf", "text_Ua9XAW", "button_PAQMwR"],
+      "block_order": [
+        "text_GqmVFf",
+        "text_Ua9XAW",
+        "button_PAQMwR"
+      ],
       "settings": {
         "content_direction": "column",
         "section_width": "page-width",
@@ -91,6 +95,17 @@
         "color_scheme": "",
         "padding-block-start": 100,
         "padding-block-end": 100
+      }
+    },
+    "custom_liquid_cKPKPz": {
+      "type": "custom-liquid",
+      "name": "t:names.custom_liquid",
+      "settings": {
+        "custom_liquid": "teste",
+        "color_scheme": "",
+        "section_width": "page-width",
+        "padding-block-start": 0,
+        "padding-block-end": 0
       }
     },
     "product_list_iA96Tq": {
@@ -156,7 +171,9 @@
               "blocks": {}
             }
           },
-          "block_order": ["text_WJEa9Q"]
+          "block_order": [
+            "text_WJEa9Q"
+          ]
         },
         "static-product-card": {
           "type": "_product-card",
@@ -328,7 +345,10 @@
               ]
             }
           },
-          "block_order": ["product_card_gallery_wxYqE3", "group_rtcF9Q"]
+          "block_order": [
+            "product_card_gallery_wxYqE3",
+            "group_rtcF9Q"
+          ]
         }
       },
       "name": "t:names.products_grid",
@@ -339,6 +359,7 @@
         "max_products": 4,
         "columns": 4,
         "mobile_columns": "2",
+        "mobile_card_size": "60cqw",
         "columns_gap": 12,
         "rows_gap": 24,
         "icons_style": "arrow",
@@ -352,5 +373,9 @@
       }
     }
   },
-  "order": ["main", "product_list_iA96Tq"]
+  "order": [
+    "main",
+    "custom_liquid_cKPKPz",
+    "product_list_iA96Tq"
+  ]
 }
