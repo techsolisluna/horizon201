@@ -1,30 +1,138 @@
 {% liquid
     assign tagsList = "" | split: ""
+    assign categorias = closest.product.metafields.custom.categorias | remove_first: "[" | remove_last: "]"
+    assign categorias = categorias | split: ","
 
-    if product.metafields.custom.status.value.system.handle == "pre-venda"
-        assign tag = "Pré-venda" | sort
+
+    if closest.product.metafields.custom.status.value.system.handle == "pre-venda"
+        assign tag = "PRÉ-VENDA" | sort
         assign tagsList = tagsList | concat: tag
-    elsif product.metafields.custom.status.value.system.handle == "lancamento"
-        assign tag = "Lançamento" | sort
+    elsif closest.product.metafields.custom.status.value.system.handle == "lancamento"
+        assign tag = "NOVIDADE" | sort
         assign tagsList = tagsList | concat: tag
     endif
 
-    for category in product.metafields.custom.categorias.values
-        assign tag = category | sort
+    for category in categorias
+        assign palavra = category | remove_first: '"' | remove_last: '"'
+        assign tag = palavra | sort
         assign tagsList = tagsList | concat: tag
     endfor
 
-    assign tagsList = tagsList | slice: 0, 2 
+    assign tagsList = tagsList | slice: 0, 3 
 %}
 
-{{ tagsList }}
+{% style %}
+  .flex-badges{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 0.4rem;
+    align-items: center;
+    justify-content: center;
+    padding-top: {{ block.settings.padding-top }}px;
+    padding-bottom: {{ block.settings.padding-bottom }}px;
+  }
+
+  .product-badges__badge_block {
+    --badge-font-size: var(--font-size--xs);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: var(--color-foreground);
+    background: var(--color-background);
+    font-size: 0.65rem;
+    font-family: "Noto Sans";
+    font-weight: var(--badge-font-weight);
+    text-transform: var(--badge-text-transform);
+    border-radius: 3px;
+    gap: 0.1rem;
+  }
+
+  .product-badges__badge_block--rectangle {
+    padding-block: 2px;
+    padding-inline: 5px;
+  }
+
+  .badge-icon {
+    fill: #F79E1B;
+  }
+
+  .tag-text {
+  }
+{% endstyle %}
+
+<div class="flex-badges" 
+    style="
+      --badge-border-radius: {{ settings.badge_corner_radius }}px;
+      --badge-font-family: var(--font-{{ settings.badge_font_family }}--family); --badge-font-weight: var(--font-{{ settings.badge_font_family }}--weight); --badge-text-transform: {{ settings.badge_text_transform }};
+    "
+>
+  {% for tag in tagsList %}
+    <div
+      class="product-badges__badge_block product-badges__badge_block--rectangle"
+      style="
+        {% if tag == "PRÉ-VENDA"  %}background-color: #a90000; color: white; font-weight: bold;
+        {% elsif tag == "NOVIDADE"  %}background-color: #FFD700; border-color: #FFD700; font-weight: bold; color: #5E5E5E;
+        {% else %}background-color: #D9D9D9; border-color: #D9D9D9; color: #383838;{% endif %}
+      "
+    >
+      {% if tag == "PRÉ-VENDA" %}
+        <svg
+          aria-hidden="true"
+          focusable="false"
+          class="badge-icon"
+          width="10"
+          height="10"
+          viewBox="0 0 19 19"
+        >
+          {% render 'icon', icon: 'full-star' %}
+        </svg>
+      {% elsif tag == "NOVIDADE" %}
+        <svg
+          aria-hidden="true"
+          focusable="false"
+          class="badge-icon"
+          width="10"
+          height="10"
+          viewBox="0 0 19 19"
+        >
+          {% render 'icon', icon: 'full-star' %}
+        </svg>
+      {% endif %}
+      <span class="tag-text">{{ tag }}</span>
+    </div>
+  {% endfor %}
+</div>
+
+
 
 {% schema %}
 {
   "name": "Product Badges",
   "tag": null,
   "settings": [
-    
+    {
+      "type": "range",
+      "id": "padding-top",
+      "label": "t:settings.top",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "default": 10
+    },
+    {
+      "type": "range",
+      "id": "padding-bottom",
+      "label": "t:settings.bottom",
+      "min": 0,
+      "max": 100,
+      "step": 1,
+      "unit": "px",
+      "default": 10
+    }
   ],
   "presets": [
     {
