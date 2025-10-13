@@ -686,7 +686,6 @@
                     },
                     "accordion_row_a8xKG8": {
                       "type": "_accordion-row",
-                      "disabled": true,
                       "settings": {
                         "heading": "Classificação",
                         "open_by_default": false,
