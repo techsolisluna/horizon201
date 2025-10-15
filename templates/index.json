@@ -142,853 +142,6 @@
         "padding-block-end": 20
       }
     },
-    "section_Hgiqdy": {
-      "type": "section",
-      "blocks": {
-        "group_Dgy8GV": {
-          "type": "group",
-          "settings": {
-            "link": "shopify://pages/leitores",
-            "open_in_new_tab": true,
-            "content_direction": "column",
-            "vertical_on_mobile": true,
-            "horizontal_alignment": "flex-start",
-            "vertical_alignment": "center",
-            "align_baseline": false,
-            "horizontal_alignment_flex_direction_column": "center",
-            "vertical_alignment_flex_direction_column": "center",
-            "gap": 16,
-            "width": "fill",
-            "custom_width": 100,
-            "width_mobile": "fill",
-            "custom_width_mobile": 100,
-            "height": "fit",
-            "custom_height": 100,
-            "inherit_color_scheme": true,
-            "color_scheme": "",
-            "background_media": "none",
-            "video_position": "cover",
-            "background_image_position": "cover",
-            "border": "none",
-            "border_width": 1,
-            "border_opacity": 100,
-            "border_radius": 15,
-            "toggle_overlay": true,
-            "overlay_color": "#ffc200",
-            "overlay_style": "solid",
-            "gradient_direction": "to top",
-            "padding-block-start": 20,
-            "padding-block-end": 20,
-            "padding-inline-start": 0,
-            "padding-inline-end": 0
-          },
-          "blocks": {
-            "icon_dHpKgr": {
-              "type": "icon",
-              "settings": {
-                "icon": "heart",
-                "width": 32,
-                "link": "shopify://pages/carrinho-de-livros",
-                "open_in_new_tab": true
-              },
-              "blocks": {}
-            },
-            "group_xUDTTD": {
-              "type": "group",
-              "settings": {
-                "link": "shopify://pages/sala-do-educador",
-                "open_in_new_tab": true,
-                "content_direction": "column",
-                "vertical_on_mobile": true,
-                "horizontal_alignment": "flex-start",
-                "vertical_alignment": "center",
-                "align_baseline": false,
-                "horizontal_alignment_flex_direction_column": "flex-start",
-                "vertical_alignment_flex_direction_column": "center",
-                "gap": 4,
-                "width": "fill",
-                "custom_width": 100,
-                "width_mobile": "fill",
-                "custom_width_mobile": 100,
-                "height": "fit",
-                "custom_height": 100,
-                "inherit_color_scheme": true,
-                "color_scheme": "",
-                "background_media": "none",
-                "video_position": "cover",
-                "background_image_position": "cover",
-                "border": "none",
-                "border_width": 1,
-                "border_opacity": 100,
-                "border_radius": 0,
-                "toggle_overlay": false,
-                "overlay_color": "#00000026",
-                "overlay_style": "solid",
-                "gradient_direction": "to top",
-                "padding-block-start": 0,
-                "padding-block-end": 0,
-                "padding-inline-start": 0,
-                "padding-inline-end": 0
-              },
-              "blocks": {
-                "text_VCRwwj": {
-                  "type": "text",
-                  "settings": {
-                    "text": "<h2><a href=\"/pages/leitores\" target=\"_blank\" title=\"Leitores\">Leitores</a></h2>",
-                    "width": "100%",
-                    "max_width": "normal",
-                    "alignment": "center",
-                    "type_preset": "h3",
-                    "font": "var(--font-body--family)",
-                    "font_size": "",
-                    "line_height": "normal",
-                    "letter_spacing": "normal",
-                    "case": "none",
-                    "wrap": "pretty",
-                    "color": "var(--color-foreground)",
-                    "background": false,
-                    "background_color": "#00000026",
-                    "corner_radius": 0,
-                    "padding-block-start": 0,
-                    "padding-block-end": 0,
-                    "padding-inline-start": 0,
-                    "padding-inline-end": 0
-                  },
-                  "blocks": {}
-                }
-              },
-              "block_order": [
-                "text_VCRwwj"
-              ]
-            }
-          },
-          "block_order": [
-            "icon_dHpKgr",
-            "group_xUDTTD"
-          ]
-        },
-        "group_VnbDrM": {
-          "type": "group",
-          "settings": {
-            "link": "shopify://pages/livrarias",
-            "open_in_new_tab": true,
-            "content_direction": "column",
-            "vertical_on_mobile": true,
-            "horizontal_alignment": "flex-start",
-            "vertical_alignment": "center",
-            "align_baseline": false,
-            "horizontal_alignment_flex_direction_column": "center",
-            "vertical_alignment_flex_direction_column": "center",
-            "gap": 16,
-            "width": "fill",
-            "custom_width": 100,
-            "width_mobile": "fill",
-            "custom_width_mobile": 100,
-            "height": "fit",
-            "custom_height": 100,
-            "inherit_color_scheme": true,
-            "color_scheme": "",
-            "background_media": "none",
-            "video_position": "cover",
-            "background_image_position": "cover",
-            "border": "none",
-            "border_width": 1,
-            "border_opacity": 100,
-            "border_radius": 15,
-            "toggle_overlay": true,
-            "overlay_color": "#ffc200",
-            "overlay_style": "solid",
-            "gradient_direction": "to top",
-            "padding-block-start": 20,
-            "padding-block-end": 20,
-            "padding-inline-start": 0,
-            "padding-inline-end": 0
-          },
-          "blocks": {
-            "icon_fAERgt": {
-              "type": "icon",
-              "settings": {
-                "icon": "map_pin",
-                "width": 32,
-                "link": "shopify://pages/distribuidores-e-pontos-de-venda-dos-livros-da-solisluna",
-                "open_in_new_tab": true
-              },
-              "blocks": {}
-            },
-            "group_GBUKkf": {
-              "type": "group",
-              "settings": {
-                "link": "",
-                "open_in_new_tab": false,
-                "content_direction": "column",
-                "vertical_on_mobile": true,
-                "horizontal_alignment": "flex-start",
-                "vertical_alignment": "center",
-                "align_baseline": false,
-                "horizontal_alignment_flex_direction_column": "flex-start",
-                "vertical_alignment_flex_direction_column": "center",
-                "gap": 4,
-                "width": "fill",
-                "custom_width": 100,
-                "width_mobile": "fill",
-                "custom_width_mobile": 100,
-                "height": "fit",
-                "custom_height": 100,
-                "inherit_color_scheme": true,
-                "color_scheme": "",
-                "background_media": "none",
-                "video_position": "cover",
-                "background_image_position": "cover",
-                "border": "none",
-                "border_width": 1,
-                "border_opacity": 100,
-                "border_radius": 0,
-                "toggle_overlay": false,
-                "overlay_color": "#00000026",
-                "overlay_style": "solid",
-                "gradient_direction": "to top",
-                "padding-block-start": 0,
-                "padding-block-end": 0,
-                "padding-inline-start": 0,
-                "padding-inline-end": 0
-              },
-              "blocks": {
-                "text_7E8E6E": {
-                  "type": "text",
-                  "settings": {
-                    "text": "<h2><a href=\"/pages/livrarias\" target=\"_blank\" title=\"Livrarias\">Livreiros</a></h2>",
-                    "width": "100%",
-                    "max_width": "normal",
-                    "alignment": "center",
-                    "type_preset": "h3",
-                    "font": "var(--font-body--family)",
-                    "font_size": "",
-                    "line_height": "normal",
-                    "letter_spacing": "normal",
-                    "case": "none",
-                    "wrap": "pretty",
-                    "color": "var(--color-foreground)",
-                    "background": false,
-                    "background_color": "#00000026",
-                    "corner_radius": 0,
-                    "padding-block-start": 0,
-                    "padding-block-end": 0,
-                    "padding-inline-start": 0,
-                    "padding-inline-end": 0
-                  },
-                  "blocks": {}
-                }
-              },
-              "block_order": [
-                "text_7E8E6E"
-              ]
-            }
-          },
-          "block_order": [
-            "icon_fAERgt",
-            "group_GBUKkf"
-          ]
-        },
-        "group_PRDkzp": {
-          "type": "group",
-          "settings": {
-            "link": "shopify://pages/escolas",
-            "open_in_new_tab": true,
-            "content_direction": "column",
-            "vertical_on_mobile": true,
-            "horizontal_alignment": "flex-start",
-            "vertical_alignment": "center",
-            "align_baseline": false,
-            "horizontal_alignment_flex_direction_column": "center",
-            "vertical_alignment_flex_direction_column": "center",
-            "gap": 16,
-            "width": "fill",
-            "custom_width": 100,
-            "width_mobile": "fill",
-            "custom_width_mobile": 100,
-            "height": "fit",
-            "custom_height": 100,
-            "inherit_color_scheme": true,
-            "color_scheme": "",
-            "background_media": "none",
-            "video_position": "cover",
-            "background_image_position": "cover",
-            "border": "none",
-            "border_width": 1,
-            "border_opacity": 100,
-            "border_radius": 15,
-            "toggle_overlay": true,
-            "overlay_color": "#ffc200",
-            "overlay_style": "solid",
-            "gradient_direction": "to top",
-            "padding-block-start": 20,
-            "padding-block-end": 20,
-            "padding-inline-start": 0,
-            "padding-inline-end": 0
-          },
-          "blocks": {
-            "icon_P9BVAG": {
-              "type": "icon",
-              "settings": {
-                "icon": "plant",
-                "width": 32,
-                "link": "",
-                "open_in_new_tab": false
-              },
-              "blocks": {}
-            },
-            "group_rmkDLV": {
-              "type": "group",
-              "settings": {
-                "link": "",
-                "open_in_new_tab": false,
-                "content_direction": "column",
-                "vertical_on_mobile": true,
-                "horizontal_alignment": "flex-start",
-                "vertical_alignment": "center",
-                "align_baseline": false,
-                "horizontal_alignment_flex_direction_column": "flex-start",
-                "vertical_alignment_flex_direction_column": "center",
-                "gap": 4,
-                "width": "fill",
-                "custom_width": 100,
-                "width_mobile": "fill",
-                "custom_width_mobile": 100,
-                "height": "fit",
-                "custom_height": 100,
-                "inherit_color_scheme": true,
-                "color_scheme": "",
-                "background_media": "none",
-                "video_position": "cover",
-                "background_image_position": "cover",
-                "border": "none",
-                "border_width": 1,
-                "border_opacity": 100,
-                "border_radius": 0,
-                "toggle_overlay": false,
-                "overlay_color": "#00000026",
-                "overlay_style": "solid",
-                "gradient_direction": "to top",
-                "padding-block-start": 0,
-                "padding-block-end": 0,
-                "padding-inline-start": 0,
-                "padding-inline-end": 0
-              },
-              "blocks": {
-                "text_zrgJnC": {
-                  "type": "text",
-                  "settings": {
-                    "text": "<h2><a href=\"/pages/escolas\" target=\"_blank\" title=\"Escolas\">Educadores</a></h2>",
-                    "width": "100%",
-                    "max_width": "normal",
-                    "alignment": "center",
-                    "type_preset": "h3",
-                    "font": "var(--font-body--family)",
-                    "font_size": "",
-                    "line_height": "normal",
-                    "letter_spacing": "normal",
-                    "case": "none",
-                    "wrap": "pretty",
-                    "color": "var(--color-primary)",
-                    "background": false,
-                    "background_color": "#00000026",
-                    "corner_radius": 0,
-                    "padding-block-start": 0,
-                    "padding-block-end": 0,
-                    "padding-inline-start": 0,
-                    "padding-inline-end": 0
-                  },
-                  "blocks": {}
-                }
-              },
-              "block_order": [
-                "text_zrgJnC"
-              ]
-            }
-          },
-          "block_order": [
-            "icon_P9BVAG",
-            "group_rmkDLV"
-          ]
-        },
-        "group_TKfjcL": {
-          "type": "group",
-          "settings": {
-            "link": "shopify://pages/bibliotecas",
-            "open_in_new_tab": true,
-            "content_direction": "column",
-            "vertical_on_mobile": true,
-            "horizontal_alignment": "flex-start",
-            "vertical_alignment": "center",
-            "align_baseline": false,
-            "horizontal_alignment_flex_direction_column": "center",
-            "vertical_alignment_flex_direction_column": "center",
-            "gap": 16,
-            "width": "fill",
-            "custom_width": 100,
-            "width_mobile": "fill",
-            "custom_width_mobile": 100,
-            "height": "fit",
-            "custom_height": 100,
-            "inherit_color_scheme": true,
-            "color_scheme": "",
-            "background_media": "none",
-            "video_position": "cover",
-            "background_image_position": "cover",
-            "border": "none",
-            "border_width": 1,
-            "border_opacity": 100,
-            "border_radius": 15,
-            "toggle_overlay": true,
-            "overlay_color": "#ffc200",
-            "overlay_style": "solid",
-            "gradient_direction": "to top",
-            "padding-block-start": 20,
-            "padding-block-end": 20,
-            "padding-inline-start": 0,
-            "padding-inline-end": 0
-          },
-          "blocks": {
-            "icon_yDxbRe": {
-              "type": "icon",
-              "settings": {
-                "icon": "star",
-                "width": 32,
-                "link": "",
-                "open_in_new_tab": false
-              },
-              "blocks": {}
-            },
-            "group_NYXdnm": {
-              "type": "group",
-              "settings": {
-                "link": "",
-                "open_in_new_tab": false,
-                "content_direction": "column",
-                "vertical_on_mobile": true,
-                "horizontal_alignment": "flex-start",
-                "vertical_alignment": "center",
-                "align_baseline": false,
-                "horizontal_alignment_flex_direction_column": "flex-start",
-                "vertical_alignment_flex_direction_column": "center",
-                "gap": 4,
-                "width": "fill",
-                "custom_width": 100,
-                "width_mobile": "fill",
-                "custom_width_mobile": 100,
-                "height": "fit",
-                "custom_height": 100,
-                "inherit_color_scheme": true,
-                "color_scheme": "",
-                "background_media": "none",
-                "video_position": "cover",
-                "background_image_position": "cover",
-                "border": "none",
-                "border_width": 1,
-                "border_opacity": 100,
-                "border_radius": 0,
-                "toggle_overlay": false,
-                "overlay_color": "#00000026",
-                "overlay_style": "solid",
-                "gradient_direction": "to top",
-                "padding-block-start": 0,
-                "padding-block-end": 0,
-                "padding-inline-start": 0,
-                "padding-inline-end": 0
-              },
-              "blocks": {
-                "text_UFbk84": {
-                  "type": "text",
-                  "settings": {
-                    "text": "<h2><a href=\"/pages/bibliotecas\" title=\"Bibliotecas\">Bibliotecas</a></h2>",
-                    "width": "100%",
-                    "max_width": "normal",
-                    "alignment": "center",
-                    "type_preset": "h3",
-                    "font": "var(--font-body--family)",
-                    "font_size": "",
-                    "line_height": "normal",
-                    "letter_spacing": "normal",
-                    "case": "none",
-                    "wrap": "pretty",
-                    "color": "var(--color-foreground)",
-                    "background": false,
-                    "background_color": "#00000026",
-                    "corner_radius": 0,
-                    "padding-block-start": 0,
-                    "padding-block-end": 0,
-                    "padding-inline-start": 0,
-                    "padding-inline-end": 0
-                  },
-                  "blocks": {}
-                }
-              },
-              "block_order": [
-                "text_UFbk84"
-              ]
-            }
-          },
-          "block_order": [
-            "icon_yDxbRe",
-            "group_NYXdnm"
-          ]
-        },
-        "group_EPx3dx": {
-          "type": "group",
-          "disabled": true,
-          "settings": {
-            "link": "",
-            "open_in_new_tab": false,
-            "content_direction": "column",
-            "vertical_on_mobile": true,
-            "horizontal_alignment": "flex-start",
-            "vertical_alignment": "center",
-            "align_baseline": false,
-            "horizontal_alignment_flex_direction_column": "center",
-            "vertical_alignment_flex_direction_column": "center",
-            "gap": 16,
-            "width": "fill",
-            "custom_width": 100,
-            "width_mobile": "fill",
-            "custom_width_mobile": 100,
-            "height": "fit",
-            "custom_height": 100,
-            "inherit_color_scheme": true,
-            "color_scheme": "",
-            "background_media": "none",
-            "video_position": "cover",
-            "background_image_position": "cover",
-            "border": "none",
-            "border_width": 1,
-            "border_opacity": 100,
-            "border_radius": 0,
-            "toggle_overlay": false,
-            "overlay_color": "#00000026",
-            "overlay_style": "solid",
-            "gradient_direction": "to top",
-            "padding-block-start": 0,
-            "padding-block-end": 0,
-            "padding-inline-start": 0,
-            "padding-inline-end": 0
-          },
-          "blocks": {
-            "icon_6gX8JK": {
-              "type": "icon",
-              "settings": {
-                "icon": "silhouette",
-                "width": 32,
-                "link": "",
-                "open_in_new_tab": false
-              },
-              "blocks": {}
-            },
-            "group_hqTAA8": {
-              "type": "group",
-              "settings": {
-                "link": "",
-                "open_in_new_tab": false,
-                "content_direction": "column",
-                "vertical_on_mobile": true,
-                "horizontal_alignment": "flex-start",
-                "vertical_alignment": "center",
-                "align_baseline": false,
-                "horizontal_alignment_flex_direction_column": "flex-start",
-                "vertical_alignment_flex_direction_column": "center",
-                "gap": 4,
-                "width": "fill",
-                "custom_width": 100,
-                "width_mobile": "fill",
-                "custom_width_mobile": 100,
-                "height": "fit",
-                "custom_height": 100,
-                "inherit_color_scheme": true,
-                "color_scheme": "",
-                "background_media": "none",
-                "video_position": "cover",
-                "background_image_position": "cover",
-                "border": "none",
-                "border_width": 1,
-                "border_opacity": 100,
-                "border_radius": 0,
-                "toggle_overlay": false,
-                "overlay_color": "#00000026",
-                "overlay_style": "solid",
-                "gradient_direction": "to top",
-                "padding-block-start": 0,
-                "padding-block-end": 0,
-                "padding-inline-start": 0,
-                "padding-inline-end": 0
-              },
-              "blocks": {
-                "text_eRGBLP": {
-                  "type": "text",
-                  "settings": {
-                    "text": "<h2>Autores</h2>",
-                    "width": "100%",
-                    "max_width": "normal",
-                    "alignment": "center",
-                    "type_preset": "h3",
-                    "font": "var(--font-body--family)",
-                    "font_size": "",
-                    "line_height": "normal",
-                    "letter_spacing": "normal",
-                    "case": "none",
-                    "wrap": "pretty",
-                    "color": "var(--color-foreground)",
-                    "background": false,
-                    "background_color": "#00000026",
-                    "corner_radius": 0,
-                    "padding-block-start": 0,
-                    "padding-block-end": 0,
-                    "padding-inline-start": 0,
-                    "padding-inline-end": 0
-                  },
-                  "blocks": {}
-                }
-              },
-              "block_order": [
-                "text_eRGBLP"
-              ]
-            }
-          },
-          "block_order": [
-            "icon_6gX8JK",
-            "group_hqTAA8"
-          ]
-        }
-      },
-      "block_order": [
-        "group_Dgy8GV",
-        "group_VnbDrM",
-        "group_PRDkzp",
-        "group_TKfjcL",
-        "group_EPx3dx"
-      ],
-      "name": "t:names.icons_with_text",
-      "settings": {
-        "content_direction": "row",
-        "vertical_on_mobile": true,
-        "horizontal_alignment": "flex-start",
-        "vertical_alignment": "center",
-        "align_baseline": false,
-        "horizontal_alignment_flex_direction_column": "flex-start",
-        "vertical_alignment_flex_direction_column": "center",
-        "gap": 30,
-        "section_width": "page-width",
-        "section_height": "",
-        "section_height_custom": 50,
-        "color_scheme": "scheme-4",
-        "background_media": "none",
-        "video_position": "cover",
-        "background_image_position": "cover",
-        "border": "none",
-        "border_width": 1,
-        "border_opacity": 100,
-        "border_radius": 0,
-        "toggle_overlay": false,
-        "overlay_color": "#00000026",
-        "overlay_style": "solid",
-        "gradient_direction": "to top",
-        "padding-block-start": 48,
-        "padding-block-end": 48
-      }
-    },
-    "media_with_content_cyX99F": {
-      "type": "media-with-content",
-      "blocks": {
-        "media": {
-          "type": "_media-without-appearance",
-          "static": true,
-          "settings": {
-            "media_type": "image",
-            "image": "shopify://shop_images/galeria-logo.png",
-            "link": "",
-            "video_loop": true,
-            "video_autoplay": false,
-            "image_position": "contain",
-            "video_position": "cover"
-          },
-          "blocks": {}
-        },
-        "content": {
-          "type": "_content-without-appearance",
-          "static": true,
-          "settings": {
-            "horizontal_alignment_flex_direction_column": "flex-start",
-            "vertical_alignment_flex_direction_column": "flex-end",
-            "gap": 30
-          },
-          "blocks": {
-            "jumbo_text_jNFjfL": {
-              "type": "jumbo-text",
-              "name": "t:names.jumbo_text",
-              "disabled": true,
-              "settings": {
-                "text": "EM\nBREVE",
-                "font": "accent",
-                "alignment": "right",
-                "line_height": "1",
-                "letter_spacing": "-0.03em",
-                "case": "none",
-                "text_effect": "reveal",
-                "animation_repeat": true
-              },
-              "blocks": {}
-            },
-            "text_pwJaiE": {
-              "type": "text",
-              "name": "t:names.heading",
-              "settings": {
-                "text": "<h3><em>Em breve!</em></h3>",
-                "width": "100%",
-                "max_width": "normal",
-                "alignment": "left",
-                "type_preset": "custom",
-                "font": "var(--font-accent--family)",
-                "font_size": "1.5rem",
-                "line_height": "normal",
-                "letter_spacing": "normal",
-                "case": "none",
-                "wrap": "pretty",
-                "color": "var(--color-foreground)",
-                "background": false,
-                "background_color": "#00000026",
-                "corner_radius": 0,
-                "padding-block-start": 0,
-                "padding-block-end": 0,
-                "padding-inline-start": 0,
-                "padding-inline-end": 0
-              },
-              "blocks": {}
-            },
-            "text_EbGLXT": {
-              "type": "text",
-              "name": "t:names.heading",
-              "settings": {
-                "text": "<h2>Impressões em <em>Fine-Art</em> de obras de arte selecionadas.</h2>",
-                "width": "100%",
-                "max_width": "normal",
-                "alignment": "left",
-                "type_preset": "rte",
-                "font": "var(--font-body--family)",
-                "font_size": "1rem",
-                "line_height": "normal",
-                "letter_spacing": "normal",
-                "case": "none",
-                "wrap": "pretty",
-                "color": "var(--color-foreground)",
-                "background": false,
-                "background_color": "#00000026",
-                "corner_radius": 0,
-                "padding-block-start": 0,
-                "padding-block-end": 0,
-                "padding-inline-start": 0,
-                "padding-inline-end": 0
-              },
-              "blocks": {}
-            },
-            "text_HCwwmw": {
-              "type": "text",
-              "name": "t:names.text",
-              "settings": {
-                "text": "<p>Vocês pediram e nós vamos realizar. </p><p>A obra de arte que vai da páginas do livro à parede da sua casa. <br/>Uma seleção de obras de arte em gravura.</p>",
-                "width": "fit-content",
-                "max_width": "normal",
-                "alignment": "left",
-                "type_preset": "rte",
-                "font": "var(--font-body--family)",
-                "font_size": "1rem",
-                "line_height": "normal",
-                "letter_spacing": "normal",
-                "case": "none",
-                "wrap": "pretty",
-                "color": "var(--color-foreground)",
-                "background": false,
-                "background_color": "#00000026",
-                "corner_radius": 0,
-                "padding-block-start": 0,
-                "padding-block-end": 0,
-                "padding-inline-start": 0,
-                "padding-inline-end": 0
-              },
-              "blocks": {}
-            },
-            "button_Up7ixF": {
-              "type": "button",
-              "name": "Button Galeria",
-              "disabled": true,
-              "settings": {
-                "label": "Me avise!",
-                "link": "shopify://pages/galeria",
-                "open_in_new_tab": false,
-                "style_class": "button",
-                "width": "fit-content",
-                "custom_width": 100,
-                "width_mobile": "fit-content",
-                "custom_width_mobile": 100
-              },
-              "blocks": {}
-            },
-            "popup_link_nx7fmg": {
-              "type": "popup-link",
-              "name": "t:names.popup_link",
-              "settings": {
-                "behavior": "default",
-                "heading": "Me avise",
-                "type_preset": "",
-                "padding-block-start": 0,
-                "padding-block-end": 0,
-                "padding-inline-start": 0,
-                "padding-inline-end": 0
-              },
-              "blocks": {
-                "forms_inline_nzX33h": {
-                  "type": "shopify://apps/forms/blocks/inline/8744a304-fcb1-4347-b211-bb6b4759a76a",
-                  "settings": {
-                    "form_id": "585847",
-                    "text_color": "#202020",
-                    "button_background_color": "#202020",
-                    "button_label_color": "#ffffff",
-                    "links_color": "#1878b9",
-                    "errors_color": "#e02229",
-                    "text_alignment": "center",
-                    "form_alignment": "center",
-                    "padding_top": 0,
-                    "padding_bottom": 24,
-                    "padding_right": 0,
-                    "padding_left": 0
-                  }
-                }
-              },
-              "block_order": [
-                "forms_inline_nzX33h"
-              ]
-            }
-          },
-          "block_order": [
-            "jumbo_text_jNFjfL",
-            "text_pwJaiE",
-            "text_EbGLXT",
-            "text_HCwwmw",
-            "button_Up7ixF",
-            "popup_link_nx7fmg"
-          ]
-        }
-      },
-      "custom_css": [],
-      "name": "GALERIA",
-      "settings": {
-        "has_image": false,
-        "media_position": "right",
-        "media_width": "narrow",
-        "media_height": "auto",
-        "section_width": "page-width",
-        "extend_media": true,
-        "color_scheme": "scheme-1",
-        "padding-block-start": 70,
-        "padding-block-end": 70
-      }
-    },
     "product_list_GEztnp": {
       "type": "product-list",
       "blocks": {
@@ -1109,7 +262,12 @@
             },
             "product_badges": {
               "type": "product-badges",
-              "name": "Product Badges"
+              "name": "Product Badges",
+              "settings": {
+                "padding-top": 10,
+                "padding-bottom": 10
+              },
+              "blocks": {}
             },
             "group_f9Q4A4": {
               "type": "_product-card-group",
@@ -1267,6 +425,7 @@
           ]
         }
       },
+      "disabled": true,
       "name": "Próximos lançamentos",
       "settings": {
         "collection": "pre-venda",
@@ -1354,6 +513,7 @@
             "text_4y3p7C": {
               "type": "text",
               "name": "t:names.text",
+              "disabled": true,
               "settings": {
                 "text": "<p>Livros com acabamentos primorosos, riquíssimas ilustrações e histórias envolventes.</p>",
                 "width": "fit-content",
@@ -1435,7 +595,12 @@
             },
             "product_badges": {
               "type": "product-badges",
-              "name": "Product Badges"
+              "name": "Product Badges",
+              "settings": {
+                "padding-top": 10,
+                "padding-bottom": 10
+              },
+              "blocks": {}
             },
             "product_card_group_4mcdDU": {
               "type": "_product-card-group",
@@ -2214,6 +1379,657 @@
         "gap_between_elements": 24
       }
     },
+    "section_Hgiqdy": {
+      "type": "section",
+      "blocks": {
+        "group_Dgy8GV": {
+          "type": "group",
+          "settings": {
+            "link": "shopify://pages/leitores",
+            "open_in_new_tab": true,
+            "content_direction": "column",
+            "vertical_on_mobile": true,
+            "horizontal_alignment": "flex-start",
+            "vertical_alignment": "center",
+            "align_baseline": false,
+            "horizontal_alignment_flex_direction_column": "center",
+            "vertical_alignment_flex_direction_column": "center",
+            "gap": 16,
+            "width": "fill",
+            "custom_width": 100,
+            "width_mobile": "fill",
+            "custom_width_mobile": 100,
+            "height": "fit",
+            "custom_height": 100,
+            "inherit_color_scheme": true,
+            "color_scheme": "",
+            "background_media": "none",
+            "video_position": "cover",
+            "background_image_position": "cover",
+            "border": "none",
+            "border_width": 1,
+            "border_opacity": 100,
+            "border_radius": 15,
+            "toggle_overlay": true,
+            "overlay_color": "#ffc200",
+            "overlay_style": "solid",
+            "gradient_direction": "to top",
+            "padding-block-start": 20,
+            "padding-block-end": 20,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {
+            "icon_dHpKgr": {
+              "type": "icon",
+              "settings": {
+                "icon": "heart",
+                "width": 32,
+                "link": "shopify://pages/carrinho-de-livros",
+                "open_in_new_tab": true
+              },
+              "blocks": {}
+            },
+            "group_xUDTTD": {
+              "type": "group",
+              "settings": {
+                "link": "shopify://pages/sala-do-educador",
+                "open_in_new_tab": true,
+                "content_direction": "column",
+                "vertical_on_mobile": true,
+                "horizontal_alignment": "flex-start",
+                "vertical_alignment": "center",
+                "align_baseline": false,
+                "horizontal_alignment_flex_direction_column": "flex-start",
+                "vertical_alignment_flex_direction_column": "center",
+                "gap": 4,
+                "width": "fill",
+                "custom_width": 100,
+                "width_mobile": "fill",
+                "custom_width_mobile": 100,
+                "height": "fit",
+                "custom_height": 100,
+                "inherit_color_scheme": true,
+                "color_scheme": "",
+                "background_media": "none",
+                "video_position": "cover",
+                "background_image_position": "cover",
+                "border": "none",
+                "border_width": 1,
+                "border_opacity": 100,
+                "border_radius": 0,
+                "toggle_overlay": false,
+                "overlay_color": "#00000026",
+                "overlay_style": "solid",
+                "gradient_direction": "to top",
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {
+                "text_VCRwwj": {
+                  "type": "text",
+                  "settings": {
+                    "text": "<h2><a href=\"/pages/leitores\" target=\"_blank\" title=\"Leitores\">Leitores</a></h2>",
+                    "width": "100%",
+                    "max_width": "normal",
+                    "alignment": "center",
+                    "type_preset": "h3",
+                    "font": "var(--font-body--family)",
+                    "font_size": "",
+                    "line_height": "normal",
+                    "letter_spacing": "normal",
+                    "case": "none",
+                    "wrap": "pretty",
+                    "color": "var(--color-foreground)",
+                    "background": false,
+                    "background_color": "#00000026",
+                    "corner_radius": 0,
+                    "padding-block-start": 0,
+                    "padding-block-end": 0,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "text_VCRwwj"
+              ]
+            }
+          },
+          "block_order": [
+            "icon_dHpKgr",
+            "group_xUDTTD"
+          ]
+        },
+        "group_VnbDrM": {
+          "type": "group",
+          "settings": {
+            "link": "shopify://pages/livrarias",
+            "open_in_new_tab": true,
+            "content_direction": "column",
+            "vertical_on_mobile": true,
+            "horizontal_alignment": "flex-start",
+            "vertical_alignment": "center",
+            "align_baseline": false,
+            "horizontal_alignment_flex_direction_column": "center",
+            "vertical_alignment_flex_direction_column": "center",
+            "gap": 16,
+            "width": "fill",
+            "custom_width": 100,
+            "width_mobile": "fill",
+            "custom_width_mobile": 100,
+            "height": "fit",
+            "custom_height": 100,
+            "inherit_color_scheme": true,
+            "color_scheme": "",
+            "background_media": "none",
+            "video_position": "cover",
+            "background_image_position": "cover",
+            "border": "none",
+            "border_width": 1,
+            "border_opacity": 100,
+            "border_radius": 15,
+            "toggle_overlay": true,
+            "overlay_color": "#ffc200",
+            "overlay_style": "solid",
+            "gradient_direction": "to top",
+            "padding-block-start": 20,
+            "padding-block-end": 20,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {
+            "icon_fAERgt": {
+              "type": "icon",
+              "settings": {
+                "icon": "map_pin",
+                "width": 32,
+                "link": "shopify://pages/distribuidores-e-pontos-de-venda-dos-livros-da-solisluna",
+                "open_in_new_tab": true
+              },
+              "blocks": {}
+            },
+            "group_GBUKkf": {
+              "type": "group",
+              "settings": {
+                "link": "",
+                "open_in_new_tab": false,
+                "content_direction": "column",
+                "vertical_on_mobile": true,
+                "horizontal_alignment": "flex-start",
+                "vertical_alignment": "center",
+                "align_baseline": false,
+                "horizontal_alignment_flex_direction_column": "flex-start",
+                "vertical_alignment_flex_direction_column": "center",
+                "gap": 4,
+                "width": "fill",
+                "custom_width": 100,
+                "width_mobile": "fill",
+                "custom_width_mobile": 100,
+                "height": "fit",
+                "custom_height": 100,
+                "inherit_color_scheme": true,
+                "color_scheme": "",
+                "background_media": "none",
+                "video_position": "cover",
+                "background_image_position": "cover",
+                "border": "none",
+                "border_width": 1,
+                "border_opacity": 100,
+                "border_radius": 0,
+                "toggle_overlay": false,
+                "overlay_color": "#00000026",
+                "overlay_style": "solid",
+                "gradient_direction": "to top",
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {
+                "text_7E8E6E": {
+                  "type": "text",
+                  "settings": {
+                    "text": "<h2><a href=\"/pages/livrarias\" target=\"_blank\" title=\"Livrarias\">Livreiros</a></h2>",
+                    "width": "100%",
+                    "max_width": "normal",
+                    "alignment": "center",
+                    "type_preset": "h3",
+                    "font": "var(--font-body--family)",
+                    "font_size": "",
+                    "line_height": "normal",
+                    "letter_spacing": "normal",
+                    "case": "none",
+                    "wrap": "pretty",
+                    "color": "var(--color-foreground)",
+                    "background": false,
+                    "background_color": "#00000026",
+                    "corner_radius": 0,
+                    "padding-block-start": 0,
+                    "padding-block-end": 0,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "text_7E8E6E"
+              ]
+            }
+          },
+          "block_order": [
+            "icon_fAERgt",
+            "group_GBUKkf"
+          ]
+        },
+        "group_PRDkzp": {
+          "type": "group",
+          "settings": {
+            "link": "shopify://pages/escolas",
+            "open_in_new_tab": true,
+            "content_direction": "column",
+            "vertical_on_mobile": true,
+            "horizontal_alignment": "flex-start",
+            "vertical_alignment": "center",
+            "align_baseline": false,
+            "horizontal_alignment_flex_direction_column": "center",
+            "vertical_alignment_flex_direction_column": "center",
+            "gap": 16,
+            "width": "fill",
+            "custom_width": 100,
+            "width_mobile": "fill",
+            "custom_width_mobile": 100,
+            "height": "fit",
+            "custom_height": 100,
+            "inherit_color_scheme": true,
+            "color_scheme": "",
+            "background_media": "none",
+            "video_position": "cover",
+            "background_image_position": "cover",
+            "border": "none",
+            "border_width": 1,
+            "border_opacity": 100,
+            "border_radius": 15,
+            "toggle_overlay": true,
+            "overlay_color": "#ffc200",
+            "overlay_style": "solid",
+            "gradient_direction": "to top",
+            "padding-block-start": 20,
+            "padding-block-end": 20,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {
+            "icon_P9BVAG": {
+              "type": "icon",
+              "settings": {
+                "icon": "plant",
+                "width": 32,
+                "link": "",
+                "open_in_new_tab": false
+              },
+              "blocks": {}
+            },
+            "group_rmkDLV": {
+              "type": "group",
+              "settings": {
+                "link": "",
+                "open_in_new_tab": false,
+                "content_direction": "column",
+                "vertical_on_mobile": true,
+                "horizontal_alignment": "flex-start",
+                "vertical_alignment": "center",
+                "align_baseline": false,
+                "horizontal_alignment_flex_direction_column": "flex-start",
+                "vertical_alignment_flex_direction_column": "center",
+                "gap": 4,
+                "width": "fill",
+                "custom_width": 100,
+                "width_mobile": "fill",
+                "custom_width_mobile": 100,
+                "height": "fit",
+                "custom_height": 100,
+                "inherit_color_scheme": true,
+                "color_scheme": "",
+                "background_media": "none",
+                "video_position": "cover",
+                "background_image_position": "cover",
+                "border": "none",
+                "border_width": 1,
+                "border_opacity": 100,
+                "border_radius": 0,
+                "toggle_overlay": false,
+                "overlay_color": "#00000026",
+                "overlay_style": "solid",
+                "gradient_direction": "to top",
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {
+                "text_zrgJnC": {
+                  "type": "text",
+                  "settings": {
+                    "text": "<h2><a href=\"/pages/escolas\" target=\"_blank\" title=\"Escolas\">Educadores</a></h2>",
+                    "width": "100%",
+                    "max_width": "normal",
+                    "alignment": "center",
+                    "type_preset": "h3",
+                    "font": "var(--font-body--family)",
+                    "font_size": "",
+                    "line_height": "normal",
+                    "letter_spacing": "normal",
+                    "case": "none",
+                    "wrap": "pretty",
+                    "color": "var(--color-primary)",
+                    "background": false,
+                    "background_color": "#00000026",
+                    "corner_radius": 0,
+                    "padding-block-start": 0,
+                    "padding-block-end": 0,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "text_zrgJnC"
+              ]
+            }
+          },
+          "block_order": [
+            "icon_P9BVAG",
+            "group_rmkDLV"
+          ]
+        },
+        "group_TKfjcL": {
+          "type": "group",
+          "settings": {
+            "link": "shopify://pages/bibliotecas",
+            "open_in_new_tab": true,
+            "content_direction": "column",
+            "vertical_on_mobile": true,
+            "horizontal_alignment": "flex-start",
+            "vertical_alignment": "center",
+            "align_baseline": false,
+            "horizontal_alignment_flex_direction_column": "center",
+            "vertical_alignment_flex_direction_column": "center",
+            "gap": 16,
+            "width": "fill",
+            "custom_width": 100,
+            "width_mobile": "fill",
+            "custom_width_mobile": 100,
+            "height": "fit",
+            "custom_height": 100,
+            "inherit_color_scheme": true,
+            "color_scheme": "",
+            "background_media": "none",
+            "video_position": "cover",
+            "background_image_position": "cover",
+            "border": "none",
+            "border_width": 1,
+            "border_opacity": 100,
+            "border_radius": 15,
+            "toggle_overlay": true,
+            "overlay_color": "#ffc200",
+            "overlay_style": "solid",
+            "gradient_direction": "to top",
+            "padding-block-start": 20,
+            "padding-block-end": 20,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {
+            "icon_yDxbRe": {
+              "type": "icon",
+              "settings": {
+                "icon": "star",
+                "width": 32,
+                "link": "",
+                "open_in_new_tab": false
+              },
+              "blocks": {}
+            },
+            "group_NYXdnm": {
+              "type": "group",
+              "settings": {
+                "link": "",
+                "open_in_new_tab": false,
+                "content_direction": "column",
+                "vertical_on_mobile": true,
+                "horizontal_alignment": "flex-start",
+                "vertical_alignment": "center",
+                "align_baseline": false,
+                "horizontal_alignment_flex_direction_column": "flex-start",
+                "vertical_alignment_flex_direction_column": "center",
+                "gap": 4,
+                "width": "fill",
+                "custom_width": 100,
+                "width_mobile": "fill",
+                "custom_width_mobile": 100,
+                "height": "fit",
+                "custom_height": 100,
+                "inherit_color_scheme": true,
+                "color_scheme": "",
+                "background_media": "none",
+                "video_position": "cover",
+                "background_image_position": "cover",
+                "border": "none",
+                "border_width": 1,
+                "border_opacity": 100,
+                "border_radius": 0,
+                "toggle_overlay": false,
+                "overlay_color": "#00000026",
+                "overlay_style": "solid",
+                "gradient_direction": "to top",
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {
+                "text_UFbk84": {
+                  "type": "text",
+                  "settings": {
+                    "text": "<h2><a href=\"/pages/bibliotecas\" title=\"Bibliotecas\">Bibliotecas</a></h2>",
+                    "width": "100%",
+                    "max_width": "normal",
+                    "alignment": "center",
+                    "type_preset": "h3",
+                    "font": "var(--font-body--family)",
+                    "font_size": "",
+                    "line_height": "normal",
+                    "letter_spacing": "normal",
+                    "case": "none",
+                    "wrap": "pretty",
+                    "color": "var(--color-foreground)",
+                    "background": false,
+                    "background_color": "#00000026",
+                    "corner_radius": 0,
+                    "padding-block-start": 0,
+                    "padding-block-end": 0,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "text_UFbk84"
+              ]
+            }
+          },
+          "block_order": [
+            "icon_yDxbRe",
+            "group_NYXdnm"
+          ]
+        },
+        "group_EPx3dx": {
+          "type": "group",
+          "disabled": true,
+          "settings": {
+            "link": "",
+            "open_in_new_tab": false,
+            "content_direction": "column",
+            "vertical_on_mobile": true,
+            "horizontal_alignment": "flex-start",
+            "vertical_alignment": "center",
+            "align_baseline": false,
+            "horizontal_alignment_flex_direction_column": "center",
+            "vertical_alignment_flex_direction_column": "center",
+            "gap": 16,
+            "width": "fill",
+            "custom_width": 100,
+            "width_mobile": "fill",
+            "custom_width_mobile": 100,
+            "height": "fit",
+            "custom_height": 100,
+            "inherit_color_scheme": true,
+            "color_scheme": "",
+            "background_media": "none",
+            "video_position": "cover",
+            "background_image_position": "cover",
+            "border": "none",
+            "border_width": 1,
+            "border_opacity": 100,
+            "border_radius": 0,
+            "toggle_overlay": false,
+            "overlay_color": "#00000026",
+            "overlay_style": "solid",
+            "gradient_direction": "to top",
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {
+            "icon_6gX8JK": {
+              "type": "icon",
+              "settings": {
+                "icon": "silhouette",
+                "width": 32,
+                "link": "",
+                "open_in_new_tab": false
+              },
+              "blocks": {}
+            },
+            "group_hqTAA8": {
+              "type": "group",
+              "settings": {
+                "link": "",
+                "open_in_new_tab": false,
+                "content_direction": "column",
+                "vertical_on_mobile": true,
+                "horizontal_alignment": "flex-start",
+                "vertical_alignment": "center",
+                "align_baseline": false,
+                "horizontal_alignment_flex_direction_column": "flex-start",
+                "vertical_alignment_flex_direction_column": "center",
+                "gap": 4,
+                "width": "fill",
+                "custom_width": 100,
+                "width_mobile": "fill",
+                "custom_width_mobile": 100,
+                "height": "fit",
+                "custom_height": 100,
+                "inherit_color_scheme": true,
+                "color_scheme": "",
+                "background_media": "none",
+                "video_position": "cover",
+                "background_image_position": "cover",
+                "border": "none",
+                "border_width": 1,
+                "border_opacity": 100,
+                "border_radius": 0,
+                "toggle_overlay": false,
+                "overlay_color": "#00000026",
+                "overlay_style": "solid",
+                "gradient_direction": "to top",
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {
+                "text_eRGBLP": {
+                  "type": "text",
+                  "settings": {
+                    "text": "<h2>Autores</h2>",
+                    "width": "100%",
+                    "max_width": "normal",
+                    "alignment": "center",
+                    "type_preset": "h3",
+                    "font": "var(--font-body--family)",
+                    "font_size": "",
+                    "line_height": "normal",
+                    "letter_spacing": "normal",
+                    "case": "none",
+                    "wrap": "pretty",
+                    "color": "var(--color-foreground)",
+                    "background": false,
+                    "background_color": "#00000026",
+                    "corner_radius": 0,
+                    "padding-block-start": 0,
+                    "padding-block-end": 0,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "text_eRGBLP"
+              ]
+            }
+          },
+          "block_order": [
+            "icon_6gX8JK",
+            "group_hqTAA8"
+          ]
+        }
+      },
+      "block_order": [
+        "group_Dgy8GV",
+        "group_VnbDrM",
+        "group_PRDkzp",
+        "group_TKfjcL",
+        "group_EPx3dx"
+      ],
+      "name": "t:names.icons_with_text",
+      "settings": {
+        "content_direction": "row",
+        "vertical_on_mobile": true,
+        "horizontal_alignment": "flex-start",
+        "vertical_alignment": "center",
+        "align_baseline": false,
+        "horizontal_alignment_flex_direction_column": "flex-start",
+        "vertical_alignment_flex_direction_column": "center",
+        "gap": 30,
+        "section_width": "page-width",
+        "section_height": "",
+        "section_height_custom": 50,
+        "color_scheme": "scheme-4",
+        "background_media": "none",
+        "video_position": "cover",
+        "background_image_position": "cover",
+        "border": "none",
+        "border_width": 1,
+        "border_opacity": 100,
+        "border_radius": 0,
+        "toggle_overlay": false,
+        "overlay_color": "#00000026",
+        "overlay_style": "solid",
+        "gradient_direction": "to top",
+        "padding-block-start": 48,
+        "padding-block-end": 48
+      }
+    },
     "section_HfQAGW": {
       "type": "section",
       "blocks": {
@@ -2289,6 +2105,202 @@
         "gradient_direction": "to top",
         "padding-block-start": 64,
         "padding-block-end": 64
+      }
+    },
+    "media_with_content_cyX99F": {
+      "type": "media-with-content",
+      "blocks": {
+        "media": {
+          "type": "_media-without-appearance",
+          "static": true,
+          "settings": {
+            "media_type": "image",
+            "image": "shopify://shop_images/galeria-logo.png",
+            "link": "",
+            "video_loop": true,
+            "video_autoplay": false,
+            "image_position": "contain",
+            "video_position": "cover"
+          },
+          "blocks": {}
+        },
+        "content": {
+          "type": "_content-without-appearance",
+          "static": true,
+          "settings": {
+            "horizontal_alignment_flex_direction_column": "flex-start",
+            "vertical_alignment_flex_direction_column": "flex-end",
+            "gap": 30
+          },
+          "blocks": {
+            "jumbo_text_jNFjfL": {
+              "type": "jumbo-text",
+              "name": "t:names.jumbo_text",
+              "disabled": true,
+              "settings": {
+                "text": "EM\nBREVE",
+                "font": "accent",
+                "alignment": "right",
+                "line_height": "1",
+                "letter_spacing": "-0.03em",
+                "case": "none",
+                "text_effect": "reveal",
+                "animation_repeat": true
+              },
+              "blocks": {}
+            },
+            "text_pwJaiE": {
+              "type": "text",
+              "name": "t:names.heading",
+              "settings": {
+                "text": "<h3><em>Em breve!</em></h3>",
+                "width": "100%",
+                "max_width": "normal",
+                "alignment": "left",
+                "type_preset": "custom",
+                "font": "var(--font-accent--family)",
+                "font_size": "1.5rem",
+                "line_height": "normal",
+                "letter_spacing": "normal",
+                "case": "none",
+                "wrap": "pretty",
+                "color": "var(--color-foreground)",
+                "background": false,
+                "background_color": "#00000026",
+                "corner_radius": 0,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            },
+            "text_EbGLXT": {
+              "type": "text",
+              "name": "t:names.heading",
+              "settings": {
+                "text": "<h2>Impressões em <em>Fine-Art</em> de obras de arte selecionadas.</h2>",
+                "width": "100%",
+                "max_width": "normal",
+                "alignment": "left",
+                "type_preset": "rte",
+                "font": "var(--font-body--family)",
+                "font_size": "1rem",
+                "line_height": "normal",
+                "letter_spacing": "normal",
+                "case": "none",
+                "wrap": "pretty",
+                "color": "var(--color-foreground)",
+                "background": false,
+                "background_color": "#00000026",
+                "corner_radius": 0,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            },
+            "text_HCwwmw": {
+              "type": "text",
+              "name": "t:names.text",
+              "settings": {
+                "text": "<p>Vocês pediram e nós vamos realizar. </p><p>A obra de arte que vai da páginas do livro à parede da sua casa. <br/>Uma seleção de obras de arte em gravura.</p>",
+                "width": "fit-content",
+                "max_width": "normal",
+                "alignment": "left",
+                "type_preset": "rte",
+                "font": "var(--font-body--family)",
+                "font_size": "1rem",
+                "line_height": "normal",
+                "letter_spacing": "normal",
+                "case": "none",
+                "wrap": "pretty",
+                "color": "var(--color-foreground)",
+                "background": false,
+                "background_color": "#00000026",
+                "corner_radius": 0,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            },
+            "button_Up7ixF": {
+              "type": "button",
+              "name": "Button Galeria",
+              "disabled": true,
+              "settings": {
+                "label": "Me avise!",
+                "link": "shopify://pages/galeria",
+                "open_in_new_tab": false,
+                "style_class": "button",
+                "width": "fit-content",
+                "custom_width": 100,
+                "width_mobile": "fit-content",
+                "custom_width_mobile": 100
+              },
+              "blocks": {}
+            },
+            "popup_link_nx7fmg": {
+              "type": "popup-link",
+              "name": "t:names.popup_link",
+              "settings": {
+                "behavior": "default",
+                "heading": "Me avise",
+                "type_preset": "",
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {
+                "forms_inline_nzX33h": {
+                  "type": "shopify://apps/forms/blocks/inline/8744a304-fcb1-4347-b211-bb6b4759a76a",
+                  "settings": {
+                    "form_id": "585847",
+                    "text_color": "#202020",
+                    "button_background_color": "#202020",
+                    "button_label_color": "#ffffff",
+                    "links_color": "#1878b9",
+                    "errors_color": "#e02229",
+                    "text_alignment": "center",
+                    "form_alignment": "center",
+                    "padding_top": 0,
+                    "padding_bottom": 24,
+                    "padding_right": 0,
+                    "padding_left": 0
+                  }
+                }
+              },
+              "block_order": [
+                "forms_inline_nzX33h"
+              ]
+            }
+          },
+          "block_order": [
+            "jumbo_text_jNFjfL",
+            "text_pwJaiE",
+            "text_EbGLXT",
+            "text_HCwwmw",
+            "button_Up7ixF",
+            "popup_link_nx7fmg"
+          ]
+        }
+      },
+      "custom_css": [],
+      "name": "GALERIA",
+      "settings": {
+        "has_image": false,
+        "media_position": "right",
+        "media_width": "narrow",
+        "media_height": "auto",
+        "section_width": "page-width",
+        "extend_media": true,
+        "color_scheme": "scheme-1",
+        "padding-block-start": 70,
+        "padding-block-end": 70
       }
     },
     "slideshow_fzxHeh": {
@@ -4057,17 +4069,17 @@
   },
   "order": [
     "hero_jVaWmY",
-    "section_rQ6qPU",
-    "section_Hgiqdy",
-    "media_with_content_cyX99F",
     "product_list_GEztnp",
     "product_list_bRtVep",
     "slideshow_tqXcVa",
     "section_mhzJA7",
     "collection_links_cpihfQ",
     "section_jVTF7W",
+    "section_rQ6qPU",
+    "section_Hgiqdy",
     "marquee_DPpXh7",
     "section_HfQAGW",
+    "media_with_content_cyX99F",
     "slideshow_fzxHeh",
     "media_with_content_JVbTt8",
     "section_9PkDgA",
