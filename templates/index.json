@@ -349,7 +349,6 @@
           ]
         }
       },
-      "disabled": true,
       "name": "Próximos lançamentos",
       "settings": {
         "collection": "pre-venda",
