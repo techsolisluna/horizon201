@@ -227,6 +227,15 @@
               },
               "blocks": {}
             },
+            "product_badges_yNF9qP": {
+              "type": "product-badges",
+              "name": "Product Badges",
+              "settings": {
+                "padding-top": 10,
+                "padding-bottom": 10
+              },
+              "blocks": {}
+            },
             "group": {
               "type": "_product-card-group",
               "settings": {
@@ -349,6 +358,7 @@
           },
           "block_order": [
             "card-gallery",
+            "product_badges_yNF9qP",
             "group"
           ]
         }
