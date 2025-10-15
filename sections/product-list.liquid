@@ -26,124 +26,131 @@
         echo '--mobile-card-size: ' | append: section.settings.mobile_card_size | append: ';'
       endcapture
   endcase
+
+  assign show_section = true
+  if section_products.size == 0 and section.settings.hide_empty == true
+    assign show_section = false
+  endif
 %}
 
-<div class="section-background color-{{ section.settings.color_scheme }}"></div>
-<div
-  class="
-    section
-    section--{{ section.settings.section_width }}
-    color-{{ section.settings.color_scheme }}
-    section-resource-list
-    spacing-style
-    gap-style
-    {% if request.design_mode == false and section.settings.collection == blank %}
-      in-onboarding-state
-    {% endif %}
-  "
-  style="
-    --column-count-mobile: {{ section.settings.mobile_columns }};
-    {% render 'spacing-style', settings: section.settings %}
-    {% render 'gap-style', value: section.settings.gap %}
-    {{ styles }}
-  "
->
-  <div class="section-resource-list__header">
-    {%- content_for 'block', type: '_product-list-content', id: 'static-header' -%}
-  </div>
-
-  {% capture list_items %}
-    {% for i in (1..max_items) %}
-      {% if section_products.size > 0 %}
-        {% assign index = forloop.index0 %}
-        {% assign product = section_products[index] %}
-        {%- unless product.type == "Livro" or product.type == "Livros impressos" or product.type == "Livros" or product.type == "Books" or product.type == "Printed books" or product.type == "Book" -%}
-          {% assign product = null %}
-        {%- endunless -%}
-      {% else %}
-        {% assign product = null %}
-      {% endif %}
-      <div
-        class="resource-list__item"
-      >
-        {% content_for 'block', type: '_product-card', id: 'static-product-card', closest.product: product %}
-      </div>
-
-      {% unless forloop.last %}
-        <!--@list/split-->
-      {% endunless %}
-
-    {% endfor %}
-  {% endcapture %}
-
-  {% liquid
-    # Create an array from the list items to be used for different layout types
-    assign list_items_array = list_items | strip | split: '<!--@list/split-->'
-  %}
-
+{% if show_section %}
+  <div class="section-background color-{{ section.settings.color_scheme }}"></div>
   <div
     class="
-      resource-list
-      {% if section.settings.layout_type == 'carousel' %}
-        force-full-width
+      section
+      section--{{ section.settings.section_width }}
+      color-{{ section.settings.color_scheme }}
+      section-resource-list
+      spacing-style
+      gap-style
+      {% if request.design_mode == false and section.settings.collection == blank %}
+        in-onboarding-state
       {% endif %}
-      {% if section.settings.carousel_on_mobile and section.settings.layout_type != 'carousel' %}
-        hidden--mobile
-      {% endif %}
-      {{ classes }}
     "
-    style="{{ styles }}"
-    {% if section.settings.layout_type == 'grid' %}
-      data-testid="resource-list-grid"
-    {% endif %}
+    style="
+      --column-count-mobile: {{ section.settings.mobile_columns }};
+      {% render 'spacing-style', settings: section.settings %}
+      {% render 'gap-style', value: section.settings.gap %}
+      {{ styles }}
+    "
   >
-    {% case section.settings.layout_type %}
-      {% when 'grid' %}
-        {{ list_items }}
-      {% when 'carousel' %}
+    <div class="section-resource-list__header">
+      {%- content_for 'block', type: '_product-list-content', id: 'static-header' -%}
+    </div>
+
+    {% capture list_items %}
+      {% for i in (1..max_items) %}
+        {% if section_products.size > 0 %}
+          {% assign index = forloop.index0 %}
+          {% assign product = section_products[index] %}
+          {%- unless product.type == "Livro" or product.type == "Livros impressos" or product.type == "Livros" or product.type == "Books" or product.type == "Printed books" or product.type == "Book" -%}
+            {% assign product = null %}
+          {%- endunless -%}
+        {% else %}
+          {% assign product = null %}
+        {% endif %}
+        <div
+          class="resource-list__item"
+        >
+          {% content_for 'block', type: '_product-card', id: 'static-product-card', closest.product: product %}
+        </div>
+
+        {% unless forloop.last %}
+          <!--@list/split-->
+        {% endunless %}
+
+      {% endfor %}
+    {% endcapture %}
+
+    {% liquid
+      # Create an array from the list items to be used for different layout types
+      assign list_items_array = list_items | strip | split: '<!--@list/split-->'
+    %}
+
+    <div
+      class="
+        resource-list
+        {% if section.settings.layout_type == 'carousel' %}
+          force-full-width
+        {% endif %}
+        {% if section.settings.carousel_on_mobile and section.settings.layout_type != 'carousel' %}
+          hidden--mobile
+        {% endif %}
+        {{ classes }}
+      "
+      style="{{ styles }}"
+      {% if section.settings.layout_type == 'grid' %}
+        data-testid="resource-list-grid"
+      {% endif %}
+    >
+      {% case section.settings.layout_type %}
+        {% when 'grid' %}
+          {{ list_items }}
+        {% when 'carousel' %}
+          {% render 'resource-list-carousel',
+            ref: 'resourceListCarousel',
+            slides: list_items_array,
+            slide_count: max_items,
+            settings: section.settings
+          %}
+        {% when 'editorial' %}
+          {% render 'editorial-product-grid', items: list_items_array %}
+      {% endcase %}
+    </div>
+
+    {% if section.settings.carousel_on_mobile and section.settings.layout_type != 'carousel' %}
+      {% liquid
+        assign mobile_carousel_gap = section.settings.columns_gap
+      %}
+      <div
+        class="
+          resource-list
+          hidden--desktop
+          force-full-width
+        "
+        style="
+          --resource-list-column-gap-desktop: {{ mobile_carousel_gap }}px;
+          --column-count: {{ section.settings.columns }};
+          --mobile-card-size: {{ section.settings.mobile_card_size }};
+        "
+      >
         {% render 'resource-list-carousel',
-          ref: 'resourceListCarousel',
+          ref: 'resourceListCarouselMobile',
           slides: list_items_array,
           slide_count: max_items,
           settings: section.settings
         %}
-      {% when 'editorial' %}
-        {% render 'editorial-product-grid', items: list_items_array %}
-    {% endcase %}
-  </div>
+      </div>
+    {% endif %}
 
-  {% if section.settings.carousel_on_mobile and section.settings.layout_type != 'carousel' %}
-    {% liquid
-      assign mobile_carousel_gap = section.settings.columns_gap
-    %}
     <div
-      class="
-        resource-list
-        hidden--desktop
-        force-full-width
-      "
-      style="
-        --resource-list-column-gap-desktop: {{ mobile_carousel_gap }}px;
-        --column-count: {{ section.settings.columns }};
-        --mobile-card-size: {{ section.settings.mobile_card_size }};
-      "
+      class="section-resource-list__content"
+      style="--horizontal-alignment: {{ section.settings.horizontal_alignment }};"
     >
-      {% render 'resource-list-carousel',
-        ref: 'resourceListCarouselMobile',
-        slides: list_items_array,
-        slide_count: max_items,
-        settings: section.settings
-      %}
+      {%- content_for 'blocks' -%}
     </div>
-  {% endif %}
-
-  <div
-    class="section-resource-list__content"
-    style="--horizontal-alignment: {{ section.settings.horizontal_alignment }};"
-  >
-    {%- content_for 'blocks' -%}
   </div>
-</div>
+{% endif %}
 
 {% schema %}
 {
@@ -164,6 +171,16 @@
     "groups": ["header", "footer"]
   },
   "settings": [
+    {
+      "type": "checkbox",
+      "id": "hide_empty",
+      "label": "Esconder section se collection estiver vazia",
+      "default": true
+    },
+    {
+      "type": "header",
+      "content": "Collection"
+    },
     {
       "type": "collection",
       "id": "collection",
