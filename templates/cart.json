@@ -181,6 +181,15 @@
               },
               "blocks": {}
             },
+            "product_badges_6GGwLU": {
+              "type": "product-badges",
+              "name": "Product Badges",
+              "settings": {
+                "padding-top": 10,
+                "padding-bottom": 10
+              },
+              "blocks": {}
+            },
             "group_U8Leyx": {
               "type": "_product-card-group",
               "name": "t:names.group",
@@ -319,12 +328,14 @@
           },
           "block_order": [
             "product_card_gallery_PEPpfq",
+            "product_badges_6GGwLU",
             "group_U8Leyx"
           ]
         }
       },
       "name": "t:names.products_grid",
       "settings": {
+        "hide_empty": true,
         "collection": "lancamentos-1",
         "layout_type": "grid",
         "carousel_on_mobile": false,
