@@ -867,6 +867,15 @@
               },
               "blocks": {}
             },
+            "product_badges_GaPBJn": {
+              "type": "product-badges",
+              "name": "Product Badges",
+              "settings": {
+                "padding-top": 10,
+                "padding-bottom": 10
+              },
+              "blocks": {}
+            },
             "product_title_eLXqMa": {
               "type": "product-title",
               "name": "t:names.product_title",
@@ -918,6 +927,7 @@
           },
           "block_order": [
             "product_card_gallery_w4LE3m",
+            "product_badges_GaPBJn",
             "product_title_eLXqMa",
             "price_6FC4ht"
           ]
@@ -925,6 +935,7 @@
       },
       "name": "t:names.products_carousel",
       "settings": {
+        "hide_empty": true,
         "collection": "lancamentos-para-adultos",
         "layout_type": "carousel",
         "carousel_on_mobile": false,
