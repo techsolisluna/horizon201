@@ -704,6 +704,47 @@
         "padding-block-end": 48
       }
     },
+    "marquee_DPpXh7": {
+      "type": "marquee",
+      "blocks": {
+        "text_qV3hX6": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Desde 1993, excelência na arte de publicar histórias que transformam.</p>",
+            "width": "fit-content",
+            "max_width": "normal",
+            "alignment": "left",
+            "type_preset": "custom",
+            "font": "var(--font-body--family)",
+            "font_size": "1rem",
+            "line_height": "tight",
+            "letter_spacing": "tight",
+            "case": "none",
+            "wrap": "nowrap",
+            "color": "var(--color-foreground)",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "text_qV3hX6"
+      ],
+      "name": "t:names.marquee_section",
+      "settings": {
+        "movement_direction": "normal",
+        "color_scheme": "scheme-4",
+        "padding-block-start": 24,
+        "padding-block-end": 24,
+        "gap_between_elements": 24
+      }
+    },
     "slideshow_tqXcVa": {
       "type": "slideshow",
       "blocks": {
@@ -1263,10 +1304,10 @@
         "padding-block-end": 50
       }
     },
-    "marquee_DPpXh7": {
+    "marquee_ercWQB": {
       "type": "marquee",
       "blocks": {
-        "text_qV3hX6": {
+        "text_pqTkUm": {
           "type": "text",
           "settings": {
             "text": "<p>Desde 1993, excelência na arte de publicar histórias que transformam.</p>",
@@ -1293,8 +1334,9 @@
         }
       },
       "block_order": [
-        "text_qV3hX6"
+        "text_pqTkUm"
       ],
+      "disabled": true,
       "name": "t:names.marquee_section",
       "settings": {
         "movement_direction": "normal",
@@ -4072,11 +4114,12 @@
     "hero_jVaWmY",
     "product_list_GEztnp",
     "product_list_bRtVep",
+    "marquee_DPpXh7",
     "slideshow_tqXcVa",
     "section_mhzJA7",
     "collection_links_cpihfQ",
     "section_jVTF7W",
-    "marquee_DPpXh7",
+    "marquee_ercWQB",
     "section_rQ6qPU",
     "section_Hgiqdy",
     "section_HfQAGW",
