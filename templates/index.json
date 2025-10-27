@@ -736,6 +736,7 @@
       "block_order": [
         "text_qV3hX6"
       ],
+      "disabled": true,
       "name": "t:names.marquee_section",
       "settings": {
         "movement_direction": "normal",
@@ -1284,6 +1285,7 @@
       "block_order": [
         "group_q3HzfP"
       ],
+      "disabled": true,
       "name": "t:names.collections_bento",
       "settings": {
         "collection_list": [
