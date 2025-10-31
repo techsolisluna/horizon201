@@ -2414,7 +2414,7 @@ deferred-media[class] :is(.deferred-media__poster-button img, .deferred-media__p
 .checkbox__label-text {
   padding-inline-start: var(--checkbox-label-padding);
   white-space: nowrap;
-  overflow: hidden;
+  /* overflow: hidden; */
   text-overflow: ellipsis;
 }
 
