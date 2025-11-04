@@ -19,7 +19,7 @@
             "inverse": true,
             "font": "accent",
             "unit": "percent",
-            "percent_width": 20,
+            "percent_width": 15,
             "pixel_height": 96,
             "custom_mobile_size": true,
             "unit_mobile": "pixel",
@@ -349,6 +349,7 @@
           ]
         }
       },
+      "disabled": true,
       "name": "Próximos lançamentos",
       "settings": {
         "hide_empty": true,
@@ -356,7 +357,7 @@
         "layout_type": "carousel",
         "carousel_on_mobile": false,
         "max_products": 7,
-        "columns": 2,
+        "columns": 3,
         "mobile_columns": "2",
         "mobile_card_size": "60cqw",
         "columns_gap": 0,
@@ -685,7 +686,7 @@
       "name": "Lançamentos para crianças e jovens",
       "settings": {
         "hide_empty": true,
-        "collection": "lancamentos-para-adultos",
+        "collection": "lancamentos-1",
         "layout_type": "carousel",
         "carousel_on_mobile": false,
         "max_products": 7,
@@ -3922,7 +3923,7 @@
                 "label": "Saiba mais",
                 "link": "shopify://blogs/portfolio/museu-virtual-casa-de-ganho-para-as-ganhadeiras-de-itapua",
                 "open_in_new_tab": false,
-                "style_class": "link",
+                "style_class": "button",
                 "width": "fit-content",
                 "custom_width": 100,
                 "width_mobile": "fit-content",
