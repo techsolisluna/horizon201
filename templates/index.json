@@ -1639,7 +1639,7 @@
               "settings": {
                 "icon": "heart",
                 "width": 32,
-                "link": "shopify://pages/carrinho-de-livros",
+                "link": "shopify://pages/leitores",
                 "open_in_new_tab": true
               },
               "blocks": {}
@@ -1647,7 +1647,7 @@
             "group_xUDTTD": {
               "type": "group",
               "settings": {
-                "link": "shopify://pages/sala-do-educador",
+                "link": "shopify://pages/leitores",
                 "open_in_new_tab": true,
                 "content_direction": "column",
                 "vertical_on_mobile": true,
@@ -1761,7 +1761,7 @@
               "settings": {
                 "icon": "map_pin",
                 "width": 32,
-                "link": "shopify://pages/distribuidores-e-pontos-de-venda-dos-livros-da-solisluna",
+                "link": "shopify://pages/livrarias",
                 "open_in_new_tab": true
               },
               "blocks": {}
@@ -1769,8 +1769,8 @@
             "group_GBUKkf": {
               "type": "group",
               "settings": {
-                "link": "",
-                "open_in_new_tab": false,
+                "link": "shopify://pages/livrarias",
+                "open_in_new_tab": true,
                 "content_direction": "column",
                 "vertical_on_mobile": true,
                 "horizontal_alignment": "flex-start",
@@ -1883,16 +1883,16 @@
               "settings": {
                 "icon": "plant",
                 "width": 32,
-                "link": "",
-                "open_in_new_tab": false
+                "link": "shopify://pages/escolas",
+                "open_in_new_tab": true
               },
               "blocks": {}
             },
             "group_rmkDLV": {
               "type": "group",
               "settings": {
-                "link": "",
-                "open_in_new_tab": false,
+                "link": "shopify://pages/escolas",
+                "open_in_new_tab": true,
                 "content_direction": "column",
                 "vertical_on_mobile": true,
                 "horizontal_alignment": "flex-start",
@@ -2005,16 +2005,16 @@
               "settings": {
                 "icon": "star",
                 "width": 32,
-                "link": "",
-                "open_in_new_tab": false
+                "link": "shopify://pages/bibliotecas",
+                "open_in_new_tab": true
               },
               "blocks": {}
             },
             "group_NYXdnm": {
               "type": "group",
               "settings": {
-                "link": "",
-                "open_in_new_tab": false,
+                "link": "shopify://pages/bibliotecas",
+                "open_in_new_tab": true,
                 "content_direction": "column",
                 "vertical_on_mobile": true,
                 "horizontal_alignment": "flex-start",
