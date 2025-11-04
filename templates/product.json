@@ -763,7 +763,7 @@
         "desktop_media_position": "left",
         "equal_columns": false,
         "limit_details_width": false,
-        "gap": 0,
+        "gap": 24,
         "color_scheme": "scheme-1",
         "padding-block-start": 0,
         "padding-block-end": 0
