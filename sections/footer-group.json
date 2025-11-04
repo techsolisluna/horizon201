@@ -224,6 +224,14 @@
               "static": true,
               "settings": {},
               "blocks": {
+                "social_link_LXd76P": {
+                  "type": "_social-link",
+                  "name": "Facebook",
+                  "settings": {
+                    "link": "https://www.facebook.com/solislunaeditora"
+                  },
+                  "blocks": {}
+                },
                 "social_link_9i9EqD": {
                   "type": "_social-link",
                   "name": "Instagram ",
@@ -251,6 +259,7 @@
                 }
               },
               "block_order": [
+                "social_link_LXd76P",
                 "social_link_9i9EqD",
                 "social_link_kd8UUt",
                 "social_link_aAH768"
