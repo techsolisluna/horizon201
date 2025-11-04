@@ -228,13 +228,14 @@
                   "type": "_social-link",
                   "name": "Instagram ",
                   "settings": {
-                    "link": "https://www.instagram.com/shopify/#"
+                    "link": "https://www.instagram.com/solislunaeditora/"
                   },
                   "blocks": {}
                 },
                 "social_link_kd8UUt": {
                   "type": "_social-link",
                   "name": "TikTok",
+                  "disabled": true,
                   "settings": {
                     "link": "https://www.tiktok.com/@shopify"
                   },
@@ -244,7 +245,7 @@
                   "type": "_social-link",
                   "name": "YouTube",
                   "settings": {
-                    "link": "https://www.youtube.com/shopify"
+                    "link": "https://www.youtube.com/@Solisluna"
                   },
                   "blocks": {}
                 }

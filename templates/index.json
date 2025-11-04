@@ -683,6 +683,7 @@
           ]
         }
       },
+      "custom_css": [],
       "name": "Lançamentos para crianças e jovens",
       "settings": {
         "hide_empty": true,
