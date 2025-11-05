@@ -1929,6 +1929,7 @@
                   "type": "image",
                   "name": "t:names.image",
                   "settings": {
+                    "image": "shopify://shop_images/foto_eris.jpg",
                     "link": "",
                     "image_ratio": "square",
                     "width": "custom",
@@ -2022,6 +2023,7 @@
                   "type": "image",
                   "name": "t:names.image",
                   "settings": {
+                    "image": "shopify://shop_images/foto_natalia.png",
                     "link": "",
                     "image_ratio": "square",
                     "width": "custom",
@@ -2115,6 +2117,7 @@
                   "type": "image",
                   "name": "t:names.image",
                   "settings": {
+                    "image": "shopify://shop_images/foto_jean.jpg",
                     "link": "",
                     "image_ratio": "square",
                     "width": "custom",
