@@ -976,6 +976,7 @@
         "group_czVira",
         "image_BCeQbG"
       ],
+      "custom_css": [],
       "name": "t:names.image_with_text",
       "settings": {
         "content_direction": "row",
