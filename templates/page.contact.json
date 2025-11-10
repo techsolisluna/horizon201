@@ -69,6 +69,7 @@
         "title",
         "content"
       ],
+      "disabled": true,
       "settings": {
         "content_direction": "column",
         "gap": 0,
@@ -410,6 +411,7 @@
         "text_473we9",
         "accordion_GNdHhC"
       ],
+      "disabled": true,
       "name": "t:names.faq_section",
       "settings": {
         "content_direction": "row",
@@ -438,11 +440,315 @@
         "padding-block-start": 48,
         "padding-block-end": 48
       }
+    },
+    "section_4wXNmF": {
+      "type": "section",
+      "blocks": {
+        "text_R4E6ik": {
+          "type": "text",
+          "name": "t:names.heading",
+          "settings": {
+            "text": "<p>Fale conosco</p>",
+            "width": "fit-content",
+            "max_width": "normal",
+            "alignment": "left",
+            "type_preset": "h2",
+            "font": "var(--font-body--family)",
+            "font_size": "1rem",
+            "line_height": "normal",
+            "letter_spacing": "normal",
+            "case": "none",
+            "wrap": "pretty",
+            "color": "var(--color-foreground)",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        },
+        "text_kMjnL8": {
+          "type": "text",
+          "name": "t:names.text",
+          "settings": {
+            "text": "<p>Você pode entrar em contato conosco pelo formulário a seguir,<br/>pelo chat no canto inferior direito ou pelo email <a href=\"mailto:comercial@solisluna.com.br\" target=\"_blank\" title=\"Contato da Solisluna\">contato@solisluna.com.br</a></p><p></p><p><strong>Horário de atendimento:</strong></p><p>De segunda-feira a sexta-feira<br/>Das 10h às 12h</p>",
+            "width": "fit-content",
+            "max_width": "normal",
+            "alignment": "left",
+            "type_preset": "rte",
+            "font": "var(--font-body--family)",
+            "font_size": "1rem",
+            "line_height": "normal",
+            "letter_spacing": "normal",
+            "case": "none",
+            "wrap": "pretty",
+            "color": "var(--color-foreground)",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "text_R4E6ik",
+        "text_kMjnL8"
+      ],
+      "name": "t:names.custom_section",
+      "settings": {
+        "content_direction": "column",
+        "vertical_on_mobile": true,
+        "horizontal_alignment": "flex-start",
+        "vertical_alignment": "center",
+        "align_baseline": false,
+        "horizontal_alignment_flex_direction_column": "center",
+        "vertical_alignment_flex_direction_column": "flex-start",
+        "gap": 12,
+        "section_width": "page-width",
+        "section_height": "",
+        "section_height_custom": 50,
+        "color_scheme": "",
+        "background_media": "none",
+        "video_position": "cover",
+        "background_image_position": "cover",
+        "border": "none",
+        "border_width": 1,
+        "border_opacity": 100,
+        "border_radius": 0,
+        "toggle_overlay": false,
+        "overlay_color": "#00000026",
+        "overlay_style": "solid",
+        "gradient_direction": "to top",
+        "padding-block-start": 60,
+        "padding-block-end": 100
+      }
+    },
+    "section_3bWPCy": {
+      "type": "section",
+      "blocks": {
+        "text_iQpEK6": {
+          "type": "text",
+          "name": "t:names.heading",
+          "settings": {
+            "text": "<p>Como podemos te ajudar?</p>",
+            "width": "fit-content",
+            "max_width": "normal",
+            "alignment": "left",
+            "type_preset": "h3",
+            "font": "var(--font-body--family)",
+            "font_size": "1rem",
+            "line_height": "normal",
+            "letter_spacing": "normal",
+            "case": "none",
+            "wrap": "pretty",
+            "color": "var(--color-foreground)",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        },
+        "accordion_QHpcU4": {
+          "type": "accordion",
+          "name": "t:names.accordion",
+          "settings": {
+            "icon": "caret",
+            "dividers": true,
+            "type_preset": "h5",
+            "inherit_color_scheme": true,
+            "color_scheme": "",
+            "border": "none",
+            "border_width": 1,
+            "border_opacity": 100,
+            "border_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {
+            "accordion_row_AfKFr7": {
+              "type": "_accordion-row",
+              "settings": {
+                "heading": "Suporte ao cliente",
+                "open_by_default": false,
+                "icon": "chat_bubble",
+                "width": 20
+              },
+              "blocks": {
+                "page_AQprJf": {
+                  "type": "page",
+                  "name": "t:names.page",
+                  "settings": {
+                    "page": "suporte-ao-cliente",
+                    "inherit_color_scheme": true,
+                    "color_scheme": "",
+                    "background": false,
+                    "background_color": "#00000026",
+                    "padding-block-start": 0,
+                    "padding-block-end": 0,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "page_AQprJf"
+              ]
+            },
+            "accordion_row_KNt7rc": {
+              "type": "_accordion-row",
+              "settings": {
+                "heading": "Comercial",
+                "open_by_default": false,
+                "icon": "check_box",
+                "width": 20
+              },
+              "blocks": {
+                "page_gcdGaG": {
+                  "type": "page",
+                  "name": "t:names.page",
+                  "settings": {
+                    "page": "",
+                    "inherit_color_scheme": true,
+                    "color_scheme": "",
+                    "background": false,
+                    "background_color": "#00000026",
+                    "padding-block-start": 0,
+                    "padding-block-end": 0,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "page_gcdGaG"
+              ]
+            },
+            "accordion_row_EwLzQ9": {
+              "type": "_accordion-row",
+              "settings": {
+                "heading": "Vagas: trabelhe conosco",
+                "open_by_default": false,
+                "icon": "lightning_bolt",
+                "width": 20
+              },
+              "blocks": {
+                "page_AH9bUA": {
+                  "type": "page",
+                  "name": "t:names.page",
+                  "settings": {
+                    "page": "",
+                    "inherit_color_scheme": true,
+                    "color_scheme": "",
+                    "background": false,
+                    "background_color": "#00000026",
+                    "padding-block-start": 0,
+                    "padding-block-end": 0,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "page_AH9bUA"
+              ]
+            },
+            "accordion_row_bLYfDF": {
+              "type": "_accordion-row",
+              "settings": {
+                "heading": "Portfólio de Arte & Ilustração",
+                "open_by_default": false,
+                "icon": "star",
+                "width": 20
+              },
+              "blocks": {
+                "page_Yy7npT": {
+                  "type": "page",
+                  "name": "t:names.page",
+                  "settings": {
+                    "page": "",
+                    "inherit_color_scheme": true,
+                    "color_scheme": "",
+                    "background": false,
+                    "background_color": "#00000026",
+                    "padding-block-start": 0,
+                    "padding-block-end": 0,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "page_Yy7npT"
+              ]
+            }
+          },
+          "block_order": [
+            "accordion_row_AfKFr7",
+            "accordion_row_KNt7rc",
+            "accordion_row_EwLzQ9",
+            "accordion_row_bLYfDF"
+          ]
+        }
+      },
+      "block_order": [
+        "text_iQpEK6",
+        "accordion_QHpcU4"
+      ],
+      "custom_css": [
+        ".section-content-wrapper {max-width: 800px; margin: auto;}"
+      ],
+      "name": "t:names.custom_section",
+      "settings": {
+        "content_direction": "column",
+        "vertical_on_mobile": true,
+        "horizontal_alignment": "flex-start",
+        "vertical_alignment": "center",
+        "align_baseline": false,
+        "horizontal_alignment_flex_direction_column": "flex-start",
+        "vertical_alignment_flex_direction_column": "center",
+        "gap": 12,
+        "section_width": "page-width",
+        "section_height": "",
+        "section_height_custom": 50,
+        "color_scheme": "",
+        "background_media": "none",
+        "video_position": "cover",
+        "background_image_position": "cover",
+        "border": "none",
+        "border_width": 1,
+        "border_opacity": 100,
+        "border_radius": 0,
+        "toggle_overlay": false,
+        "overlay_color": "#00000026",
+        "overlay_style": "solid",
+        "gradient_direction": "to top",
+        "padding-block-start": 0,
+        "padding-block-end": 100
+      }
     }
   },
   "order": [
     "main",
     "form",
-    "section_3JVyBm"
+    "section_3JVyBm",
+    "section_4wXNmF",
+    "section_3bWPCy"
   ]
 }
