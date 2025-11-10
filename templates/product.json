@@ -758,12 +758,15 @@
           ]
         }
       },
+      "custom_css": [
+        "@media screen and (min-width: 750px) {.product-information__grid:not( :has(.product-information__media:empty) ).product-information--media-left:has(.media-gallery--extend) {grid-column: 2; }}"
+      ],
       "settings": {
         "content_width": "content-center-aligned",
         "desktop_media_position": "left",
         "equal_columns": false,
         "limit_details_width": false,
-        "gap": 24,
+        "gap": 48,
         "color_scheme": "scheme-1",
         "padding-block-start": 0,
         "padding-block-end": 0
