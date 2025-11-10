@@ -621,7 +621,7 @@
                   "type": "page",
                   "name": "t:names.page",
                   "settings": {
-                    "page": "",
+                    "page": "comercial",
                     "inherit_color_scheme": true,
                     "color_scheme": "",
                     "background": false,
@@ -651,7 +651,7 @@
                   "type": "page",
                   "name": "t:names.page",
                   "settings": {
-                    "page": "",
+                    "page": "trabalhe-conosco",
                     "inherit_color_scheme": true,
                     "color_scheme": "",
                     "background": false,
@@ -681,7 +681,7 @@
                   "type": "page",
                   "name": "t:names.page",
                   "settings": {
-                    "page": "",
+                    "page": "portfolio-de-arte-ilustracao",
                     "inherit_color_scheme": true,
                     "color_scheme": "",
                     "background": false,
@@ -712,7 +712,9 @@
         "accordion_QHpcU4"
       ],
       "custom_css": [
-        ".section-content-wrapper {max-width: 800px; margin: auto;}"
+        ".section-content-wrapper {max-width: 800px; margin: auto;}",
+        ".rte {width: 100%;}",
+        ".page-title {display: none;}"
       ],
       "name": "t:names.custom_section",
       "settings": {
