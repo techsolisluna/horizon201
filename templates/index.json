@@ -4305,7 +4305,7 @@
                   "name": "t:names.text",
                   "settings": {
                     "text": "<h3>Expedição de Mateus Aleluia ganha Museu Virtual</h3>",
-                    "width": "fit-content",
+                    "width": "100%",
                     "max_width": "normal",
                     "alignment": "left",
                     "type_preset": "rte",
