@@ -697,13 +697,44 @@
               "block_order": [
                 "page_Yy7npT"
               ]
+            },
+            "accordion_row_hHxbEc": {
+              "type": "_accordion-row",
+              "settings": {
+                "heading": "Submissão de originais para análise",
+                "open_by_default": false,
+                "icon": "clipboard",
+                "width": 20
+              },
+              "blocks": {
+                "page_ytCcQb": {
+                  "type": "page",
+                  "name": "t:names.page",
+                  "settings": {
+                    "page": "envio-de-originais",
+                    "inherit_color_scheme": true,
+                    "color_scheme": "",
+                    "background": false,
+                    "background_color": "#00000026",
+                    "padding-block-start": 0,
+                    "padding-block-end": 0,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "page_ytCcQb"
+              ]
             }
           },
           "block_order": [
             "accordion_row_AfKFr7",
             "accordion_row_KNt7rc",
             "accordion_row_EwLzQ9",
-            "accordion_row_bLYfDF"
+            "accordion_row_bLYfDF",
+            "accordion_row_hHxbEc"
           ]
         }
       },
