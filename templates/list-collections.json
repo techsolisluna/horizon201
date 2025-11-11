@@ -336,7 +336,7 @@
             "text": "<p><a href=\"/pages/autor/graciela-montes\" target=\"_blank\" title=\"Graciela Montes\">Graciela Montes</a> em <a href=\"/products/buscar-indicios-construir-sentidos\" target=\"_blank\" title=\"Buscar indícios, construir sentidos\"><strong>'Buscar Indícios, construir sentidos'</strong></a></p>",
             "width": "100%",
             "max_width": "normal",
-            "alignment": "center",
+            "alignment": "left",
             "type_preset": "rte",
             "font": "var(--font-body--family)",
             "font_size": "1rem",

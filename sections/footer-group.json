@@ -17,6 +17,7 @@
         "divider_hFm3am": {
           "type": "_divider",
           "name": "t:names.divider",
+          "disabled": true,
           "settings": {
             "thickness": 1,
             "corner_radius": "square",
@@ -59,7 +60,7 @@
             "overlay_color": "#00000026",
             "overlay_style": "solid",
             "gradient_direction": "to top",
-            "padding-block-start": 0,
+            "padding-block-start": 40,
             "padding-block-end": 0,
             "padding-inline-start": 0,
             "padding-inline-end": 0
