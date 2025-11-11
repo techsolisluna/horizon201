@@ -2051,7 +2051,7 @@
                 "text_UFbk84": {
                   "type": "text",
                   "settings": {
-                    "text": "<h2><a href=\"/pages/bibliotecas\" title=\"Bibliotecas\">Bibliotecas</a></h2>",
+                    "text": "<h2><a href=\"/pages/bibliotecas\" target=\"_blank\" title=\"Bibliotecas\">Bibliotecas</a></h2>",
                     "width": "100%",
                     "max_width": "normal",
                     "alignment": "center",
