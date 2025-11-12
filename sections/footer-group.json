@@ -109,7 +109,7 @@
                   "type": "text",
                   "name": "Heading",
                   "settings": {
-                    "text": "<h2>Correio Lunar</h2>",
+                    "text": "<h2><em>Correio Lunar</em></h2>",
                     "width": "fit-content",
                     "max_width": "normal",
                     "alignment": "left",
@@ -135,7 +135,7 @@
                   "type": "text",
                   "name": "Text",
                   "settings": {
-                    "text": "<p>Acompanhe as novidades e lançamentos</p>",
+                    "text": "<p>Assine para acompanhar as novidades e lançamentos</p>",
                     "width": "fit-content",
                     "max_width": "normal",
                     "alignment": "left",

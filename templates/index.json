@@ -601,7 +601,7 @@
                     "alignment": "center",
                     "type_preset": "custom",
                     "font": "var(--font-heading--family)",
-                    "font_size": "1.125rem",
+                    "font_size": "1rem",
                     "line_height": "normal",
                     "letter_spacing": "normal",
                     "case": "none",
@@ -1072,6 +1072,7 @@
         "slide_EW6N67",
         "slide_cPQwzN"
       ],
+      "disabled": true,
       "name": "t:names.slideshow",
       "settings": {
         "icons_style": "arrows_large",
@@ -1091,7 +1092,7 @@
         "text_rb9CMp": {
           "type": "text",
           "settings": {
-            "text": "<p>Escolha por temas</p>",
+            "text": "<p>Pesquise por temas</p>",
             "width": "100%",
             "max_width": "none",
             "alignment": "center",
@@ -1130,7 +1131,7 @@
         "section_width": "full-width",
         "section_height": "",
         "section_height_custom": 50,
-        "color_scheme": "scheme-2",
+        "color_scheme": "scheme-1",
         "background_media": "none",
         "video_position": "cover",
         "background_image_position": "cover",
@@ -1144,174 +1145,6 @@
         "gradient_direction": "to top",
         "padding-block-start": 100,
         "padding-block-end": 15
-      }
-    },
-    "collection_list_tGWj47": {
-      "type": "collection-list",
-      "blocks": {
-        "group_q3HzfP": {
-          "type": "group",
-          "name": "t:names.header",
-          "settings": {
-            "link": "",
-            "open_in_new_tab": false,
-            "content_direction": "column",
-            "vertical_on_mobile": true,
-            "horizontal_alignment": "flex-start",
-            "vertical_alignment": "center",
-            "align_baseline": false,
-            "horizontal_alignment_flex_direction_column": "flex-start",
-            "vertical_alignment_flex_direction_column": "center",
-            "gap": 16,
-            "width": "fill",
-            "custom_width": 100,
-            "width_mobile": "fill",
-            "custom_width_mobile": 100,
-            "height": "fit",
-            "custom_height": 100,
-            "inherit_color_scheme": true,
-            "color_scheme": "",
-            "background_media": "none",
-            "video_position": "cover",
-            "background_image_position": "cover",
-            "border": "none",
-            "border_width": 1,
-            "border_opacity": 100,
-            "border_radius": 0,
-            "toggle_overlay": false,
-            "overlay_color": "#00000026",
-            "overlay_style": "solid",
-            "gradient_direction": "to top",
-            "padding-block-start": 0,
-            "padding-block-end": 0,
-            "padding-inline-start": 0,
-            "padding-inline-end": 0
-          },
-          "blocks": {
-            "text_k968PE": {
-              "type": "text",
-              "name": "t:names.text",
-              "settings": {
-                "text": "<h3>Shop by collection</h3>",
-                "width": "fit-content",
-                "max_width": "normal",
-                "alignment": "left",
-                "type_preset": "rte",
-                "font": "var(--font-body--family)",
-                "font_size": "1rem",
-                "line_height": "normal",
-                "letter_spacing": "normal",
-                "case": "none",
-                "wrap": "pretty",
-                "color": "var(--color-foreground)",
-                "background": false,
-                "background_color": "#00000026",
-                "corner_radius": 0,
-                "padding-block-start": 0,
-                "padding-block-end": 16,
-                "padding-inline-start": 0,
-                "padding-inline-end": 0
-              },
-              "blocks": {}
-            }
-          },
-          "block_order": [
-            "text_k968PE"
-          ]
-        },
-        "static-collection-card": {
-          "type": "_collection-card",
-          "name": "t:names.collection_card",
-          "static": true,
-          "settings": {
-            "placement": "on_image",
-            "horizontal_alignment": "flex-start",
-            "vertical_alignment": "flex-end",
-            "collection_card_gap": 8,
-            "inherit_color_scheme": true,
-            "color_scheme": "",
-            "border": "none",
-            "border_width": 1,
-            "border_opacity": 100,
-            "border_radius": 0
-          },
-          "blocks": {
-            "collection_title_ctPgfi": {
-              "type": "collection-title",
-              "name": "t:names.collection_title",
-              "settings": {
-                "width": "fit-content",
-                "max_width": "normal",
-                "alignment": "left",
-                "type_preset": "rte",
-                "font": "var(--font-body--family)",
-                "font_size": "1rem",
-                "line_height": "normal",
-                "letter_spacing": "normal",
-                "case": "none",
-                "wrap": "pretty",
-                "color": "var(--color-foreground)",
-                "background": true,
-                "background_color": "#ffffff",
-                "corner_radius": 0,
-                "padding-block-start": 4,
-                "padding-block-end": 4,
-                "padding-inline-start": 8,
-                "padding-inline-end": 8
-              },
-              "blocks": {}
-            },
-            "collection-card-image": {
-              "type": "_collection-card-image",
-              "name": "t:names.collection_card_image",
-              "static": true,
-              "settings": {
-                "image_ratio": "portrait",
-                "toggle_overlay": false,
-                "overlay_color": "#00000026",
-                "overlay_style": "solid",
-                "gradient_direction": "to top",
-                "border": "none",
-                "border_width": 1,
-                "border_opacity": 100,
-                "border_radius": 0
-              },
-              "blocks": {}
-            }
-          },
-          "block_order": [
-            "collection_title_ctPgfi"
-          ]
-        }
-      },
-      "block_order": [
-        "group_q3HzfP"
-      ],
-      "disabled": true,
-      "name": "t:names.collections_bento",
-      "settings": {
-        "collection_list": [
-          "arte",
-          "infantil",
-          "colecao-de-ensaios-para-pensar-a-leitura-selo-emilia-solisluna",
-          "ficcao"
-        ],
-        "layout_type": "bento",
-        "carousel_on_mobile": false,
-        "columns": 4,
-        "mobile_columns": "2",
-        "mobile_card_size": "60cqw",
-        "columns_gap": 8,
-        "bento_gap": 8,
-        "rows_gap": 8,
-        "max_collections": 4,
-        "icons_style": "arrow",
-        "icons_shape": "none",
-        "section_width": "page-width",
-        "gap": 12,
-        "color_scheme": "",
-        "padding-block-start": 24,
-        "padding-block-end": 24
       }
     },
     "collection_links_cpihfQ": {
@@ -1358,7 +1191,7 @@
         "section_width": "page-width",
         "alignment": "center",
         "image_position": "right",
-        "color_scheme": "scheme-2",
+        "color_scheme": "scheme-1",
         "padding-block-start": 25,
         "padding-block-end": 100
       }
@@ -1459,7 +1292,7 @@
         "section_width": "page-width",
         "section_height": "",
         "section_height_custom": 50,
-        "color_scheme": "scheme-2",
+        "color_scheme": "scheme-4",
         "background_media": "none",
         "video_position": "cover",
         "background_image_position": "cover",
@@ -1515,82 +1348,6 @@
         "padding-block-start": 24,
         "padding-block-end": 24,
         "gap_between_elements": 24
-      }
-    },
-    "section_rQ6qPU": {
-      "type": "section",
-      "blocks": {
-        "text_ziDzkY": {
-          "type": "text",
-          "settings": {
-            "text": "<p>Histórias que atravessam o tempo e inspiram o presente.</p>",
-            "width": "100%",
-            "max_width": "normal",
-            "alignment": "center",
-            "type_preset": "h2",
-            "font": "var(--font-body--family)",
-            "font_size": "1rem",
-            "line_height": "normal",
-            "letter_spacing": "normal",
-            "case": "none",
-            "wrap": "pretty",
-            "color": "var(--color-foreground)",
-            "background": false,
-            "background_color": "#00000026",
-            "corner_radius": 0,
-            "padding-block-start": 0,
-            "padding-block-end": 0,
-            "padding-inline-start": 0,
-            "padding-inline-end": 0
-          },
-          "blocks": {}
-        },
-        "button_EXTijY": {
-          "type": "button",
-          "settings": {
-            "label": "",
-            "link": "shopify://collections/all",
-            "open_in_new_tab": false,
-            "style_class": "link",
-            "width": "fit-content",
-            "custom_width": 100,
-            "width_mobile": "fit-content",
-            "custom_width_mobile": 100
-          },
-          "blocks": {}
-        }
-      },
-      "block_order": [
-        "text_ziDzkY",
-        "button_EXTijY"
-      ],
-      "name": "t:names.pull_quote",
-      "settings": {
-        "content_direction": "column",
-        "vertical_on_mobile": true,
-        "horizontal_alignment": "flex-start",
-        "vertical_alignment": "center",
-        "align_baseline": false,
-        "horizontal_alignment_flex_direction_column": "flex-start",
-        "vertical_alignment_flex_direction_column": "center",
-        "gap": 0,
-        "section_width": "page-width",
-        "section_height": "",
-        "section_height_custom": 50,
-        "color_scheme": "scheme-4",
-        "background_media": "none",
-        "video_position": "cover",
-        "background_image_position": "cover",
-        "border": "none",
-        "border_width": 1,
-        "border_opacity": 100,
-        "border_radius": 0,
-        "toggle_overlay": false,
-        "overlay_color": "#00000026",
-        "overlay_style": "solid",
-        "gradient_direction": "to top",
-        "padding-block-start": 40,
-        "padding-block-end": 20
       }
     },
     "section_Hgiqdy": {
@@ -2244,6 +2001,82 @@
         "padding-block-end": 48
       }
     },
+    "section_rQ6qPU": {
+      "type": "section",
+      "blocks": {
+        "text_ziDzkY": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Histórias que atravessam o tempo e inspiram o presente.</p>",
+            "width": "100%",
+            "max_width": "normal",
+            "alignment": "center",
+            "type_preset": "h2",
+            "font": "var(--font-body--family)",
+            "font_size": "1rem",
+            "line_height": "normal",
+            "letter_spacing": "normal",
+            "case": "none",
+            "wrap": "pretty",
+            "color": "var(--color-foreground)",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        },
+        "button_EXTijY": {
+          "type": "button",
+          "settings": {
+            "label": "",
+            "link": "shopify://collections/all",
+            "open_in_new_tab": false,
+            "style_class": "link",
+            "width": "fit-content",
+            "custom_width": 100,
+            "width_mobile": "fit-content",
+            "custom_width_mobile": 100
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "text_ziDzkY",
+        "button_EXTijY"
+      ],
+      "name": "t:names.pull_quote",
+      "settings": {
+        "content_direction": "column",
+        "vertical_on_mobile": true,
+        "horizontal_alignment": "flex-start",
+        "vertical_alignment": "center",
+        "align_baseline": false,
+        "horizontal_alignment_flex_direction_column": "flex-start",
+        "vertical_alignment_flex_direction_column": "center",
+        "gap": 0,
+        "section_width": "page-width",
+        "section_height": "",
+        "section_height_custom": 50,
+        "color_scheme": "scheme-4",
+        "background_media": "none",
+        "video_position": "cover",
+        "background_image_position": "cover",
+        "border": "none",
+        "border_width": 1,
+        "border_opacity": 100,
+        "border_radius": 0,
+        "toggle_overlay": false,
+        "overlay_color": "#00000026",
+        "overlay_style": "solid",
+        "gradient_direction": "to top",
+        "padding-block-start": 40,
+        "padding-block-end": 20
+      }
+    },
     "section_HfQAGW": {
       "type": "section",
       "blocks": {
@@ -2252,9 +2085,9 @@
           "settings": {
             "text": "<p>a <strong>Solisluna </strong>realiza projetos e ações que sensibilizam e levam à reflexão sobre diferentes realidades e modos diversos de ver o mundo</p>",
             "width": "100%",
-            "max_width": "narrow",
+            "max_width": "normal",
             "alignment": "center",
-            "type_preset": "h2",
+            "type_preset": "h3",
             "font": "var(--font-body--family)",
             "font_size": "1rem",
             "line_height": "normal",
@@ -2317,7 +2150,7 @@
         "overlay_color": "#00000026",
         "overlay_style": "solid",
         "gradient_direction": "to top",
-        "padding-block-start": 64,
+        "padding-block-start": 20,
         "padding-block-end": 64
       }
     },
@@ -3279,11 +3112,11 @@
               "type": "text",
               "name": "t:names.caption",
               "settings": {
-                "text": "<p>Sorrisos de Pierre Verger</p>",
+                "text": "<p>Conheça o livro <strong>Sorrisos</strong> de <strong>Pierre Verger</strong></p>",
                 "width": "fit-content",
                 "max_width": "normal",
                 "alignment": "left",
-                "type_preset": "h5",
+                "type_preset": "rte",
                 "font": "var(--font-body--family)",
                 "font_size": "1rem",
                 "line_height": "normal",
@@ -3369,13 +3202,13 @@
                 "text_CgP99b": {
                   "type": "text",
                   "settings": {
-                    "text": "<p>“Se alguém está tão cansado que não possa te dar um sorriso, deixa-lhe o teu.” <em>Provérbio popular</em></p>",
+                    "text": "<h3>“Se alguém está tão cansado que não possa te dar um sorriso, deixa-lhe o teu.”</h3><p><em>Provérbio popular</em></p>",
                     "width": "100%",
-                    "max_width": "narrow",
+                    "max_width": "normal",
                     "alignment": "left",
-                    "type_preset": "custom",
+                    "type_preset": "rte",
                     "font": "var(--font-heading--family)",
-                    "font_size": "1.5rem",
+                    "font_size": "1.25rem",
                     "line_height": "normal",
                     "letter_spacing": "normal",
                     "case": "none",
@@ -3400,9 +3233,9 @@
             "button_AgCNi9": {
               "type": "button",
               "settings": {
-                "label": "Conheça o livro",
+                "label": "Saiba mais",
                 "link": "shopify://products/sorrisos",
-                "open_in_new_tab": false,
+                "open_in_new_tab": true,
                 "style_class": "link",
                 "width": "fit-content",
                 "custom_width": 100,
@@ -3427,7 +3260,7 @@
         "media_height": "60svh",
         "section_width": "full-width",
         "extend_media": true,
-        "color_scheme": "scheme-5",
+        "color_scheme": "scheme-07c8db3a-eea6-4a3a-b02d-25d441259306",
         "padding-block-start": 0,
         "padding-block-end": 0
       }
@@ -3609,6 +3442,7 @@
         "group_Chd83P",
         "group_3mR9mP"
       ],
+      "disabled": true,
       "name": "t:names.split_showcase",
       "settings": {
         "content_direction": "row",
@@ -3750,14 +3584,40 @@
     "section_pcVPYN": {
       "type": "section",
       "blocks": {
+        "text_cEqLDn": {
+          "type": "text",
+          "name": "t:names.text",
+          "settings": {
+            "text": "<h2>Experiências que unem tradição e inovação</h2>",
+            "width": "fit-content",
+            "max_width": "normal",
+            "alignment": "left",
+            "type_preset": "rte",
+            "font": "var(--font-body--family)",
+            "font_size": "1rem",
+            "line_height": "normal",
+            "letter_spacing": "normal",
+            "case": "none",
+            "wrap": "pretty",
+            "color": "var(--color-foreground)",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        },
         "text_A3qLbt": {
           "type": "text",
           "settings": {
-            "text": "<p>Experiências que unem tradição e inovação: projetos digitais que preservam e amplificam o patrimônio histórico e a memória viva das nossas culturas.</p>",
+            "text": "<h1>projetos digitais que preservam e amplificam o patrimônio histórico e a memória viva das nossas culturas.</h1>",
             "width": "fit-content",
-            "max_width": "narrow",
+            "max_width": "normal",
             "alignment": "left",
-            "type_preset": "h2",
+            "type_preset": "h3",
             "font": "var(--font-body--family)",
             "font_size": "1rem",
             "line_height": "normal",
@@ -3803,23 +3663,24 @@
         }
       },
       "block_order": [
+        "text_cEqLDn",
         "text_A3qLbt",
         "text_rJEKXh"
       ],
       "name": "t:names.pull_quote",
       "settings": {
-        "content_direction": "row",
+        "content_direction": "column",
         "vertical_on_mobile": true,
         "horizontal_alignment": "center",
         "vertical_alignment": "center",
         "align_baseline": false,
-        "horizontal_alignment_flex_direction_column": "flex-start",
+        "horizontal_alignment_flex_direction_column": "center",
         "vertical_alignment_flex_direction_column": "center",
         "gap": 16,
         "section_width": "page-width",
         "section_height": "",
         "section_height_custom": 50,
-        "color_scheme": "scheme-58084d4c-a86e-4d0a-855e-a0966e5043f7",
+        "color_scheme": "scheme-07c8db3a-eea6-4a3a-b02d-25d441259306",
         "background_media": "none",
         "video_position": "cover",
         "background_image_position": "cover",
@@ -4418,12 +4279,11 @@
     "marquee_DPpXh7",
     "slideshow_tqXcVa",
     "section_mhzJA7",
-    "collection_list_tGWj47",
     "collection_links_cpihfQ",
     "section_jVTF7W",
     "marquee_ercWQB",
-    "section_rQ6qPU",
     "section_Hgiqdy",
+    "section_rQ6qPU",
     "section_HfQAGW",
     "media_with_content_cyX99F",
     "slideshow_fzxHeh",
