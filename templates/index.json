@@ -2007,7 +2007,7 @@
         "text_ziDzkY": {
           "type": "text",
           "settings": {
-            "text": "<p>Histórias que atravessam o tempo e inspiram o presente.</p>",
+            "text": "<p>Histórias que atravessam o tempo e inspiram o presente</p>",
             "width": "100%",
             "max_width": "normal",
             "alignment": "center",
@@ -3613,7 +3613,7 @@
         "text_A3qLbt": {
           "type": "text",
           "settings": {
-            "text": "<h1>projetos digitais que preservam e amplificam o patrimônio histórico e a memória viva das nossas culturas.</h1>",
+            "text": "<h1>projetos digitais que preservam e amplificam o patrimônio histórico e a memória viva das nossas culturas</h1>",
             "width": "fit-content",
             "max_width": "normal",
             "alignment": "left",
