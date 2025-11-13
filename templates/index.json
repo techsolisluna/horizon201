@@ -4667,7 +4667,7 @@
       "settings": {
         "hide_empty": true,
         "collection": "kit-livros-primeira-infancia",
-        "layout_type": "grid",
+        "layout_type": "carousel",
         "carousel_on_mobile": false,
         "max_products": 8,
         "columns": 4,
