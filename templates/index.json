@@ -1724,16 +1724,16 @@
               "settings": {
                 "icon": "plant",
                 "width": 32,
-                "link": "shopify://pages/escolas",
-                "open_in_new_tab": true
+                "link": "",
+                "open_in_new_tab": false
               },
               "blocks": {}
             },
             "group_rmkDLV": {
               "type": "group",
               "settings": {
-                "link": "shopify://pages/escolas",
-                "open_in_new_tab": true,
+                "link": "",
+                "open_in_new_tab": false,
                 "content_direction": "column",
                 "vertical_on_mobile": true,
                 "horizontal_alignment": "flex-start",
@@ -1770,7 +1770,7 @@
                 "text_zrgJnC": {
                   "type": "text",
                   "settings": {
-                    "text": "<h2><a href=\"/pages/escolas\" target=\"_blank\" title=\"Escolas\">Educadores</a></h2>",
+                    "text": "<h2>Educadores</h2>",
                     "width": "100%",
                     "max_width": "normal",
                     "alignment": "center",
