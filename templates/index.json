@@ -2279,7 +2279,7 @@
         "group_EPx3dx"
       ],
       "custom_css": [
-        ".group-block__link:hover,.group-block:hover {background: #e6af02 !important;}"
+        ".group-block:hover group-block__media-wrapper overlay--solid {background: #e6af02 !important;}"
       ],
       "name": "t:names.icons_with_text",
       "settings": {
