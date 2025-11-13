@@ -3076,7 +3076,7 @@
             "color_scheme": "scheme-1",
             "background_media": "image",
             "video_position": "cover",
-            "background_image": "shopify://shop_images/IMG_20170812_132707529_b_fadf70f0-9a25-4d39-a29d-5e5358f1f442.jpg",
+            "background_image": "shopify://shop_images/IMG_7786_1.jpg",
             "background_image_position": "cover",
             "border": "none",
             "border_width": 1,
@@ -3256,7 +3256,6 @@
         },
         "group_M9wdnw": {
           "type": "group",
-          "disabled": true,
           "settings": {
             "link": "",
             "open_in_new_tab": false,
@@ -3564,7 +3563,7 @@
       "name": "Sorrisos",
       "settings": {
         "has_image": false,
-        "media_position": "left",
+        "media_position": "right",
         "media_width": "medium",
         "media_height": "60svh",
         "section_width": "full-width",
