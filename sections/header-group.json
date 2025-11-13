@@ -11,6 +11,36 @@
   "type": "header",
   "name": "Header",
   "sections": {
+    "header_announcements_pDtCeW": {
+      "type": "header-announcements",
+      "blocks": {
+        "announcement_ULMxwf": {
+          "type": "_announcement",
+          "settings": {
+            "text": "<strong>🎉 Site de cara nova + promoção de Black Friday e muito mais! </strong>",
+            "link": "",
+            "font": "var(--font-body--family)",
+            "font_size": "1rem",
+            "weight": "",
+            "letter_spacing": "tight",
+            "case": "none"
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "announcement_ULMxwf"
+      ],
+      "name": "t:names.announcement_bar",
+      "settings": {
+        "speed": 5,
+        "section_width": "page-width",
+        "color_scheme": "",
+        "divider_width": 0,
+        "padding-block-start": 15,
+        "padding-block-end": 15
+      }
+    },
     "header_section": {
       "type": "header",
       "blocks": {
@@ -86,36 +116,6 @@
         "product_color_scheme": "inverse",
         "enable_transparent_header_collection": false,
         "collection_color_scheme": "default"
-      }
-    },
-    "header_announcements_pDtCeW": {
-      "type": "header-announcements",
-      "blocks": {
-        "announcement_ULMxwf": {
-          "type": "_announcement",
-          "settings": {
-            "text": "<strong>Boas vindas ao site da Solis de cara nova! </strong>Frete grátis para compras acima de R$ 250",
-            "link": "",
-            "font": "var(--font-body--family)",
-            "font_size": "1rem",
-            "weight": "",
-            "letter_spacing": "normal",
-            "case": "none"
-          },
-          "blocks": {}
-        }
-      },
-      "block_order": [
-        "announcement_ULMxwf"
-      ],
-      "name": "t:names.announcement_bar",
-      "settings": {
-        "speed": 5,
-        "section_width": "page-width",
-        "color_scheme": "",
-        "divider_width": 0,
-        "padding-block-start": 15,
-        "padding-block-end": 15
       }
     }
   },
