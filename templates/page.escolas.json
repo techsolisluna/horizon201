@@ -41,7 +41,7 @@
               "settings": {
                 "text": "nas escolas",
                 "font": "accent",
-                "alignment": "right",
+                "alignment": "left",
                 "line_height": "1",
                 "letter_spacing": "-0.03em",
                 "case": "none",
