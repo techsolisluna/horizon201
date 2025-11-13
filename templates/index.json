@@ -1480,16 +1480,16 @@
               "settings": {
                 "icon": "heart",
                 "width": 32,
-                "link": "shopify://pages/leitores",
-                "open_in_new_tab": true
+                "link": "",
+                "open_in_new_tab": false
               },
               "blocks": {}
             },
             "group_xUDTTD": {
               "type": "group",
               "settings": {
-                "link": "shopify://pages/leitores",
-                "open_in_new_tab": true,
+                "link": "",
+                "open_in_new_tab": false,
                 "content_direction": "column",
                 "vertical_on_mobile": true,
                 "horizontal_alignment": "flex-start",
@@ -1526,7 +1526,7 @@
                 "text_VCRwwj": {
                   "type": "text",
                   "settings": {
-                    "text": "<h2><a href=\"/pages/leitores\" target=\"_blank\" title=\"Leitores\">Leitores</a></h2>",
+                    "text": "<h2>Leitores</h2>",
                     "width": "100%",
                     "max_width": "normal",
                     "alignment": "center",
@@ -2056,6 +2056,7 @@
         "group_TKfjcL",
         "group_EPx3dx"
       ],
+      "custom_css": [],
       "name": "t:names.icons_with_text",
       "settings": {
         "content_direction": "row",
