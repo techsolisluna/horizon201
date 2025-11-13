@@ -1602,16 +1602,16 @@
               "settings": {
                 "icon": "map_pin",
                 "width": 32,
-                "link": "shopify://pages/livrarias",
-                "open_in_new_tab": true
+                "link": "",
+                "open_in_new_tab": false
               },
               "blocks": {}
             },
             "group_GBUKkf": {
               "type": "group",
               "settings": {
-                "link": "shopify://pages/livrarias",
-                "open_in_new_tab": true,
+                "link": "",
+                "open_in_new_tab": false,
                 "content_direction": "column",
                 "vertical_on_mobile": true,
                 "horizontal_alignment": "flex-start",
@@ -1648,7 +1648,7 @@
                 "text_7E8E6E": {
                   "type": "text",
                   "settings": {
-                    "text": "<h2><a href=\"/pages/livrarias\" target=\"_blank\" title=\"Livrarias\">Livreiros</a></h2>",
+                    "text": "<h2>Livreiros</h2>",
                     "width": "100%",
                     "max_width": "normal",
                     "alignment": "center",
