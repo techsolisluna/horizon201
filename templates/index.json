@@ -3752,6 +3752,55 @@
     "section_pcVPYN": {
       "type": "section",
       "blocks": {
+        "text_AQLba3": {
+          "type": "text",
+          "name": "t:names.text",
+          "settings": {
+            "text": "<p><a href=\"/products/imagens-da-diaspora\" target=\"_blank\" title=\"Imagens da Diáspora\">Livro Imagens da Diáspora © Goya Lopes </a></p>",
+            "width": "100%",
+            "max_width": "none",
+            "alignment": "left",
+            "type_preset": "custom",
+            "font": "var(--font-body--family)",
+            "font_size": "0.625rem",
+            "line_height": "tight",
+            "letter_spacing": "normal",
+            "case": "none",
+            "wrap": "balance",
+            "color": "var(--color-foreground)",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        },
+        "image_C9Nq9k": {
+          "type": "image",
+          "name": "t:names.image",
+          "settings": {
+            "image": "shopify://shop_images/Frame_2666.png",
+            "link": "",
+            "image_ratio": "adapt",
+            "width": "custom",
+            "custom_width": 79,
+            "width_mobile": "fit-content",
+            "custom_width_mobile": 100,
+            "height": "fill",
+            "border": "none",
+            "border_width": 1,
+            "border_opacity": 100,
+            "border_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        },
         "text_cEqLDn": {
           "type": "text",
           "name": "t:names.text",
@@ -3831,6 +3880,8 @@
         }
       },
       "block_order": [
+        "text_AQLba3",
+        "image_C9Nq9k",
         "text_cEqLDn",
         "text_A3qLbt",
         "text_rJEKXh"
