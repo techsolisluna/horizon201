@@ -4269,3 +4269,8 @@ text-component {
 .breadcrumb .deactive:hover{
   color: black;
 }
+
+.shopify-payment-button__button, .shopify-payment-button__button--unbranded{
+  background-color: #FCD700 !important;
+  color: #000 !important;
+}
