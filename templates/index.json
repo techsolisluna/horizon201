@@ -3756,7 +3756,7 @@
           "type": "text",
           "name": "t:names.text",
           "settings": {
-            "text": "<p><a href=\"/products/imagens-da-diaspora\" target=\"_blank\" title=\"Imagens da Diáspora\">Livro Imagens da Diáspora © Goya Lopes </a></p>",
+            "text": "<p>Livro Imagens da Diáspora © Goya Lopes </p>",
             "width": "100%",
             "max_width": "none",
             "alignment": "left",
