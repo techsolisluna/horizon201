@@ -2056,7 +2056,9 @@
         "group_TKfjcL",
         "group_EPx3dx"
       ],
-      "custom_css": [],
+      "custom_css": [
+        ".group-block__link:hover, .group-block:hover {background: #e6af02 !important;}"
+      ],
       "name": "t:names.icons_with_text",
       "settings": {
         "content_direction": "row",
