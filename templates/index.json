@@ -4132,7 +4132,7 @@
             "vertical_alignment": "center",
             "align_baseline": false,
             "horizontal_alignment_flex_direction_column": "flex-start",
-            "vertical_alignment_flex_direction_column": "flex-end",
+            "vertical_alignment_flex_direction_column": "flex-start",
             "gap": 0,
             "width": "fill",
             "custom_width": 100,
@@ -4160,19 +4160,6 @@
             "padding-inline-end": 0
           },
           "blocks": {
-            "spacer_8WtCTJ": {
-              "type": "spacer",
-              "settings": {
-                "size": "pixel",
-                "percent_size": 100,
-                "pixel_size": 16,
-                "custom_mobile_size": false,
-                "size_mobile": "percent",
-                "percent_size_mobile": 100,
-                "pixel_size_mobile": 120
-              },
-              "blocks": {}
-            },
             "group_jzheaX": {
               "type": "group",
               "name": "t:names.group",
@@ -4220,9 +4207,9 @@
                     "width": "100%",
                     "max_width": "normal",
                     "alignment": "left",
-                    "type_preset": "rte",
-                    "font": "var(--font-body--family)",
-                    "font_size": "1rem",
+                    "type_preset": "custom",
+                    "font": "var(--font-subheading--family)",
+                    "font_size": "1.125rem",
                     "line_height": "normal",
                     "letter_spacing": "normal",
                     "case": "none",
@@ -4255,6 +4242,20 @@
                 "icon_tAbyEt"
               ]
             },
+            "spacer_8WtCTJ": {
+              "type": "spacer",
+              "disabled": true,
+              "settings": {
+                "size": "pixel",
+                "percent_size": 100,
+                "pixel_size": 16,
+                "custom_mobile_size": false,
+                "size_mobile": "percent",
+                "percent_size_mobile": 100,
+                "pixel_size_mobile": 120
+              },
+              "blocks": {}
+            },
             "text_WrcLPm": {
               "type": "text",
               "disabled": true,
@@ -4283,8 +4284,8 @@
             }
           },
           "block_order": [
-            "spacer_8WtCTJ",
             "group_jzheaX",
+            "spacer_8WtCTJ",
             "text_WrcLPm"
           ]
         },
@@ -4384,13 +4385,13 @@
                   "type": "text",
                   "name": "t:names.text",
                   "settings": {
-                    "text": "<h3>Expedição de Mateus Aleluia ganha Museu Virtual</h3>",
+                    "text": "<h4>Expedição de Mateus Aleluia ganha Museu Virtual</h4>",
                     "width": "100%",
-                    "max_width": "normal",
+                    "max_width": "none",
                     "alignment": "left",
-                    "type_preset": "rte",
-                    "font": "var(--font-body--family)",
-                    "font_size": "1rem",
+                    "type_preset": "custom",
+                    "font": "var(--font-subheading--family)",
+                    "font_size": "1.125rem",
                     "line_height": "normal",
                     "letter_spacing": "normal",
                     "case": "none",
@@ -4473,8 +4474,8 @@
         "gap": 9,
         "section_width": "full-width",
         "section_height": "custom",
-        "section_height_custom": 70,
-        "color_scheme": "scheme-5",
+        "section_height_custom": 50,
+        "color_scheme": "scheme-4",
         "background_media": "none",
         "video_position": "cover",
         "background_image_position": "cover",
