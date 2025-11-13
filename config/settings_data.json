@@ -9,8 +9,8 @@
  */
 {
   "current": {
-    "logo": "shopify://shop_images/logo_horizontal_11.png",
-    "logo_inverse": "shopify://shop_images/logo_vertical_163.png",
+    "logo": "shopify://shop_images/logo-solisluna-white-23.png",
+    "logo_inverse": "shopify://shop_images/logo_branca.png",
     "type_body_font": "sans-serif",
     "type_subheading_font": "inter_n5",
     "type_heading_font": "noto_sans_display_n6",
