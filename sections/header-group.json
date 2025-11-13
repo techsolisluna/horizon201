@@ -108,7 +108,6 @@
       "block_order": [
         "announcement_ULMxwf"
       ],
-      "disabled": true,
       "name": "t:names.announcement_bar",
       "settings": {
         "speed": 5,
@@ -121,7 +120,7 @@
     }
   },
   "order": [
-    "header_section",
-    "header_announcements_pDtCeW"
+    "header_announcements_pDtCeW",
+    "header_section"
   ]
 }
