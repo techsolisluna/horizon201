@@ -2140,6 +2140,9 @@
         "group_TKfjcL",
         "group_EPx3dx"
       ],
+      "custom_css": [
+        ".group-block__link:hover {opacity: 0.8;}"
+      ],
       "name": "t:names.icons_with_text",
       "settings": {
         "content_direction": "row",
@@ -2772,8 +2775,8 @@
                 "width": "fit-content",
                 "max_width": "normal",
                 "alignment": "left",
-                "type_preset": "h5",
-                "font": "var(--font-body--family)",
+                "type_preset": "custom",
+                "font": "var(--font-heading--family)",
                 "font_size": "1rem",
                 "line_height": "normal",
                 "letter_spacing": "normal",
@@ -4132,7 +4135,7 @@
             "vertical_alignment": "center",
             "align_baseline": false,
             "horizontal_alignment_flex_direction_column": "flex-start",
-            "vertical_alignment_flex_direction_column": "flex-start",
+            "vertical_alignment_flex_direction_column": "flex-end",
             "gap": 0,
             "width": "fill",
             "custom_width": 100,
@@ -4160,6 +4163,19 @@
             "padding-inline-end": 0
           },
           "blocks": {
+            "spacer_8WtCTJ": {
+              "type": "spacer",
+              "settings": {
+                "size": "pixel",
+                "percent_size": 100,
+                "pixel_size": 16,
+                "custom_mobile_size": false,
+                "size_mobile": "percent",
+                "percent_size_mobile": 100,
+                "pixel_size_mobile": 120
+              },
+              "blocks": {}
+            },
             "group_jzheaX": {
               "type": "group",
               "name": "t:names.group",
@@ -4207,9 +4223,9 @@
                     "width": "100%",
                     "max_width": "normal",
                     "alignment": "left",
-                    "type_preset": "custom",
-                    "font": "var(--font-subheading--family)",
-                    "font_size": "1.125rem",
+                    "type_preset": "rte",
+                    "font": "var(--font-body--family)",
+                    "font_size": "1rem",
                     "line_height": "normal",
                     "letter_spacing": "normal",
                     "case": "none",
@@ -4242,20 +4258,6 @@
                 "icon_tAbyEt"
               ]
             },
-            "spacer_8WtCTJ": {
-              "type": "spacer",
-              "disabled": true,
-              "settings": {
-                "size": "pixel",
-                "percent_size": 100,
-                "pixel_size": 16,
-                "custom_mobile_size": false,
-                "size_mobile": "percent",
-                "percent_size_mobile": 100,
-                "pixel_size_mobile": 120
-              },
-              "blocks": {}
-            },
             "text_WrcLPm": {
               "type": "text",
               "disabled": true,
@@ -4284,8 +4286,8 @@
             }
           },
           "block_order": [
-            "group_jzheaX",
             "spacer_8WtCTJ",
+            "group_jzheaX",
             "text_WrcLPm"
           ]
         },
@@ -4385,13 +4387,13 @@
                   "type": "text",
                   "name": "t:names.text",
                   "settings": {
-                    "text": "<h4>Expedição de Mateus Aleluia ganha Museu Virtual</h4>",
+                    "text": "<h3>Expedição de Mateus Aleluia ganha Museu Virtual</h3>",
                     "width": "100%",
-                    "max_width": "none",
+                    "max_width": "normal",
                     "alignment": "left",
-                    "type_preset": "custom",
-                    "font": "var(--font-subheading--family)",
-                    "font_size": "1.125rem",
+                    "type_preset": "rte",
+                    "font": "var(--font-body--family)",
+                    "font_size": "1rem",
                     "line_height": "normal",
                     "letter_spacing": "normal",
                     "case": "none",
@@ -4474,8 +4476,8 @@
         "gap": 9,
         "section_width": "full-width",
         "section_height": "custom",
-        "section_height_custom": 50,
-        "color_scheme": "scheme-4",
+        "section_height_custom": 70,
+        "color_scheme": "scheme-5",
         "background_media": "none",
         "video_position": "cover",
         "background_image_position": "cover",
@@ -4532,7 +4534,7 @@
               "type": "_product-list-text",
               "name": "t:names.collection_title",
               "settings": {
-                "text": "<h3>Economize ao comprar por KITs temáticos</h3>",
+                "text": "<h3>{{ closest.collection.title }}</h3>",
                 "width": "fit-content",
                 "max_width": "normal",
                 "alignment": "left",
@@ -4633,32 +4635,6 @@
               },
               "blocks": {}
             },
-            "text_rDHfVp": {
-              "type": "text",
-              "name": "t:names.text",
-              "settings": {
-                "text": "",
-                "width": "fit-content",
-                "max_width": "normal",
-                "alignment": "left",
-                "type_preset": "rte",
-                "font": "var(--font-body--family)",
-                "font_size": "1rem",
-                "line_height": "normal",
-                "letter_spacing": "normal",
-                "case": "none",
-                "wrap": "pretty",
-                "color": "var(--color-foreground)",
-                "background": false,
-                "background_color": "#00000026",
-                "corner_radius": 0,
-                "padding-block-start": 0,
-                "padding-block-end": 0,
-                "padding-inline-start": 0,
-                "padding-inline-end": 0
-              },
-              "blocks": {}
-            },
             "price_4P6f4e": {
               "type": "price",
               "name": "t:names.product_price",
@@ -4686,7 +4662,6 @@
           "block_order": [
             "product_card_gallery_kBMRVc",
             "product_title_9kJYGi",
-            "text_rDHfVp",
             "price_4P6f4e"
           ]
         }
@@ -4701,14 +4676,14 @@
         "columns": 3,
         "mobile_columns": "2",
         "mobile_card_size": "60cqw",
-        "columns_gap": 0,
+        "columns_gap": 8,
         "rows_gap": 24,
         "icons_style": "arrow",
         "icons_shape": "none",
         "section_width": "page-width",
         "horizontal_alignment": "flex-start",
         "gap": 28,
-        "color_scheme": "scheme-4",
+        "color_scheme": "scheme-1",
         "padding-block-start": 48,
         "padding-block-end": 48
       }
