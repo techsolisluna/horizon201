@@ -3781,13 +3781,13 @@
         "text_A3qLbt": {
           "type": "text",
           "settings": {
-            "text": "<h1>projetos digitais que preservam e amplificam o patrimônio histórico e a memória viva das nossas culturas</h1>",
+            "text": "<p>projetos digitais que preservam e amplificam o patrimônio histórico e a memória viva das nossas culturas</p>",
             "width": "fit-content",
-            "max_width": "normal",
+            "max_width": "none",
             "alignment": "left",
-            "type_preset": "h3",
-            "font": "var(--font-body--family)",
-            "font_size": "1rem",
+            "type_preset": "custom",
+            "font": "var(--font-subheading--family)",
+            "font_size": "1.25rem",
             "line_height": "normal",
             "letter_spacing": "normal",
             "case": "none",
