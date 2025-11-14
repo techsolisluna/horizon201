@@ -139,6 +139,7 @@
         "text_twGGkJ",
         "group_JMpXCP"
       ],
+      "disabled": true,
       "name": "Heading",
       "settings": {
         "content_direction": "row",
@@ -177,7 +178,7 @@
           "type": "text",
           "name": "t:names.heading",
           "settings": {
-            "text": "<p>{{ closest.collection.title }}</p>",
+            "text": "<p>Combos</p>",
             "width": "fit-content",
             "max_width": "normal",
             "alignment": "left",
