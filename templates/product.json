@@ -1165,10 +1165,10 @@
       "settings": {
         "has_image": true,
         "media_position": "left",
-        "media_width": "medium",
+        "media_width": "narrow",
         "media_height": "60svh",
-        "section_width": "full-width",
-        "extend_media": true,
+        "section_width": "page-width",
+        "extend_media": false,
         "color_scheme": "scheme-1",
         "padding-block-start": 0,
         "padding-block-end": 0
