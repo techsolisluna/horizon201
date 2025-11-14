@@ -4500,7 +4500,7 @@
         "related_product": false,
         "posts_limit": true,
         "max_posts": 3,
-        "layout_type": "editorial",
+        "layout_type": "grid",
         "carousel_on_mobile": true,
         "columns": 4,
         "mobile_columns": "2",
