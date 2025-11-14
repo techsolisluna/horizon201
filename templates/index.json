@@ -2130,7 +2130,7 @@
               "type": "_product-list-text",
               "name": "t:names.collection_title",
               "settings": {
-                "text": "<h3>Economize ao comprar por KITs temáticos</h3>",
+                "text": "<h3>Economize ao comprar por combos temáticos</h3>",
                 "width": "fit-content",
                 "max_width": "normal",
                 "alignment": "left",
