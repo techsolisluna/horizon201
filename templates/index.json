@@ -2132,6 +2132,7 @@
       "blocks": {
         "text_drDxec": {
           "type": "text",
+          "disabled": true,
           "settings": {
             "text": "<h1>New arrivals</h1>",
             "width": "fit-content",
@@ -2157,6 +2158,7 @@
         },
         "text_tXUVxD": {
           "type": "text",
+          "disabled": true,
           "settings": {
             "text": "<p>Made with care and unconditionally loved by our customers.</p>",
             "width": "fit-content",
@@ -2183,6 +2185,7 @@
         "button_D6YQCe": {
           "type": "button",
           "name": "t:names.button",
+          "disabled": true,
           "settings": {
             "label": "Shop Now",
             "link": "shopify://collections/all",
