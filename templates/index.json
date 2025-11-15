@@ -2335,35 +2335,6 @@
     },
     "1763174005e51a22b2": {
       "type": "_blocks",
-      "blocks": {
-        "ai_gen_block_f60e3ad_YChkhT": {
-          "type": "ai_gen_block_f60e3ad",
-          "settings": {
-            "before_image": "shopify://shop_images/8novidades_pelocaminhodasestrelas_bruna-martins_op2.png",
-            "after_image": "shopify://shop_images/Captura_de_Tela_2025-11-10_as_18.58.41.png",
-            "aspect_ratio": 75,
-            "border_radius": 8,
-            "initial_position": 50,
-            "divider_width": 3,
-            "divider_color": "#ffffff",
-            "handle_size": 50,
-            "handle_color": "#ffffff",
-            "handle_arrow_color": "#000000",
-            "show_labels": true,
-            "before_label": "Before",
-            "after_label": "After",
-            "label_font_size": 14,
-            "label_background": "#000000",
-            "label_text_color": "#ffffff",
-            "label_position_vertical": 20,
-            "label_position_horizontal": 20
-          },
-          "blocks": {}
-        }
-      },
-      "block_order": [
-        "ai_gen_block_f60e3ad_YChkhT"
-      ],
       "settings": {
         "content_direction": "column",
         "vertical_on_mobile": true,
