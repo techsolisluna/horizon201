@@ -903,7 +903,7 @@
                   "type": "text",
                   "name": "t:names.text",
                   "settings": {
-                    "text": "<p>Our products are manufactured both locally and globally. We carefully select our manufacturing partners to ensure our products are high quality and a fair value. </p>",
+                    "text": "<p>Para agendar uma conversa com nosso divulgador, acesse nosso calendário de agendamentos e escolha o horário mais conveniente para você <a href=\"https://meetings.hubspot.com/kin/apresentacao-solisluna\" target=\"_blank\" title=\"https://meetings.hubspot.com/kin/apresentacao-solisluna\">neste link.</a></p><p>Caso necessite de um horário fora dos disponíveis ou tenha alguma dúvida, entre em contato diretamente pelo email comercial@solisluna.com.br</p><p>Será um prazer conversar com você!</p>",
                     "width": "100%",
                     "max_width": "normal",
                     "alignment": "left",
