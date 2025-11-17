@@ -12,23 +12,28 @@
 
 {% style %}
   .authors-container-{{ ai_gen_id }} {
-    {% if block.settings.container_width == 'full' %}
-      width: 100%;
-      padding: 0 {{ block.settings.container_padding }}px;
-    {% else %}
-      max-width: {{ block.settings.max_width }}px;
-      margin: 0 auto;
-      padding: 0 {{ block.settings.container_padding }}px;
-    {% endif %}
-  }
+  {% if block.settings.container_width == 'full' %}
+    width: 100%;
+    padding: 0 {{ block.settings.container_padding }}px;
+  {% else %}
+    width: 100%; 
+
+    max-width: {{ block.settings.max_width }}px;
+    margin: 0 auto;
+    padding: 0 {{ block.settings.container_padding }}px;
+  {% endif %}
+}
 
   .authors-grid-{{ ai_gen_id }} {
     display: grid;
     grid-template-columns: repeat({{ block.settings.columns_desktop }}, 1fr);
     gap: {{ block.settings.grid_gap }}px;
-    {% if block.settings.container_width == 'full' %}
-      width: 100%;
-    {% endif %}
+    
+    /*
+      Força o grid a sempre ocupar 100% do container-pai.
+      Isso impede que ele "encolha" ao filtrar.
+    */
+    width: 100%;
   }
 
   @media screen and (max-width: 749px) {
@@ -118,6 +123,78 @@
     color: {{ block.settings.heading_color }};
     font-size: {{ block.settings.heading_size }}px;
   }
+
+  .author-filter-nav-{{ ai_gen_id }} {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 30px;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  .author-filter-button-{{ ai_gen_id }} {
+    padding: 8px 16px;
+    font-size: 15px;
+    color: #333;
+    background-color: #f4f4f4;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    font-weight: 500;
+  }
+
+  .author-filter-button-{{ ai_gen_id }}:hover {
+    background-color: #e0e0e0;
+  }
+
+  .author-filter-button-{{ ai_gen_id }}.active {
+    background-color: {{ block.settings.heading_color | default: '#000000' }};
+    color: {{ block.settings.card_background_color | default: '#ffffff' }};
+    border-color: {{ block.settings.heading_color | default: '#000000' }};
+  }
+
+  .author-search-bar-{{ ai_gen_id }} {
+    padding: 8px 16px;
+    font-size: 15px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    margin-left: 10px; /* Espaço entre o último botão e a busca */
+    flex-grow: 1; /* Permite que a barra cresça */
+    max-width: 350px; /* Limita o tamanho máximo */
+    line-height: 1.5;
+  }
+  
+  /* Ajuste para mobile */
+  @media screen and (max-width: 749px) {
+    .author-search-bar-{{ ai_gen_id }} {
+      margin-left: 0;
+      width: 100%; /* Ocupa a largura toda */
+      max-width: none;
+      order: 4; /* Joga a barra de busca para baixo dos botões */
+    }
+  }
+
+  .author-card-{{ ai_gen_id }}.is-hidden {
+   display: none;
+ }
+
+ .author-no-results-{{ ai_gen_id }} {
+    display: none; /* Escondido por padrão */
+    padding: 40px 20px;
+    text-align: center;
+    font-size: 18px;
+    color: {{ block.settings.description_color | default: '#666666' }};
+    
+    /* Chave para o layout: faz a mensagem ocupar todas as colunas */
+    grid-column: 1 / -1;
+  }
+
+  /* Classe que o JS vai adicionar para mostrar a mensagem */
+  .author-no-results-{{ ai_gen_id }}.is-visible {
+    display: block;
+  }
 {% endstyle %}
 
 <div class="authors-container-{{ ai_gen_id }}" {{ block.shopify_attributes }}>
@@ -133,12 +210,34 @@
     </div>
   {% endif %}
 
+  <div class="author-filter-nav-{{ ai_gen_id }}">
+    <button type="button" class="author-filter-button-{{ ai_gen_id }} active" data-filter="todos">Todos</button>
+    <button type="button" class="author-filter-button-{{ ai_gen_id }}" data-filter="ilustrador">Ilustradores</button>
+
+    <input type="text" class="author-search-bar-{{ ai_gen_id }}" placeholder="Buscar por nome">
+  </div>
+
   <div class="authors-grid-{{ ai_gen_id }}">
+
+    <div class="author-no-results-{{ ai_gen_id }}">
+      A busca não retornou resultados
+    </div>
+
     {% paginate metaobjects.autor.values by 1000 %}
       {% assign autores_ordenados = metaobjects.autor.values | sort: 'nome.value' %}
         {% for autor in autores_ordenados %}
-        <a href="{{ autor.system.url }}" class="author-card-{{ ai_gen_id }}">
-          <div class="author-image-wrapper-{{ ai_gen_id }}">
+          
+          {% comment %} Lógica para definir o tipo de filtro {% endcomment %}
+          {%- assign filter_key = "escritor" -%}
+          {%- if autor.ilustrador.value == true -%}
+            {%- assign filter_key = "ilustrador" -%}
+          {%- endif -%}
+
+          <a href="{{ autor.system.url }}" 
+             class="author-card-{{ ai_gen_id }}" 
+             data-filter-type="{{ filter_key }}">
+            
+            <div class="author-image-wrapper-{{ ai_gen_id }}">
             {% if autor.foto.value != blank %}
               <img 
                 src="{{ autor.foto.value | image_url: width: 300 }}" 
@@ -169,6 +268,95 @@
     {% endpaginate %}
   </div>
 </div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const blockId = '{{ ai_gen_id }}';
+  
+  // Seleciona todos os elementos
+  const filterButtons = document.querySelectorAll(`.author-filter-button-${blockId}`);
+  const searchBar = document.querySelector(`.author-search-bar-${blockId}`);
+  const authorCards = document.querySelectorAll(`.author-card-${blockId}`);
+  
+  // Seleciona a mensagem "sem resultados"
+  const noResultsMessage = document.querySelector(`.author-no-results-${blockId}`);
+
+  // Se não houver cards, não faz nada
+  if (!authorCards.length) {
+    return;
+  }
+
+  // Guarda o estado atual dos filtros
+  let currentFilterType = 'todos';
+  let currentSearchTerm = '';
+  const hiddenClass = 'is-hidden';
+  
+  // Classe para a mensagem
+  const noResultsClass = 'is-visible'; 
+
+  // Função helper para "normalizar" texto
+  function normalizeText(text) {
+    if (!text) return '';
+    return text
+      .toLowerCase()
+      .normalize("NFD")
+      .replace(/[\u0300-\u036f]/g, "");
+  }
+
+  // Função principal que aplica AMBOS os filtros
+  function applyFilters() {
+    const normalizedSearchTerm = normalizeText(currentSearchTerm);
+    
+    // Contador de itens visíveis
+    let visibleCount = 0;
+
+    authorCards.forEach(card => {
+      const cardType = card.dataset.filterType;
+      const authorNameElement = card.querySelector(`.author-name-${blockId}`);
+      const authorName = authorNameElement ? normalizeText(authorNameElement.textContent) : '';
+
+      const typeMatch = (currentFilterType === 'todos' || currentFilterType === cardType);
+      const searchMatch = (authorName.includes(normalizedSearchTerm));
+
+      if (typeMatch && searchMatch) {
+        card.classList.remove(hiddenClass);
+        visibleCount++; // Incrementa o contador
+      } else {
+        card.classList.add(hiddenClass);
+      }
+    });
+
+    // Bloco para mostrar/esconder a mensagem
+    if (noResultsMessage) {
+      if (visibleCount === 0) {
+        noResultsMessage.classList.add(noResultsClass);
+      } else {
+        noResultsMessage.classList.remove(noResultsClass);
+      }
+    }
+  }
+
+  // Adiciona os "ouvintes" de evento
+
+  // Ouvinte para os BOTÕES
+  filterButtons.forEach(button => {
+    button.addEventListener('click', function() {
+      filterButtons.forEach(btn => btn.classList.remove('active'));
+      this.classList.add('active');
+      currentFilterType = this.dataset.filter;
+      applyFilters();
+    });
+  });
+
+  // Ouvinte para a BARRA DE BUSCA
+  if (searchBar) {
+    searchBar.addEventListener('input', function() {
+      currentSearchTerm = this.value;
+      applyFilters();
+    });
+  }
+});
+</script>
 
 {% schema %}
 {
