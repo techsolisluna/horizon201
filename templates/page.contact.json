@@ -474,7 +474,7 @@
           "type": "text",
           "name": "t:names.text",
           "settings": {
-            "text": "<p>Você pode entrar em contato conosco pelo formulário a seguir,<br/>pelo chat no canto inferior direito ou pelo email <a href=\"mailto:comercial@solisluna.com.br\" target=\"_blank\" title=\"Contato da Solisluna\">contato@solisluna.com.br</a></p><p></p><p><strong>Horário de atendimento:</strong></p><p>De segunda-feira a sexta-feira<br/>Das 10h às 12h</p>",
+            "text": "<p>Você pode entrar em contato conosco pelo formulário a seguir,<br/>pelo chat no canto inferior direito ou pelo email <a href=\"mailto:comercial@solisluna.com.br\" target=\"_blank\" title=\"Contato da Solisluna\">contato@solisluna.com.br</a></p><p></p>",
             "width": "fit-content",
             "max_width": "normal",
             "alignment": "left",
