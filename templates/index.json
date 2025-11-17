@@ -2634,7 +2634,7 @@
                   "type": "text",
                   "name": "t:names.text",
                   "settings": {
-                    "text": "<p>Tecelagem © Goya Lopes</p>",
+                    "text": "<p><a href=\"/products/tecelagem\" target=\"_blank\" title=\"Tecelagem\">Tecelagem © Goya Lopes</a></p>",
                     "width": "fit-content",
                     "max_width": "normal",
                     "alignment": "left",
