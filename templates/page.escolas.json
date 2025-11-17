@@ -684,13 +684,14 @@
           "static": true,
           "settings": {
             "horizontal_alignment_flex_direction_column": "flex-start",
-            "vertical_alignment_flex_direction_column": "space-between",
-            "gap": 24
+            "vertical_alignment_flex_direction_column": "flex-end",
+            "gap": 75
           },
           "blocks": {
             "text_XYG8UW": {
               "type": "text",
               "name": "t:names.caption",
+              "disabled": true,
               "settings": {
                 "text": "<p>Para as infâncias</p>",
                 "width": "fit-content",
