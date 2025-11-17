@@ -109,7 +109,7 @@
                   "type": "text",
                   "name": "Heading",
                   "settings": {
-                    "text": "<h2><em>Correio Lunar</em></h2>",
+                    "text": "<h2><a href=\"/blogs/correio-lunar\" title=\"Correio Lunar\"><em>Correio Lunar</em></a></h2>",
                     "width": "fit-content",
                     "max_width": "normal",
                     "alignment": "left",
