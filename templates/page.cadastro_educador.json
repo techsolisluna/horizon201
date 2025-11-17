@@ -15,7 +15,6 @@
         "heading": {
           "type": "text",
           "name": "Title",
-          "disabled": true,
           "settings": {
             "text": "<p>{{ closest.page.title }}</p>",
             "width": "100%",
