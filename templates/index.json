@@ -959,7 +959,7 @@
         "group_kVTRnN"
       ],
       "custom_css": [
-        "@media screen and (min-width: 750px) {.collection-card{min-height: 280px; }}"
+        "@media screen and (min-width: 750px) {.collection-card {min-height: 280px; }}"
       ],
       "name": "t:names.collections_bento",
       "settings": {
@@ -2330,7 +2330,7 @@
       "name": "t:names.featured_product",
       "settings": {
         "product": "pelo-caminho-das-estrelas",
-        "layout": "media-right",
+        "layout": "media-left",
         "color_scheme": "scheme-1",
         "padding-block-start": 0,
         "padding-block-end": 0
