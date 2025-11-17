@@ -68,10 +68,10 @@
           "type": "button",
           "name": "t:names.button",
           "settings": {
-            "label": "Continue comprando",
+            "label": "Continue navegando",
             "link": "https://solisluna.com.br",
             "open_in_new_tab": false,
-            "style_class": "button",
+            "style_class": "button-secondary",
             "width": "fit-content",
             "custom_width": 100,
             "width_mobile": "fit-content",
@@ -95,17 +95,6 @@
         "color_scheme": "",
         "padding-block-start": 100,
         "padding-block-end": 100
-      }
-    },
-    "custom_liquid_cKPKPz": {
-      "type": "custom-liquid",
-      "name": "t:names.custom_liquid",
-      "settings": {
-        "custom_liquid": "teste",
-        "color_scheme": "",
-        "section_width": "page-width",
-        "padding-block-start": 0,
-        "padding-block-end": 0
       }
     },
     "product_list_iA96Tq": {
@@ -386,7 +375,6 @@
   },
   "order": [
     "main",
-    "custom_liquid_cKPKPz",
     "product_list_iA96Tq"
   ]
 }
