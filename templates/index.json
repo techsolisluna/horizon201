@@ -2330,7 +2330,7 @@
       "name": "t:names.featured_product",
       "settings": {
         "product": "pelo-caminho-das-estrelas",
-        "layout": "media-left",
+        "layout": "media-right",
         "color_scheme": "scheme-1",
         "padding-block-start": 0,
         "padding-block-end": 0
