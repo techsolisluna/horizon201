@@ -2734,7 +2734,7 @@
                   "type": "text",
                   "name": "t:names.text",
                   "settings": {
-                    "text": "<p>© Veronica Truttero</p>",
+                    "text": "<p><a href=\"/products/de-noite\" target=\"_blank\" title=\"De noite\"><strong>De Noite © Veronica Truttero</strong></a></p>",
                     "width": "fit-content",
                     "max_width": "normal",
                     "alignment": "left",
@@ -2833,7 +2833,7 @@
                 "text_gBxwqd": {
                   "type": "text",
                   "settings": {
-                    "text": "<p>© Issa Watanabe</p>",
+                    "text": "<p><a href=\"/products/migrantes\" target=\"_blank\" title=\"Migrantes\">Migrantes © Issa Watanabe</a></p>",
                     "width": "fit-content",
                     "max_width": "normal",
                     "alignment": "left",
