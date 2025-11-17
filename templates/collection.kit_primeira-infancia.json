@@ -456,11 +456,11 @@
       },
       "settings": {
         "layout_type": "grid",
-        "product_card_size": "extra-large",
+        "product_card_size": "large",
         "mobile_product_card_size": "large",
         "product_grid_width": "full-width",
         "full_width_on_mobile": true,
-        "columns_gap_horizontal": 0,
+        "columns_gap_horizontal": 23,
         "columns_gap_vertical": 0,
         "padding-inline-start": 0,
         "padding-inline-end": 0,
