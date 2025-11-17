@@ -2243,11 +2243,11 @@
           "static": true,
           "settings": {
             "media_type": "image",
-            "image": "shopify://shop_images/Captura_de_Tela_2025-11-10_as_19.00.22.png",
+            "image": "shopify://shop_images/Pelo_Caminho_das_Estrelas.jpg",
             "link": "shopify://products/pelo-caminho-das-estrelas",
             "video_loop": true,
             "video_autoplay": false,
-            "image_position": "contain",
+            "image_position": "cover",
             "video_position": "cover"
           },
           "blocks": {}
