@@ -2244,7 +2244,7 @@
           "settings": {
             "media_type": "image",
             "image": "shopify://shop_images/Captura_de_Tela_2025-11-10_as_19.00.22.png",
-            "link": "",
+            "link": "shopify://products/pelo-caminho-das-estrelas",
             "video_loop": true,
             "video_autoplay": false,
             "image_position": "contain",
@@ -2300,7 +2300,7 @@
               "name": "t:names.image",
               "static": true,
               "settings": {
-                "image_ratio": "adapt",
+                "image_ratio": "square",
                 "constrain_to_viewport": "contain"
               },
               "blocks": {}
@@ -2327,7 +2327,7 @@
       "name": "t:names.featured_product",
       "settings": {
         "product": "pelo-caminho-das-estrelas",
-        "layout": "media-left",
+        "layout": "media-right",
         "color_scheme": "scheme-1",
         "padding-block-start": 0,
         "padding-block-end": 0
