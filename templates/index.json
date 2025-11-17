@@ -958,6 +958,9 @@
       "block_order": [
         "group_kVTRnN"
       ],
+      "custom_css": [
+        "@media screen and (min-width: 750px) {.collection-card{min-height: 280px; }}"
+      ],
       "name": "t:names.collections_bento",
       "settings": {
         "collection_list": [
