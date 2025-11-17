@@ -1307,6 +1307,257 @@
         "text_xBLtjy",
         "accordion_3dB8NX"
       ],
+      "disabled": true,
+      "name": "t:names.faq_section",
+      "settings": {
+        "content_direction": "column",
+        "vertical_on_mobile": true,
+        "horizontal_alignment": "flex-start",
+        "vertical_alignment": "center",
+        "align_baseline": false,
+        "horizontal_alignment_flex_direction_column": "flex-start",
+        "vertical_alignment_flex_direction_column": "center",
+        "gap": 32,
+        "section_width": "page-width",
+        "section_height": "",
+        "section_height_custom": 50,
+        "color_scheme": "",
+        "background_media": "none",
+        "video_position": "cover",
+        "background_image_position": "cover",
+        "border": "none",
+        "border_width": 1,
+        "border_opacity": 100,
+        "border_radius": 0,
+        "toggle_overlay": false,
+        "overlay_color": "#00000026",
+        "overlay_style": "solid",
+        "gradient_direction": "to top",
+        "padding-block-start": 48,
+        "padding-block-end": 48
+      }
+    },
+    "section_dyTzmk": {
+      "type": "section",
+      "blocks": {
+        "text_yMY33i": {
+          "type": "text",
+          "name": "t:names.heading",
+          "settings": {
+            "text": "<h3>Dúvidas frequentes</h3>",
+            "width": "fit-content",
+            "max_width": "narrow",
+            "alignment": "left",
+            "type_preset": "rte",
+            "font": "var(--font-body--family)",
+            "font_size": "",
+            "line_height": "normal",
+            "letter_spacing": "normal",
+            "case": "none",
+            "wrap": "pretty",
+            "color": "var(--color-foreground)",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        },
+        "accordion_MziyGr": {
+          "type": "accordion",
+          "name": "t:names.accordion",
+          "settings": {
+            "icon": "caret",
+            "dividers": true,
+            "type_preset": "h5",
+            "inherit_color_scheme": true,
+            "color_scheme": "",
+            "border": "none",
+            "border_width": 1,
+            "border_opacity": 100,
+            "border_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {
+            "accordion_row_qEejqd": {
+              "type": "_accordion-row",
+              "settings": {
+                "heading": "Onde encontrar os livros da Solisluna?",
+                "open_by_default": true,
+                "icon": "star",
+                "width": 22
+              },
+              "blocks": {
+                "text_9meWj9": {
+                  "type": "text",
+                  "settings": {
+                    "text": "<ul><li><strong>Livrarias parceiras</strong>: Trabalhamos com livrarias selecionadas que compartilham nossos valores de curadoria literária e apoio à literatura independente.</li></ul><p></p><ul><li><strong>Loja online</strong>: Também vendemos diretamente pelo nosso site oficial, com envio seguro para todo o Brasil. <strong>Comprar diretamente da editora é uma forma de fortalecer e valorizar o trabalho editorial independente.</strong></li></ul><p>💡 <strong>Nossa recomendação</strong>: Ao comprar um livro, se possível, dê preferência às livrarias de rua e independentes - elas são espaços fundamentais de literatura e resistência cultural, e seu apoio fortalece todo o ecossistema literário nacional.</p>",
+                    "width": "100%",
+                    "max_width": "normal",
+                    "alignment": "left",
+                    "type_preset": "rte",
+                    "font": "var(--font-body--family)",
+                    "font_size": "",
+                    "line_height": "normal",
+                    "letter_spacing": "normal",
+                    "case": "none",
+                    "wrap": "pretty",
+                    "color": "var(--color-foreground)",
+                    "background": false,
+                    "background_color": "#00000026",
+                    "corner_radius": 0,
+                    "padding-block-start": 10,
+                    "padding-block-end": 20,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "text_9meWj9"
+              ]
+            },
+            "accordion_row_88P967": {
+              "type": "_accordion-row",
+              "settings": {
+                "heading": "Tenho uma livraria. Como posso revender os livros da Solisluna?",
+                "open_by_default": false,
+                "icon": "plant",
+                "width": 22
+              },
+              "blocks": {
+                "text_EH4QjR": {
+                  "type": "text",
+                  "settings": {
+                    "text": "<p>Ficamos muito felizes com seu interesse! Trabalhamos exclusivamente com livrarias que valorizam literatura de qualidade, independente e diversa.</p><p><strong>Para se tornar nosso parceiro:</strong></p><ul><li>Envie um e-mail para: <strong>comercial@solisluna.com.br</strong></li><li>Ou preencha nosso formulário de parceria</li><li>Inclua: dados da livraria, CNPJ, localização</li><li>um pouco sobre seu perfil editorial, os gêneros e assuntos de interesse</li></ul><p>Geralmente as livrarias são atendidas por distribuidores, que podemos indicar e acompanhar o atendimento. Buscamos sempre estreitar os laços com as livrarias e apoiar o desenvolvimento de um relacionamento próximo e duradouro.</p>",
+                    "width": "100%",
+                    "max_width": "normal",
+                    "alignment": "left",
+                    "type_preset": "paragraph",
+                    "font": "var(--font-body--family)",
+                    "font_size": "",
+                    "line_height": "normal",
+                    "letter_spacing": "normal",
+                    "case": "none",
+                    "wrap": "pretty",
+                    "color": "var(--color-foreground)",
+                    "background": false,
+                    "background_color": "#00000026",
+                    "corner_radius": 0,
+                    "padding-block-start": 10,
+                    "padding-block-end": 20,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "text_EH4QjR"
+              ]
+            },
+            "accordion_row_Ufxqz7": {
+              "type": "_accordion-row",
+              "name": "t:names.accordion_dash_row",
+              "settings": {
+                "heading": "Vocês oferecem descontos para professores e bibliotecários?",
+                "open_by_default": false,
+                "icon": "price_tag",
+                "width": 12
+              },
+              "blocks": {
+                "text_88exqX": {
+                  "type": "text",
+                  "name": "t:names.text",
+                  "settings": {
+                    "text": "<p>Sim! Oferecemos desconto especial para educadores e bibliotecários, além de outros benefícios e conteúdos exclusivos.. Saiba mais <a href=\"/pages/sala-do-educador\" title=\"Professores, bibliotecários e mediadores de leitura\">neste link.</a></p>",
+                    "width": "100%",
+                    "max_width": "normal",
+                    "alignment": "left",
+                    "type_preset": "rte",
+                    "font": "var(--font-body--family)",
+                    "font_size": "",
+                    "line_height": "normal",
+                    "letter_spacing": "normal",
+                    "case": "none",
+                    "wrap": "pretty",
+                    "color": "var(--color-foreground)",
+                    "background": false,
+                    "background_color": "#00000026",
+                    "corner_radius": 0,
+                    "padding-block-start": 10,
+                    "padding-block-end": 20,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "text_88exqX"
+              ]
+            },
+            "accordion_row_ff4WRh": {
+              "type": "_accordion-row",
+              "name": "t:names.accordion_dash_row",
+              "settings": {
+                "heading": "Como agendar uma reunião com um divulgador da Solisluna?",
+                "open_by_default": false,
+                "icon": "chat_bubble",
+                "width": 22
+              },
+              "blocks": {
+                "text_xGRUGY": {
+                  "type": "text",
+                  "name": "t:names.text",
+                  "settings": {
+                    "text": "<p>Para agendar uma conversa com nosso divulgador, acesse nosso calendário de agendamentos e escolha o horário mais conveniente para você <a href=\"https://meetings.hubspot.com/kin/apresentacao-solisluna\" target=\"_blank\" title=\"https://meetings.hubspot.com/kin/apresentacao-solisluna\">neste link.</a></p><p>Caso necessite de um horário fora dos disponíveis ou tenha alguma dúvida, entre em contato diretamente pelo email comercial@solisluna.com.br</p><p>Será um prazer conversar com você!</p>",
+                    "width": "100%",
+                    "max_width": "normal",
+                    "alignment": "left",
+                    "type_preset": "rte",
+                    "font": "var(--font-body--family)",
+                    "font_size": "",
+                    "line_height": "normal",
+                    "letter_spacing": "normal",
+                    "case": "none",
+                    "wrap": "pretty",
+                    "color": "var(--color-foreground)",
+                    "background": false,
+                    "background_color": "#00000026",
+                    "corner_radius": 0,
+                    "padding-block-start": 10,
+                    "padding-block-end": 20,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "text_xGRUGY"
+              ]
+            }
+          },
+          "block_order": [
+            "accordion_row_qEejqd",
+            "accordion_row_88P967",
+            "accordion_row_Ufxqz7",
+            "accordion_row_ff4WRh"
+          ]
+        }
+      },
+      "block_order": [
+        "text_yMY33i",
+        "accordion_MziyGr"
+      ],
       "name": "t:names.faq_section",
       "settings": {
         "content_direction": "column",
@@ -1344,6 +1595,7 @@
     "section_DzYxLz",
     "section_nPgXMT",
     "section_NfT4ay",
-    "section_WNPGVC"
+    "section_WNPGVC",
+    "section_dyTzmk"
   ]
 }
