@@ -2545,6 +2545,7 @@
           ]
         }
       },
+      "disabled": true,
       "custom_css": [],
       "name": "GALERIA",
       "settings": {
