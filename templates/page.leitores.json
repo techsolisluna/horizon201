@@ -17,7 +17,7 @@
           "static": true,
           "settings": {
             "media_type": "image",
-            "image": "shopify://shop_images/carrinho-de-livros.jpg",
+            "image": "shopify://shop_images/IMG_2900.jpg",
             "link": "",
             "video_loop": true,
             "video_autoplay": false,
@@ -1307,6 +1307,7 @@
         "text_xBLtjy",
         "accordion_3dB8NX"
       ],
+      "disabled": true,
       "name": "t:names.faq_section",
       "settings": {
         "content_direction": "column",
