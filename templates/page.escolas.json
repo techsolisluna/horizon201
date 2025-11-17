@@ -1535,7 +1535,7 @@
               "type": "button",
               "settings": {
                 "label": "Agendar uma apresentação",
-                "link": "mailto:comercial@solisluna.com.br",
+                "link": "https://meetings.hubspot.com/kin/apresentacao-solisluna",
                 "open_in_new_tab": true,
                 "style_class": "button",
                 "width": "custom",
