@@ -3178,7 +3178,7 @@
             "color_scheme": "scheme-1",
             "background_media": "image",
             "video_position": "cover",
-            "background_image": "shopify://shop_images/Carrinho_Bienal_1.jpg",
+            "background_image": "shopify://shop_images/CarrinhoLivrosSolislunaPrimavera.jpg",
             "background_image_position": "cover",
             "border": "none",
             "border_width": 1,
@@ -3989,69 +3989,6 @@
         "padding-block-end": 40
       }
     },
-    "blog_posts_Uze9H7": {
-      "type": "blog-posts",
-      "blocks": {
-        "static-header": {
-          "type": "_product-list-content",
-          "static": true,
-          "settings": {
-            "content_direction": "column",
-            "vertical_on_mobile": true,
-            "horizontal_alignment": "flex-start",
-            "vertical_alignment": "center",
-            "align_baseline": false,
-            "horizontal_alignment_flex_direction_column": "flex-start",
-            "vertical_alignment_flex_direction_column": "center",
-            "gap": 12,
-            "width": "fill",
-            "custom_width": 100,
-            "width_mobile": "fill",
-            "custom_width_mobile": 100,
-            "height": "fit",
-            "custom_height": 100,
-            "inherit_color_scheme": true,
-            "color_scheme": "",
-            "background_media": "none",
-            "video_position": "cover",
-            "background_image_position": "cover",
-            "border": "none",
-            "border_width": 1,
-            "border_opacity": 100,
-            "border_radius": 0,
-            "padding-block-start": 0,
-            "padding-block-end": 0,
-            "padding-inline-start": 0,
-            "padding-inline-end": 0
-          },
-          "blocks": {}
-        }
-      },
-      "name": "Blog posts",
-      "settings": {
-        "blog": "",
-        "related_product": false,
-        "posts_limit": true,
-        "max_posts": 2,
-        "layout_type": "carousel",
-        "carousel_on_mobile": false,
-        "columns": 4,
-        "mobile_columns": "2",
-        "columns_gap": 8,
-        "rows_gap": 8,
-        "font_size_heading": 1.2,
-        "font_size_date": 0.8,
-        "font_size_body": 1,
-        "icons_style": "arrow",
-        "icons_shape": "none",
-        "section_width": "page-width",
-        "horizontal_alignment": "flex-start",
-        "gap": 12,
-        "color_scheme": "",
-        "padding-block-start": 0,
-        "padding-block-end": 0
-      }
-    },
     "section_7xk9Xh": {
       "type": "section",
       "blocks": {
@@ -4543,7 +4480,6 @@
     "media_with_content_UxxP3g",
     "section_pcVPYN",
     "hero_LRV9yj",
-    "blog_posts_Uze9H7",
     "section_7xk9Xh",
     "blog_posts_wMHpxz"
   ]
