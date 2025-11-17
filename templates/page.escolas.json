@@ -419,7 +419,7 @@
             "text_wJH7Qc": {
               "type": "text",
               "settings": {
-                "text": "<h3>Dúvidas? Entre em contato</h3>",
+                "text": "<h3>Professores e bibliotecários tem 30% de desconto</h3>",
                 "width": "fit-content",
                 "max_width": "normal",
                 "alignment": "center",
@@ -444,10 +444,10 @@
             "button_h4yqrf": {
               "type": "button",
               "settings": {
-                "label": "contato@solisluna.com.br",
+                "label": "Cadastre-se",
                 "link": "mailto:contato@solisluna.com.br",
                 "open_in_new_tab": true,
-                "style_class": "link",
+                "style_class": "button-secondary",
                 "width": "fit-content",
                 "custom_width": 100,
                 "width_mobile": "fit-content",
