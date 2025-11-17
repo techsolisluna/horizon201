@@ -806,7 +806,7 @@
       },
       "name": "Collection links: TEMAS",
       "settings": {
-        "collection_list": "{{ metaobjects.colecoes_destaque[\"temas-em-destaque\"].lista_a.value }}",
+        "collection_list": "{{ metaobjects.colecoes_destaque[\"colecao-destaque-01\"].lista_a.value }}",
         "layout": "text",
         "section_width": "page-width",
         "alignment": "center",
