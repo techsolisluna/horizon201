@@ -1649,94 +1649,6 @@
         "padding-block-end": 40
       }
     },
-    "section_cDbPdJ": {
-      "type": "section",
-      "blocks": {
-        "text_qUn4cC": {
-          "type": "text",
-          "settings": {
-            "text": "<p>\"Quem lê se 'desnaturaliza' de alguma forma, dá o salto, desacredita do automático, sente perplexidade, curiosidade, intriga, depois olha, procura, decifra. (...) Busca indícios e, ao encontrá-los, tem audácia de construir pequenas cidades de sentido, pequenos universos que habita por um tempo, sem se enraizar definitivamente neles porque terá que continuar lendo.  O leitor é ágil e está sempre insatisfeito.\"</p><p></p>",
-            "width": "fit-content",
-            "max_width": "narrow",
-            "alignment": "center",
-            "type_preset": "custom",
-            "font": "var(--font-subheading--family)",
-            "font_size": "1.5rem",
-            "line_height": "normal",
-            "letter_spacing": "normal",
-            "case": "none",
-            "wrap": "pretty",
-            "color": "var(--color-foreground)",
-            "background": false,
-            "background_color": "#00000026",
-            "corner_radius": 0,
-            "padding-block-start": 0,
-            "padding-block-end": 0,
-            "padding-inline-start": 0,
-            "padding-inline-end": 0
-          },
-          "blocks": {}
-        },
-        "text_MrLqdH": {
-          "type": "text",
-          "name": "t:names.text",
-          "settings": {
-            "text": "<p>Graciela Montes em ‘<a href=\"/products/buscar-indicios-construir-sentidos\" target=\"_blank\" title=\"Buscar indícios, construir sentidos\">Buscar Indícios, Construir Sentidos</a>’</p>",
-            "width": "fit-content",
-            "max_width": "normal",
-            "alignment": "left",
-            "type_preset": "rte",
-            "font": "var(--font-body--family)",
-            "font_size": "1rem",
-            "line_height": "normal",
-            "letter_spacing": "normal",
-            "case": "none",
-            "wrap": "pretty",
-            "color": "var(--color-foreground)",
-            "background": false,
-            "background_color": "#00000026",
-            "corner_radius": 0,
-            "padding-block-start": 0,
-            "padding-block-end": 0,
-            "padding-inline-start": 0,
-            "padding-inline-end": 0
-          },
-          "blocks": {}
-        }
-      },
-      "block_order": [
-        "text_qUn4cC",
-        "text_MrLqdH"
-      ],
-      "name": "Frase Graciela",
-      "settings": {
-        "content_direction": "column",
-        "vertical_on_mobile": true,
-        "horizontal_alignment": "flex-start",
-        "vertical_alignment": "center",
-        "align_baseline": false,
-        "horizontal_alignment_flex_direction_column": "center",
-        "vertical_alignment_flex_direction_column": "center",
-        "gap": 16,
-        "section_width": "page-width",
-        "section_height": "",
-        "section_height_custom": 50,
-        "color_scheme": "scheme-4",
-        "background_media": "none",
-        "video_position": "cover",
-        "background_image_position": "cover",
-        "border": "none",
-        "border_width": 1,
-        "border_opacity": 100,
-        "border_radius": 0,
-        "toggle_overlay": false,
-        "overlay_color": "#00000026",
-        "overlay_style": "solid",
-        "gradient_direction": "to top",
-        "padding-block-start": 80,
-        "padding-block-end": 80
-      }
-    },
     "hero_Vh4JeL": {
       "type": "hero",
       "blocks": {
@@ -1793,7 +1705,7 @@
         "overlay_color": "rgba(0,0,0,0)",
         "overlay_style": "gradient",
         "gradient_direction": "to top",
-        "blurred_reflection": true,
+        "blurred_reflection": false,
         "reflection_opacity": 56,
         "padding-block-start": 40,
         "padding-block-end": 40
@@ -2024,6 +1936,94 @@
         "padding-block-start": 0,
         "padding-block-end": 0
       }
+    },
+    "section_cDbPdJ": {
+      "type": "section",
+      "blocks": {
+        "text_qUn4cC": {
+          "type": "text",
+          "settings": {
+            "text": "<p>\"Quem lê se 'desnaturaliza' de alguma forma, dá o salto, desacredita do automático, sente perplexidade, curiosidade, intriga, depois olha, procura, decifra. (...) Busca indícios e, ao encontrá-los, tem audácia de construir pequenas cidades de sentido, pequenos universos que habita por um tempo, sem se enraizar definitivamente neles porque terá que continuar lendo.  O leitor é ágil e está sempre insatisfeito.\"</p><p></p>",
+            "width": "fit-content",
+            "max_width": "narrow",
+            "alignment": "center",
+            "type_preset": "custom",
+            "font": "var(--font-subheading--family)",
+            "font_size": "1.5rem",
+            "line_height": "normal",
+            "letter_spacing": "normal",
+            "case": "none",
+            "wrap": "pretty",
+            "color": "var(--color-foreground)",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        },
+        "text_MrLqdH": {
+          "type": "text",
+          "name": "t:names.text",
+          "settings": {
+            "text": "<p>Graciela Montes em ‘<a href=\"/products/buscar-indicios-construir-sentidos\" target=\"_blank\" title=\"Buscar indícios, construir sentidos\">Buscar Indícios, Construir Sentidos</a>’</p>",
+            "width": "fit-content",
+            "max_width": "normal",
+            "alignment": "left",
+            "type_preset": "rte",
+            "font": "var(--font-body--family)",
+            "font_size": "1rem",
+            "line_height": "normal",
+            "letter_spacing": "normal",
+            "case": "none",
+            "wrap": "pretty",
+            "color": "var(--color-foreground)",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "text_qUn4cC",
+        "text_MrLqdH"
+      ],
+      "name": "Frase Graciela",
+      "settings": {
+        "content_direction": "column",
+        "vertical_on_mobile": true,
+        "horizontal_alignment": "flex-start",
+        "vertical_alignment": "center",
+        "align_baseline": false,
+        "horizontal_alignment_flex_direction_column": "flex-start",
+        "vertical_alignment_flex_direction_column": "center",
+        "gap": 16,
+        "section_width": "page-width",
+        "section_height": "",
+        "section_height_custom": 50,
+        "color_scheme": "scheme-4",
+        "background_media": "none",
+        "video_position": "cover",
+        "background_image_position": "cover",
+        "border": "none",
+        "border_width": 1,
+        "border_opacity": 100,
+        "border_radius": 0,
+        "toggle_overlay": false,
+        "overlay_color": "#00000026",
+        "overlay_style": "solid",
+        "gradient_direction": "to top",
+        "padding-block-start": 80,
+        "padding-block-end": 80
+      }
     }
   },
   "order": [
@@ -2036,8 +2036,8 @@
     "section_e6KNyt",
     "section_JxNiNy",
     "hero_hMWK8V",
-    "section_cDbPdJ",
     "hero_Vh4JeL",
-    "section_NfT4ay"
+    "section_NfT4ay",
+    "section_cDbPdJ"
   ]
 }
