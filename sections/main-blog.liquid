@@ -20,22 +20,41 @@
   >
     {% content_for 'blocks' %}
 
-    {%- paginate blog.articles by 12 -%}
+    {% comment %} === BARRA DE BUSCA === {% endcomment %}
+    <div class="blog-search-wrapper">
+      <input 
+        type="text" 
+        id="blog-search-{{ section.id }}" 
+        class="blog-search-input" 
+        placeholder="Buscar por título"
+      >
+    </div>
+
+    {%- paginate blog.articles by 10000 -%}
       <span ref="viewMorePrevious"></span>
+      
       <div
         ref="grid"
         class="blog-posts-container"
         data-last-page="{{ paginate.pages }}"
       >
+
         {% for article in blog.articles %}
+          {% comment %} === ADICIONADO DATA-TITLE AQUI === {% endcomment %}
           <div
             class="blog-post-item"
             ref="cards[]"
             data-page="{{ paginate.current_page }}"
+            data-title="{{ article.title | escape }}" 
           >
             {% content_for 'block', id: 'static-blog-post-card', type: '_blog-post-card', article: article %}
           </div>
         {% endfor %}
+
+        {% comment %} === MENSAGEM DE SEM RESULTADOS === {% endcomment %}
+        <div class="blog-no-results" id="blog-no-results-{{ section.id }}">
+          A busca não retornou resultados
+        </div>
       </div>
       <span ref="viewMoreNext"></span>
     {%- endpaginate -%}
@@ -130,7 +149,129 @@
     border: none;
     padding: 0;
   }
+
+  /* Estilos da Barra de Busca */
+  .blog-search-wrapper {
+    width: 100%;
+    max-width: 600px;
+    /*margin: 0 auto 40px auto;  Espaço abaixo da busca */
+    margin: 0 0 40px;
+    padding: 0;
+  }
+
+  .blog-search-input {
+    width: 100%;
+    padding: 12px 20px;
+    font-size: 16px;
+    border: 1px solid rgb(var(--color-foreground-rgb) / 0.2);
+    border-radius: 8px; /* Ou use o padrão do seu tema */
+    background-color: rgb(var(--color-background));
+    color: rgb(var(--color-foreground));
+  }
+
+  .blog-search-input:focus {
+    outline: 2px solid rgb(var(--color-foreground));
+    outline-offset: 2px;
+  }
+
+  /* Estilos da Mensagem Sem Resultados */
+  .blog-no-results {
+    display: none; /* Escondido por padrão */
+    grid-column: 1 / -1; /* Ocupa toda a largura do grid */
+    text-align: center;
+    padding: 60px 20px;
+    font-size: 18px;
+    color: rgb(var(--color-foreground-rgb) / 0.7);
+  }
+
+  .blog-no-results.is-visible {
+    display: block;
+  }
+
+  /* Classe utilitária para esconder itens */
+  .blog-post-item.is-hidden {
+    display: none !important;
+  }
+
+  @media screen and (min-width: 750px) {
+    
+    /* 1. Força o tamanho do grid a ser igual para todos (3 colunas) */
+    .blog-posts-container.is-searching .blog-post-item,
+    .blog-posts-container.is-searching .blog-post-item:first-child,
+    .blog-posts-container.is-searching .blog-post-item:nth-child(2),
+    .blog-posts-container.is-searching .blog-post-item:nth-child(3) {
+      grid-column: span 2 !important; 
+      --blog-post-card-scale: 0.6 !important;
+    }
+
+    /*
+       Força o card interno a empilhar a imagem e o texto (vertical),
+       anulando o estilo horizontal do destaque.
+    */
+    .blog-posts-container.is-searching .blog-post-item:first-child .blog-post-card {
+      flex-direction: column !important;
+    }
+
+    /* Garante que a imagem ocupe a largura total da nova coluna */
+    .blog-posts-container.is-searching .blog-post-item:first-child .blog-post-card__content,
+    .blog-posts-container.is-searching .blog-post-item:first-child .blog-post-card__image-container {
+      padding-inline-start: 0 !important;
+      width: 100% !important;
+      flex: auto !important;
+    }
+  }
 {% endstylesheet %}
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  const sectionId = '{{ section.id }}';
+  const searchInput = document.getElementById(`blog-search-${sectionId}`);
+  const noResultsMsg = document.getElementById(`blog-no-results-${sectionId}`);
+  
+  function normalizeText(text) {
+    if (!text) return '';
+    return text.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+  }
+
+  if (searchInput) {
+    searchInput.addEventListener('input', function(e) {
+      const rawTerm = e.target.value; // Texto original para verificar se está vazio
+      const searchTerm = normalizeText(rawTerm);
+      
+      const container = searchInput.closest('blog-posts-list').querySelector('.blog-posts-container');
+      const cards = container.querySelectorAll('.blog-post-item');
+      
+      // === NOVA LÓGICA DE LAYOUT AQUI ===
+      // Se tem texto digitado, ativa o modo de busca. Se vazio, desativa.
+      if (rawTerm.length > 0) {
+        container.classList.add('is-searching');
+      } else {
+        container.classList.remove('is-searching');
+      }
+      // ==================================
+
+      let visibleCount = 0;
+
+      cards.forEach(card => {
+        const title = normalizeText(card.dataset.title);
+        
+        if (title.includes(searchTerm)) {
+          card.classList.remove('is-hidden');
+          visibleCount++;
+        } else {
+          card.classList.add('is-hidden');
+        }
+      });
+
+      if (visibleCount === 0) {
+        noResultsMsg.classList.add('is-visible');
+      } else {
+        noResultsMsg.classList.remove('is-visible');
+      }
+    });
+  }
+});
+</script>
 
 {% schema %}
 {
