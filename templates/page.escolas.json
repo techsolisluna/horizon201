@@ -1649,94 +1649,6 @@
         "padding-block-end": 40
       }
     },
-    "section_cDbPdJ": {
-      "type": "section",
-      "blocks": {
-        "text_qUn4cC": {
-          "type": "text",
-          "settings": {
-            "text": "<p>\"Quem lê se 'desnaturaliza' de alguma forma, dá o salto, desacredita do automático, sente perplexidade, curiosidade, intriga, depois olha, procura, decifra. (...) Busca indícios e, ao encontrá-los, tem audácia de construir pequenas cidades de sentido, pequenos universos que habita por um tempo, sem se enraizar definitivamente neles porque terá que continuar lendo.  O leitor é ágil e está sempre insatisfeito.\"</p><p></p>",
-            "width": "100%",
-            "max_width": "normal",
-            "alignment": "center",
-            "type_preset": "h2",
-            "font": "var(--font-body--family)",
-            "font_size": "1rem",
-            "line_height": "normal",
-            "letter_spacing": "normal",
-            "case": "none",
-            "wrap": "pretty",
-            "color": "var(--color-foreground)",
-            "background": false,
-            "background_color": "#00000026",
-            "corner_radius": 0,
-            "padding-block-start": 0,
-            "padding-block-end": 0,
-            "padding-inline-start": 0,
-            "padding-inline-end": 0
-          },
-          "blocks": {}
-        },
-        "text_MrLqdH": {
-          "type": "text",
-          "name": "t:names.text",
-          "settings": {
-            "text": "<p>Graciela Montes em ‘<a href=\"/products/buscar-indicios-construir-sentidos\" target=\"_blank\" title=\"Buscar indícios, construir sentidos\">Buscar Indícios, Construir Sentidos</a>’</p>",
-            "width": "fit-content",
-            "max_width": "normal",
-            "alignment": "left",
-            "type_preset": "rte",
-            "font": "var(--font-body--family)",
-            "font_size": "1rem",
-            "line_height": "normal",
-            "letter_spacing": "normal",
-            "case": "none",
-            "wrap": "pretty",
-            "color": "var(--color-foreground)",
-            "background": false,
-            "background_color": "#00000026",
-            "corner_radius": 0,
-            "padding-block-start": 0,
-            "padding-block-end": 0,
-            "padding-inline-start": 0,
-            "padding-inline-end": 0
-          },
-          "blocks": {}
-        }
-      },
-      "block_order": [
-        "text_qUn4cC",
-        "text_MrLqdH"
-      ],
-      "name": "Frase Graciela",
-      "settings": {
-        "content_direction": "column",
-        "vertical_on_mobile": true,
-        "horizontal_alignment": "flex-start",
-        "vertical_alignment": "center",
-        "align_baseline": false,
-        "horizontal_alignment_flex_direction_column": "center",
-        "vertical_alignment_flex_direction_column": "center",
-        "gap": 16,
-        "section_width": "page-width",
-        "section_height": "",
-        "section_height_custom": 50,
-        "color_scheme": "scheme-4",
-        "background_media": "none",
-        "video_position": "cover",
-        "background_image_position": "cover",
-        "border": "none",
-        "border_width": 1,
-        "border_opacity": 100,
-        "border_radius": 0,
-        "toggle_overlay": false,
-        "overlay_color": "#00000026",
-        "overlay_style": "solid",
-        "gradient_direction": "to top",
-        "padding-block-start": 80,
-        "padding-block-end": 80
-      }
-    },
     "hero_Vh4JeL": {
       "type": "hero",
       "blocks": {
@@ -1793,7 +1705,7 @@
         "overlay_color": "rgba(0,0,0,0)",
         "overlay_style": "gradient",
         "gradient_direction": "to top",
-        "blurred_reflection": true,
+        "blurred_reflection": false,
         "reflection_opacity": 56,
         "padding-block-start": 40,
         "padding-block-end": 40
@@ -2025,20 +1937,19 @@
         "padding-block-end": 0
       }
     },
-    "section_WNPGVC": {
+    "section_cDbPdJ": {
       "type": "section",
       "blocks": {
-        "text_xBLtjy": {
+        "text_qUn4cC": {
           "type": "text",
-          "name": "t:names.heading",
           "settings": {
-            "text": "<h3>Dúvidas frequentes</h3>",
+            "text": "<p>\"Quem lê se 'desnaturaliza' de alguma forma, dá o salto, desacredita do automático, sente perplexidade, curiosidade, intriga, depois olha, procura, decifra. (...) Busca indícios e, ao encontrá-los, tem audácia de construir pequenas cidades de sentido, pequenos universos que habita por um tempo, sem se enraizar definitivamente neles porque terá que continuar lendo.  O leitor é ágil e está sempre insatisfeito.\"</p><p></p>",
             "width": "fit-content",
             "max_width": "narrow",
-            "alignment": "left",
-            "type_preset": "rte",
-            "font": "var(--font-body--family)",
-            "font_size": "",
+            "alignment": "center",
+            "type_preset": "custom",
+            "font": "var(--font-subheading--family)",
+            "font_size": "1.5rem",
             "line_height": "normal",
             "letter_spacing": "normal",
             "case": "none",
@@ -2054,242 +1965,38 @@
           },
           "blocks": {}
         },
-        "accordion_3dB8NX": {
-          "type": "accordion",
-          "name": "t:names.accordion",
+        "text_MrLqdH": {
+          "type": "text",
+          "name": "t:names.text",
           "settings": {
-            "icon": "caret",
-            "dividers": true,
-            "type_preset": "h5",
-            "inherit_color_scheme": true,
-            "color_scheme": "",
-            "border": "none",
-            "border_width": 1,
-            "border_opacity": 100,
-            "border_radius": 0,
+            "text": "<p>Graciela Montes em ‘<a href=\"/products/buscar-indicios-construir-sentidos\" target=\"_blank\" title=\"Buscar indícios, construir sentidos\">Buscar Indícios, Construir Sentidos</a>’</p>",
+            "width": "fit-content",
+            "max_width": "normal",
+            "alignment": "left",
+            "type_preset": "rte",
+            "font": "var(--font-body--family)",
+            "font_size": "1rem",
+            "line_height": "normal",
+            "letter_spacing": "normal",
+            "case": "none",
+            "wrap": "pretty",
+            "color": "var(--color-foreground)",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
             "padding-block-start": 0,
             "padding-block-end": 0,
             "padding-inline-start": 0,
             "padding-inline-end": 0
           },
-          "blocks": {
-            "accordion_row_GpHjVc": {
-              "type": "_accordion-row",
-              "settings": {
-                "heading": "Onde encontrar os livros da Solisluna?",
-                "open_by_default": false,
-                "icon": "none",
-                "width": 20
-              },
-              "blocks": {
-                "text_Hdagiw": {
-                  "type": "text",
-                  "settings": {
-                    "text": "<p>Our goal is for every customer to be totally satisfied with their purchase. If this isn’t the case, let us know and we’ll do our best to work with you to make it right. </p>",
-                    "width": "100%",
-                    "max_width": "normal",
-                    "alignment": "left",
-                    "type_preset": "rte",
-                    "font": "var(--font-body--family)",
-                    "font_size": "",
-                    "line_height": "normal",
-                    "letter_spacing": "normal",
-                    "case": "none",
-                    "wrap": "pretty",
-                    "color": "var(--color-foreground)",
-                    "background": false,
-                    "background_color": "#00000026",
-                    "corner_radius": 0,
-                    "padding-block-start": 0,
-                    "padding-block-end": 0,
-                    "padding-inline-start": 0,
-                    "padding-inline-end": 0
-                  },
-                  "blocks": {}
-                }
-              },
-              "block_order": [
-                "text_Hdagiw"
-              ]
-            },
-            "accordion_row_VTykeG": {
-              "type": "_accordion-row",
-              "settings": {
-                "heading": "Tenho uma livraria. Como posso revender os livros da Solisluna?",
-                "open_by_default": true,
-                "icon": "none",
-                "width": 20
-              },
-              "blocks": {
-                "text_UUzK7G": {
-                  "type": "text",
-                  "settings": {
-                    "text": "<p>We are unable to accept returns on certain items. These will be carefully marked before purchase.</p>",
-                    "width": "100%",
-                    "max_width": "normal",
-                    "alignment": "left",
-                    "type_preset": "rte",
-                    "font": "var(--font-body--family)",
-                    "font_size": "",
-                    "line_height": "normal",
-                    "letter_spacing": "normal",
-                    "case": "none",
-                    "wrap": "pretty",
-                    "color": "var(--color-foreground)",
-                    "background": false,
-                    "background_color": "#00000026",
-                    "corner_radius": 0,
-                    "padding-block-start": 0,
-                    "padding-block-end": 0,
-                    "padding-inline-start": 0,
-                    "padding-inline-end": 0
-                  },
-                  "blocks": {}
-                }
-              },
-              "block_order": [
-                "text_UUzK7G"
-              ]
-            },
-            "accordion_row_y7tmXC": {
-              "type": "_accordion-row",
-              "name": "t:names.accordion_dash_row",
-              "settings": {
-                "heading": "Professor e bibliotecário tem desconto?",
-                "open_by_default": false,
-                "icon": "none",
-                "width": 20
-              },
-              "blocks": {
-                "text_xrTHFL": {
-                  "type": "text",
-                  "name": "t:names.text",
-                  "settings": {
-                    "text": "<p>We will work quickly to ship your order as soon as possible. Once your order has shipped, you will receive an email with further information. Delivery times vary depending on your location.</p>",
-                    "width": "100%",
-                    "max_width": "normal",
-                    "alignment": "left",
-                    "type_preset": "rte",
-                    "font": "var(--font-body--family)",
-                    "font_size": "",
-                    "line_height": "normal",
-                    "letter_spacing": "normal",
-                    "case": "none",
-                    "wrap": "pretty",
-                    "color": "var(--color-foreground)",
-                    "background": false,
-                    "background_color": "#00000026",
-                    "corner_radius": 0,
-                    "padding-block-start": 0,
-                    "padding-block-end": 0,
-                    "padding-inline-start": 0,
-                    "padding-inline-end": 0
-                  },
-                  "blocks": {}
-                }
-              },
-              "block_order": [
-                "text_xrTHFL"
-              ]
-            },
-            "accordion_row_aKHQcq": {
-              "type": "_accordion-row",
-              "name": "t:names.accordion_dash_row",
-              "settings": {
-                "heading": "Como agendar uma reunião com um divulgador da Solisluna?",
-                "open_by_default": false,
-                "icon": "none",
-                "width": 20
-              },
-              "blocks": {
-                "text_6JP3Wx": {
-                  "type": "text",
-                  "name": "t:names.text",
-                  "settings": {
-                    "text": "<p>Our products are manufactured both locally and globally. We carefully select our manufacturing partners to ensure our products are high quality and a fair value. </p>",
-                    "width": "100%",
-                    "max_width": "normal",
-                    "alignment": "left",
-                    "type_preset": "rte",
-                    "font": "var(--font-body--family)",
-                    "font_size": "",
-                    "line_height": "normal",
-                    "letter_spacing": "normal",
-                    "case": "none",
-                    "wrap": "pretty",
-                    "color": "var(--color-foreground)",
-                    "background": false,
-                    "background_color": "#00000026",
-                    "corner_radius": 0,
-                    "padding-block-start": 0,
-                    "padding-block-end": 0,
-                    "padding-inline-start": 0,
-                    "padding-inline-end": 0
-                  },
-                  "blocks": {}
-                }
-              },
-              "block_order": [
-                "text_6JP3Wx"
-              ]
-            },
-            "accordion_row_iRgtAx": {
-              "type": "_accordion-row",
-              "name": "t:names.accordion_dash_row",
-              "settings": {
-                "heading": "How much does shipping cost?",
-                "open_by_default": false,
-                "icon": "none",
-                "width": 20
-              },
-              "blocks": {
-                "text_jHhFan": {
-                  "type": "text",
-                  "name": "t:names.text",
-                  "settings": {
-                    "text": "<p>Shipping is calculated based on your location and the items in your order. You will always know the shipping price before you purchase.</p>",
-                    "width": "100%",
-                    "max_width": "normal",
-                    "alignment": "left",
-                    "type_preset": "rte",
-                    "font": "var(--font-body--family)",
-                    "font_size": "",
-                    "line_height": "normal",
-                    "letter_spacing": "normal",
-                    "case": "none",
-                    "wrap": "pretty",
-                    "color": "var(--color-foreground)",
-                    "background": false,
-                    "background_color": "#00000026",
-                    "corner_radius": 0,
-                    "padding-block-start": 0,
-                    "padding-block-end": 0,
-                    "padding-inline-start": 0,
-                    "padding-inline-end": 0
-                  },
-                  "blocks": {}
-                }
-              },
-              "block_order": [
-                "text_jHhFan"
-              ]
-            }
-          },
-          "block_order": [
-            "accordion_row_GpHjVc",
-            "accordion_row_VTykeG",
-            "accordion_row_y7tmXC",
-            "accordion_row_aKHQcq",
-            "accordion_row_iRgtAx"
-          ]
+          "blocks": {}
         }
       },
       "block_order": [
-        "text_xBLtjy",
-        "accordion_3dB8NX"
+        "text_qUn4cC",
+        "text_MrLqdH"
       ],
-      "disabled": true,
-      "name": "t:names.faq_section",
+      "name": "Frase Graciela",
       "settings": {
         "content_direction": "column",
         "vertical_on_mobile": true,
@@ -2298,11 +2005,11 @@
         "align_baseline": false,
         "horizontal_alignment_flex_direction_column": "flex-start",
         "vertical_alignment_flex_direction_column": "center",
-        "gap": 32,
+        "gap": 16,
         "section_width": "page-width",
         "section_height": "",
         "section_height_custom": 50,
-        "color_scheme": "",
+        "color_scheme": "scheme-4",
         "background_media": "none",
         "video_position": "cover",
         "background_image_position": "cover",
@@ -2314,8 +2021,8 @@
         "overlay_color": "#00000026",
         "overlay_style": "solid",
         "gradient_direction": "to top",
-        "padding-block-start": 48,
-        "padding-block-end": 48
+        "padding-block-start": 80,
+        "padding-block-end": 80
       }
     }
   },
@@ -2329,9 +2036,8 @@
     "section_e6KNyt",
     "section_JxNiNy",
     "hero_hMWK8V",
-    "section_cDbPdJ",
     "hero_Vh4JeL",
     "section_NfT4ay",
-    "section_WNPGVC"
+    "section_cDbPdJ"
   ]
 }
