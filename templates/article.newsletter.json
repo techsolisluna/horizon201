@@ -199,11 +199,11 @@
         }
       },
       "settings": {
-        "link_text": "Voltar",
-        "link_url": "shopify://blogs/solisblogluna",
+        "link_text": "Edições passadas",
+        "link_url": "shopify://blogs/correio-lunar",
         "content_direction": "column",
         "gap": 32,
-        "color_scheme": "",
+        "color_scheme": "scheme-2",
         "padding-block-start": 40,
         "padding-block-end": 80
       }
