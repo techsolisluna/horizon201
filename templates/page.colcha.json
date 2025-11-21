@@ -15,7 +15,6 @@
         "heading": {
           "type": "text",
           "name": "Title",
-          "disabled": true,
           "settings": {
             "text": "<p>{{ closest.page.title }}</p>",
             "width": "100%",
@@ -44,7 +43,7 @@
           "name": "t:names.text",
           "settings": {
             "text": "{{ closest.page.content }}",
-            "width": "fit-content",
+            "width": "100%",
             "max_width": "none",
             "alignment": "left",
             "type_preset": "rte",
@@ -72,7 +71,7 @@
       ],
       "settings": {
         "content_direction": "column",
-        "gap": 32,
+        "gap": 10,
         "color_scheme": "scheme-1",
         "padding-block-start": 40,
         "padding-block-end": 80
