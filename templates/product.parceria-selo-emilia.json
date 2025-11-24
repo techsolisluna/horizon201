@@ -696,7 +696,7 @@
                         "text_geD4ir": {
                           "type": "text",
                           "settings": {
-                            "text": "<p><strong>Palavras-chave:</strong> {{ product.metafields.custom.palavra_chave.value }}<br/><strong>Público-alvo:</strong> {{ product.metafields.custom.publico_alvo.value }}<br/><strong>Classificação Thema: </strong>{{ product.metafields.custom.classificacao_thema | metafield_tag }}<br/><strong>BISAC: </strong><br/>{{ product.metafields.custom.bisac | metafield_tag }}<br/><strong>Temas: </strong></p>{{ closest.product.metafields.custom.temas | metafield_tag }}",
+                            "text": "<p><strong>Palavras-chave:</strong> {{ product.metafields.custom.palavra_chave.value }}<br/><strong>Público-alvo:</strong> {{ product.metafields.custom.publico_alvo.value }}<br/><strong>Classificação Thema: </strong>{{ product.metafields.custom.classificacao_thema | metafield_tag }}<br/><strong>BISAC: </strong><br/>{{ product.metafields.custom.bisac | metafield_tag }}<br/><strong>Temas: </strong></p><p>{{ closest.product.metafields.custom.temas | metafield_tag }}</p>",
                             "width": "100%",
                             "max_width": "normal",
                             "alignment": "left",
@@ -967,6 +967,175 @@
         "gradient_direction": "to top",
         "padding-block-start": 0,
         "padding-block-end": 0
+      }
+    },
+    "section_MGAJ7X": {
+      "type": "section",
+      "blocks": {
+        "image_NDkyjh": {
+          "type": "image",
+          "settings": {
+            "image": "shopify://shop_images/Selo-Emilia-solisluna.jpg",
+            "link": "",
+            "image_ratio": "adapt",
+            "width": "custom",
+            "custom_width": 39,
+            "width_mobile": "fit-content",
+            "custom_width_mobile": 100,
+            "height": "fit",
+            "border": "none",
+            "border_width": 1,
+            "border_opacity": 100,
+            "border_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        },
+        "group_NERHFy": {
+          "type": "group",
+          "settings": {
+            "link": "",
+            "open_in_new_tab": false,
+            "content_direction": "column",
+            "vertical_on_mobile": true,
+            "horizontal_alignment": "flex-start",
+            "vertical_alignment": "center",
+            "align_baseline": false,
+            "horizontal_alignment_flex_direction_column": "center",
+            "vertical_alignment_flex_direction_column": "center",
+            "gap": 12,
+            "width": "custom",
+            "custom_width": 100,
+            "width_mobile": "fill",
+            "custom_width_mobile": 100,
+            "height": "fit",
+            "custom_height": 100,
+            "inherit_color_scheme": true,
+            "color_scheme": "",
+            "background_media": "none",
+            "video_position": "cover",
+            "background_image_position": "cover",
+            "border": "none",
+            "border_width": 1,
+            "border_opacity": 100,
+            "border_radius": 0,
+            "toggle_overlay": false,
+            "overlay_color": "#00000026",
+            "overlay_style": "solid",
+            "gradient_direction": "to top",
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {
+            "text_ac3MTV": {
+              "type": "text",
+              "name": "t:names.heading",
+              "settings": {
+                "text": "<h2>Livro publicado em coedição</h2>",
+                "width": "fit-content",
+                "max_width": "normal",
+                "alignment": "left",
+                "type_preset": "h3",
+                "font": "var(--font-body--family)",
+                "font_size": "1rem",
+                "line_height": "normal",
+                "letter_spacing": "normal",
+                "case": "none",
+                "wrap": "pretty",
+                "color": "var(--color-foreground)",
+                "background": false,
+                "background_color": "#00000026",
+                "corner_radius": 0,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            },
+            "text_4d96LV": {
+              "type": "text",
+              "settings": {
+                "text": "<p>Solisluna Editora e Selo Emília se uniram com o propósito de juntar forças e trazer para o Brasil importantes títulos destinados a educadores, mediadores de leitura, professores, bibliotecários e todos que estudam, pesquisam e trabalham com literatura para crianças e jovens.</p>",
+                "width": "fit-content",
+                "max_width": "normal",
+                "alignment": "left",
+                "type_preset": "rte",
+                "font": "var(--font-body--family)",
+                "font_size": "1rem",
+                "line_height": "normal",
+                "letter_spacing": "normal",
+                "case": "none",
+                "wrap": "pretty",
+                "color": "var(--color-foreground)",
+                "background": false,
+                "background_color": "#00000026",
+                "corner_radius": 0,
+                "padding-block-start": 0,
+                "padding-block-end": 0,
+                "padding-inline-start": 0,
+                "padding-inline-end": 0
+              },
+              "blocks": {}
+            },
+            "button_8AxUfR": {
+              "type": "button",
+              "settings": {
+                "label": "Saiba mais",
+                "link": "shopify://collections/livros-em-parceria-com-o-selo-emilia",
+                "open_in_new_tab": false,
+                "style_class": "button",
+                "width": "fit-content",
+                "custom_width": 100,
+                "width_mobile": "fit-content",
+                "custom_width_mobile": 100
+              },
+              "blocks": {}
+            }
+          },
+          "block_order": [
+            "text_ac3MTV",
+            "text_4d96LV",
+            "button_8AxUfR"
+          ]
+        }
+      },
+      "block_order": [
+        "image_NDkyjh",
+        "group_NERHFy"
+      ],
+      "name": "t:names.image_with_text",
+      "settings": {
+        "content_direction": "column",
+        "vertical_on_mobile": true,
+        "horizontal_alignment": "flex-start",
+        "vertical_alignment": "center",
+        "align_baseline": false,
+        "horizontal_alignment_flex_direction_column": "center",
+        "vertical_alignment_flex_direction_column": "center",
+        "gap": 32,
+        "section_width": "page-width",
+        "section_height": "",
+        "section_height_custom": 50,
+        "color_scheme": "",
+        "background_media": "none",
+        "video_position": "cover",
+        "background_image_position": "cover",
+        "border": "none",
+        "border_width": 1,
+        "border_opacity": 100,
+        "border_radius": 0,
+        "toggle_overlay": false,
+        "overlay_color": "#00000026",
+        "overlay_style": "solid",
+        "gradient_direction": "to top",
+        "padding-block-start": 40,
+        "padding-block-end": 40
       }
     },
     "media_with_content_7g7CXm": {
@@ -1696,6 +1865,7 @@
     "17593322738c5dfb36",
     "custom_liquid_gcUDFt",
     "1751125067ca0a4964",
+    "section_MGAJ7X",
     "media_with_content_7g7CXm",
     "heyzine",
     "section_7rF8BL",
