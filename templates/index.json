@@ -1286,7 +1286,7 @@
         "autoplay_speed": 4,
         "section_width": "full-width",
         "slide_height": "large",
-        "padding-block-start": 0,
+        "padding-block-start": 40,
         "padding-block-end": 0
       }
     },
