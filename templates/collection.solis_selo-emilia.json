@@ -156,7 +156,7 @@
         "background_media": "image",
         "video": "{{ collection.metafields.custom.banner.value }}",
         "video_position": "cover",
-        "background_image": "{{ collection.metafields.custom.banner.value }}",
+        "background_image": "shopify://shop_images/IMG_8975-3.jpg",
         "background_image_position": "cover",
         "border": "none",
         "border_width": 1,
@@ -170,40 +170,73 @@
         "padding-block-end": 48
       }
     },
-    "section_8G9wWb": {
+    "section_Wt9UXU": {
       "type": "section",
       "blocks": {
-        "text_ebHALb": {
-          "type": "text",
-          "name": "t:names.heading",
+        "image_RhPpn4": {
+          "type": "image",
+          "name": "t:names.image",
           "settings": {
-            "text": "<p>{{ closest.collection.title }}</p>",
-            "width": "fit-content",
-            "max_width": "normal",
-            "alignment": "left",
-            "type_preset": "custom",
-            "font": "var(--font-heading--family)",
-            "font_size": "2.5rem",
-            "line_height": "loose",
-            "letter_spacing": "normal",
-            "case": "none",
-            "wrap": "pretty",
-            "color": "var(--color-foreground)",
-            "background": false,
-            "background_color": "#00000026",
-            "corner_radius": 0,
+            "image": "shopify://shop_images/marcas.png",
+            "link": "",
+            "image_ratio": "adapt",
+            "width": "custom",
+            "custom_width": 40,
+            "width_mobile": "fill",
+            "custom_width_mobile": 100,
+            "height": "fit",
+            "border": "none",
+            "border_width": 1,
+            "border_opacity": 100,
+            "border_radius": 0,
             "padding-block-start": 0,
             "padding-block-end": 0,
             "padding-inline-start": 0,
             "padding-inline-end": 0
           },
           "blocks": {}
-        },
+        }
+      },
+      "block_order": [
+        "image_RhPpn4"
+      ],
+      "name": "t:names.custom_section",
+      "settings": {
+        "content_direction": "column",
+        "vertical_on_mobile": true,
+        "horizontal_alignment": "flex-start",
+        "vertical_alignment": "center",
+        "align_baseline": false,
+        "horizontal_alignment_flex_direction_column": "center",
+        "vertical_alignment_flex_direction_column": "center",
+        "gap": 0,
+        "section_width": "page-width",
+        "section_height": "",
+        "section_height_custom": 50,
+        "color_scheme": "",
+        "background_media": "none",
+        "video_position": "cover",
+        "background_image_position": "cover",
+        "border": "none",
+        "border_width": 1,
+        "border_opacity": 100,
+        "border_radius": 0,
+        "toggle_overlay": false,
+        "overlay_color": "#00000026",
+        "overlay_style": "solid",
+        "gradient_direction": "to top",
+        "padding-block-start": 40,
+        "padding-block-end": 0
+      }
+    },
+    "section_8G9wWb": {
+      "type": "section",
+      "blocks": {
         "text_t4V8wD": {
           "type": "text",
           "name": "t:names.text",
           "settings": {
-            "text": "{{ closest.collection.description }}",
+            "text": "<p>A <strong>Solisluna Editora</strong> e o <strong>Selo Emília</strong> do <a href=\"https://emilia.org.br/?utm_source=solisluna&utm_medium=site&utm_campaign=parceria\" target=\"_blank\" title=\"https://emilia.org.br/?utm_source=solisluna&utm_medium=site&utm_campaign=parceria\">Instituto Emília</a> se uniram com o propósito de juntar forças e trazer para o Brasil importantes títulos destinados a educadores, mediadores de leitura, professores, bibliotecários e todos que estudam, pesquisam e trabalham com literatura para crianças e jovens. Nesta parceria também são escolhidos livros para a infância sobre temas da vida, sensíveis e urgentes como migração e política.</p>",
             "width": "100%",
             "max_width": "none",
             "alignment": "left",
@@ -224,11 +257,37 @@
             "padding-inline-end": 0
           },
           "blocks": {}
+        },
+        "text_ebHALb": {
+          "type": "text",
+          "name": "t:names.heading",
+          "settings": {
+            "text": "<h2>Coleção de ensaios para pensar a leitura</h2>",
+            "width": "fit-content",
+            "max_width": "normal",
+            "alignment": "left",
+            "type_preset": "custom",
+            "font": "var(--font-heading--family)",
+            "font_size": "3rem",
+            "line_height": "loose",
+            "letter_spacing": "normal",
+            "case": "none",
+            "wrap": "pretty",
+            "color": "var(--color-foreground)",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
         }
       },
       "block_order": [
-        "text_ebHALb",
-        "text_t4V8wD"
+        "text_t4V8wD",
+        "text_ebHALb"
       ],
       "name": "t:names.custom_section",
       "settings": {
@@ -255,7 +314,7 @@
         "overlay_color": "#00000026",
         "overlay_style": "solid",
         "gradient_direction": "to top",
-        "padding-block-start": 0,
+        "padding-block-start": 40,
         "padding-block-end": 0
       }
     },
@@ -471,6 +530,7 @@
   },
   "order": [
     "section",
+    "section_Wt9UXU",
     "section_8G9wWb",
     "main"
   ]
