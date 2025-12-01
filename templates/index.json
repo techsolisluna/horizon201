@@ -356,6 +356,7 @@
         "slide_34bEmU",
         "slide_LXc6qH"
       ],
+      "disabled": true,
       "name": "t:names.slideshow",
       "settings": {
         "icons_style": "arrows_large",
