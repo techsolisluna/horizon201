@@ -982,7 +982,7 @@
             "video": "{{ closest.product.metafields.custom.video.value }}",
             "video_loop": true,
             "video_autoplay": true,
-            "image_position": "cover",
+            "image_position": "contain",
             "video_position": "cover"
           },
           "blocks": {}
@@ -1692,7 +1692,11 @@
     "sticky-atc-bar": {
       "type": "sticky-atc-bar",
       "name": "Sticky bottom bar",
-      "settings": {}
+      "settings": {
+        "btn_text": "Adicionar ao carrinho",
+        "btn_color": "#fcd700",
+        "btn_text_color": "#000000"
+      }
     }
   },
   "order": [
