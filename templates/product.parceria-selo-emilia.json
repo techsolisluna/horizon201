@@ -1857,6 +1857,10 @@
         "padding-block-start": 65,
         "padding-block-end": 40
       }
+    },
+    "sticky-atc-bar": {
+      "type": "sticky-atc-bar",
+      "name": "Sticky bottom bar"
     }
   },
   "order": [
@@ -1871,6 +1875,7 @@
     "section_7rF8BL",
     "hero_EfXQDX",
     "product_recommendations_qggXJq",
-    "blog_posts_CDck9P"
+    "blog_posts_CDck9P",
+    "sticky-atc-bar"
   ]
 }

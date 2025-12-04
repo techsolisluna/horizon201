@@ -1,0 +1,297 @@
+{%- comment -%}
+  Sticky ATC Bar para Shopify - Mobile Grid Layout V2
+  Imagem Esquerda (Grande) | Texto + Preço Topo | Botão Baixo
+{%- endcomment -%}
+
+<style>
+  /* --- CONFIGURAÇÕES GERAIS (DESKTOP) --- */
+  
+  .sticky-atc-wrapper {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #ffffff;
+    box-shadow: 0 -4px 15px rgba(0,0,0,0.08);
+    z-index: 9999;
+    transform: translateY(100%);
+    transition: transform 0.3s ease-in-out;
+    border-top: 1px solid #e5e5e5;
+  }
+
+  .sticky-atc-wrapper.is-visible {
+    transform: translateY(0);
+  }
+
+  .sticky-atc-container {
+    display: flex; /* Flexbox para Desktop */
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 15px 20px;
+    margin: 0 auto;
+    width: 100%;
+    max-width: var(--page-width, 1200px); 
+  }
+
+  /* Grupo Info (Imagem + Texto) */
+  .sticky-atc-info {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    flex: 1;
+    overflow: hidden;
+  }
+
+  .sticky-atc-img {
+    width: 56px;
+    height: 56px;
+    object-fit: cover;
+    border-radius: 6px;
+    border: 1px solid #f0f0f0;
+  }
+
+  .sticky-atc-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2px;
+  }
+
+  .sticky-atc-title {
+    font-size: 16px;
+    font-weight: 700;
+    color: #333;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    margin: 0;
+    max-width: 350px;
+  }
+
+  .sticky-atc-price {
+    font-size: 15px;
+    color: #555;
+    font-weight: 500;
+  }
+
+  /* Grupo Ações (Botão + Fechar) */
+  .sticky-atc-actions {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .sticky-atc-btn {
+    background-color: {{ section.settings.btn_color }};
+    color: {{ section.settings.btn_text_color }};
+    border: none;
+    padding: 14px 30px;
+    font-weight: 700;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 8px;
+    white-space: nowrap;
+    transition: all 0.2s ease;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
+
+  .sticky-atc-btn:hover {
+    opacity: 0.9;
+    transform: translateY(-1px);
+  }
+
+  .sticky-atc-close {
+    background: transparent;
+    border: none;
+    font-size: 28px;
+    color: #999;
+    cursor: pointer;
+    line-height: 1;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /* --- LAYOUT MOBILE (GRID V2) --- */
+  
+  @media (max-width: 768px) {
+    
+    .sticky-atc-container {
+      /* Grid de 3 colunas: [Imagem] [Conteúdo] [Botão Fechar] */
+      display: grid;
+      grid-template-columns: 75px 1fr auto; 
+      /* Linhas automáticas */
+      grid-template-rows: auto auto; 
+      column-gap: 12px;
+      row-gap: 8px;
+      padding: 12px 15px;
+      align-items: center; /* Centraliza verticalmente */
+    }
+
+    /* 1. IMAGEM: Fica na esquerda e ocupa 2 linhas de altura 
+         (Aumentei para 75px conforme pedido)
+    */
+    .sticky-atc-info { display: contents; } /* Remove wrapper pai */
+    
+    .sticky-atc-img {
+      grid-column: 1;
+      grid-row: 1 / span 2; /* Ocupa linha 1 e 2 */
+      width: 75px; 
+      height: 75px;
+      margin: 0;
+    }
+
+    /* 2. TEXTO (Título + Preço): 
+         Mantemos o bloco .sticky-atc-text intacto para eles ficarem juntos
+         Posição: Topo, Coluna do meio
+    */
+    .sticky-atc-text {
+      grid-column: 2;
+      grid-row: 1;
+      align-self: end; /* Alinha mais para baixo, perto do botão */
+      gap: 0px; /* Preço colado no título */
+    }
+    
+    .sticky-atc-title {
+      font-size: 14px;
+      max-width: 100%;
+      white-space: nowrap;
+    }
+    
+    .sticky-atc-price {
+      font-size: 13px;
+      color: #666;
+    }
+
+    /* 3. AÇÕES:
+         Usamos display: contents para separar o Botão do 'X'
+    */
+    .sticky-atc-actions { display: contents; }
+
+    /* Botão Fechar: Topo, Direita */
+    .sticky-atc-close {
+      grid-column: 3;
+      grid-row: 1;
+      font-size: 24px;
+      align-self: start; /* Fica bem no topo */
+      padding: 0;
+    }
+
+    /* Botão Adicionar: Baixo, Ocupa coluna do meio e direita */
+    .sticky-atc-btn {
+      grid-column: 2 / span 2; /* Começa na col 2, vai até o fim */
+      grid-row: 2;
+      width: 100%;
+      padding: 0;
+      height: 38px; /* Altura fixa confortável */
+      font-size: 14px;
+      align-self: start; /* Encosta no texto de cima */
+    }
+  }
+</style>
+
+<div id="sticky-atc-bar" class="sticky-atc-wrapper" aria-hidden="true">
+  <div class="sticky-atc-container page-width">
+    
+    <div class="sticky-atc-info">
+      {% if product.featured_image %}
+        <img src="{{ product.featured_image | img_url: '150x' }}" alt="{{ product.title }}" class="sticky-atc-img" loading="lazy">
+      {% endif %}
+      <div class="sticky-atc-text">
+        <p class="sticky-atc-title">{{ product.title }}</p>
+        <span class="sticky-atc-price">{{ product.price | money }}</span>
+      </div>
+    </div>
+
+    <div class="sticky-atc-actions">
+      <button type="button" class="sticky-atc-btn" id="sticky-atc-trigger">
+        {{ section.settings.btn_text | default: 'Adicionar' }}
+      </button>
+      
+      <button type="button" class="sticky-atc-close" id="sticky-atc-close-btn" aria-label="Fechar barra">
+        &times;
+      </button>
+    </div>
+    
+  </div>
+</div>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function() {
+    const stickyBar = document.getElementById('sticky-atc-bar');
+    const stickyBtn = document.getElementById('sticky-atc-trigger');
+    const closeBtn = document.getElementById('sticky-atc-close-btn');
+    
+    let userClosed = false;
+
+    const mainForm = document.querySelector('form[action*="/cart/add"]');
+    let originalBtn = mainForm ? mainForm.querySelector('[type="submit"]') : null;
+
+    if (!originalBtn) {
+      originalBtn = document.querySelector('.product-form__submit, .add-to-cart, button[name="add"]');
+    }
+
+    if (!stickyBar || !originalBtn) return;
+
+    stickyBtn.addEventListener('click', function(e) {
+      e.preventDefault();
+      originalBtn.click();
+    });
+
+    closeBtn.addEventListener('click', function(e) {
+      e.preventDefault();
+      stickyBar.classList.remove('is-visible');
+      userClosed = true;
+    });
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (!entry.isIntersecting && !userClosed) {
+          stickyBar.classList.add('is-visible');
+        } else {
+          stickyBar.classList.remove('is-visible');
+        }
+      });
+    }, {
+      root: null,
+      threshold: 0, 
+      rootMargin: "0px"
+    });
+
+    observer.observe(originalBtn);
+  });
+</script>
+
+{% schema %}
+{
+  "name": "Sticky Add to Cart",
+  "settings": [
+    {
+      "type": "text",
+      "id": "btn_text",
+      "label": "Texto do Botão",
+      "default": "Adicionar ao carrinho"
+    },
+    {
+      "type": "color",
+      "id": "btn_color",
+      "label": "Cor do Botão",
+      "default": "#FCD700"
+    },
+    {
+      "type": "color",
+      "id": "btn_text_color",
+      "label": "Cor do Texto do Botão",
+      "default": "#000000"
+    }
+  ],
+  "presets": [
+    {
+      "name": "Sticky Add to Cart"
+    }
+  ],
+  "templates": ["product"]
+}
+{% endschema %}
