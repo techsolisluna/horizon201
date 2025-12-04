@@ -1691,7 +1691,8 @@
     },
     "sticky-atc-bar": {
       "type": "sticky-atc-bar",
-      "name": "Sticky bottom bar"
+      "name": "Sticky bottom bar",
+      "settings": {}
     }
   },
   "order": [
