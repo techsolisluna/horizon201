@@ -74,7 +74,7 @@
         "gap": 32,
         "color_scheme": "scheme-1",
         "padding-block-start": 40,
-        "padding-block-end": 70
+        "padding-block-end": 50
       }
     },
     "section_YNKfPw": {
@@ -100,7 +100,7 @@
             "background_color": "#00000026",
             "corner_radius": 0,
             "padding-block-start": 0,
-            "padding-block-end": 0,
+            "padding-block-end": 20,
             "padding-inline-start": 0,
             "padding-inline-end": 0
           },
@@ -158,7 +158,7 @@
                 "align_baseline": false,
                 "horizontal_alignment_flex_direction_column": "center",
                 "vertical_alignment_flex_direction_column": "center",
-                "gap": 12,
+                "gap": 20,
                 "width": "fill",
                 "custom_width": 100,
                 "width_mobile": "fill",
@@ -166,7 +166,7 @@
                 "height": "fit",
                 "custom_height": 100,
                 "inherit_color_scheme": true,
-                "color_scheme": "",
+                "color_scheme": "scheme-3",
                 "background_media": "none",
                 "video_position": "cover",
                 "background_image_position": "cover",
@@ -174,14 +174,14 @@
                 "border_width": 1,
                 "border_opacity": 100,
                 "border_radius": 0,
-                "toggle_overlay": false,
-                "overlay_color": "#00000026",
+                "toggle_overlay": true,
+                "overlay_color": "#ededeb",
                 "overlay_style": "solid",
                 "gradient_direction": "to top",
-                "padding-block-start": 0,
-                "padding-block-end": 0,
-                "padding-inline-start": 0,
-                "padding-inline-end": 0
+                "padding-block-start": 25,
+                "padding-block-end": 25,
+                "padding-inline-start": 25,
+                "padding-inline-end": 25
               },
               "blocks": {
                 "text_xiWmDc": {
@@ -193,8 +193,8 @@
                     "max_width": "normal",
                     "alignment": "left",
                     "type_preset": "custom",
-                    "font": "var(--font-body--family)",
-                    "font_size": "1rem",
+                    "font": "var(--font-subheading--family)",
+                    "font_size": "1.5rem",
                     "line_height": "normal",
                     "letter_spacing": "normal",
                     "case": "none",
@@ -231,7 +231,7 @@
                 "button_ay4CaB"
               ]
             },
-            "group_jqVwzK": {
+            "group_Pd9Bhk": {
               "type": "group",
               "name": "t:names.group",
               "settings": {
@@ -244,7 +244,7 @@
                 "align_baseline": false,
                 "horizontal_alignment_flex_direction_column": "center",
                 "vertical_alignment_flex_direction_column": "center",
-                "gap": 12,
+                "gap": 20,
                 "width": "fill",
                 "custom_width": 100,
                 "width_mobile": "fill",
@@ -252,7 +252,7 @@
                 "height": "fit",
                 "custom_height": 100,
                 "inherit_color_scheme": true,
-                "color_scheme": "",
+                "color_scheme": "scheme-3",
                 "background_media": "none",
                 "video_position": "cover",
                 "background_image_position": "cover",
@@ -260,17 +260,17 @@
                 "border_width": 1,
                 "border_opacity": 100,
                 "border_radius": 0,
-                "toggle_overlay": false,
-                "overlay_color": "#00000026",
+                "toggle_overlay": true,
+                "overlay_color": "#ededeb",
                 "overlay_style": "solid",
                 "gradient_direction": "to top",
-                "padding-block-start": 0,
-                "padding-block-end": 0,
-                "padding-inline-start": 0,
-                "padding-inline-end": 0
+                "padding-block-start": 25,
+                "padding-block-end": 25,
+                "padding-inline-start": 25,
+                "padding-inline-end": 25
               },
               "blocks": {
-                "text_mTg6HE": {
+                "text_A6rqeC": {
                   "type": "text",
                   "name": "t:names.text",
                   "settings": {
@@ -279,8 +279,8 @@
                     "max_width": "normal",
                     "alignment": "left",
                     "type_preset": "custom",
-                    "font": "var(--font-body--family)",
-                    "font_size": "1rem",
+                    "font": "var(--font-subheading--family)",
+                    "font_size": "1.5rem",
                     "line_height": "normal",
                     "letter_spacing": "normal",
                     "case": "none",
@@ -296,7 +296,7 @@
                   },
                   "blocks": {}
                 },
-                "button_iqYkmx": {
+                "button_z3qCmT": {
                   "type": "button",
                   "name": "t:names.button",
                   "settings": {
@@ -313,14 +313,14 @@
                 }
               },
               "block_order": [
-                "text_mTg6HE",
-                "button_iqYkmx"
+                "text_A6rqeC",
+                "button_z3qCmT"
               ]
             }
           },
           "block_order": [
             "group_gCwEtc",
-            "group_jqVwzK"
+            "group_Pd9Bhk"
           ]
         }
       },
@@ -341,7 +341,7 @@
         "section_width": "page-width",
         "section_height": "",
         "section_height_custom": 50,
-        "color_scheme": "scheme-3",
+        "color_scheme": "scheme-1",
         "background_media": "none",
         "video_position": "cover",
         "background_image_position": "cover",
@@ -349,8 +349,8 @@
         "border_width": 1,
         "border_opacity": 100,
         "border_radius": 0,
-        "toggle_overlay": false,
-        "overlay_color": "#00000026",
+        "toggle_overlay": true,
+        "overlay_color": "#f6f6f5",
         "overlay_style": "solid",
         "gradient_direction": "to top",
         "padding-block-start": 20,
