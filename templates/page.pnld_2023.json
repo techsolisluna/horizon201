@@ -19,10 +19,10 @@
             "text": "<p>{{ closest.page.title }}</p>",
             "width": "100%",
             "max_width": "none",
-            "alignment": "left",
-            "type_preset": "h1",
-            "font": "var(--font-primary--family)",
-            "font_size": "",
+            "alignment": "center",
+            "type_preset": "custom",
+            "font": "var(--font-heading--family)",
+            "font_size": "3.5rem",
             "line_height": "normal",
             "letter_spacing": "normal",
             "case": "none",
@@ -42,13 +42,13 @@
           "type": "text",
           "name": "t:names.text",
           "settings": {
-            "text": "{{ closest.page.content }}",
-            "width": "fit-content",
+            "text": "<p>Conheça as obras da Solisluna Editora aprovadas no Programa Nacional do Livro e do Material Didático (PNLD) 2023 para os <strong>anos iniciais do ensino fundamental</strong></p>",
+            "width": "100%",
             "max_width": "none",
-            "alignment": "left",
-            "type_preset": "rte",
+            "alignment": "center",
+            "type_preset": "custom",
             "font": "var(--font-body--family)",
-            "font_size": "1rem",
+            "font_size": "1.125rem",
             "line_height": "normal",
             "letter_spacing": "normal",
             "case": "none",
@@ -72,7 +72,7 @@
       "settings": {
         "content_direction": "column",
         "gap": 32,
-        "color_scheme": "scheme-1",
+        "color_scheme": "scheme-4",
         "padding-block-start": 40,
         "padding-block-end": 50
       }
@@ -80,32 +80,6 @@
     "section_YNKfPw": {
       "type": "section",
       "blocks": {
-        "text_9Qd3Et": {
-          "type": "text",
-          "name": "t:names.heading",
-          "settings": {
-            "text": "<p>Conheça as obras da Solisluna aprovadas e selecionadas para distribuição gratuita pelo PNLD literário</p>",
-            "width": "100%",
-            "max_width": "none",
-            "alignment": "left",
-            "type_preset": "custom",
-            "font": "var(--font-subheading--family)",
-            "font_size": "2.5rem",
-            "line_height": "normal",
-            "letter_spacing": "normal",
-            "case": "none",
-            "wrap": "pretty",
-            "color": "var(--color-foreground)",
-            "background": false,
-            "background_color": "#00000026",
-            "corner_radius": 0,
-            "padding-block-start": 0,
-            "padding-block-end": 20,
-            "padding-inline-start": 0,
-            "padding-inline-end": 0
-          },
-          "blocks": {}
-        },
         "group_MiykrG": {
           "type": "group",
           "name": "t:names.group",
@@ -119,9 +93,9 @@
             "align_baseline": false,
             "horizontal_alignment_flex_direction_column": "flex-start",
             "vertical_alignment_flex_direction_column": "center",
-            "gap": 12,
-            "width": "fill",
-            "custom_width": 100,
+            "gap": 30,
+            "width": "custom",
+            "custom_width": 70,
             "width_mobile": "fill",
             "custom_width_mobile": 100,
             "height": "fit",
@@ -325,7 +299,6 @@
         }
       },
       "block_order": [
-        "text_9Qd3Et",
         "group_MiykrG"
       ],
       "name": "t:names.custom_section",
@@ -335,7 +308,7 @@
         "horizontal_alignment": "flex-start",
         "vertical_alignment": "center",
         "align_baseline": false,
-        "horizontal_alignment_flex_direction_column": "flex-start",
+        "horizontal_alignment_flex_direction_column": "center",
         "vertical_alignment_flex_direction_column": "center",
         "gap": 12,
         "section_width": "page-width",
