@@ -315,7 +315,7 @@
               "name": "t:names.button",
               "settings": {
                 "label": "Trecho da obra",
-                "link": "https://link.solisluna.com.br/pnld22_trecho_quebichodoido",
+                "link": "https://link.solisluna.com.br/pnld22_trecho_auniaofazacolcha",
                 "open_in_new_tab": false,
                 "style_class": "button",
                 "width": "custom",
@@ -330,7 +330,7 @@
               "name": "t:names.button",
               "settings": {
                 "label": "Manual do Professor",
-                "link": "https://link.solisluna.com.br/pnld22_mdp_quebichodoido",
+                "link": "https://link.solisluna.com.br/pnld22_mdp_auniaofazacolcha",
                 "open_in_new_tab": false,
                 "style_class": "button",
                 "width": "custom",
