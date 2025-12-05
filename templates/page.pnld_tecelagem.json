@@ -519,7 +519,7 @@
           "type": "text",
           "name": "t:names.text",
           "settings": {
-            "text": "<p><strong>ACERVOS</strong></p><p>09 e 13</p><p> </p><p><strong>CÓDIGO DA OBRA</strong></p><p>0715P220201000000</p><p> </p><p><strong>CATEGORIA</strong></p><p>Creche I</p><p> </p><p><strong>ESPECIFICAÇÃO DE USO DA OBRA</strong></p><p>Para manuseio dos bebês</p>",
+            "text": "<p><strong>ACERVO</strong></p><p>6</p><p> </p><p><strong>CÓDIGO DA OBRA</strong></p><p>1051P230301000000</p><p> </p><p><strong>CATEGORIA</strong></p><p>Obras Literárias do 1º ao 3º ano do ensino fundamental</p><p></p>",
             "width": "100%",
             "max_width": "none",
             "alignment": "left",
@@ -545,7 +545,7 @@
           "type": "text",
           "name": "t:names.text",
           "settings": {
-            "text": "<p><strong>TEMA</strong></p><p>Animais da fauna local, nacional e mundial</p><p> </p><p><strong>GÊNERO LITERÁRIO</strong></p><p>Livro de imagens</p><p> </p><p><strong>FORMATO</strong></p><p>20,5cm x 27,5cm | 32 páginas</p>",
+            "text": "<p><strong>GÊNERO LITERÁRIO</strong></p><p>Conto, crônica, novela</p><p> </p><p><strong>FORMATO</strong></p><p>20,5cm x 27,5cm | 28 páginas</p>",
             "width": "100%",
             "max_width": "none",
             "alignment": "left",
