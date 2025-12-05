@@ -665,7 +665,7 @@
         "overlay_style": "solid",
         "gradient_direction": "to top",
         "padding-block-start": 0,
-        "padding-block-end": 79
+        "padding-block-end": 80
       }
     },
     "section_TLqngh": {
@@ -760,12 +760,23 @@
         "padding-block-end": 40
       }
     },
+    "custom_liquid_THieyP": {
+      "type": "custom-liquid",
+      "name": "t:names.custom_liquid",
+      "settings": {
+        "custom_liquid": "<div class=\"button-pnld-code\"><h3>1052P230302000000</h3><button id=\"btn-copy\"> copiar código da obra <i class=\"fas fa-copy\"></i></button></div>\n\n\n<script>\n  var btnCopy = document.getElementById(\"btn-copy\");\n  var contentToCopy = \"1052P230302000000\";\n\n  btnCopy.addEventListener(\"click\", function() {\n    navigator.clipboard.writeText(contentToCopy)\n      .then(function() {\n        btnCopy.textContent = \"código copiado!\";\n        console.log(\"Conteúdo copiado para o clipboard\");\n      })\n      .catch(function() {\n        console.log(\"Não foi possível copiar o conteúdo para o clipboard\");\n      });\n  });\n</script>\n<style>\n#btn-copy {\n  background-color: #007bc8;\n  border: none;\n  color: white;\n  cursor: pointer;\n  font-size: 22px;\n  padding: 10px 25px;\n  border-radius: 5px;\n  -webkit-transition: all 0.5s ease-out;\n  -moz-transition: all 0.5s ease-out;\n  -ms-transition: all 0.5s ease-out;\n  -o-transition: all 0.5s ease-out;\n  transition: all 0.5s ease-out;\n}\n#btn-copy:hover {\n  background-color: #0065a4;\n  cursor: pointer;\n  padding: 10px 35px;\n-webkit-filter: drop-shadow(5px 2px 5px rgba(0, 0, 0, 0.3));\n  filter: drop-shadow(5px 2px 5px rgba(0, 0, 0, 0.3));\n}\n.button-pnld-code {\n  text-align: center;\n  margin-bottom: 3em;\n}\n</style>",
+        "color_scheme": "",
+        "section_width": "page-width",
+        "padding-block-start": 100,
+        "padding-block-end": 100
+      }
+    },
     "hero_Tzq6eF": {
       "type": "hero",
       "name": "t:names.hero",
       "settings": {
         "media_type_1": "image",
-        "image_1": "shopify://shop_images/Captura_de_Tela_2021-09-25_as_17.43.06.png",
+        "image_1": "shopify://shop_images/ilustracao_Antonino_Peregrino_03.jpg",
         "media_type_2": "image",
         "link": "",
         "open_in_new_tab": false,
@@ -778,7 +789,7 @@
         "vertical_alignment_flex_direction_column": "center",
         "gap": 16,
         "section_width": "page-width",
-        "section_height": "medium",
+        "section_height": "full-screen",
         "section_height_custom": 50,
         "color_scheme": "scheme-5",
         "banner_not_empty": false,
@@ -834,6 +845,7 @@
     "section_WrBJfx",
     "section_NckyLz",
     "section_TLqngh",
+    "custom_liquid_THieyP",
     "hero_Tzq6eF",
     "hero_bTKYFB"
   ]
