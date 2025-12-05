@@ -16,7 +16,7 @@
           "type": "text",
           "name": "Title",
           "settings": {
-            "text": "<p>{{ closest.page.title }}</p>",
+            "text": "<p>PNLD 2022 - Educação Infantil</p>",
             "width": "100%",
             "max_width": "none",
             "alignment": "center",
@@ -42,7 +42,7 @@
           "type": "text",
           "name": "t:names.text",
           "settings": {
-            "text": "<p>Conheça as obras da Solisluna Editora aprovadas no Programa Nacional do Livro e do Material Didático (PNLD) 2023 para os <strong>anos iniciais do ensino fundamental</strong></p>",
+            "text": "<p>Conheça as obras da Solisluna Editora aprovadas no PNLD 2022 para a Educação Infantil</p>",
             "width": "100%",
             "max_width": "none",
             "alignment": "center",
@@ -162,7 +162,7 @@
                   "type": "image",
                   "name": "t:names.image",
                   "settings": {
-                    "image": "shopify://shop_images/Tecelagem-capa-mockup.png",
+                    "image": "shopify://shop_images/Que-bicho-doido-PNDL.png",
                     "link": "",
                     "image_ratio": "adapt",
                     "width": "fill",
@@ -185,7 +185,7 @@
                   "type": "text",
                   "name": "t:names.text",
                   "settings": {
-                    "text": "<p><strong>Texto e ilustrações<br/></strong>Goya Lopes</p><p>-<strong><br/>1º ao 3º ano do ensino fundamental</strong></p><p>-</p><h3><strong>ACERVO 6</strong></h3><p>-</p><p><strong>GÊNERO</strong> Conto, crônica, novela</p><p></p><p>-</p><p><strong>CÓDIGO </strong>1051P230301000000</p><p></p>",
+                    "text": "<p><strong>Texto e ilustrações<br/></strong>Enéas Guerra</p><p>-<strong><br/>Educação infantil - Creche I</strong></p><p>-</p><h3><strong>ACERVOS 09 e 13 </strong></h3><p>-</p><p><strong>TEMA</strong> Animais da fauna local, nacional e mundial</p><p>-</p><p><strong>CÓDIGO </strong>0715P220201000000</p><p></p>",
                     "width": "100%",
                     "max_width": "none",
                     "alignment": "left",
@@ -212,7 +212,7 @@
                   "name": "t:names.button",
                   "settings": {
                     "label": "SAIBA MAIS",
-                    "link": "shopify://pages/pnld-2023-tecelagem",
+                    "link": "shopify://pages/pnld-2022-que-bicho-doido",
                     "open_in_new_tab": false,
                     "style_class": "button",
                     "width": "custom",
@@ -272,7 +272,7 @@
                   "type": "image",
                   "name": "t:names.image",
                   "settings": {
-                    "image": "shopify://shop_images/Antonino-Peregrino_1_4a3606d1-3f5e-4593-9c8b-65110502d2de.png",
+                    "image": "shopify://shop_images/A-uniao-faz-a-colcha-PNDL.png",
                     "link": "",
                     "image_ratio": "adapt",
                     "width": "fill",
@@ -295,7 +295,7 @@
                   "type": "text",
                   "name": "t:names.text",
                   "settings": {
-                    "text": "<p><strong>Texto </strong>Osvaldo Costa Martins<strong><br/>Ilustrações </strong>Luci Sacoleira</p><p>-<strong><br/>4º e 5º ano do ensino fundamental</strong></p><p>-</p><h3><strong>ACERVO 11 </strong></h3><p>-</p><p><strong>GÊNERO</strong> Memória, diário, biografia</p><p><br/></p><p><strong>CÓDIGO </strong>1052P230302000000</p>",
+                    "text": "<p><strong>Texto </strong>Antonio Miranda e Enéas Guerra<strong><br/>Ilustrações </strong>Enéas Guerra</p><p>-<strong><br/>Educação infantil - Pré-escola</strong></p><p>-</p><h3><strong>ACERVOS 04 e 23 </strong></h3><p>-</p><p><strong>TEMA</strong> Profissões urbanas e rurais</p><p>-</p><p><strong>CÓDIGO<br/></strong>0716P220203000000</p>",
                     "width": "100%",
                     "max_width": "none",
                     "alignment": "left",
@@ -322,7 +322,7 @@
                   "name": "t:names.button",
                   "settings": {
                     "label": "SAIBA MAIS",
-                    "link": "shopify://pages/antonino-peregrino",
+                    "link": "shopify://pages/pnld-2022-a-uniao-faz-a-colcha",
                     "open_in_new_tab": false,
                     "style_class": "button",
                     "width": "custom",
@@ -383,7 +383,7 @@
       "name": "t:names.hero",
       "settings": {
         "media_type_1": "image",
-        "image_1": "shopify://shop_images/A2_Banner-site-PNLD-2023.png",
+        "image_1": "shopify://shop_images/Banner-PNDL-2022.jpg",
         "media_type_2": "image",
         "link": "",
         "open_in_new_tab": false,
