@@ -163,7 +163,7 @@
           "type": "image",
           "name": "t:names.image",
           "settings": {
-            "image": "shopify://shop_images/Que-bicho-doido-PNDL.png",
+            "image": "shopify://shop_images/A-uniao-faz-a-colcha-PNDL.png",
             "link": "",
             "image_ratio": "adapt",
             "width": "custom",
@@ -186,7 +186,7 @@
           "type": "text",
           "name": "t:names.text",
           "settings": {
-            "text": "<h1><strong>Que bicho doido!</strong></h1><p></p><p><strong>Texto e Ilustrações:</strong> <a href=\"https://solisluna.com.br/collections/eneas-guerra\" target=\"_blank\" title=\"Enéas Guerra\">Enéas Guerra<br/></a><strong>Código da obra: </strong>0715P220201000000</p><p><strong>ACERVOS: </strong>09 e 13</p><p><br/></p><p>De um mesmo contorno aparecem bichos que existem e também bichos doidos inventados, em uma forma lúdica e divertida. Os sons dos grunhidos, uivos, urros, guinchos, roncos, inspiram a criança a inventar seu próprio bicho doido!<br/><br/>O autor, a partir da forma repetida de uma máscara, experimenta grafismos e cores que multiplicam esses bichos, bichos doidos, bichos reais, bichos bem brasileiros e bichos imaginários. Trabalha variações de um mesmo \"tema\" e, ao mesmo tempo, improvisa e empresta vozes a cada criatura.<br/><br/>São onomatopeias retiradas do vocabulário comum das brincadeiras familiares de <em>au-au, miau, quiquiqui</em>, das histórias em quadrinhos (<em>grrrr</em>) e outros sons inventados - <em>iau iau iau, cronf cronf, ugli ugli ugli</em> de uma maneira bastante livre e engraçada.</p>",
+            "text": "<h1><strong>A união faz a colcha</strong></h1><p></p><p><strong>Texto</strong>  <a href=\"https://solisluna.com.br/collections/antonio-miranda\" target=\"_blank\" title=\"Antonio Miranda\">Antonio Miranda</a> e <a href=\"https://solisluna.com.br/collections/eneas-guerra\" target=\"_blank\" title=\"Enéas Guerra\">Enéas Guerra</a></p><p><strong>Ilustrações</strong> <a href=\"https://solisluna.com.br/collections/eneas-guerra\" target=\"_blank\" title=\"Enéas Guerra\">Enéas Guerra</a></p><p><strong>Código da obra: </strong>0716P220203000000</p><p><strong>ACERVOS: </strong>04 e 23</p><p> </p><p>E os retalhos, de onde vêm? Vêm de lugares e de pessoas diferentes. Cada uma com seu jeito de vestir; cada costura, com seu jeito de unir; cada cor, com sua maneira de colorir. Desfilam harmonia numa colcha de retalhos, cobrindo, com um manto de alegria, os diferentes que fazem do seu dia a dia o bem viver de uma cidade.</p><p> <br/>O livro A união faz a colcha propõe uma brincadeira em formato de pergunta: <em>de onde vieram estes retalhos? Da sapatilha da bailarina, do pijama da menina, da faixa do padre, do paletó do compadre</em>... E assim começa uma divertida procura pelos donos dos retalhos, um grupo diverso de pessoas com profissões, gêneros, jeitos e aparências diferentes.</p><p><br/>Ao decorrer da leitura, a criança acompanha a formação de uma colcha de retalhos que vem de lugares e pessoas diferentes, uma mistura linda, rica e colorida.</p><p> </p><p>Um dos diferenciais da publicação é que ele acompanha uma música autoral, que pode ser acessada com um QR Code, no final do livro.</p>",
             "width": "fit-content",
             "max_width": "normal",
             "alignment": "left",
@@ -218,7 +218,7 @@
         "content_direction": "row",
         "vertical_on_mobile": true,
         "horizontal_alignment": "flex-start",
-        "vertical_alignment": "center",
+        "vertical_alignment": "flex-start",
         "align_baseline": false,
         "horizontal_alignment_flex_direction_column": "flex-start",
         "vertical_alignment_flex_direction_column": "center",
