@@ -148,7 +148,7 @@
                 "border_width": 1,
                 "border_opacity": 100,
                 "border_radius": 0,
-                "toggle_overlay": true,
+                "toggle_overlay": false,
                 "overlay_color": "#ededeb",
                 "overlay_style": "solid",
                 "gradient_direction": "to top",
@@ -158,15 +158,38 @@
                 "padding-inline-end": 25
               },
               "blocks": {
+                "image_AJa84R": {
+                  "type": "image",
+                  "name": "t:names.image",
+                  "settings": {
+                    "image": "shopify://shop_images/Tecelagem-capa-mockup.png",
+                    "link": "",
+                    "image_ratio": "adapt",
+                    "width": "fill",
+                    "custom_width": 100,
+                    "width_mobile": "fill",
+                    "custom_width_mobile": 100,
+                    "height": "fit",
+                    "border": "none",
+                    "border_width": 1,
+                    "border_opacity": 100,
+                    "border_radius": 0,
+                    "padding-block-start": 0,
+                    "padding-block-end": 0,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0
+                  },
+                  "blocks": {}
+                },
                 "text_xiWmDc": {
                   "type": "text",
                   "name": "t:names.text",
                   "settings": {
-                    "text": "<p>PNLD 2023</p>",
-                    "width": "fit-content",
-                    "max_width": "normal",
+                    "text": "<p><strong>Texto e ilustrações<br/></strong>Goya Lopes</p><p>-<strong><br/>1º ao 3º ano do ensino fundamental</strong></p><p>-</p><h3><strong>ACERVO 6</strong></h3><p>-</p><p><strong>GÊNERO</strong> Conto, crônica, novela</p><p></p><p>-</p><p><strong>CÓDIGO </strong>1051P230301000000</p><p></p>",
+                    "width": "100%",
+                    "max_width": "none",
                     "alignment": "left",
-                    "type_preset": "custom",
+                    "type_preset": "rte",
                     "font": "var(--font-subheading--family)",
                     "font_size": "1.5rem",
                     "line_height": "normal",
@@ -188,24 +211,25 @@
                   "type": "button",
                   "name": "t:names.button",
                   "settings": {
-                    "label": "Conheça as obras aprovadas",
-                    "link": "shopify://pages/pnld-2023",
+                    "label": "SAIBA MAIS",
+                    "link": "shopify://pages/pnld-2023-tecelagem",
                     "open_in_new_tab": false,
                     "style_class": "button",
-                    "width": "fit-content",
+                    "width": "custom",
                     "custom_width": 100,
-                    "width_mobile": "fit-content",
+                    "width_mobile": "custom",
                     "custom_width_mobile": 100
                   },
                   "blocks": {}
                 }
               },
               "block_order": [
+                "image_AJa84R",
                 "text_xiWmDc",
                 "button_ay4CaB"
               ]
             },
-            "group_Pd9Bhk": {
+            "group_tipAiV": {
               "type": "group",
               "name": "t:names.group",
               "settings": {
@@ -234,7 +258,7 @@
                 "border_width": 1,
                 "border_opacity": 100,
                 "border_radius": 0,
-                "toggle_overlay": true,
+                "toggle_overlay": false,
                 "overlay_color": "#ededeb",
                 "overlay_style": "solid",
                 "gradient_direction": "to top",
@@ -244,15 +268,38 @@
                 "padding-inline-end": 25
               },
               "blocks": {
-                "text_A6rqeC": {
+                "image_cw4FcL": {
+                  "type": "image",
+                  "name": "t:names.image",
+                  "settings": {
+                    "image": "shopify://shop_images/Antonino-Peregrino_1_4a3606d1-3f5e-4593-9c8b-65110502d2de.png",
+                    "link": "",
+                    "image_ratio": "adapt",
+                    "width": "fill",
+                    "custom_width": 100,
+                    "width_mobile": "fill",
+                    "custom_width_mobile": 100,
+                    "height": "fit",
+                    "border": "none",
+                    "border_width": 1,
+                    "border_opacity": 100,
+                    "border_radius": 0,
+                    "padding-block-start": 0,
+                    "padding-block-end": 0,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0
+                  },
+                  "blocks": {}
+                },
+                "text_Y69FtB": {
                   "type": "text",
                   "name": "t:names.text",
                   "settings": {
-                    "text": "<p>PNLD 2022</p>",
-                    "width": "fit-content",
-                    "max_width": "normal",
+                    "text": "<p><strong>Texto </strong>Osvaldo Costa Martins<strong><br/>Ilustrações </strong>Luci Sacoleira</p><p>-<strong><br/>4º e 5º ano do ensino fundamental</strong></p><p>-</p><h3><strong>ACERVO 11 </strong></h3><p>-</p><p><strong>GÊNERO</strong> Memória, diário, biografia</p><p><br/></p><p><strong>CÓDIGO </strong>1052P230302000000</p>",
+                    "width": "100%",
+                    "max_width": "none",
                     "alignment": "left",
-                    "type_preset": "custom",
+                    "type_preset": "rte",
                     "font": "var(--font-subheading--family)",
                     "font_size": "1.5rem",
                     "line_height": "normal",
@@ -270,31 +317,32 @@
                   },
                   "blocks": {}
                 },
-                "button_z3qCmT": {
+                "button_gpfBPt": {
                   "type": "button",
                   "name": "t:names.button",
                   "settings": {
-                    "label": "Conheça as obras aprovadas",
-                    "link": "shopify://pages/pnld-2022",
+                    "label": "SAIBA MAIS",
+                    "link": "shopify://pages/antonino-peregrino",
                     "open_in_new_tab": false,
                     "style_class": "button",
-                    "width": "fit-content",
+                    "width": "custom",
                     "custom_width": 100,
-                    "width_mobile": "fit-content",
+                    "width_mobile": "custom",
                     "custom_width_mobile": 100
                   },
                   "blocks": {}
                 }
               },
               "block_order": [
-                "text_A6rqeC",
-                "button_z3qCmT"
+                "image_cw4FcL",
+                "text_Y69FtB",
+                "button_gpfBPt"
               ]
             }
           },
           "block_order": [
             "group_gCwEtc",
-            "group_Pd9Bhk"
+            "group_tipAiV"
           ]
         }
       },
@@ -322,7 +370,7 @@
         "border_width": 1,
         "border_opacity": 100,
         "border_radius": 0,
-        "toggle_overlay": true,
+        "toggle_overlay": false,
         "overlay_color": "#f6f6f5",
         "overlay_style": "solid",
         "gradient_direction": "to top",
