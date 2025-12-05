@@ -127,7 +127,7 @@
         "text_MzNzwU",
         "button_73VCJq"
       ],
-      "name": "t:names.custom_section",
+      "name": "Header",
       "settings": {
         "content_direction": "column",
         "vertical_on_mobile": true,
@@ -152,8 +152,318 @@
         "overlay_color": "#f6f6f5",
         "overlay_style": "solid",
         "gradient_direction": "to top",
-        "padding-block-start": 20,
-        "padding-block-end": 20
+        "padding-block-start": 40,
+        "padding-block-end": 60
+      }
+    },
+    "section_NB4JEG": {
+      "type": "section",
+      "blocks": {
+        "image_kP7Xjx": {
+          "type": "image",
+          "name": "t:names.image",
+          "settings": {
+            "image": "shopify://shop_images/Que-bicho-doido-PNDL.png",
+            "link": "",
+            "image_ratio": "adapt",
+            "width": "custom",
+            "custom_width": 49,
+            "width_mobile": "fill",
+            "custom_width_mobile": 100,
+            "height": "fit",
+            "border": "none",
+            "border_width": 1,
+            "border_opacity": 100,
+            "border_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        },
+        "text_CznNte": {
+          "type": "text",
+          "name": "t:names.text",
+          "settings": {
+            "text": "<h1><strong>Que bicho doido!</strong></h1><p></p><p><strong>Texto e Ilustrações:</strong> <a href=\"https://solisluna.com.br/collections/eneas-guerra\" target=\"_blank\" title=\"Enéas Guerra\">Enéas Guerra<br/></a><strong>Código da obra: </strong>0715P220201000000</p><p><strong>ACERVOS: </strong>09 e 13</p><p><br/></p><p>De um mesmo contorno aparecem bichos que existem e também bichos doidos inventados, em uma forma lúdica e divertida. Os sons dos grunhidos, uivos, urros, guinchos, roncos, inspiram a criança a inventar seu próprio bicho doido!<br/><br/>O autor, a partir da forma repetida de uma máscara, experimenta grafismos e cores que multiplicam esses bichos, bichos doidos, bichos reais, bichos bem brasileiros e bichos imaginários. Trabalha variações de um mesmo \"tema\" e, ao mesmo tempo, improvisa e empresta vozes a cada criatura.<br/><br/>São onomatopeias retiradas do vocabulário comum das brincadeiras familiares de <em>au-au, miau, quiquiqui</em>, das histórias em quadrinhos (<em>grrrr</em>) e outros sons inventados - <em>iau iau iau, cronf cronf, ugli ugli ugli</em> de uma maneira bastante livre e engraçada.</p>",
+            "width": "fit-content",
+            "max_width": "normal",
+            "alignment": "left",
+            "type_preset": "rte",
+            "font": "var(--font-body--family)",
+            "font_size": "1rem",
+            "line_height": "normal",
+            "letter_spacing": "normal",
+            "case": "none",
+            "wrap": "pretty",
+            "color": "var(--color-foreground)",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "image_kP7Xjx",
+        "text_CznNte"
+      ],
+      "name": "Livro",
+      "settings": {
+        "content_direction": "row",
+        "vertical_on_mobile": true,
+        "horizontal_alignment": "flex-start",
+        "vertical_alignment": "center",
+        "align_baseline": false,
+        "horizontal_alignment_flex_direction_column": "flex-start",
+        "vertical_alignment_flex_direction_column": "center",
+        "gap": 12,
+        "section_width": "page-width",
+        "section_height": "small",
+        "section_height_custom": 50,
+        "color_scheme": "",
+        "background_media": "none",
+        "video_position": "cover",
+        "background_image_position": "cover",
+        "border": "none",
+        "border_width": 1,
+        "border_opacity": 100,
+        "border_radius": 0,
+        "toggle_overlay": false,
+        "overlay_color": "#00000026",
+        "overlay_style": "solid",
+        "gradient_direction": "to top",
+        "padding-block-start": 0,
+        "padding-block-end": 100
+      }
+    },
+    "section_DhRztC": {
+      "type": "section",
+      "blocks": {
+        "text_QRULDB": {
+          "type": "text",
+          "name": "t:names.heading",
+          "settings": {
+            "text": "<h2>Faça o download</h2>",
+            "width": "100%",
+            "max_width": "normal",
+            "alignment": "center",
+            "type_preset": "rte",
+            "font": "var(--font-body--family)",
+            "font_size": "1rem",
+            "line_height": "normal",
+            "letter_spacing": "normal",
+            "case": "none",
+            "wrap": "pretty",
+            "color": "var(--color-foreground)",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 10,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        },
+        "group_yRHkXb": {
+          "type": "group",
+          "name": "t:names.group",
+          "settings": {
+            "link": "",
+            "open_in_new_tab": false,
+            "content_direction": "row",
+            "vertical_on_mobile": true,
+            "horizontal_alignment": "center",
+            "vertical_alignment": "center",
+            "align_baseline": false,
+            "horizontal_alignment_flex_direction_column": "flex-start",
+            "vertical_alignment_flex_direction_column": "center",
+            "gap": 12,
+            "width": "fill",
+            "custom_width": 100,
+            "width_mobile": "fill",
+            "custom_width_mobile": 100,
+            "height": "fit",
+            "custom_height": 100,
+            "inherit_color_scheme": true,
+            "color_scheme": "",
+            "background_media": "none",
+            "video_position": "cover",
+            "background_image_position": "cover",
+            "border": "none",
+            "border_width": 1,
+            "border_opacity": 100,
+            "border_radius": 0,
+            "toggle_overlay": false,
+            "overlay_color": "#00000026",
+            "overlay_style": "solid",
+            "gradient_direction": "to top",
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {
+            "button_LdYmKG": {
+              "type": "button",
+              "name": "t:names.button",
+              "settings": {
+                "label": "Trecho da obra",
+                "link": "https://link.solisluna.com.br/pnld22_trecho_quebichodoido",
+                "open_in_new_tab": false,
+                "style_class": "button",
+                "width": "custom",
+                "custom_width": 23,
+                "width_mobile": "fit-content",
+                "custom_width_mobile": 100
+              },
+              "blocks": {}
+            },
+            "button_Lx7gAF": {
+              "type": "button",
+              "name": "t:names.button",
+              "settings": {
+                "label": "Manual do Professor",
+                "link": "https://link.solisluna.com.br/pnld22_mdp_quebichodoido",
+                "open_in_new_tab": false,
+                "style_class": "button",
+                "width": "custom",
+                "custom_width": 23,
+                "width_mobile": "fit-content",
+                "custom_width_mobile": 100
+              },
+              "blocks": {}
+            }
+          },
+          "block_order": [
+            "button_LdYmKG",
+            "button_Lx7gAF"
+          ]
+        }
+      },
+      "block_order": [
+        "text_QRULDB",
+        "group_yRHkXb"
+      ],
+      "name": "Download",
+      "settings": {
+        "content_direction": "column",
+        "vertical_on_mobile": true,
+        "horizontal_alignment": "flex-start",
+        "vertical_alignment": "center",
+        "align_baseline": false,
+        "horizontal_alignment_flex_direction_column": "flex-start",
+        "vertical_alignment_flex_direction_column": "center",
+        "gap": 12,
+        "section_width": "page-width",
+        "section_height": "",
+        "section_height_custom": 50,
+        "color_scheme": "",
+        "background_media": "none",
+        "video_position": "cover",
+        "background_image_position": "cover",
+        "border": "none",
+        "border_width": 1,
+        "border_opacity": 100,
+        "border_radius": 0,
+        "toggle_overlay": false,
+        "overlay_color": "#00000026",
+        "overlay_style": "solid",
+        "gradient_direction": "to top",
+        "padding-block-start": 0,
+        "padding-block-end": 40
+      }
+    },
+    "section_TLqngh": {
+      "type": "section",
+      "blocks": {
+        "image_drB4xK": {
+          "type": "image",
+          "name": "t:names.image",
+          "settings": {
+            "image": "shopify://shop_images/Que-bicho-doido-PNDL.png",
+            "link": "",
+            "image_ratio": "adapt",
+            "width": "custom",
+            "custom_width": 49,
+            "width_mobile": "fill",
+            "custom_width_mobile": 100,
+            "height": "fit",
+            "border": "none",
+            "border_width": 1,
+            "border_opacity": 100,
+            "border_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        },
+        "text_UmF4Tr": {
+          "type": "text",
+          "name": "t:names.text",
+          "settings": {
+            "text": "<h1><strong>Que bicho doido!</strong></h1><p></p><p><strong>Texto e Ilustrações:</strong> <a href=\"https://solisluna.com.br/collections/eneas-guerra\" target=\"_blank\" title=\"Enéas Guerra\">Enéas Guerra<br/></a><strong>Código da obra: </strong>0715P220201000000</p><p><strong>ACERVOS: </strong>09 e 13</p><p><br/></p><p>De um mesmo contorno aparecem bichos que existem e também bichos doidos inventados, em uma forma lúdica e divertida. Os sons dos grunhidos, uivos, urros, guinchos, roncos, inspiram a criança a inventar seu próprio bicho doido!<br/><br/>O autor, a partir da forma repetida de uma máscara, experimenta grafismos e cores que multiplicam esses bichos, bichos doidos, bichos reais, bichos bem brasileiros e bichos imaginários. Trabalha variações de um mesmo \"tema\" e, ao mesmo tempo, improvisa e empresta vozes a cada criatura.<br/><br/>São onomatopeias retiradas do vocabulário comum das brincadeiras familiares de <em>au-au, miau, quiquiqui</em>, das histórias em quadrinhos (<em>grrrr</em>) e outros sons inventados - <em>iau iau iau, cronf cronf, ugli ugli ugli</em> de uma maneira bastante livre e engraçada.</p>",
+            "width": "fit-content",
+            "max_width": "normal",
+            "alignment": "left",
+            "type_preset": "rte",
+            "font": "var(--font-body--family)",
+            "font_size": "1rem",
+            "line_height": "normal",
+            "letter_spacing": "normal",
+            "case": "none",
+            "wrap": "pretty",
+            "color": "var(--color-foreground)",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "image_drB4xK",
+        "text_UmF4Tr"
+      ],
+      "name": "Info",
+      "settings": {
+        "content_direction": "row",
+        "vertical_on_mobile": true,
+        "horizontal_alignment": "flex-start",
+        "vertical_alignment": "center",
+        "align_baseline": false,
+        "horizontal_alignment_flex_direction_column": "flex-start",
+        "vertical_alignment_flex_direction_column": "center",
+        "gap": 12,
+        "section_width": "page-width",
+        "section_height": "small",
+        "section_height_custom": 50,
+        "color_scheme": "",
+        "background_media": "none",
+        "video_position": "cover",
+        "background_image_position": "cover",
+        "border": "none",
+        "border_width": 1,
+        "border_opacity": 100,
+        "border_radius": 0,
+        "toggle_overlay": false,
+        "overlay_color": "#00000026",
+        "overlay_style": "solid",
+        "gradient_direction": "to top",
+        "padding-block-start": 0,
+        "padding-block-end": 100
       }
     },
     "hero_Tzq6eF": {
@@ -224,6 +534,9 @@
   "order": [
     "main",
     "section_YNKfPw",
+    "section_NB4JEG",
+    "section_DhRztC",
+    "section_TLqngh",
     "hero_Tzq6eF",
     "hero_bTKYFB"
   ]
