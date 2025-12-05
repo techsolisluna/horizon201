@@ -85,7 +85,7 @@
           "type": "text",
           "name": "t:names.heading",
           "settings": {
-            "text": "<p>PNLD 2022 - EDUCAÇÃO INFANTIL</p>",
+            "text": "<p>PNLD 2023 - 4º e 5º ano do ensino fundamental</p>",
             "width": "100%",
             "max_width": "normal",
             "alignment": "left",
@@ -112,7 +112,7 @@
           "name": "t:names.button",
           "settings": {
             "label": "Todas as obras",
-            "link": "shopify://pages/pnld-2022",
+            "link": "shopify://pages/pnld-2023",
             "open_in_new_tab": false,
             "style_class": "button",
             "width": "fit-content",
