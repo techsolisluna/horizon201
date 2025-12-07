@@ -53,6 +53,8 @@
       {%- render 'theme-editor' -%}
     {% endif %}
 
+    {{ content_for_header }}
+
     <script src="https://cdn.brevo.com/js/sdk-loader.js" async></script>
     <script>
         // Version: 2.0
@@ -65,8 +67,6 @@
             }
         ]);
     </script>
-
-    {{ content_for_header }}
   </head>
 
   <body class="page-width-{{ settings.page_width }} card-hover-effect-{{ settings.card_hover_effect }}">
