@@ -53,6 +53,19 @@
       {%- render 'theme-editor' -%}
     {% endif %}
 
+    <script src="https://cdn.brevo.com/js/sdk-loader.js" async></script>
+    <script>
+        // Version: 2.0
+        window.Brevo = window.Brevo || [];
+        Brevo.push([
+            "init",
+            {
+            client_key: "zo5ai1094xd1ql5eajbxkq9t",
+            // Optional: Add other initialization options, see documentation
+            }
+        ]);
+    </script>
+
     {{ content_for_header }}
   </head>
 
