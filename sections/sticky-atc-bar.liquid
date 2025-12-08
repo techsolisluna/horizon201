@@ -1,11 +1,14 @@
 {%- comment -%}
-  Sticky ATC Bar para Shopify - Mobile Grid Layout V2
-  Imagem Esquerda (Grande) | Texto + Preço Topo | Botão Baixo
+  Sticky Add to Cart Bar
+  Funcionalidade: Barra fixa inferior com informações do produto e botão de compra.
+  Layout: Flexbox em Desktop, Grid Customizado em Mobile.
+  Integração: AJAX Cart API + Section Rendering API para atualização dinâmica do Drawer.
 {%- endcomment -%}
 
 <style>
-  /* --- CONFIGURAÇÕES GERAIS (DESKTOP) --- */
-  
+  /* * CONFIGURAÇÕES DE LAYOUT (DESKTOP)
+   * Utiliza Flexbox para distribuir elementos horizontalmente.
+   */
   .sticky-atc-wrapper {
     position: fixed;
     bottom: 0;
@@ -24,7 +27,7 @@
   }
 
   .sticky-atc-container {
-    display: flex; /* Flexbox para Desktop */
+    display: flex;
     align-items: center;
     justify-content: space-between;
     gap: 20px;
@@ -34,7 +37,7 @@
     max-width: var(--page-width, 1200px); 
   }
 
-  /* Grupo Info (Imagem + Texto) */
+  /* Bloco de Informações (Imagem e Texto) */
   .sticky-atc-info {
     display: flex;
     align-items: center;
@@ -75,7 +78,7 @@
     font-weight: 500;
   }
 
-  /* Grupo Ações (Botão + Fechar) */
+  /* Bloco de Ações (Botões) */
   .sticky-atc-actions {
     display: flex;
     align-items: center;
@@ -101,6 +104,11 @@
     transform: translateY(-1px);
   }
 
+  .sticky-atc-btn.loading {
+    opacity: 0.7;
+    cursor: wait;
+  }
+
   .sticky-atc-close {
     background: transparent;
     border: none;
@@ -114,44 +122,39 @@
     justify-content: center;
   }
 
-  /* --- LAYOUT MOBILE (GRID V2) --- */
-  
+  /* * CONFIGURAÇÕES DE LAYOUT (MOBILE)
+   * Utiliza CSS Grid para reorganizar a ordem visual dos elementos.
+   * Breakpoint: 768px
+   */
   @media (max-width: 768px) {
-    
     .sticky-atc-container {
-      /* Grid de 3 colunas: [Imagem] [Conteúdo] [Botão Fechar] */
       display: grid;
       grid-template-columns: 75px 1fr auto; 
-      /* Linhas automáticas */
       grid-template-rows: auto auto; 
       column-gap: 12px;
       row-gap: 8px;
       padding: 12px 15px;
-      align-items: center; /* Centraliza verticalmente */
+      align-items: center; 
     }
 
-    /* 1. IMAGEM: Fica na esquerda e ocupa 2 linhas de altura 
-         (Aumentei para 75px conforme pedido)
-    */
-    .sticky-atc-info { display: contents; } /* Remove wrapper pai */
+    /* Remove display flex dos containers filhos para permitir controle via Grid */
+    .sticky-atc-info { display: contents; } 
     
+    /* Posicionamento Imagem: Coluna 1, Ocupa 2 linhas */
     .sticky-atc-img {
       grid-column: 1;
-      grid-row: 1 / span 2; /* Ocupa linha 1 e 2 */
+      grid-row: 1 / span 2; 
       width: 75px; 
       height: 75px;
       margin: 0;
     }
 
-    /* 2. TEXTO (Título + Preço): 
-         Mantemos o bloco .sticky-atc-text intacto para eles ficarem juntos
-         Posição: Topo, Coluna do meio
-    */
+    /* Posicionamento Texto: Coluna 2, Linha 1 */
     .sticky-atc-text {
       grid-column: 2;
       grid-row: 1;
-      align-self: end; /* Alinha mais para baixo, perto do botão */
-      gap: 0px; /* Preço colado no título */
+      align-self: end; 
+      gap: 0px; 
     }
     
     .sticky-atc-title {
@@ -165,29 +168,26 @@
       color: #666;
     }
 
-    /* 3. AÇÕES:
-         Usamos display: contents para separar o Botão do 'X'
-    */
     .sticky-atc-actions { display: contents; }
 
-    /* Botão Fechar: Topo, Direita */
+    /* Botão Fechar: Coluna 3, Linha 1 */
     .sticky-atc-close {
       grid-column: 3;
       grid-row: 1;
       font-size: 24px;
-      align-self: start; /* Fica bem no topo */
+      align-self: start;
       padding: 0;
     }
 
-    /* Botão Adicionar: Baixo, Ocupa coluna do meio e direita */
+    /* Botão Adicionar: Coluna 2 a 3, Linha 2 */
     .sticky-atc-btn {
-      grid-column: 2 / span 2; /* Começa na col 2, vai até o fim */
+      grid-column: 2 / span 2; 
       grid-row: 2;
       width: 100%;
       padding: 0;
-      height: 38px; /* Altura fixa confortável */
+      height: 38px; 
       font-size: 14px;
-      align-self: start; /* Encosta no texto de cima */
+      align-self: start; 
     }
   }
 </style>
@@ -220,34 +220,122 @@
 
 <script>
   document.addEventListener("DOMContentLoaded", function() {
+    // Inicialização de seletores DOM
     const stickyBar = document.getElementById('sticky-atc-bar');
     const stickyBtn = document.getElementById('sticky-atc-trigger');
     const closeBtn = document.getElementById('sticky-atc-close-btn');
     
     let userClosed = false;
 
+    // Identifica o formulário principal do produto para capturar dados (ID da variante)
     const mainForm = document.querySelector('form[action*="/cart/add"]');
+    
+    // Identifica o botão original de compra para monitoramento de scroll (IntersectionObserver)
     let originalBtn = mainForm ? mainForm.querySelector('[type="submit"]') : null;
-
+    
+    // Fallback para seletores comuns caso o botão não esteja dentro do form padrão
     if (!originalBtn) {
       originalBtn = document.querySelector('.product-form__submit, .add-to-cart, button[name="add"]');
     }
 
     if (!stickyBar || !originalBtn) return;
 
+    // ---------------------------------------------------------
+    // EVENT LISTENER: ADICIONAR AO CARRINHO
+    // ---------------------------------------------------------
     stickyBtn.addEventListener('click', function(e) {
       e.preventDefault();
-      originalBtn.click();
+      
+      if(!mainForm) return;
+
+      // Feedback visual de carregamento
+      const originalText = stickyBtn.innerText;
+      stickyBtn.innerText = '...';
+      stickyBtn.classList.add('loading');
+
+      // Prepara os dados do formulário para submissão via AJAX
+      const formData = new FormData(mainForm);
+
+      // 1. Envio dos dados para a API do Carrinho Shopify
+      fetch('/cart/add.js', {
+        method: 'POST',
+        body: formData
+      })
+      .then(response => response.json())
+      .then(data => {
+        // Sucesso na adição ao carrinho. Inicia atualização dos componentes da interface.
+        
+        // Recupera dinamicamente o ID da seção do carrinho para uso na Section Rendering API.
+        // O seletor baseia-se na estrutura do tema (cart-items-component).
+        const drawerComponent = document.querySelector('cart-items-component');
+        const sectionId = drawerComponent ? drawerComponent.dataset.sectionId : null;
+
+        if (sectionId) {
+            // 2. Requisição assíncrona para obter o HTML atualizado da seção do carrinho
+            fetch(`${window.location.pathname}?section_id=${sectionId}`)
+                .then(res => res.text())
+                .then(text => {
+                    // Parser do texto recebido para HTML Document
+                    const html = new DOMParser().parseFromString(text, 'text/html');
+                    
+                    // Seleciona o novo conteúdo e o elemento alvo no DOM atual
+                    const newDrawerContent = html.querySelector('cart-items-component');
+                    const oldDrawerContent = document.querySelector('cart-items-component');
+
+                    // 3. Substituição do HTML do drawer para refletir o novo item adicionado
+                    if (newDrawerContent && oldDrawerContent) {
+                        oldDrawerContent.innerHTML = newDrawerContent.innerHTML;
+                    }
+
+                    // Atualização do contador do ícone do carrinho (Bubble Count), se existir
+                    const cartIconBubble = document.querySelector('#cart-icon-bubble');
+                    const newCartIconBubble = html.querySelector('#cart-icon-bubble');
+                    if(cartIconBubble && newCartIconBubble) {
+                        cartIconBubble.innerHTML = newCartIconBubble.innerHTML;
+                    }
+
+                    // 4. Acionamento do Drawer
+                    // Simula clique no botão interno do componente para abrir o menu lateral
+                    const cartIcon = document.querySelector('cart-drawer-component button') || document.querySelector('[data-testid="cart-icon"]');
+                    if (cartIcon) cartIcon.click();
+
+                    // Restaura estado inicial do botão e oculta a barra sticky
+                    stickyBtn.innerText = originalText;
+                    stickyBtn.classList.remove('loading');
+                    stickyBar.classList.remove('is-visible');
+                })
+                .catch(err => {
+                   console.error('Falha ao atualizar a seção do carrinho:', err);
+                   // Redirecionamento de fallback em caso de erro na renderização da seção
+                   window.location.href = '/cart';
+                });
+        } else {
+            // Se o ID da seção não for encontrado, redireciona para a página do carrinho
+            window.location.href = '/cart';
+        }
+      })
+      .catch((error) => {
+        console.error('Erro na requisição AJAX (/cart/add.js):', error);
+        // Fallback: Aciona o botão original do tema caso o AJAX falhe
+        originalBtn.click();
+        stickyBtn.innerText = originalText;
+        stickyBtn.classList.remove('loading');
+      });
     });
 
+    // ---------------------------------------------------------
+    // CONTROLE DE EXIBIÇÃO E FECHAMENTO
+    // ---------------------------------------------------------
     closeBtn.addEventListener('click', function(e) {
       e.preventDefault();
       stickyBar.classList.remove('is-visible');
-      userClosed = true;
+      userClosed = true; // Define flag para impedir reabertura automática na mesma sessão
     });
 
+    // IntersectionObserver: Monitora a visibilidade do botão de compra principal
     const observer = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
+        // Exibe a barra apenas se o botão principal não estiver visível E o usuário não tiver fechado manualmente
         if (!entry.isIntersecting && !userClosed) {
           stickyBar.classList.add('is-visible');
         } else {
