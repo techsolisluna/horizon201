@@ -15,7 +15,6 @@
         "heading": {
           "type": "text",
           "name": "Title",
-          "disabled": true,
           "settings": {
             "text": "<p>{{ closest.page.title }}</p>",
             "width": "100%",
@@ -70,7 +69,6 @@
         "heading",
         "text_neBLCq"
       ],
-      "disabled": true,
       "settings": {
         "content_direction": "column",
         "gap": 32,
@@ -81,6 +79,7 @@
     },
     "custom_liquid_fFfwdG": {
       "type": "custom-liquid",
+      "disabled": true,
       "name": "t:names.custom_liquid",
       "settings": {
         "custom_liquid": "<iframe class=\"airtable-embed\" src=\"https://airtable.com/embed/appHyJlPN401lTvC4/pagOJStTUM7RIe4G5/form\" frameborder=\"0\" onmousewheel=\"\" width=\"100%\" height=\"100vh\" style=\"background: transparent; border: 1px solid #ccc;\"></iframe>",

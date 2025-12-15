@@ -17,7 +17,7 @@
         "announcement_ULMxwf": {
           "type": "_announcement",
           "settings": {
-            "text": "<strong>🎉 Site de cara nova + promoção de Black Friday e muito mais! </strong>",
+            "text": "A partir de R$199,00 o frete é por nossa conta!",
             "link": "",
             "font": "var(--font-body--family)",
             "font_size": "1rem",
@@ -31,12 +31,11 @@
       "block_order": [
         "announcement_ULMxwf"
       ],
-      "disabled": true,
       "name": "t:names.announcement_bar",
       "settings": {
         "speed": 5,
         "section_width": "page-width",
-        "color_scheme": "scheme-07c8db3a-eea6-4a3a-b02d-25d441259306",
+        "color_scheme": "scheme-4",
         "divider_width": 0,
         "padding-block-start": 15,
         "padding-block-end": 15

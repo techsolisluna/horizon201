@@ -16,11 +16,11 @@
           "type": "_cart-title",
           "static": true,
           "settings": {
-            "title": "Cart",
+            "title": "Carrinho",
             "show_count": true,
             "type_preset": "h3",
             "alignment": "left",
-            "padding-block-start": 0,
+            "padding-block-start": 35,
             "padding-block-end": 0,
             "padding-inline-start": 0,
             "padding-inline-end": 0
@@ -59,8 +59,8 @@
       },
       "settings": {
         "section_width": "page-width",
-        "color_scheme": "",
-        "padding-block-start": 24,
+        "color_scheme": "scheme-1",
+        "padding-block-start": 0,
         "padding-block-end": 0
       }
     },
