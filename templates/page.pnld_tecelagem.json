@@ -81,6 +81,21 @@
     "section_YNKfPw": {
       "type": "section",
       "blocks": {
+        "button_73VCJq": {
+          "type": "button",
+          "name": "t:names.button",
+          "settings": {
+            "label": "Voltar",
+            "link": "shopify://pages/pnld-2023",
+            "open_in_new_tab": false,
+            "style_class": "link",
+            "width": "fit-content",
+            "custom_width": 100,
+            "width_mobile": "fit-content",
+            "custom_width_mobile": 100
+          },
+          "blocks": {}
+        },
         "text_MzNzwU": {
           "type": "text",
           "name": "t:names.heading",
@@ -106,26 +121,11 @@
             "padding-inline-end": 0
           },
           "blocks": {}
-        },
-        "button_73VCJq": {
-          "type": "button",
-          "name": "t:names.button",
-          "settings": {
-            "label": "Todas as obras",
-            "link": "shopify://pages/pnld-2023",
-            "open_in_new_tab": false,
-            "style_class": "button",
-            "width": "fit-content",
-            "custom_width": 100,
-            "width_mobile": "fit-content",
-            "custom_width_mobile": 100
-          },
-          "blocks": {}
         }
       },
       "block_order": [
-        "text_MzNzwU",
-        "button_73VCJq"
+        "button_73VCJq",
+        "text_MzNzwU"
       ],
       "name": "Header",
       "settings": {
@@ -140,7 +140,7 @@
         "section_width": "page-width",
         "section_height": "",
         "section_height_custom": 50,
-        "color_scheme": "scheme-1",
+        "color_scheme": "scheme-3",
         "background_media": "none",
         "video_position": "cover",
         "background_image_position": "cover",
@@ -186,7 +186,7 @@
           "type": "text",
           "name": "t:names.text",
           "settings": {
-            "text": "<h1><strong>Tecelagem</strong></h1><p></p><p><strong>Texto e Ilustrações:</strong> <a href=\"/collections/goya-lopes\" target=\"_blank\" title=\"Goya Lopes\">Goya Lopes<br/></a><strong>Código da obra: </strong>1051P230301000000</p><p><strong>Categoria: </strong>Obras Literárias do 1º ao 3º ano do ensino fundamental</p><p><strong>Gênero: </strong>Conto, crônica, novela<strong><br/>ACERVO: </strong>6</p><p><br/></p><p>Um conto que apresenta a narrativa dos irmãos Loom e Axó, contando a história da tecelagem na África. </p><p><strong>É uma obra direcionada ao 1º, 2º e 3º ano do Ensino Fundamental </strong>- Anos Iniciais, com abordagens sobre a descoberta de si; família, amigos e escola; o mundo natural e social, ressaltando a importância da ancestralidade na forma de tecer e confeccionar roupas.</p><p>O conto apresenta duas crianças como narradores-personagens: a menina Loom e seu irmão Axó. </p><p>Ambos acompanham, junto à família, todo o processo do ofício. Além das crianças e seus familiares, a natureza também é uma personagem da trama, já que vem dela toda a matéria prima para realizar essa arte ancestral.<br/>A narrativa conta desde quando o algodão é semente nas plantações até se tornar uma vestimenta. Todo o processo é explicado pelas crianças narradoras. Primeiro, a colheita das sementes e separação das fibras; depois, a transformação em fios e tingimento, para, finalmente, esses fios serem esticados no tear de madeira e se tornarem tecidos. No desfecho da história, Loom e Axó voltam para reforçar que a tecelagem é um trabalho desenvolvido pelos seus antepassados e é transmitido dos pais para os filhos - informação valiosa para toda história de origem africana.</p><p></p>",
+            "text": "<h2><strong>Tecelagem</strong></h2><p></p><p><strong>Texto e Ilustrações:</strong> <a href=\"/collections/goya-lopes\" target=\"_blank\" title=\"Goya Lopes\">Goya Lopes<br/></a><strong>Código da obra: </strong>1051P230301000000</p><p><strong>Categoria: </strong>Obras Literárias do 1º ao 3º ano do ensino fundamental</p><p><strong>Gênero: </strong>Conto, crônica, novela<strong><br/>ACERVO: </strong>6</p><p><br/></p><p>Um conto que apresenta a narrativa dos irmãos Loom e Axó, contando a história da tecelagem na África. </p><p><strong>É uma obra direcionada ao 1º, 2º e 3º ano do Ensino Fundamental </strong>- Anos Iniciais, com abordagens sobre a descoberta de si; família, amigos e escola; o mundo natural e social, ressaltando a importância da ancestralidade na forma de tecer e confeccionar roupas.</p><p>O conto apresenta duas crianças como narradores-personagens: a menina Loom e seu irmão Axó. </p><p>Ambos acompanham, junto à família, todo o processo do ofício. Além das crianças e seus familiares, a natureza também é uma personagem da trama, já que vem dela toda a matéria prima para realizar essa arte ancestral.<br/>A narrativa conta desde quando o algodão é semente nas plantações até se tornar uma vestimenta. Todo o processo é explicado pelas crianças narradoras. Primeiro, a colheita das sementes e separação das fibras; depois, a transformação em fios e tingimento, para, finalmente, esses fios serem esticados no tear de madeira e se tornarem tecidos. No desfecho da história, Loom e Axó voltam para reforçar que a tecelagem é um trabalho desenvolvido pelos seus antepassados e é transmitido dos pais para os filhos - informação valiosa para toda história de origem africana.</p><p></p>",
             "width": "fit-content",
             "max_width": "normal",
             "alignment": "left",
@@ -238,7 +238,7 @@
         "overlay_color": "#00000026",
         "overlay_style": "solid",
         "gradient_direction": "to top",
-        "padding-block-start": 0,
+        "padding-block-start": 30,
         "padding-block-end": 100
       }
     },
