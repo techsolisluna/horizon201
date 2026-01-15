@@ -54,7 +54,7 @@
     class="product-inventory__status"
   >
     <span
-      class="svg-wrapper product-inventory__icon product-inventory__icon-{{ status }}"  {% if product.metafields.custom.status.value.system.handle == "pre-venda" %}style="color: rgb(238,148,65);"{% endif %}
+      class="svg-wrapper product-inventory__icon product-inventory__icon-{{ status }}"  {% if product.metafields.custom.status.value.system.handle == "pre-venda" %}style="color: rgb(238,148,65);"{% endif %} {% if product.metafields.custom.status.value.system.handle == "indisponivel" %}style="color: rgb(255, 0, 0);"{% endif %}
     >
       {{ 'icon-inventory.svg' | inline_asset_content }}
     </span>
@@ -66,6 +66,8 @@
     >
       {%- if product.metafields.custom.status.value.system.handle == "pre-venda" -%}
         {% if localization.language.iso_code == "en" %}In production{% else %}Em produção{% endif %}
+      {%- elsif product.metafields.custom.status.value.system.handle == "indisponivel" -%}
+        {% if localization.language.iso_code == "en" %}Unavailable{% else %}Indisponível{% endif %}
       {%- elsif show_quantity -%}
         {{ 'content.inventory_low_stock_show_count' | t: count: inventory_quantity }}
       {%- else -%}

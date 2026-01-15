@@ -40,7 +40,7 @@
   class="buy-buttons-block buy-buttons-block--{{ block.id }}"
   {{ block.shopify_attributes }}
 >
-  {%- if product != blank -%}
+  {%- if product != blank and product.metafields.custom.status.value.system.handle != 'indisponivel' -%}
     {%- assign product_form_id = 'BuyButtons-ProductForm-' | append: block.id -%}
     <product-form-component
       data-section-id="{{ section.id }}"
@@ -91,6 +91,17 @@
         </div>
       {%- endform -%}
     </product-form-component>
+  {%- elsif product.metafields.custom.status.value.system.handle == 'indisponivel' -%}
+    <div class="product-form-buttons">
+      <button
+        type="submit"
+        name="add"
+        class="button"
+        disabled
+      >
+        {% if localization.language.iso_code == "en" %}Unavailable{% else %}Indisponível{% endif %}
+      </button>
+    </div>
   {%- else -%}
     <div class="product-form-buttons">
       <button

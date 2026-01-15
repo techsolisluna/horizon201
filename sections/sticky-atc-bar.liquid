@@ -192,31 +192,33 @@
   }
 </style>
 
-<div id="sticky-atc-bar" class="sticky-atc-wrapper" aria-hidden="true">
-  <div class="sticky-atc-container page-width">
-    
-    <div class="sticky-atc-info">
-      {% if product.featured_image %}
-        <img src="{{ product.featured_image | img_url: '150x' }}" alt="{{ product.title }}" class="sticky-atc-img" loading="lazy">
-      {% endif %}
-      <div class="sticky-atc-text">
-        <p class="sticky-atc-title">{{ product.title }}</p>
-        <span class="sticky-atc-price">{{ product.price | money }}</span>
-      </div>
-    </div>
-
-    <div class="sticky-atc-actions">
-      <button type="button" class="sticky-atc-btn" id="sticky-atc-trigger">
-        {{ section.settings.btn_text | default: 'Adicionar' }}
-      </button>
+{% if product.metafields.custom.status.value.system.handle != "indisponivel" %}
+  <div id="sticky-atc-bar" class="sticky-atc-wrapper" aria-hidden="true">
+    <div class="sticky-atc-container page-width">
       
-      <button type="button" class="sticky-atc-close" id="sticky-atc-close-btn" aria-label="Fechar barra">
-        &times;
-      </button>
+      <div class="sticky-atc-info">
+        {% if product.featured_image %}
+          <img src="{{ product.featured_image | img_url: '150x' }}" alt="{{ product.title }}" class="sticky-atc-img" loading="lazy">
+        {% endif %}
+        <div class="sticky-atc-text">
+          <p class="sticky-atc-title">{{ product.title }}</p>
+          <span class="sticky-atc-price">{{ product.price | money }}</span>
+        </div>
+      </div>
+
+      <div class="sticky-atc-actions">
+        <button type="button" class="sticky-atc-btn" id="sticky-atc-trigger">
+          {{ section.settings.btn_text | default: 'Adicionar' }}
+        </button>
+        
+        <button type="button" class="sticky-atc-close" id="sticky-atc-close-btn" aria-label="Fechar barra">
+          &times;
+        </button>
+      </div>
+      
     </div>
-    
   </div>
-</div>
+{% endif %}
 
 <script>
   document.addEventListener("DOMContentLoaded", function() {
