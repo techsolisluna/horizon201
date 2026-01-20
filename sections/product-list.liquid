@@ -63,7 +63,7 @@
         {% if section_products.size > 0 %}
           {% assign index = forloop.index0 %}
           {% assign product = section_products[index] %}
-          {%- unless product.type == "Livro" or product.type == "Livros impressos" or product.type == "Livros" or product.type == "Books" or product.type == "Printed books" or product.type == "Book" -%}
+          {%- unless product.type == "Livro" or product.type == "Livros impressos" or product.type == "Livros" or product.type == "Books" or product.type == "Printed books" or product.type == "Book" or product.type == "Kit" -%}
             {% assign product = null %}
           {%- endunless -%}
         {% else %}

@@ -2259,7 +2259,7 @@
           ]
         }
       },
-      "disabled": true,
+      "disabled": false,
       "name": "KITS",
       "settings": {
         "hide_empty": true,
