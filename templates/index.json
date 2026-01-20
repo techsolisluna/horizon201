@@ -2259,6 +2259,7 @@
           ]
         }
       },
+      "disabled": true,
       "name": "KITS",
       "settings": {
         "hide_empty": true,
