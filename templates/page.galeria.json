@@ -11,6 +11,7 @@
   "sections": {
     "custom_liquid_nJA9Hp": {
       "type": "custom-liquid",
+      "disabled": true,
       "name": "t:names.custom_liquid",
       "settings": {
         "custom_liquid": "<style>\n  /* Try multiple approaches to force black background */\n  body header,\n  body .header,\n  body #shopify-section-header,\n  body [id*=\"shopify-section-header\"],\n  .page-galeria header,\n  .template-page header {\n    background-color: #000000 !important;\n    background-image: none !important;\n  }\n  \n  /* Keep white text */\n  header a, \n  .header a, \n  header .header__heading-link, \n  .header__menu-item, \n  .header__active-menu-item,\n  header nav a {\n    color: #ffffff !important;\n  }\n</style>",
