@@ -9,6 +9,17 @@
  */
 {
   "sections": {
+    "custom_liquid_nJA9Hp": {
+      "type": "custom-liquid",
+      "name": "t:names.custom_liquid",
+      "settings": {
+        "custom_liquid": "<style>\n  /* Try multiple approaches to force black background */\n  body header,\n  body .header,\n  body #shopify-section-header,\n  body [id*=\"shopify-section-header\"],\n  .page-galeria header,\n  .template-page header {\n    background-color: #000000 !important;\n    background-image: none !important;\n  }\n  \n  /* Keep white text */\n  header a, \n  .header a, \n  header .header__heading-link, \n  .header__menu-item, \n  .header__active-menu-item,\n  header nav a {\n    color: #ffffff !important;\n  }\n</style>",
+        "color_scheme": "",
+        "section_width": "page-width",
+        "padding-block-start": 0,
+        "padding-block-end": 0
+      }
+    },
     "main": {
       "type": "main-page",
       "blocks": {
@@ -80,51 +91,6 @@
     },
     "section_XF9HNj": {
       "type": "section",
-      "blocks": {
-        "text_wRnEBn": {
-          "type": "text",
-          "settings": {
-            "text": "<p>At the heart of every product lies a unique story, driven by our passion for quality and innovation. Each item enhances your everyday life and sparks joy.</p>",
-            "width": "100%",
-            "max_width": "narrow",
-            "alignment": "center",
-            "type_preset": "h2",
-            "font": "var(--font-body--family)",
-            "font_size": "1rem",
-            "line_height": "normal",
-            "letter_spacing": "normal",
-            "case": "none",
-            "wrap": "pretty",
-            "color": "var(--color-foreground)",
-            "background": false,
-            "background_color": "#00000026",
-            "corner_radius": 0,
-            "padding-block-start": 0,
-            "padding-block-end": 0,
-            "padding-inline-start": 0,
-            "padding-inline-end": 0
-          },
-          "blocks": {}
-        },
-        "button_EKMWb4": {
-          "type": "button",
-          "settings": {
-            "label": "Shop now",
-            "link": "shopify://collections/all",
-            "open_in_new_tab": false,
-            "style_class": "link",
-            "width": "fit-content",
-            "custom_width": 100,
-            "width_mobile": "fit-content",
-            "custom_width_mobile": 100
-          },
-          "blocks": {}
-        }
-      },
-      "block_order": [
-        "text_wRnEBn",
-        "button_EKMWb4"
-      ],
       "name": "t:names.pull_quote",
       "settings": {
         "content_direction": "column",
@@ -138,7 +104,7 @@
         "section_width": "page-width",
         "section_height": "",
         "section_height_custom": 50,
-        "color_scheme": "scheme-4",
+        "color_scheme": "scheme-07c8db3a-eea6-4a3a-b02d-25d441259306",
         "background_media": "none",
         "video_position": "cover",
         "background_image_position": "cover",
@@ -367,6 +333,7 @@
       "disabled": true,
       "name": "t:names.editorial_jumbo_text",
       "settings": {
+        "has_image": false,
         "media_position": "left",
         "media_width": "narrow",
         "media_height": "auto",
@@ -1090,6 +1057,7 @@
     }
   },
   "order": [
+    "custom_liquid_nJA9Hp",
     "main",
     "section_XF9HNj",
     "section_c8k6Fm",
