@@ -460,26 +460,12 @@
               "type": "variant-picker",
               "settings": {
                 "variant_style": "buttons",
-                "show_swatches": true,
+                "show_swatches": false,
                 "alignment": "left",
                 "padding-block-start": 0,
-                "padding-block-end": 0,
+                "padding-block-end": 10,
                 "padding-inline-start": 0,
                 "padding-inline-end": 0
-              },
-              "blocks": {}
-            },
-            "swatches_tcYTXx": {
-              "type": "swatches",
-              "name": "t:names.swatches",
-              "settings": {
-                "product_swatches_alignment": "flex-start",
-                "product_swatches_alignment_mobile": "flex-start",
-                "hide_padding": false,
-                "product_swatches_padding_top": 4,
-                "product_swatches_padding_bottom": 0,
-                "product_swatches_padding_left": 0,
-                "product_swatches_padding_right": 0
               },
               "blocks": {}
             },
@@ -570,6 +556,7 @@
             "custom_liquid_b3hbXz": {
               "type": "custom-liquid",
               "name": "Data prevenda",
+              "disabled": true,
               "settings": {
                 "custom_liquid": "{% if product.metafields.my_fields.prevenda_data and product.metafields.custom.status.value.system.handle == \"pre-venda\" %}<div style=\"font-size:0.75rem; font-style: italic;\">{% if localization.language.iso_code == 'en' %}This book is in pre-order.\nShipping forecast{% else %}Livro em pré-venda.\nPrevisão de envio{% endif %} {{product.metafields.my_fields.prevenda_data}}</div>{% endif %}"
               },
@@ -801,7 +788,6 @@
             "icon_AgpVgU",
             "divider_VJhene",
             "variant_picker_R3rGDr",
-            "swatches_tcYTXx",
             "price_pf9hrj",
             "buy_buttons_eYQEYi",
             "text_AkRqta",
@@ -895,7 +881,7 @@
             "gap": 30,
             "margin_top": 70,
             "margin_bottom": 70,
-            "card_background_color": "#fffded",
+            "card_background_color": "#ffffff",
             "card_border_radius": 8,
             "card_padding": 30,
             "card_shadow": 0,
@@ -914,7 +900,7 @@
             "button_padding_horizontal": 40,
             "button_border_radius": 4,
             "button_alignment": "flex-start",
-            "button_background_color": "#ffffff",
+            "button_background_color": "#e6e6e6",
             "button_text_color": "#000000",
             "button_hover_background_color": "#ffe180",
             "button_hover_text_color": "#000000"
@@ -1427,7 +1413,7 @@
             "icon_jHUA6k": {
               "type": "icon",
               "settings": {
-                "icon": "leaf",
+                "icon": "recycle",
                 "width": 32,
                 "link": "",
                 "open_in_new_tab": false
@@ -1475,7 +1461,7 @@
                 "text_Hp649c": {
                   "type": "text",
                   "settings": {
-                    "text": "<h2>Sustentabilidade</h2>",
+                    "text": "<p>Produção consciente</p>",
                     "width": "100%",
                     "max_width": "normal",
                     "alignment": "center",
@@ -1500,7 +1486,7 @@
                 "text_nbhGiJ": {
                   "type": "text",
                   "settings": {
-                    "text": "<p>Everything we do starts with why</p>",
+                    "text": "<p>Cada <em>print</em> é produzido especialmente após o pedido.</p><p></p>",
                     "width": "100%",
                     "max_width": "normal",
                     "alignment": "center",
@@ -1623,7 +1609,7 @@
                 "text_bym47m": {
                   "type": "text",
                   "settings": {
-                    "text": "<h2>Feito com carinho</h2>",
+                    "text": "<p>Cuidado curatorial e gráfico</p>",
                     "width": "100%",
                     "max_width": "normal",
                     "alignment": "center",
@@ -1648,7 +1634,7 @@
                 "text_7mpkh9": {
                   "type": "text",
                   "settings": {
-                    "text": "<p>We believe in building better</p>",
+                    "text": "<p>Cada detalhe da impressão é acompanhado pela galeria.</p><p></p>",
                     "width": "100%",
                     "max_width": "normal",
                     "alignment": "center",
@@ -1723,7 +1709,7 @@
             "icon_xnqTix": {
               "type": "icon",
               "settings": {
-                "icon": "silhouette",
+                "icon": "star",
                 "width": 32,
                 "link": "",
                 "open_in_new_tab": false
@@ -1771,7 +1757,7 @@
                 "text_TiDtkV": {
                   "type": "text",
                   "settings": {
-                    "text": "<h2>A team with a goal</h2>",
+                    "text": "<p>Impressão Fine Art</p>",
                     "width": "100%",
                     "max_width": "normal",
                     "alignment": "center",
@@ -1796,7 +1782,7 @@
                 "text_Q3jYBE": {
                   "type": "text",
                   "settings": {
-                    "text": "<p>Real people making great products</p>",
+                    "text": "<p>Alta fidelidade de cores e definição de detalhes com garantia.</p><p></p>",
                     "width": "100%",
                     "max_width": "normal",
                     "alignment": "center",
