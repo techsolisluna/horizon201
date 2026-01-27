@@ -41,7 +41,7 @@
         "text_LmGAEi": {
           "type": "text",
           "settings": {
-            "text": "<p>O boletim informativo da Solisluna direto no seu email.</p><p><strong>Inscreva-se</strong></p>",
+            "text": "<p>A cada lua inteira, uma nova edição da <em>newsletter</em> da <strong>solisluna</strong> direto no seu email. </p>",
             "width": "100%",
             "max_width": "normal",
             "alignment": "center",
