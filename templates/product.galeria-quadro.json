@@ -459,7 +459,7 @@
             "variant_picker_R3rGDr": {
               "type": "variant-picker",
               "settings": {
-                "variant_style": "dropdowns",
+                "variant_style": "buttons",
                 "show_swatches": true,
                 "alignment": "left",
                 "padding-block-start": 0,
@@ -844,6 +844,7 @@
       "block_order": [
         "judge_me_reviews_review_widget_zxQDwA"
       ],
+      "disabled": true,
       "name": "Reviews",
       "settings": {
         "content_direction": "column",
@@ -865,8 +866,8 @@
         "border_width": 1,
         "border_opacity": 100,
         "border_radius": 0,
-        "toggle_overlay": false,
-        "overlay_color": "#00000026",
+        "toggle_overlay": true,
+        "overlay_color": "#000000",
         "overlay_style": "solid",
         "gradient_direction": "to top",
         "padding-block-start": 0,
@@ -1864,6 +1865,66 @@
         "padding-block-end": 48
       }
     },
+    "media_with_content_ynBwar": {
+      "type": "media-with-content",
+      "blocks": {
+        "media": {
+          "type": "_media-without-appearance",
+          "static": true,
+          "settings": {
+            "media_type": "image",
+            "image": "shopify://shop_images/galeria_logo_d4f8b18c-beb8-482a-b11c-48d96dd9c8ff.png",
+            "link": "",
+            "video_loop": true,
+            "video_autoplay": false,
+            "image_position": "contain",
+            "video_position": "cover"
+          },
+          "blocks": {}
+        },
+        "content": {
+          "type": "_content-without-appearance",
+          "static": true,
+          "settings": {
+            "horizontal_alignment_flex_direction_column": "flex-start",
+            "vertical_alignment_flex_direction_column": "center",
+            "gap": 24
+          },
+          "blocks": {
+            "jumbo_text_FbRqYx": {
+              "type": "jumbo-text",
+              "name": "t:names.jumbo_text",
+              "settings": {
+                "text": "arte em toda parte",
+                "font": "accent",
+                "alignment": "right",
+                "line_height": "1.2",
+                "letter_spacing": "normal",
+                "case": "none",
+                "text_effect": "none",
+                "animation_repeat": false
+              },
+              "blocks": {}
+            }
+          },
+          "block_order": [
+            "jumbo_text_FbRqYx"
+          ]
+        }
+      },
+      "name": "t:names.editorial_jumbo_text",
+      "settings": {
+        "has_image": false,
+        "media_position": "right",
+        "media_width": "medium",
+        "media_height": "50svh",
+        "section_width": "full-width",
+        "extend_media": true,
+        "color_scheme": "scheme-07c8db3a-eea6-4a3a-b02d-25d441259306",
+        "padding-block-start": 0,
+        "padding-block-end": 0
+      }
+    },
     "product_recommendations_qggXJq": {
       "type": "product-recommendations",
       "blocks": {
@@ -1871,7 +1932,7 @@
           "type": "text",
           "name": "t:names.header",
           "settings": {
-            "text": "<h3>Você também vai gostar</h3>",
+            "text": "<h3>Livros que você também vai gostar</h3>",
             "width": "fit-content",
             "max_width": "normal",
             "alignment": "left",
@@ -2174,6 +2235,7 @@
     "section_7rF8BL",
     "hero_EfXQDX",
     "section_Ub4fFd",
+    "media_with_content_ynBwar",
     "product_recommendations_qggXJq",
     "blog_posts_CDck9P",
     "sticky-atc-bar"
