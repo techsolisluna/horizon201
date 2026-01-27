@@ -550,6 +550,7 @@
             "swatches_tcYTXx": {
               "type": "swatches",
               "name": "t:names.swatches",
+              "disabled": true,
               "settings": {
                 "product_swatches_alignment": "flex-start",
                 "product_swatches_alignment_mobile": "flex-start",
