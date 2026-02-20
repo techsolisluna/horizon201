@@ -89,13 +89,54 @@
         "padding-block-end": 0
       }
     },
+    "marquee_8X7QgN": {
+      "type": "marquee",
+      "blocks": {
+        "text_wey6Di": {
+          "type": "text",
+          "settings": {
+            "text": "<p><strong>Atenção</strong>! Pausa temporária nos envios</p>",
+            "width": "fit-content",
+            "max_width": "normal",
+            "alignment": "left",
+            "type_preset": "custom",
+            "font": "var(--font-body--family)",
+            "font_size": "1rem",
+            "line_height": "tight",
+            "letter_spacing": "tight",
+            "case": "none",
+            "wrap": "nowrap",
+            "color": "var(--color-foreground)",
+            "background": false,
+            "background_color": "#00000026",
+            "corner_radius": 0,
+            "padding-block-start": 0,
+            "padding-block-end": 0,
+            "padding-inline-start": 0,
+            "padding-inline-end": 0
+          },
+          "blocks": {}
+        }
+      },
+      "block_order": [
+        "text_wey6Di"
+      ],
+      "name": "t:names.marquee_section",
+      "settings": {
+        "movement_direction": "normal",
+        "color_scheme": "scheme-4",
+        "padding-block-start": 24,
+        "padding-block-end": 24,
+        "gap_between_elements": 24
+      }
+    },
     "section_dYWfVq": {
       "type": "section",
       "blocks": {
         "text_DJqGid": {
           "type": "text",
           "settings": {
-            "text": "<p><strong>Atenção. Pausa Temporária nos Envios</strong></p><p>Identificamos uma instabilidade técnica em nossa plataforma de formulários (Airtable) que está afetando o recebimento de candidaturas. Nossa equipe já está acompanhando a resolução junto ao serviço para que tudo volte ao normal o quanto antes.</p><p><strong>Por favor, tente novamente em breve.</strong> Agradecemos o interesse em fazer parte da Solisluna e valorizamos sua paciência!</p>",
+            "text": "<p>Identificamos uma instabilidade técnica em nossa plataforma de formulários (Airtable) que está afetando o recebimento de candidaturas. Nossa equipe já está acompanhando a resolução junto ao serviço para que tudo volte ao normal o quanto antes.</p><p><strong>Por favor, tente novamente em breve.</strong> Agradecemos o interesse em fazer parte da Solisluna e valorizamos sua paciência!</p>",
             "width": "100%",
             "max_width": "normal",
             "alignment": "center",
@@ -1022,6 +1063,7 @@
   "order": [
     "main",
     "custom_liquid_fFfwdG",
+    "marquee_8X7QgN",
     "section_dYWfVq",
     "section_9Lec8T",
     "section_3r3EbW",
