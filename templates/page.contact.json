@@ -640,6 +640,7 @@
             },
             "accordion_row_EwLzQ9": {
               "type": "_accordion-row",
+              "disabled": true,
               "settings": {
                 "heading": "Vagas: trabalhe conosco",
                 "open_by_default": false,
