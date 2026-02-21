@@ -121,6 +121,7 @@
       "block_order": [
         "text_wey6Di"
       ],
+      "disabled": true,
       "name": "t:names.marquee_section",
       "settings": {
         "movement_direction": "normal",
@@ -162,6 +163,7 @@
       "block_order": [
         "text_DJqGid"
       ],
+      "disabled": true,
       "name": "t:names.pull_quote",
       "settings": {
         "content_direction": "column",
@@ -309,7 +311,6 @@
                 "button_DCFKcR": {
                   "type": "button",
                   "name": "t:names.button",
-                  "disabled": true,
                   "settings": {
                     "label": "Acessar formulário",
                     "link": "https://link.solisluna.com.br/Analista-Marketing",
@@ -485,7 +486,6 @@
                 "button_gRcABj": {
                   "type": "button",
                   "name": "t:names.button",
-                  "disabled": true,
                   "settings": {
                     "label": "Acessar formulário",
                     "link": "https://link.solisluna.com.br/Vendedor(a)-temp",
@@ -625,7 +625,6 @@
                 "button_eJe7pq": {
                   "type": "button",
                   "name": "t:names.button",
-                  "disabled": true,
                   "settings": {
                     "label": "Acessar formulário",
                     "link": "https://link.solisluna.com.br/Livreira(o)",
@@ -802,7 +801,6 @@
                 "button_yCKBx9": {
                   "type": "button",
                   "name": "t:names.button",
-                  "disabled": true,
                   "settings": {
                     "label": "Acessar formulário",
                     "link": "https://link.solisluna.com.br/Estagio-TI",
@@ -942,7 +940,6 @@
                 "button_qxHyNN": {
                   "type": "button",
                   "name": "t:names.button",
-                  "disabled": true,
                   "settings": {
                     "label": "Acessar formulário",
                     "link": "https://link.solisluna.com.br/Produtor(a)",
