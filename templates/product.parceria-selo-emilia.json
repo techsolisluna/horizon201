@@ -657,7 +657,7 @@
                         "text_k7LUUJ": {
                           "type": "text",
                           "settings": {
-                            "text": "<p><strong>ISBN:</strong> {{ product.metafields.facts.isbn.value }}<br/><strong>Idioma:</strong> {{ product.metafields.custom.idiomas_do_produto.value }}<br/><strong>Formato:</strong> {{ product.metafields.custom.largura.value }} x {{ product.metafields.custom.altura.value }} x {{ product.metafields.custom.profundidade.value }} cm<br/><strong>N° de páginas:</strong> {{ product.metafields.custom.numero_de_paginas.value }}<br/><strong>Encadernação:</strong> {{ product.metafields.custom.formato.value }}<br/><strong>Ano de publicação:</strong> {{ product.metafields.my_fields.published_year.value }}</p>",
+                            "text": "<p><strong>ISBN:</strong> {{ product.metafields.facts.isbn.value }}<br/><strong>Idioma:</strong> {{ product.metafields.custom.idiomas_do_produto.value }}<br/><strong>Formato:</strong> {{ product.metafields.custom.largura.value }} x {{ product.metafields.custom.altura.value }} x {{ product.metafields.custom.profundidade.value }} cm<br/><strong>N° de páginas:</strong> {{ product.metafields.custom.numero_de_paginas.value }}<br/><strong>Encadernação:</strong> {{ product.metafields.custom.formato.value }}<br/><strong>Ano de publicação:</strong> {{ product.metafields.my_fields.published_year.value }}<br/><strong>Edição:</strong> Solisluna/Selo Emília</p>",
                             "width": "100%",
                             "max_width": "normal",
                             "alignment": "left",
@@ -1861,7 +1861,11 @@
     "sticky-atc-bar": {
       "type": "sticky-atc-bar",
       "name": "Sticky bottom bar",
-      "settings": {}
+      "settings": {
+        "btn_text": "Adicionar ao carrinho",
+        "btn_color": "#fcd700",
+        "btn_text_color": "#000000"
+      }
     }
   },
   "order": [
