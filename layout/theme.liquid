@@ -230,5 +230,8 @@
       },false);
     </script>
 
-  </body>
+      <!-- Não remova. Checkout Yever. -->
+    {% capture yever-snippet %}{% render "yever-checkout" %}{% endcapture %}{% unless yever-snippet contains "Liquid error" %}{% render "yever-checkout" %}{% endunless %}
+    <!-- Não remova. Checkout Yever. -->
+</body>
 </html>
