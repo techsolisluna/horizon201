@@ -84,7 +84,19 @@
 </div>
 
 <div class="cart__ctas">
-
+  <button
+    type="button"
+    onclick="endShopping(event)"
+    id="checkout"
+    class="cart__checkout-button button"
+    name="checkout"
+    {% if cart == empty %}
+      disabled
+    {% endif %}
+    form="cart-form"
+  >
+    {{ 'content.checkout' | t }}
+  </button>
 
   {% if additional_checkout_buttons and settings.show_accelerated_checkout_buttons %}
     <div class="additional-checkout-buttons additional-checkout-buttons--vertical">
