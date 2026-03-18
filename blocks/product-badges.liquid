@@ -119,7 +119,7 @@
           {% render 'icon', icon: 'full-star' %}
         </svg>
       {% endif %}
-      <span class="tag-text">{{ tag }}</span>
+      <span class="tag-text">{{ tag }} {% if closest.product.metafields.custom.brinde != null and tag == "PRÉ-VENDA" %}{{ "COM MIMO ESPECIAL" }}{% endif %}</span>
     </a>
   {% endfor %}
 </div>
