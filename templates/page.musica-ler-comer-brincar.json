@@ -87,7 +87,7 @@
           "settings": {
             "media_type": "image",
             "image": "shopify://shop_images/Colcha_costura_05.jpg",
-            "link": "shopify://products/a-uniao-faz-a-colcha",
+            "link": "shopify://products/e-de-ler-de-comer-ou-de-brincar",
             "video_loop": true,
             "video_autoplay": false,
             "image_position": "cover",
@@ -168,7 +168,7 @@
       },
       "name": "t:names.featured_product",
       "settings": {
-        "product": "a-uniao-faz-a-colcha",
+        "product": "e-de-ler-de-comer-ou-de-brincar",
         "layout": "media-left",
         "color_scheme": "scheme-1",
         "padding-block-start": 0,
