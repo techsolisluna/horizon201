@@ -380,6 +380,9 @@
     },
     "hero_Tzq6eF": {
       "type": "hero",
+      "custom_css": [
+        "@media screen and (max-width: 450px) {.hero {min-height: 12rem; }}"
+      ],
       "name": "t:names.hero",
       "settings": {
         "media_type_1": "image",
