@@ -110,7 +110,7 @@
             "image": "shopify://shop_images/capa_epub_historias_orixas.jpg",
             "link": "",
             "image_ratio": "adapt",
-            "width": "fill",
+            "width": "fit-content",
             "custom_width": 33,
             "width_mobile": "custom",
             "custom_width_mobile": 100,
