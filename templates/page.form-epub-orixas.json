@@ -174,7 +174,7 @@
           "settings": {
             "text": "<p>Este projeto foi contemplado nos Editais da Política Nacional Aldir Blanc de Fomento à Cultura na Bahia, realizados com recursos do Governo Federal repassados pelo Ministério da Cultura, e executados pelo Governo do Estado da Bahia, por meio da Secretaria de Cultura do Estado.</p>",
             "width": "fit-content",
-            "max_width": "none",
+            "max_width": "normal",
             "alignment": "left",
             "type_preset": "custom",
             "font": "var(--font-body--family)",
@@ -241,7 +241,7 @@
             "link": "",
             "image_ratio": "adapt",
             "width": "custom",
-            "custom_width": 75,
+            "custom_width": 70,
             "width_mobile": "fill",
             "custom_width_mobile": 100,
             "height": "fit",
