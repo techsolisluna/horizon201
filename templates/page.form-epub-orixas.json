@@ -134,7 +134,7 @@
       "custom_css": [
         ".custom-section-content > div > div {width: 40%; max-width: 550px;}",
         "img {border-radius: 10px; box-shadow: 0px 4px 16px 0px rgba(99, 77, 255, 0.06);}",
-        "@media screen and (max-width: 749px) {.custom-section-content > div > div {width: 100%; max-width: none; } .custom-section-content > div {padding-bottom: 0; } img {border-radius: 0; box-shadow: none; }}"
+        "@media screen and (max-width: 749px) {.custom-section-content > div > div {width: 100%; max-width: none; } .custom-section-content > div {padding-top: 0; padding-bottom: 0; } img {border-radius: 0; box-shadow: none; }}"
       ],
       "name": "t:names.custom_section",
       "settings": {
@@ -145,7 +145,7 @@
         "align_baseline": false,
         "horizontal_alignment_flex_direction_column": "flex-start",
         "vertical_alignment_flex_direction_column": "center",
-        "gap": 0,
+        "gap": 20,
         "section_width": "full-width",
         "section_height": "",
         "section_height_custom": 48,
@@ -199,7 +199,7 @@
         "text_tb9T4i"
       ],
       "custom_css": [
-        "@media screen and ();"
+        "@media screen and (max-width: 749px){p{font-size: 14px; }}"
       ],
       "name": "t:names.custom_section",
       "settings": {
