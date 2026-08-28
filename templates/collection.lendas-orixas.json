@@ -562,7 +562,7 @@
               "settings": {
                 "text": "<p>Clique na imagem ou no botão abaixo para fazer o download gratuito do e-book em EPUB.</p>",
                 "width": "fit-content",
-                "max_width": "narrow",
+                "max_width": "normal",
                 "alignment": "left",
                 "type_preset": "rte",
                 "font": "var(--font-body--family)",
