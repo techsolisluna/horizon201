@@ -99,7 +99,7 @@
           "type": "image",
           "name": "t:names.image",
           "settings": {
-            "image": "shopify://shop_images/capa_epub_historias_orixas.jpg",
+            "image": "shopify://shop_images/Guia_de_sugestoes_para_educadores.jpg",
             "link": "",
             "image_ratio": "adapt",
             "width": "fit-content",
