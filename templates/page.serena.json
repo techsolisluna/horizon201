@@ -71,7 +71,7 @@
       ],
       "settings": {
         "content_direction": "column",
-        "gap": 10,
+        "gap": 20,
         "color_scheme": "scheme-1",
         "padding-block-start": 40,
         "padding-block-end": 80
@@ -86,8 +86,8 @@
           "static": true,
           "settings": {
             "media_type": "image",
-            "image": "shopify://shop_images/Colcha_costura_05.jpg",
-            "link": "shopify://products/a-uniao-faz-a-colcha",
+            "image": "shopify://shop_images/A_incrivel_Serena_contra_o_temivel_Aspiraldo_02.jpg",
+            "link": "shopify://products/a-incrivel-serena-contra-o-temivel-aspiraldo",
             "video_loop": true,
             "video_autoplay": false,
             "image_position": "cover",
@@ -168,7 +168,7 @@
       },
       "name": "t:names.featured_product",
       "settings": {
-        "product": "a-uniao-faz-a-colcha",
+        "product": "a-incrivel-serena-contra-o-temivel-aspiraldo",
         "layout": "media-left",
         "color_scheme": "scheme-1",
         "padding-block-start": 0,
