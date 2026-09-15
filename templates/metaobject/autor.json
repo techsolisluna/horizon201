@@ -368,7 +368,7 @@
               "type": "_product-list-text",
               "name": "t:names.collection_title",
               "settings": {
-                "text": "<h3>Livros de {{ metaobject.nome.value }} publicados pela Solisluna</h3>",
+                "text": "<h3>Livro(s) de {{ metaobject.nome.value }} publicado(s) pela Solisluna</h3>",
                 "width": "fit-content",
                 "max_width": "normal",
                 "alignment": "left",
