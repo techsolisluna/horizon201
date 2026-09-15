@@ -364,9 +364,18 @@
             "padding-inline-end": 0
           },
           "blocks": {
+            "custom_liquid_F9hxpY": {
+              "type": "custom-liquid",
+              "name": "t:names.custom_liquid",
+              "settings": {
+                "custom_liquid": "{% liquid \n\nassign current_author = metaobject | default: metaobject\n\nassign max_items = section.settings.max_products\n  paginate collections.all.products by 1000\n    assign section_products = collections.all.products | sort: 'published_at' | reverse\n  endpaginate\n\nassign book_count = 0\n\npaginate section_products by 1000\n for product in section_products\n   if book_count >= 2\n      break\n    endif\n\n    assign show_product = false\n\n    if product.metafields.custom.autor.value\n      for autor_no_produto in product.metafields.custom.autor.value\n        if autor_no_produto.system.id == current_author.system.id\n          assign show_product = true\n          break\n        endif\n      endfor\n    endif\n\n    if product.metafields.custom.autor_da_ilustracao.value and show_product == false\n      for autor_no_produto in product.metafields.custom.autor_da_ilustracao.value\n        if autor_no_produto.system.id == current_author.system.id\n          assign show_product = true\n          break\n        endif\n      endfor\n    endif\n\n    if show_product\n      assign book_count = book_count | plus: 1\n    endif\n  endfor\nendpaginate\n\n%}\n\n{% if book_count == 1 %}\n    <h3>Livro de {{ metaobject.nome.value }} publicado pela Solisluna</h3>\n{% elsif book_count == 0 %}\n    \n{% else %}\n    <h3>Livros de {{ metaobject.nome.value }} publicados pela Solisluna</h3>\n{% endif %}"
+              },
+              "blocks": {}
+            },
             "product_list_text_VehFN7": {
               "type": "_product-list-text",
               "name": "t:names.collection_title",
+              "disabled": true,
               "settings": {
                 "text": "<h3>Livro(s) de {{ metaobject.nome.value }} publicado(s) pela Solisluna</h3>",
                 "width": "fit-content",
@@ -406,6 +415,7 @@
             }
           },
           "block_order": [
+            "custom_liquid_F9hxpY",
             "product_list_text_VehFN7",
             "product_list_button_xTNni6"
           ]
