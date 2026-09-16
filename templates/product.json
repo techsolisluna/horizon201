@@ -697,14 +697,14 @@
                         "custom_liquid_hyJrHR": {
                           "type": "custom-liquid",
                           "name": "t:names.custom_liquid",
-                          "disabled": true,
                           "settings": {
-                            "custom_liquid": "{% if closest.product.metafields %}{% endif %}"
+                            "custom_liquid": "<rte-formatter class=\" spacing-style text-block text-block--AOUtDNThxeStoMnBqW__text_geD4ir rte\n    text-block--align-left rte \n  \" style=\"\n    --padding-block-start: 0px; --padding-block-end:0px; \n--padding-inline-start:0px; --padding-inline-end:0px; \n\n    \n\n    --width: 100%;\n    --max-width: var(--max-width--body-normal);\n    \n      --text-align: left;\n    \n    \n  \">\n<p>\n<strong>Palavras-chave: </strong> \n{{ closest.product.metafields.custom.palavra_chave }}\n<br>\n<strong>Público-alvo: </strong>\n{{ closest.product.metafields.custom.publico_alvo }} \n<br>\n<strong>Classificação Thema: </strong>\n{{ closest.product.metafields.custom.classificacao_thema }}\n<br>\n<strong>BISAC: </strong>\n{{ closest.product.metafields.custom.bisac }}\n<br>\n<br>\n<strong>Temas: </strong>\n{{ closest.product.metafields.custom.temas }}\n</p>\n</rte-formatter>"
                           },
                           "blocks": {}
                         },
                         "text_geD4ir": {
                           "type": "text",
+                          "disabled": true,
                           "settings": {
                             "text": "<p><strong>Palavras-chave:</strong> {{ product.metafields.custom.palavra_chave.value }}<br/><strong>Público-alvo:</strong> {{ product.metafields.custom.publico_alvo.value }}<br/><strong>Classificação Thema: </strong>{{ product.metafields.custom.classificacao_thema | metafield_tag }}<br/><strong>BISAC: </strong><br/>{{ product.metafields.custom.bisac | metafield_tag }}<br/><strong>Temas: </strong></p>{{ closest.product.metafields.custom.temas | metafield_tag }}",
                             "width": "100%",
