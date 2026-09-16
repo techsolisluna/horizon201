@@ -694,6 +694,15 @@
                         "width": 20
                       },
                       "blocks": {
+                        "custom_liquid_hyJrHR": {
+                          "type": "custom-liquid",
+                          "name": "t:names.custom_liquid",
+                          "disabled": true,
+                          "settings": {
+                            "custom_liquid": "{% if closest.product.metafields %}{% endif %}"
+                          },
+                          "blocks": {}
+                        },
                         "text_geD4ir": {
                           "type": "text",
                           "settings": {
@@ -721,6 +730,7 @@
                         }
                       },
                       "block_order": [
+                        "custom_liquid_hyJrHR",
                         "text_geD4ir"
                       ]
                     }
