@@ -168,7 +168,7 @@
                   "type": "text_product_ilustrator",
                   "name": "Ilustrador",
                   "settings": {
-                    "text": "<p>Ilustrado por <strong>{{ closest.product.metafields.custom.autor_da_ilustracao | metafield_text: field: 'nome' }}</strong></p>",
+                    "text": "<p>Ilustrado por {{ closest.product.metafields.custom.autor_da_ilustracao | metafield_text: field: 'nome' }}</p>",
                     "width": "fit-content",
                     "max_width": "normal",
                     "alignment": "left",
