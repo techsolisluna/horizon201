@@ -142,7 +142,7 @@
                   "type": "text",
                   "name": "Autor",
                   "settings": {
-                    "text": "<p><a href='#authors'>{{ closest.product.metafields.custom.autor | metafield_text: field: 'nome' }}</a></p>",
+                    "text": "<p><a href=\"#authors\">{{ closest.product.metafields.custom.autor | metafield_text: field: 'nome' }}</a></p>",
                     "width": "fit-content",
                     "max_width": "normal",
                     "alignment": "left",
@@ -187,6 +187,14 @@
                     "padding-block-end": 0,
                     "padding-inline-start": 0,
                     "padding-inline-end": 0
+                  },
+                  "blocks": {}
+                },
+                "custom_liquid_tzzgzn": {
+                  "type": "custom-liquid",
+                  "name": "t:names.custom_liquid",
+                  "settings": {
+                    "custom_liquid": "{% if closest.product.id == 10562926674199 %}Ilustrado por <strong>Raiana Britto</strong>{% endif %}"
                   },
                   "blocks": {}
                 },
@@ -423,6 +431,7 @@
                 "text_xrnftG",
                 "text_HjAwYD",
                 "text_HjAwYD2",
+                "custom_liquid_tzzgzn",
                 "divider_UHPH7x",
                 "price_tVjtKg",
                 "group_mXGcxj"
