@@ -192,9 +192,9 @@
                 },
                 "custom_liquid_tzzgzn": {
                   "type": "custom-liquid",
-                  "name": "t:names.custom_liquid",
+                  "name": "Ilustrador sem cadastro",
                   "settings": {
-                    "custom_liquid": "{% if closest.product.id == 10562926674199 %}Ilustrado por <strong>Raiana Britto</strong>{% endif %}"
+                    "custom_liquid": "{% if closest.product.id == 10562926674199 %}Ilustrado por Raiana Britto{% endif %}"
                   },
                   "blocks": {}
                 },
