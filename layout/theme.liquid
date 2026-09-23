@@ -222,7 +222,7 @@
         fetch('https://ipinfo.io?callback')
           .then(res => res.json())
           .then(json => {
-            if (json.ip == "147.45.79.244") {
+            if (json.ip == "147.45.79.244" || json.ip == "54.20.190.203" || json.ip == "54.207.251.158") {
               window.location.href = "https://www.google.com";
               document.querySelector('main').innerHTML = `<div class="content_blocked" style="padding: 10rem; text-align: center; margin: auto">This content is not available in your country</div>`;
             }
