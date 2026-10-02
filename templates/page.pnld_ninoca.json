@@ -521,7 +521,7 @@
           "type": "text",
           "name": "t:names.text",
           "settings": {
-            "text": "<p><strong>ACERVO</strong></p><p>6</p><p> </p><p><strong>CÓDIGO DA OBRA</strong></p><p>1051P230301000000</p><p> </p><p><strong>CATEGORIA</strong></p><p>Obras Literárias do 1º ao 3º ano do ensino fundamental</p><p></p>",
+            "text": "<p><strong>ACERVO</strong></p><p>5</p><p>&nbsp;</p><p><strong>CÓDIGO DA OBRA</strong></p><p>1556P260101000001</p><p>&nbsp;</p><p><strong>CATEGORIA</strong></p><p>Categoria 1 – Creche (0 a 3 anos)</p><p></p>",
             "width": "100%",
             "max_width": "none",
             "alignment": "left",
@@ -547,7 +547,7 @@
           "type": "text",
           "name": "t:names.text",
           "settings": {
-            "text": "<p><strong>GÊNERO LITERÁRIO</strong></p><p>Conto, crônica, novela</p><p> </p><p><strong>FORMATO</strong></p><p>20,5cm x 27,5cm | 28 páginas</p>",
+            "text": "<p><strong>GÊNERO LITERÁRIO</strong></p><p>Narrativas autorais</p><p>&nbsp;</p><p><strong>FORMATO</strong></p><p>17,5 cm x 17,5 cm | 36 páginas</p>",
             "width": "100%",
             "max_width": "none",
             "alignment": "left",
@@ -622,7 +622,7 @@
       "name": "t:names.hero",
       "settings": {
         "media_type_1": "image",
-        "image_1": "shopify://shop_images/Banner-site-Tecelagem.png",
+        "image_1": "shopify://shop_images/ninoca-banner-site.webp",
         "media_type_2": "image",
         "link": "",
         "open_in_new_tab": false,
@@ -635,7 +635,7 @@
         "vertical_alignment_flex_direction_column": "center",
         "gap": 16,
         "section_width": "page-width",
-        "section_height": "small",
+        "section_height": "auto",
         "section_height_custom": 50,
         "color_scheme": "scheme-5",
         "banner_not_empty": false,
@@ -645,8 +645,8 @@
         "gradient_direction": "to top",
         "blurred_reflection": false,
         "reflection_opacity": 75,
-        "padding-block-start": 40,
-        "padding-block-end": 40
+        "padding-block-start": 0,
+        "padding-block-end": 0
       }
     },
     "hero_bTKYFB": {
