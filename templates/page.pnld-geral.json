@@ -148,6 +148,7 @@
             "group_gCwEtc": {
               "type": "group",
               "name": "t:names.group",
+              "disabled": true,
               "settings": {
                 "link": "",
                 "open_in_new_tab": false,
@@ -188,7 +189,7 @@
                   "type": "text",
                   "name": "t:names.text",
                   "settings": {
-                    "text": "<p>PNLD 2023</p>",
+                    "text": "<p>PNLD 2026-2029</p>",
                     "width": "fit-content",
                     "max_width": "normal",
                     "alignment": "left",
@@ -215,7 +216,7 @@
                   "name": "t:names.button",
                   "settings": {
                     "label": "Conheça as obras aprovadas",
-                    "link": "shopify://pages/pnld-2023",
+                    "link": "shopify://pages/pnld-2026",
                     "open_in_new_tab": false,
                     "style_class": "button",
                     "width": "fit-content",
@@ -229,6 +230,92 @@
               "block_order": [
                 "text_xiWmDc",
                 "button_ay4CaB"
+              ]
+            },
+            "group_Kdt4ze": {
+              "type": "group",
+              "name": "t:names.group",
+              "settings": {
+                "link": "",
+                "open_in_new_tab": false,
+                "content_direction": "column",
+                "vertical_on_mobile": true,
+                "horizontal_alignment": "flex-start",
+                "vertical_alignment": "center",
+                "align_baseline": false,
+                "horizontal_alignment_flex_direction_column": "center",
+                "vertical_alignment_flex_direction_column": "center",
+                "gap": 20,
+                "width": "fill",
+                "custom_width": 100,
+                "width_mobile": "fill",
+                "custom_width_mobile": 100,
+                "height": "fit",
+                "custom_height": 100,
+                "inherit_color_scheme": true,
+                "color_scheme": "scheme-3",
+                "background_media": "none",
+                "video_position": "cover",
+                "background_image_position": "cover",
+                "border": "none",
+                "border_width": 1,
+                "border_opacity": 100,
+                "border_radius": 0,
+                "toggle_overlay": true,
+                "overlay_color": "#ededeb",
+                "overlay_style": "solid",
+                "gradient_direction": "to top",
+                "padding-block-start": 25,
+                "padding-block-end": 25,
+                "padding-inline-start": 25,
+                "padding-inline-end": 25
+              },
+              "blocks": {
+                "text_6hAYcq": {
+                  "type": "text",
+                  "name": "t:names.text",
+                  "settings": {
+                    "text": "<p>PNLD 2023</p>",
+                    "width": "fit-content",
+                    "max_width": "normal",
+                    "alignment": "left",
+                    "type_preset": "custom",
+                    "font": "var(--font-subheading--family)",
+                    "font_size": "1.5rem",
+                    "line_height": "normal",
+                    "letter_spacing": "normal",
+                    "case": "none",
+                    "wrap": "pretty",
+                    "color": "var(--color-foreground)",
+                    "background": false,
+                    "background_color": "#00000026",
+                    "corner_radius": 0,
+                    "padding-block-start": 0,
+                    "padding-block-end": 0,
+                    "padding-inline-start": 0,
+                    "padding-inline-end": 0
+                  },
+                  "blocks": {}
+                },
+                "button_WGmE9e": {
+                  "type": "button",
+                  "name": "t:names.button",
+                  "settings": {
+                    "label": "Conheça as obras aprovadas",
+                    "link": "shopify://pages/pnld-2023",
+                    "open_in_new_tab": false,
+                    "style_class": "button",
+                    "width": "fit-content",
+                    "custom_width": 100,
+                    "width_mobile": "fit-content",
+                    "custom_width_mobile": 100
+                  },
+                  "blocks": {}
+                }
+              },
+              "block_order": [
+                "text_6hAYcq",
+                "button_WGmE9e"
               ]
             },
             "group_Pd9Bhk": {
@@ -320,6 +407,7 @@
           },
           "block_order": [
             "group_gCwEtc",
+            "group_Kdt4ze",
             "group_Pd9Bhk"
           ]
         }
