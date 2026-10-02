@@ -13,7 +13,7 @@
       "type": "hero",
       "custom_css": [
         "@media screen and (max-width: 450px) {.hero {min-height: 8rem; }}",
-        "@media screen and (min-width: 451px) {.hero {min-height: 25rem; }}"
+        "@media screen and (min-width: 451px) and (max-width: 1000px) {.hero {min-height: 12rem; }}"
       ],
       "name": "t:names.hero",
       "settings": {
