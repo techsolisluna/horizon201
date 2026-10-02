@@ -162,7 +162,7 @@
                   "type": "image",
                   "name": "t:names.image",
                   "settings": {
-                    "image": "shopify://shop_images/Tecelagem-capa-mockup.png",
+                    "image": "shopify://shop_images/Ninoca-Capa.webp",
                     "link": "",
                     "image_ratio": "adapt",
                     "width": "fill",
@@ -185,7 +185,7 @@
                   "type": "text",
                   "name": "t:names.text",
                   "settings": {
-                    "text": "<p><strong>Texto e ilustrações<br/></strong>Goya Lopes</p><p>-<strong><br/>1º ao 3º ano do ensino fundamental</strong></p><p>-</p><h3><strong>ACERVO 6</strong></h3><p>-</p><p><strong>GÊNERO</strong> Conto, crônica, novela</p><p></p><p>-</p><p><strong>CÓDIGO </strong>1051P230301000000</p><p></p>",
+                    "text": "<p><strong>Texto </strong>Natália Paiva<strong><br/>Ilustrações </strong>Luci Sacoleira</p><p>-<strong><br/>Categoria 1 – Creche (0 a 3 anos)</strong></p><p>-</p><h3><strong>ACERVO X</strong></h3><p>-</p><p><strong>GÊNERO</strong> x, x, x</p><p></p><p>-</p><p><strong>CÓDIGO </strong>1556 P26 01 01 000 001</p><p></p>",
                     "width": "100%",
                     "max_width": "none",
                     "alignment": "left",
@@ -212,7 +212,7 @@
                   "name": "t:names.button",
                   "settings": {
                     "label": "SAIBA MAIS",
-                    "link": "shopify://pages/pnld-2023-tecelagem",
+                    "link": "shopify://pages/pnld-2026-2029-ninoca-dorminhoca",
                     "open_in_new_tab": false,
                     "style_class": "button",
                     "width": "custom",
@@ -295,7 +295,7 @@
                   "type": "text",
                   "name": "t:names.text",
                   "settings": {
-                    "text": "<p><strong>Texto </strong>Osvaldo Costa Martins<strong><br/>Ilustrações </strong>Luci Sacoleira</p><p>-<strong><br/>4º e 5º ano do ensino fundamental</strong></p><p>-</p><h3><strong>ACERVO 11 </strong></h3><p>-</p><p><strong>GÊNERO</strong> Memória, diário, biografia</p><p><br/></p><p><strong>CÓDIGO </strong>1052P230302000000</p>",
+                    "text": "<p><strong>Texto </strong>Osvaldo Costa Martins<strong><br/>Ilustrações </strong>Luci Sacoleira</p><p>-<strong><br/>4º e 5º ano do ensino fundamental</strong></p><p>-</p><h3><strong>ACERVO 11&nbsp;</strong></h3><p>-</p><p><strong>GÊNERO</strong> Memória, diário, biografia</p><p><br/></p><p><strong>CÓDIGO </strong>1052P230302000000</p>",
                     "width": "100%",
                     "max_width": "none",
                     "alignment": "left",
