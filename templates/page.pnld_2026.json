@@ -42,7 +42,7 @@
           "type": "text",
           "name": "t:names.text",
           "settings": {
-            "text": "<p>Conheça as obras da Solisluna Editora aprovadas no Programa Nacional do Livro e do Material Didático (PNLD) 2026-2029 para a <strong>educação infantil.</strong></p>",
+            "text": "<p>Conheça as obras da Solisluna Editora aprovadas no Programa Nacional do Livro e do Material Didático (PNLD) 2026-2029 para a <strong>educação infantil</strong></p>",
             "width": "100%",
             "max_width": "none",
             "alignment": "center",
