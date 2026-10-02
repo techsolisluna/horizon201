@@ -11,7 +11,9 @@
   "sections": {
     "hero_Tzq6eF": {
       "type": "hero",
-      "custom_css": [],
+      "custom_css": [
+        ".hero{max-height: 570px;}"
+      ],
       "name": "t:names.hero",
       "settings": {
         "media_type_1": "image",
