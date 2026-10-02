@@ -547,7 +547,7 @@
           "type": "text",
           "name": "t:names.text",
           "settings": {
-            "text": "<p><strong>GÊNERO LITERÁRIO</strong></p><p>Narrativas autorais</p><p>&nbsp;</p><p><strong>FORMATO</strong></p><p>17,5 cm x 17,5 cm | 36 páginas</p>",
+            "text": "<p><strong>GÊNERO LITERÁRIO</strong></p><p>Narrativas autorais</p><p>&nbsp;</p><p><strong>FORMATO</strong></p><p>17,5cm x 17,5cm | 36 páginas</p>",
             "width": "100%",
             "max_width": "none",
             "alignment": "left",
