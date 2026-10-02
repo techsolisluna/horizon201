@@ -163,7 +163,7 @@
           "type": "image",
           "name": "t:names.image",
           "settings": {
-            "image": "shopify://shop_images/Tecelagem-capa-mockup.png",
+            "image": "shopify://shop_images/Ninoca-Capa.webp",
             "link": "",
             "image_ratio": "adapt",
             "width": "custom",
@@ -186,7 +186,7 @@
           "type": "text",
           "name": "t:names.text",
           "settings": {
-            "text": "<h2><strong>Tecelagem</strong></h2><p></p><p><strong>Texto e Ilustrações:</strong> <a href=\"/collections/goya-lopes\" target=\"_blank\" title=\"Goya Lopes\">Goya Lopes<br/></a><strong>Código da obra: </strong>1051P230301000000</p><p><strong>Categoria: </strong>Obras Literárias do 1º ao 3º ano do ensino fundamental</p><p><strong>Gênero: </strong>Conto, crônica, novela<strong><br/>ACERVO: </strong>6</p><p><br/></p><p>Um conto que apresenta a narrativa dos irmãos Loom e Axó, contando a história da tecelagem na África. </p><p><strong>É uma obra direcionada ao 1º, 2º e 3º ano do Ensino Fundamental </strong>- Anos Iniciais, com abordagens sobre a descoberta de si; família, amigos e escola; o mundo natural e social, ressaltando a importância da ancestralidade na forma de tecer e confeccionar roupas.</p><p>O conto apresenta duas crianças como narradores-personagens: a menina Loom e seu irmão Axó. </p><p>Ambos acompanham, junto à família, todo o processo do ofício. Além das crianças e seus familiares, a natureza também é uma personagem da trama, já que vem dela toda a matéria prima para realizar essa arte ancestral.<br/>A narrativa conta desde quando o algodão é semente nas plantações até se tornar uma vestimenta. Todo o processo é explicado pelas crianças narradoras. Primeiro, a colheita das sementes e separação das fibras; depois, a transformação em fios e tingimento, para, finalmente, esses fios serem esticados no tear de madeira e se tornarem tecidos. No desfecho da história, Loom e Axó voltam para reforçar que a tecelagem é um trabalho desenvolvido pelos seus antepassados e é transmitido dos pais para os filhos - informação valiosa para toda história de origem africana.</p><p></p>",
+            "text": "<h2><strong>Ninoca Dorminhoca</strong></h2><p></p><p><strong>Texto: </strong><a href=\"https://solisluna.com.br/pages/autor/natalia-paiva\" target=\"_blank\">Natália Paiva</a><br/><strong>Ilustrações: </strong><a href=\"https://solisluna.com.br/pages/autor/luci-sacoleira\" target=\"_blank\" title=\"https://solisluna.com.br/pages/autor/luci-sacoleira\">Luci Sacoleira</a></p><p><strong>Código da obra: </strong>1556P260101000001</p><p><strong>Categoria: </strong>Categoria 1 – Creche (0 a 3 anos)</p><p><strong>Gênero: </strong>Narrativas autorais<strong><br/>ACERVO: </strong>5</p><p><br/></p><p><br/>A obra “Ninoca dorminhoca”, escrita por Natália Paiva, ilustrada por Luci Sacoleira, Editora Solisluna, é contada em forma de versos, estrofes rimadas e ilustrações que apresentam os diferentes momentos e circunstâncias da vida de Nina.</p><p>Nessa história do bebê Nina, que dorme calmamente mesmo diante dos sons do cotidiano, são apresentados vários barulhos que cercam o sono da menina, desde cachorro latindo e gato miando até seus irmãos gritando pela casa, além de buzinas de carros e bloco de carnaval passando pela rua. A menina não se incomoda, só acordando quando é colocada no berço. Independentemente do que aconteça ao seu redor — festas, ruídos, gritos, risadas, buzinas, música, entre outras situações, Nina segue sempre dormindo, por isso a chamam de “bebê zen”.</p><p>A obra é composta pelo Livro da Criança Impresso (LCI) e pelo Livro da Criança Digital (LCD).</p>",
             "width": "fit-content",
             "max_width": "normal",
             "alignment": "left",
@@ -246,7 +246,7 @@
       "type": "custom-liquid",
       "name": "t:names.custom_liquid",
       "settings": {
-        "custom_liquid": "<div class=\"button-pnld-code\"><h3>1051P230301000000</h3><button id=\"btn-copy\"> copiar código da obra <i class=\"fas fa-copy\"></i></button></div>\n\n\n<script>\n  var btnCopy = document.getElementById(\"btn-copy\");\n  var contentToCopy = \"1051P230301000000\";\n\n  btnCopy.addEventListener(\"click\", function() {\n    navigator.clipboard.writeText(contentToCopy)\n      .then(function() {\n        btnCopy.textContent = \"código copiado!\";\n        console.log(\"Conteúdo copiado para o clipboard\");\n      })\n      .catch(function() {\n        console.log(\"Não foi possível copiar o conteúdo para o clipboard\");\n      });\n  });\n</script>\n<style>\n#btn-copy {\n  background-color: #007bc8;\n  border: none;\n  color: white;\n  cursor: pointer;\n  font-size: 22px;\n  padding: 10px 25px;\n  border-radius: 5px;\n  -webkit-transition: all 0.5s ease-out;\n  -moz-transition: all 0.5s ease-out;\n  -ms-transition: all 0.5s ease-out;\n  -o-transition: all 0.5s ease-out;\n  transition: all 0.5s ease-out;\n}\n#btn-copy:hover {\n  background-color: #0065a4;\n  cursor: pointer;\n  padding: 10px 35px;\n-webkit-filter: drop-shadow(5px 2px 5px rgba(0, 0, 0, 0.3));\n  filter: drop-shadow(5px 2px 5px rgba(0, 0, 0, 0.3));\n}\n.button-pnld-code {\n  text-align: center;\n  margin-bottom: 3em;\n}\n</style>",
+        "custom_liquid": "<div class=\"button-pnld-code\"><h3>1556P260101000001</h3><button id=\"btn-copy\"> copiar código da obra <i class=\"fas fa-copy\"></i></button></div>\n\n\n<script>\n  var btnCopy = document.getElementById(\"btn-copy\");\n  var contentToCopy = \"1556P260101000001\";\n\n  btnCopy.addEventListener(\"click\", function() {\n    navigator.clipboard.writeText(contentToCopy)\n      .then(function() {\n        btnCopy.textContent = \"código copiado!\";\n        console.log(\"Conteúdo copiado para o clipboard\");\n      })\n      .catch(function() {\n        console.log(\"Não foi possível copiar o conteúdo para o clipboard\");\n      });\n  });\n</script>\n<style>\n#btn-copy {\n  background-color: #007bc8;\n  border: none;\n  color: white;\n  cursor: pointer;\n  font-size: 22px;\n  padding: 10px 25px;\n  border-radius: 5px;\n  -webkit-transition: all 0.5s ease-out;\n  -moz-transition: all 0.5s ease-out;\n  -ms-transition: all 0.5s ease-out;\n  -o-transition: all 0.5s ease-out;\n  transition: all 0.5s ease-out;\n}\n#btn-copy:hover {\n  background-color: #0065a4;\n  cursor: pointer;\n  padding: 10px 35px;\n-webkit-filter: drop-shadow(5px 2px 5px rgba(0, 0, 0, 0.3));\n  filter: drop-shadow(5px 2px 5px rgba(0, 0, 0, 0.3));\n}\n.button-pnld-code {\n  text-align: center;\n  margin-bottom: 3em;\n}\n</style>",
         "color_scheme": "",
         "section_width": "page-width",
         "padding-block-start": 51,
@@ -361,6 +361,7 @@
         "image_t789qb",
         "text_8cj8LH"
       ],
+      "disabled": true,
       "name": "t:names.custom_section",
       "settings": {
         "content_direction": "column",
@@ -483,6 +484,7 @@
         "text_QRULDB",
         "group_yRHkXb"
       ],
+      "disabled": true,
       "name": "Download",
       "settings": {
         "content_direction": "column",
@@ -608,7 +610,7 @@
       "type": "custom-liquid",
       "name": "t:names.custom_liquid",
       "settings": {
-        "custom_liquid": "<div class=\"button-pnld-code\"><h3>1051P230301000000</h3><button id=\"btn-copy\"> copiar código da obra <i class=\"fas fa-copy\"></i></button></div>\n\n\n<script>\n  var btnCopy = document.getElementById(\"btn-copy\");\n  var contentToCopy = \"1051P230301000000\";\n\n  btnCopy.addEventListener(\"click\", function() {\n    navigator.clipboard.writeText(contentToCopy)\n      .then(function() {\n        btnCopy.textContent = \"código copiado!\";\n        console.log(\"Conteúdo copiado para o clipboard\");\n      })\n      .catch(function() {\n        console.log(\"Não foi possível copiar o conteúdo para o clipboard\");\n      });\n  });\n</script>\n<style>\n#btn-copy {\n  background-color: #007bc8;\n  border: none;\n  color: white;\n  cursor: pointer;\n  font-size: 22px;\n  padding: 10px 25px;\n  border-radius: 5px;\n  -webkit-transition: all 0.5s ease-out;\n  -moz-transition: all 0.5s ease-out;\n  -ms-transition: all 0.5s ease-out;\n  -o-transition: all 0.5s ease-out;\n  transition: all 0.5s ease-out;\n}\n#btn-copy:hover {\n  background-color: #0065a4;\n  cursor: pointer;\n  padding: 10px 35px;\n-webkit-filter: drop-shadow(5px 2px 5px rgba(0, 0, 0, 0.3));\n  filter: drop-shadow(5px 2px 5px rgba(0, 0, 0, 0.3));\n}\n.button-pnld-code {\n  text-align: center;\n  margin-bottom: 3em;\n}\n</style>",
+        "custom_liquid": "<div class=\"button-pnld-code\"><h3>1556P260101000001</h3><button id=\"btn-copy\"> copiar código da obra <i class=\"fas fa-copy\"></i></button></div>\n\n\n<script>\n  var btnCopy = document.getElementById(\"btn-copy\");\n  var contentToCopy = \"1556P260101000001\";\n\n  btnCopy.addEventListener(\"click\", function() {\n    navigator.clipboard.writeText(contentToCopy)\n      .then(function() {\n        btnCopy.textContent = \"código copiado!\";\n        console.log(\"Conteúdo copiado para o clipboard\");\n      })\n      .catch(function() {\n        console.log(\"Não foi possível copiar o conteúdo para o clipboard\");\n      });\n  });\n</script>\n<style>\n#btn-copy {\n  background-color: #007bc8;\n  border: none;\n  color: white;\n  cursor: pointer;\n  font-size: 22px;\n  padding: 10px 25px;\n  border-radius: 5px;\n  -webkit-transition: all 0.5s ease-out;\n  -moz-transition: all 0.5s ease-out;\n  -ms-transition: all 0.5s ease-out;\n  -o-transition: all 0.5s ease-out;\n  transition: all 0.5s ease-out;\n}\n#btn-copy:hover {\n  background-color: #0065a4;\n  cursor: pointer;\n  padding: 10px 35px;\n-webkit-filter: drop-shadow(5px 2px 5px rgba(0, 0, 0, 0.3));\n  filter: drop-shadow(5px 2px 5px rgba(0, 0, 0, 0.3));\n}\n.button-pnld-code {\n  text-align: center;\n  margin-bottom: 3em;\n}\n</style>",
         "color_scheme": "",
         "section_width": "page-width",
         "padding-block-start": 100,
