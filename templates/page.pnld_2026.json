@@ -11,9 +11,7 @@
   "sections": {
     "hero_Tzq6eF": {
       "type": "hero",
-      "custom_css": [
-        "@media screen and (max-width: 450px) {.hero {min-height: 8rem; }}"
-      ],
+      "custom_css": [],
       "name": "t:names.hero",
       "settings": {
         "media_type_1": "image",
@@ -30,9 +28,9 @@
         "vertical_alignment_flex_direction_column": "center",
         "gap": 16,
         "section_width": "page-width",
-        "section_height": "custom",
+        "section_height": "auto",
         "section_height_custom": 60,
-        "color_scheme": "scheme-5",
+        "color_scheme": "scheme-1",
         "banner_not_empty": false,
         "toggle_overlay": false,
         "overlay_color": "#00000026",
@@ -40,8 +38,8 @@
         "gradient_direction": "to top",
         "blurred_reflection": false,
         "reflection_opacity": 75,
-        "padding-block-start": 40,
-        "padding-block-end": 40
+        "padding-block-start": 0,
+        "padding-block-end": 0
       }
     },
     "main": {
