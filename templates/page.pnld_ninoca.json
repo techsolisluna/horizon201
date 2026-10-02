@@ -86,7 +86,7 @@
           "name": "t:names.button",
           "settings": {
             "label": "Voltar",
-            "link": "shopify://pages/pnld-2023",
+            "link": "shopify://pages/pnld-2026",
             "open_in_new_tab": false,
             "style_class": "link",
             "width": "fit-content",
@@ -100,7 +100,7 @@
           "type": "text",
           "name": "t:names.heading",
           "settings": {
-            "text": "<p>PNLD 2023 - 1º ao 3º ano do ensino fundamental</p>",
+            "text": "<p>PNLD 2026-2029 - Educação Infantil</p>",
             "width": "100%",
             "max_width": "normal",
             "alignment": "left",
