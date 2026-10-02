@@ -400,7 +400,7 @@
         "gap": 16,
         "section_width": "page-width",
         "section_height": "custom",
-        "section_height_custom": 56,
+        "section_height_custom": 60,
         "color_scheme": "scheme-5",
         "banner_not_empty": false,
         "toggle_overlay": false,
