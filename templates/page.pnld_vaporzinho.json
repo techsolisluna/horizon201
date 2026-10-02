@@ -361,6 +361,7 @@
         "image_t789qb",
         "text_8cj8LH"
       ],
+      "disabled": true,
       "name": "t:names.custom_section",
       "settings": {
         "content_direction": "column",
@@ -483,6 +484,7 @@
         "text_QRULDB",
         "group_yRHkXb"
       ],
+      "disabled": true,
       "name": "Download",
       "settings": {
         "content_direction": "column",
@@ -620,7 +622,7 @@
       "name": "t:names.hero",
       "settings": {
         "media_type_1": "image",
-        "image_1": "shopify://shop_images/Banner-site-Tecelagem.png",
+        "image_1": "shopify://shop_images/banner_vaporzinho.png",
         "media_type_2": "image",
         "link": "",
         "open_in_new_tab": false,
@@ -633,7 +635,7 @@
         "vertical_alignment_flex_direction_column": "center",
         "gap": 16,
         "section_width": "page-width",
-        "section_height": "small",
+        "section_height": "auto",
         "section_height_custom": 50,
         "color_scheme": "scheme-5",
         "banner_not_empty": false,
@@ -643,8 +645,8 @@
         "gradient_direction": "to top",
         "blurred_reflection": false,
         "reflection_opacity": 75,
-        "padding-block-start": 40,
-        "padding-block-end": 40
+        "padding-block-start": 0,
+        "padding-block-end": 0
       }
     },
     "hero_bTKYFB": {
