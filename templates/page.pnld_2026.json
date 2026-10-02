@@ -185,7 +185,7 @@
                   "type": "text",
                   "name": "t:names.text",
                   "settings": {
-                    "text": "<p><strong>Texto </strong>Natália Paiva<strong><br/>Ilustrações </strong>Luci Sacoleira</p><p>-<strong><br/>Categoria 1 – Creche (0 a 3 anos)</strong></p><p>-</p><h3><strong>ACERVO 5</strong></h3><p>-</p><p><strong>GÊNERO</strong> x<br/></p><p></p><p>-</p><p><strong>CÓDIGO </strong>1556P260101000001</p><p></p>",
+                    "text": "<p><strong>Texto </strong>Natália Paiva<strong><br/>Ilustrações </strong>Luci Sacoleira</p><p>-<strong><br/>Categoria 1 – Creche (0 a 3 anos)</strong></p><p>-</p><h3><strong>ACERVO 5</strong></h3><p>-</p><p><strong>GÊNERO</strong> Narrativas autorais</p><p>-</p><p><strong>CÓDIGO </strong>1556P260101000001</p><p></p>",
                     "width": "100%",
                     "max_width": "none",
                     "alignment": "left",
@@ -295,7 +295,7 @@
                   "type": "text",
                   "name": "t:names.text",
                   "settings": {
-                    "text": "<p><strong>Texto e ilustrações<br/></strong>Enéas Guerra</p><p>-<strong><br/>Categoria 2 – Pré-Escola (4 a 5 anos)</strong></p><p>-</p><h3><strong>ACERVO 15</strong></h3><p>-</p><p><strong>GÊNERO</strong> x<br/></p><p>-</p><p><strong>CÓDIGO </strong>1557P260102000002</p>",
+                    "text": "<p><strong>Texto e ilustrações<br/></strong>Enéas Guerra</p><p>-<strong><br/>Categoria 2 – Pré-Escola (4 a 5 anos)</strong></p><p>-</p><h3><strong>ACERVO 15</strong></h3><p>-</p><p><strong>GÊNERO</strong> Narrativas autorais<br/></p><p>-</p><p><strong>CÓDIGO </strong>1557P260102000002</p>",
                     "width": "100%",
                     "max_width": "none",
                     "alignment": "left",
