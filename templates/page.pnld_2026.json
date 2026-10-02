@@ -12,7 +12,7 @@
     "hero_Tzq6eF": {
       "type": "hero",
       "custom_css": [
-        "@media screen and (max-width: 450px) {.hero {min-height: 9rem; }}"
+        "@media screen and (max-width: 450px) {.hero {min-height: 9.5rem; }}"
       ],
       "name": "t:names.hero",
       "settings": {
