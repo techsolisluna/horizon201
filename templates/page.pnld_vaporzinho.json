@@ -86,7 +86,7 @@
           "name": "t:names.button",
           "settings": {
             "label": "Voltar",
-            "link": "shopify://pages/pnld-2023",
+            "link": "shopify://pages/pnld-2026",
             "open_in_new_tab": false,
             "style_class": "link",
             "width": "fit-content",
