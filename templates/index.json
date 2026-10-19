@@ -17,7 +17,7 @@
           "settings": {
             "media_type_1": "image",
             "image_1": "shopify://shop_images/Banner-site-Mulher-inteira.png",
-            "link": "",
+            "link": "shopify://products/mulher-inteira-palavras-para-quem-se-reconstroi-sem-pedir-licenca",
             "content_direction": "column",
             "vertical_on_mobile": true,
             "horizontal_alignment": "flex-start",
@@ -44,7 +44,7 @@
           "settings": {
             "media_type_1": "image",
             "image_1": "shopify://shop_images/Banner-site-Bicicleta.png",
-            "link": "",
+            "link": "shopify://products/bicicleta",
             "content_direction": "column",
             "vertical_on_mobile": true,
             "horizontal_alignment": "flex-start",
@@ -71,7 +71,7 @@
           "settings": {
             "media_type_1": "image",
             "image_1": "shopify://shop_images/Banner-site-Mamae-pode.png",
-            "link": "",
+            "link": "shopify://products/mamae-pode",
             "content_direction": "column",
             "vertical_on_mobile": true,
             "horizontal_alignment": "flex-start",
@@ -98,7 +98,7 @@
           "settings": {
             "media_type_1": "image",
             "image_1": "shopify://shop_images/2-Banner-site-Encontrando-Darwin_png.png",
-            "link": "",
+            "link": "shopify://products/encontrando-darwin-uma-expedicao-pelos-confins-do-mundo",
             "content_direction": "column",
             "vertical_on_mobile": true,
             "horizontal_alignment": "flex-start",
@@ -125,7 +125,7 @@
           "settings": {
             "media_type_1": "image",
             "image_1": "shopify://shop_images/Banner-site-E-de-ler.png",
-            "link": "",
+            "link": "shopify://products/e-de-ler-de-comer-ou-de-brincar",
             "content_direction": "column",
             "vertical_on_mobile": true,
             "horizontal_alignment": "flex-start",
