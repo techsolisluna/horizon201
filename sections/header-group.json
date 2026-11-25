@@ -17,8 +17,8 @@
         "announcement_ULMxwf": {
           "type": "_announcement",
           "settings": {
-            "text": "Novos pedidos serão enviados a partir do dia 5 de janeiro. Boas Festas 🎉",
-            "link": "",
+            "text": "🎉 Aproveite os descontos especiais de Black Friday → &nbsp;",
+            "link": "shopify://collections/black-friday-2026",
             "font": "var(--font-body--family)",
             "font_size": "1rem",
             "weight": "",
@@ -36,7 +36,7 @@
       "settings": {
         "speed": 5,
         "section_width": "page-width",
-        "color_scheme": "scheme-2",
+        "color_scheme": "scheme-07c8db3a-eea6-4a3a-b02d-25d441259306",
         "divider_width": 0,
         "padding-block-start": 15,
         "padding-block-end": 15
